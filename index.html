@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartResume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="/static/plusins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/im.css"/>
+    <link rel="shortcut icon" href="/static/images/logo.png">
+<style type="text/css">
+.change table:hover {transform:translate(0,-10px);    -webkit-transform:translate(0,-10px);
+    -moz-transform:translate(0,-10px);    -o-transform:translate(0,-10px);
+    -ms-transform:translate(0,-10px);}
+</style>
+</head>
+</head>
+<body>
+<nav class="ui inverted attached segment im-padded-tb-mini im-shodow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary menu">
+            <h2 class="ui teal header item"><i class="fa fa-ravelry fa-2x" aria-hidden="true"></i>Smart Resume</h2>
+             <a href="/index" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>简历模板</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon input ">
+                    <!-- transparent: 设置为透明 -->
+                    <input type="text" placeholder="Search...">
+                    <i class="search  link icon"></i>
+                </div>
+            </div>
+
+            <div class="right m-item inverted divided stackable grid item grid m-mobile-hide myMessage">
+                <div class="ui simple dropdown item My-fd1">
+                    <div class="text">
+                        <img src="/static/images/Value.jpg" class="ui avatar image">
+                        {{ username }}
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="/personal"class="item"><i class="home icon"></i>我的主页</a>
+                        <a href="#" class="item"><i class="briefcase icon"></i>我的简历</a>
+                        <a href="/emailManager" class="item"><i class="certificate icon"></i>邮件管理</a>
+                        <a href="#" class="item"><i class="paperclip icon"></i>智能简历</a>
+                        <a href="/login" class="item h-center">退出</a>
+                    </div>
+                </div>
+                <!-- 铃铛 -->
+                <div class="item ui divider">
+                    <i class="large bell outline icon"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</nav>
+<div class="ui container im-padded-tb-large">
+        <div class="ui stackable grid">
+            <div class="ui middle aligned one column grid">
+                <div class="ui top attached segment">
+                    <h1 class="ui header h-center im-padded-tb-mini">Online SmartResume</h1>
+                    <div class="change">
+                        <table  class="ui celled padded table change" onclick="setdisplayFirst();">
+                            <hr style="margin: 0px">
+                            <tbody><tr>
+                                    <td><img src="/static/images/it.PNG" class="img-size-mini"></td>
+                                    <td class="single line"><h5 class="ui teal header">IT品管/技术支持</h5></td>
+                                  <td class="right aligned"><i class="fa fa-eye" aria-hidden="true">12300</i></td>
+                                  <td>选择从事技术支持工程师这个行业，是近几年社会需求量非常大，发展前景较好的一个方向，从网络系统集成普遍应用到家电下乡等国家政策的出台都为技术支持提供了广阔的市场空间，
+                                      行业发展促进人才的需求，专业的技术支持工程师是现在企业的宝贵人力资源财富。</td>
+                                </tr></tbody>
+                        </table>
+                        <table class="ui celled padded table data-first" style="display: none">
+                            <tbody>
+                                <tr>
+                                    <td>hahahha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr style="margin: 0px">
+
+                        <table class="ui celled padded table change" onclick="setdisplaySecond();">
+                            <tbody><tr>
+                                    <td><img src="/static/images/game.PNG" class="img-size-mini"></td>
+                                    <td class="single line"><h5 class="ui teal header h-center">互联网/电子商务 <br>/网游</h5></td>
+                                  <td class="right aligned"><i class="fa fa-eye" aria-hidden="true">30400</i></td>
+                                  <td>游戏制作一般主要分为两大块，即程序开发、美术设计。程序开发主要包括服务器端开发、客户端开发。而美术设计包括场景、角色、次时代、特效、动画等部分，要完成一个优秀的游戏作品，每一部分都需有专业人才负责。</td>
+                                </tr></tbody>
+                        </table>
+                        <table class="ui celled padded table data-second" style="display: none">
+                            <tbody>
+                                <tr>
+                                    <td>hahahha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr style="margin: 0px">
+
+
+                       <table class="ui celled padded table change" onclick="setdisplayThird();">
+                            <tbody><tr>
+                                    <td><img src="/static/images/hr.PNG" class="img-size-mini"></td>
+                                    <td class="single line"><h5 class="ui teal header">&nbsp; &nbsp; 人力资源/行政 &nbsp; &nbsp;</h5></td>
+                                  <td class="right aligned"><i class="fa fa-eye" aria-hidden="true">10400</i></td>
+                                  <td>建立和完善行政人事部的工作程序、岗位职责，使部门工作更加灵活高效；同时规范明晰部门日常工作！
+                                    岗位设置：行政人事部经理，行政主管， 人事主管，行政助理，人事助理， 其他文员</td>
+                                </tr></tbody>
+                        </table>
+                        <table class="ui celled padded table data-third" style="display: none">
+                            <tbody>
+                                <tr>
+                                    <td>hahahha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr style="margin: 0px">
+
+
+                       <table class="ui celled padded table change" onclick="setdisplayFourth();">
+                            <tbody><tr>
+                                    <td><img src="/static/images/营销.PNG" class="img-size-mini"></td>
+                                    <td class="single line"><h5 class="ui teal header h-center">&emsp;&emsp;营销管理&emsp;&emsp;</h5></td>
+                                  <td class="right aligned"><i class="fa fa-eye" aria-hidden="true">10400</i></td>
+                                  <td>经营管理，是指企业为了满足社会需要，为了自己的生存和发展，对企业的经营活动进行计划、组织、指挥、协调和控制。
+                                      其目的是使企业面向用户和市场，充分利用企业拥有的各种资源，最大限度地满足用户的需要，取得良好的经济效益和社会效益。</td>
+                                </tr></tbody>
+                        </table>
+                        <table class="ui celled padded table data-fourth" style="display: none">
+                            <tbody>
+                                <tr>
+                                    <td>hahahha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr style="margin: 0px">
+
+
+                       <table class="ui celled padded table change" onclick="setdisplayFifth();">
+                            <tbody><tr>
+                                    <td><img src="/static/images/sj.PNG" class="img-size-mini"></td>
+                                    <td class="single line"><h5 class="ui teal header h-center">&emsp;&emsp;财务审计&emsp;&emsp;</h5></td>
+                                  <td class="right aligned"><i class="fa fa-eye" aria-hidden="true">10400</i></td>
+                                  <td>企业财务审计，是指审计机关按照《中华人民共和国审计法》及其实施条例和国家企业财务审计准则规定的程序和方法对国有企业(包括国有控股企业)资产、负债、损益的真实、合法、效益进行审计监督，
+                                      对被审计企业会计报表反映的会计信息依法作出客观、公正的评价，形成审计报告，出具审计意见和决定，其目的是揭露和反映企业资产、负债和盈亏的真实情况，查处企业财务收支中各种违法违规问题，
+                                      维护国家所有者权益，促进廉政建设，防止国有资产流失，为政府加强宏观调控服务。</td>
+                                </tr></tbody>
+                        </table>
+                        <table class="ui celled padded table data-fifth" style="display: none">
+                            <tbody>
+                                <tr>
+                                    <td>hahahha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr style="margin: 0px">
+
+
+                       <table class="ui celled padded table change" onclick="setdisplaySisth();">
+                            <tbody><tr>
+                                    <td><img src="/static/images/rj.PNG" class="img-size-mini"></td>
+                                    <td class="single line"><h5 class="ui teal header h-center">计算机软件/系统<br></br>集成</h5></td>
+                                  <td class="right aligned"><i class="fa fa-eye" aria-hidden="true">10400</i></td>
+                                  <td>系统集成实现的关键在于解决系统之间的互连和互操作性问题，它是一个多厂商、多协议和面向各种应用的体系结构。这需要解决各类设备、子系统间的接口、协议、系统平台、应用软件等与子系统、建筑环境、
+                                      施工配合、组织管理和人员配备相关的一切面向集成的问题。</td>
+                                </tr></tbody>
+                        </table>
+                        <table class="ui celled padded table data-sisth" style="display: none">
+                            <tbody>
+                                <tr>
+                                    <td>hahahha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr style="margin: 0px">
+
+
+                       <table class="ui celled padded table change" onclick="setdisplaySeventh();">
+                            <tbody><tr>
+                                    <td><img src="/static/images/sx.PNG" class="img-size-mini"></td>
+                                    <td class="single line"><h5 class="ui teal header h-center">&emsp;&emsp;&emsp;实习&emsp;&emsp;&emsp;</h5></td>
+                                  <td class="right aligned"><i class="fa fa-eye" aria-hidden="true">10400</i></td>
+                                  <td>实习：顾名思义，是在实践中学习。在经过一段时间的学习之后，或者说当学习告一段落的时候，我们需要了解自己的所学需要或应当如何应用在实践中。因为任何知识源于实践，归于实践，所以要付诸实践来检验
+                                      所学。实习一般包括大学里的学生的金工实习和公司里安排员工实习。企业的硬性要求往往会成为实习生被留用转正的绊脚石。</td>
+                                </tr></tbody>
+                        </table>
+                        <table class="ui celled padded table data-seventh" style="display: none">
+                            <tbody>
+                                <tr>
+                                    <td>hahahha</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/static/js/MyJs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</body>
+</html>
