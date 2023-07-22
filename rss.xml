@@ -15,7 +15,7 @@
             <link>http://example.com/value/Hexo%20blog%20deploy%20by%20Github</link>
             <category>blog</category>
             <pubDate>Sat, 22 Jul 2023 20:37:08 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;环境配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境配置&#34;&gt;#&lt;/a&gt; 环境配置&lt;/h2&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;环境配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境配置&#34;&gt;#&lt;/a&gt; 环境配置&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;hexo&lt;/li&gt;
 &lt;li&gt;Git&lt;/li&gt;

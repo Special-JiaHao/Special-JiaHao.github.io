@@ -10,7 +10,7 @@
         <id>http://example.com/value/Hexo%20blog%20deploy%20by%20Github</id>
         <title>Hexo blog deploy by Github</title>
         <link rel="alternate" href="http://example.com/value/Hexo%20blog%20deploy%20by%20Github"/>
-        <content type="html">&lt;h2 id=&#34;环境配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境配置&#34;&gt;#&lt;/a&gt; 环境配置&lt;/h2&gt;
+        <content type="html">&lt;h1 id=&#34;环境配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境配置&#34;&gt;#&lt;/a&gt; 环境配置&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;hexo&lt;/li&gt;
 &lt;li&gt;Git&lt;/li&gt;
