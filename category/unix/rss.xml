@@ -7,8 +7,8 @@
         <language>en</language>
         <pubDate>Thu, 20 Jul 2023 17:00:34 +0800</pubDate>
         <lastBuildDate>Thu, 20 Jul 2023 17:00:34 +0800</lastBuildDate>
-        <category>blog</category>
         <category>C++</category>
+        <category>blog</category>
         <item>
             <guid isPermalink="true">http://example.com/2023/07/20/Unix%20programing/</guid>
             <title>UNIX网络编程</title>
