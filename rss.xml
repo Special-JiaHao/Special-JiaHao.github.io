@@ -7,12 +7,12 @@
         <language>en</language>
         <pubDate>Sat, 22 Jul 2023 20:37:08 +0800</pubDate>
         <lastBuildDate>Sat, 22 Jul 2023 20:37:08 +0800</lastBuildDate>
-        <category>C++</category>
         <category>blog</category>
+        <category>C++</category>
         <item>
-            <guid isPermalink="true">http://example.com/2023/07/22/Hexo%20blog%20deploy%20by%20Github/</guid>
+            <guid isPermalink="true">http://example.com/value/Hexo%20blog%20deploy%20by%20Github</guid>
             <title>Hexo blog deploy by Github</title>
-            <link>http://example.com/2023/07/22/Hexo%20blog%20deploy%20by%20Github/</link>
+            <link>http://example.com/value/Hexo%20blog%20deploy%20by%20Github</link>
             <category>blog</category>
             <pubDate>Sat, 22 Jul 2023 20:37:08 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;环境配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境配置&#34;&gt;#&lt;/a&gt; 环境配置&lt;/h2&gt;
@@ -23,9 +23,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2023/07/20/Unix%20programing/</guid>
+            <guid isPermalink="true">http://example.com/value/Unix%20programing</guid>
             <title>UNIX网络编程</title>
-            <link>http://example.com/2023/07/20/Unix%20programing/</link>
+            <link>http://example.com/value/Unix%20programing</link>
             <category>C++</category>
             <pubDate>Thu, 20 Jul 2023 17:00:34 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;传输层tcp-udp和sctp&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#传输层tcp-udp和sctp&#34;&gt;#&lt;/a&gt; 传输层：TCP、UDP 和 SCTP&lt;/h2&gt;

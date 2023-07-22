@@ -4,12 +4,12 @@
     <title>繁華落盡 似水流年 • Posts by &#34;unix&#34; category</title>
     <link href="http://example.com" />
     <updated>2023-07-20T09:00:34.000Z</updated>
-    <category term="C++" />
     <category term="blog" />
+    <category term="C++" />
     <entry>
-        <id>http://example.com/2023/07/20/Unix%20programing/</id>
+        <id>http://example.com/value/Unix%20programing</id>
         <title>UNIX网络编程</title>
-        <link rel="alternate" href="http://example.com/2023/07/20/Unix%20programing/"/>
+        <link rel="alternate" href="http://example.com/value/Unix%20programing"/>
         <content type="html">&lt;h2 id=&#34;传输层tcp-udp和sctp&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#传输层tcp-udp和sctp&#34;&gt;#&lt;/a&gt; 传输层：TCP、UDP 和 SCTP&lt;/h2&gt;
 &lt;h2 id=&#34;套接字编程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#套接字编程&#34;&gt;#&lt;/a&gt; 套接字编程&lt;/h2&gt;
 &lt;h3 id=&#34;套接字地址结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#套接字地址结构&#34;&gt;#&lt;/a&gt; 套接字地址结构&lt;/h3&gt;
