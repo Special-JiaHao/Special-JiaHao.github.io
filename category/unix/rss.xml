@@ -7,12 +7,13 @@
         <language>en</language>
         <pubDate>Thu, 20 Jul 2023 17:00:34 +0800</pubDate>
         <lastBuildDate>Thu, 20 Jul 2023 17:00:34 +0800</lastBuildDate>
-        <category>python</category>
+        <category>blog</category>
+        <category>C++</category>
         <item>
             <guid isPermalink="true">http://example.com/2023/07/20/Unix%20programing/</guid>
             <title>UNIX网络编程</title>
             <link>http://example.com/2023/07/20/Unix%20programing/</link>
-            <category>python</category>
+            <category>C++</category>
             <pubDate>Thu, 20 Jul 2023 17:00:34 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;传输层tcp-udp和sctp&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#传输层tcp-udp和sctp&#34;&gt;#&lt;/a&gt; 传输层：TCP、UDP 和 SCTP&lt;/h2&gt;
 &lt;h2 id=&#34;套接字编程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#套接字编程&#34;&gt;#&lt;/a&gt; 套接字编程&lt;/h2&gt;

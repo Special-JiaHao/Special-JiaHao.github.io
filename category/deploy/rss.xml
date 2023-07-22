@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>繁華落盡 似水流年 • Posts by &#34;deploy&#34; category</title>
+        <link>http://example.com</link>
+        <description>编程日记 &amp; 随笔</description>
+        <language>en</language>
+        <pubDate>Thu, 20 Jul 2023 17:00:34 +0800</pubDate>
+        <lastBuildDate>Thu, 20 Jul 2023 17:00:34 +0800</lastBuildDate>
+        <category>blog</category>
+        <category>C++</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/07/20/Hexo%20blog%20deploy%20by%20Github/</guid>
+            <title>Hexo blog deploy by Github</title>
+            <link>http://example.com/2023/07/20/Hexo%20blog%20deploy%20by%20Github/</link>
+            <category>blog</category>
+            <pubDate>Thu, 20 Jul 2023 17:00:34 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h2&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;blog&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2023-07-20T09:00:34.000Z</updated>
+    <category term="blog" />
+    <category term="C++" />
+    <entry>
+        <id>http://example.com/2023/07/20/Hexo%20blog%20deploy%20by%20Github/</id>
+        <title>Hexo blog deploy by Github</title>
+        <link rel="alternate" href="http://example.com/2023/07/20/Hexo%20blog%20deploy%20by%20Github/"/>
+        <content type="html">&lt;h2 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h2&gt;
+</content>
+        <category term="blog" />
+        <updated>2023-07-20T09:00:34.000Z</updated>
+    </entry>
+</feed>
