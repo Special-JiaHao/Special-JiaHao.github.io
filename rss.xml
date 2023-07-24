@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Mon, 24 Jul 2023 15:01:11 +0800</pubDate>
-        <lastBuildDate>Mon, 24 Jul 2023 15:01:11 +0800</lastBuildDate>
+        <pubDate>Mon, 24 Jul 2023 15:17:34 +0800</pubDate>
+        <lastBuildDate>Mon, 24 Jul 2023 15:17:34 +0800</lastBuildDate>
         <category>语法</category>
         <category>C++</category>
         <item>
@@ -14,30 +14,35 @@
             <title>Markdown语法</title>
             <link>http://example.com/value/Markdown%20grammar</link>
             <category>语法</category>
-            <pubDate>Mon, 24 Jul 2023 15:01:11 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;markdown介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown介绍&#34;&gt;#&lt;/a&gt; # Markdown 介绍&lt;/h1&gt;
+            <pubDate>Mon, 24 Jul 2023 15:17:34 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;markdown介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown介绍&#34;&gt;#&lt;/a&gt; Markdown 介绍&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; 是一种&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvJUU4JUJEJUJCJUU5JTg3JThGJUU3JUJBJUE3JUU2JUEwJTg3JUU4JUFFJUIwJUU4JUFGJUFEJUU4JUE4JTgw&#34;&gt;轻量级标记语言&lt;/span&gt;，由&lt;em&gt;&lt;strong&gt;约翰・格鲁伯&lt;/strong&gt;&lt;/em&gt;于 2004 创建（在语法上与&lt;em&gt;&lt;strong&gt;亚伦・斯沃茨&lt;/strong&gt;&lt;/em&gt;有合作）. 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 &lt;code&gt;HTML&lt;/code&gt;  文档。其中最重要的设计是可读性，也就是说这个语言应该要能直接在字面上阅读，而不用记忆格式化指令标记（像是 &lt;code&gt;RTF&lt;/code&gt;  与 HTML）. 由于 Markdown 的轻量化、易读易写特性，并且对于图片、图表、数学式都有支持，目前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。如 &lt;code&gt;GitHub&lt;/code&gt; 、 &lt;code&gt;Reddit&lt;/code&gt; 、 &lt;code&gt;Discord&lt;/code&gt; 、 &lt;code&gt;OpenStreetMap&lt;/code&gt;  、 &lt;code&gt;CSDN&lt;/code&gt; 、 &lt;code&gt;简书&lt;/code&gt; 等，甚至还能被用来撰写电子书.&lt;/p&gt;
-&lt;p&gt;&amp;lt;center class=&amp;quot;half&amp;quot;&amp;gt;&lt;br /&gt;
-&amp;lt;img src=&amp;quot;images/markdown/ 格鲁伯.jpg&amp;quot; title=&amp;quot;格鲁伯&amp;quot; width=250/&amp;gt;&lt;br /&gt;
-&amp;lt;img src=&amp;quot;images/markdown/ 斯沃茨.jpg&amp;quot; title=&amp;quot;斯沃茨&amp;quot; width=150/&amp;gt;&lt;br /&gt;
-&amp;lt;/center&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;images/markdown/%E6%A0%BC%E9%B2%81%E4%BC%AF.jpg#pic_center&#34; alt=&#34;约翰·格鲁伯&#34; /&gt; &amp;lt;img src=&amp;quot;images/markdown/ 斯沃茨.jpg#pic_center=&amp;quot; alt=&amp;quot;斯沃茨&amp;quot; style=&amp;quot;zoom:50%;&amp;quot; /&amp;gt;&lt;/p&gt;
 &lt;h1 id=&#34;基本语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本语法&#34;&gt;#&lt;/a&gt; 基本语法&lt;/h1&gt;
 &lt;h2 id=&#34;标题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h2&gt;
 &lt;p&gt;Markdown 支持六级标题，要使用几级标题即在标题前方加上相应数目的 &lt;code&gt;#&lt;/code&gt; （兼容性：标题与 &lt;code&gt;#&lt;/code&gt; 之间添加空格）, 例如三级标题 &lt;code&gt;###&lt;/code&gt; .&lt;/p&gt;
-&lt;p&gt;&amp;lt;table class=&amp;quot;table table-bordered&amp;quot;&amp;gt;&lt;br /&gt;
-&amp;lt;thead class=&amp;quot;thead-light&amp;quot;&amp;gt;&lt;br /&gt;
-&amp;lt;tr&amp;gt;&lt;br /&gt;
-&amp;lt;th&amp;gt;Markdown 语法 &amp;lt;/th&amp;gt;&lt;br /&gt;
-&amp;lt;th&amp;gt;HTML&amp;lt;/th&amp;gt;&lt;br /&gt;
-&amp;lt;th&amp;gt; 预览效果 &amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;&lt;br /&gt;
-&amp;lt;/thead&amp;gt;&lt;br /&gt;
-&amp;lt;tbody&amp;gt;&lt;br /&gt;
-&amp;lt;tr&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;&lt;br /&gt;
-&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot; style=&amp;quot;text-align: center;&amp;quot;&amp;gt;# Heading level 1&amp;lt;/code&amp;gt;&lt;br /&gt;
-&amp;lt;/td&amp;gt;&lt;br /&gt;
-&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h1&amp;gt;Heading level 1&amp;lt;/h1&amp;gt;&lt;br /&gt;
-&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h1 data-toc-skip=&amp;quot;&amp;quot; class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 1&amp;lt;/h1&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;## Heading level 2&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h2&amp;gt;Heading level 2&amp;lt;/h2&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h2 data-toc-skip=&amp;quot;&amp;quot; class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 2&amp;lt;/h2&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;### Heading level 3&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;Heading level 3&amp;lt;/h3&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h3 data-toc-skip=&amp;quot;&amp;quot; class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 3&amp;lt;/h3&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;#### Heading level 4&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h4&amp;gt;Heading level  4&amp;lt;/h4&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h4 class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 4&amp;lt;/h4&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;##### Heading level 5&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h5&amp;gt;Heading level 5&amp;lt;/h5&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h5 class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 5&amp;lt;/h5&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;###### Heading level 6&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h6&amp;gt;Heading level 6&amp;lt;/h6&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h6 class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 6&amp;lt;/h6&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Markdown 语法&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;预览效果&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;# Heading level 1&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&amp;lt;h1&amp;gt;Heading level 1&amp;lt;/h1&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;手机&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;导管&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;快捷键：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Ctrl 1~6&lt;/code&gt;  可将对应的文本设置成相应级别的标题， &lt;code&gt;Ctrl + 0&lt;/code&gt;  将文本设成正文&lt;/li&gt;
