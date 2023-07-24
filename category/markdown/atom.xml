@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;markdown&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2023-07-24T07:01:11.383Z</updated>
+    <category term="语法" />
+    <category term="C++" />
+    <entry>
+        <id>http://example.com/value/Markdown%20grammar</id>
+        <title>Markdown语法</title>
+        <link rel="alternate" href="http://example.com/value/Markdown%20grammar"/>
+        <content type="html">&lt;h1 id=&#34;markdown介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown介绍&#34;&gt;#&lt;/a&gt; # Markdown 介绍&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; 是一种&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aC53aWtpcGVkaWEub3JnL3dpa2kvJUU4JUJEJUJCJUU5JTg3JThGJUU3JUJBJUE3JUU2JUEwJTg3JUU4JUFFJUIwJUU4JUFGJUFEJUU4JUE4JTgw&#34;&gt;轻量级标记语言&lt;/span&gt;，由&lt;em&gt;&lt;strong&gt;约翰・格鲁伯&lt;/strong&gt;&lt;/em&gt;于 2004 创建（在语法上与&lt;em&gt;&lt;strong&gt;亚伦・斯沃茨&lt;/strong&gt;&lt;/em&gt;有合作）. 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 &lt;code&gt;HTML&lt;/code&gt;  文档。其中最重要的设计是可读性，也就是说这个语言应该要能直接在字面上阅读，而不用记忆格式化指令标记（像是 &lt;code&gt;RTF&lt;/code&gt;  与 HTML）. 由于 Markdown 的轻量化、易读易写特性，并且对于图片、图表、数学式都有支持，目前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。如 &lt;code&gt;GitHub&lt;/code&gt; 、 &lt;code&gt;Reddit&lt;/code&gt; 、 &lt;code&gt;Discord&lt;/code&gt; 、 &lt;code&gt;OpenStreetMap&lt;/code&gt;  、 &lt;code&gt;CSDN&lt;/code&gt; 、 &lt;code&gt;简书&lt;/code&gt; 等，甚至还能被用来撰写电子书.&lt;/p&gt;
+&lt;p&gt;&amp;lt;center class=&amp;quot;half&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;lt;img src=&amp;quot;images/markdown/ 格鲁伯.jpg&amp;quot; title=&amp;quot;格鲁伯&amp;quot; width=250/&amp;gt;&lt;br /&gt;
+&amp;lt;img src=&amp;quot;images/markdown/ 斯沃茨.jpg&amp;quot; title=&amp;quot;斯沃茨&amp;quot; width=150/&amp;gt;&lt;br /&gt;
+&amp;lt;/center&amp;gt;&lt;/p&gt;
+&lt;h1 id=&#34;基本语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本语法&#34;&gt;#&lt;/a&gt; 基本语法&lt;/h1&gt;
+&lt;h2 id=&#34;标题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h2&gt;
+&lt;p&gt;Markdown 支持六级标题，要使用几级标题即在标题前方加上相应数目的 &lt;code&gt;#&lt;/code&gt; （兼容性：标题与 &lt;code&gt;#&lt;/code&gt; 之间添加空格）, 例如三级标题 &lt;code&gt;###&lt;/code&gt; .&lt;/p&gt;
+&lt;p&gt;&amp;lt;table class=&amp;quot;table table-bordered&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;lt;thead class=&amp;quot;thead-light&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;lt;tr&amp;gt;&lt;br /&gt;
+&amp;lt;th&amp;gt;Markdown 语法 &amp;lt;/th&amp;gt;&lt;br /&gt;
+&amp;lt;th&amp;gt;HTML&amp;lt;/th&amp;gt;&lt;br /&gt;
+&amp;lt;th&amp;gt; 预览效果 &amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;&lt;br /&gt;
+&amp;lt;/thead&amp;gt;&lt;br /&gt;
+&amp;lt;tbody&amp;gt;&lt;br /&gt;
+&amp;lt;tr&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;&lt;br /&gt;
+&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot; style=&amp;quot;text-align: center;&amp;quot;&amp;gt;# Heading level 1&amp;lt;/code&amp;gt;&lt;br /&gt;
+&amp;lt;/td&amp;gt;&lt;br /&gt;
+&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h1&amp;gt;Heading level 1&amp;lt;/h1&amp;gt;&lt;br /&gt;
+&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h1 data-toc-skip=&amp;quot;&amp;quot; class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 1&amp;lt;/h1&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;## Heading level 2&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h2&amp;gt;Heading level 2&amp;lt;/h2&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h2 data-toc-skip=&amp;quot;&amp;quot; class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 2&amp;lt;/h2&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;### Heading level 3&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;Heading level 3&amp;lt;/h3&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h3 data-toc-skip=&amp;quot;&amp;quot; class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 3&amp;lt;/h3&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;#### Heading level 4&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h4&amp;gt;Heading level  4&amp;lt;/h4&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h4 class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 4&amp;lt;/h4&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;##### Heading level 5&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h5&amp;gt;Heading level 5&amp;lt;/h5&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h5 class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 5&amp;lt;/h5&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;###### Heading level 6&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;&amp;lt;h6&amp;gt;Heading level 6&amp;lt;/h6&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;&amp;lt;h6 class=&amp;quot;no-anchor&amp;quot;&amp;gt;Heading level 6&amp;lt;/h6&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;快捷键：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl 1~6&lt;/code&gt;  可将对应的文本设置成相应级别的标题， &lt;code&gt;Ctrl + 0&lt;/code&gt;  将文本设成正文&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl +&lt;/code&gt;  或  &lt;code&gt;Ctrl -&lt;/code&gt;  将相应的标题进行升级或者降级&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;段落与换行&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#段落与换行&#34;&gt;#&lt;/a&gt; 段落与换行&lt;/h2&gt;
+&lt;p&gt;使用空白行或多行文本进行分割。需要注意的是 &#39; 回车 &#39; 和 &lt;code&gt;Shift 回车&lt;/code&gt; 不同，前者的行间距更小。同时 Markdown 并不建议使用空格（spaces）或制表符（ tabs）来缩进段落.&lt;/p&gt;
+&lt;h2 id=&#34;强调语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#强调语法&#34;&gt;#&lt;/a&gt; 强调语法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;粗体：在需要加粗的单词或者短语的前后各添加 &lt;code&gt;**&lt;/code&gt;  或者 &lt;code&gt;__&lt;/code&gt; （两个下划线）. &lt;strong&gt;Here&lt;/strong&gt;. &lt;strong&gt;快捷键&lt;/strong&gt; ——  选中文本， &lt;code&gt;Ctrl b&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;斜体：在需要用斜体的文本的前后各添加 &lt;code&gt;*&lt;/code&gt;  或者 &lt;code&gt;_&lt;/code&gt; （一个下划线）. &lt;em&gt;Here&lt;/em&gt;. &lt;strong&gt;快捷键&lt;/strong&gt; —— 选中文本， &lt;code&gt;Ctrl L&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下划线：将需要使用下划线的文本放置于 &lt;code&gt;&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;&lt;/code&gt;  标签对内. &amp;lt;u&amp;gt;Here&amp;lt;/u&amp;gt;. &lt;strong&gt;快捷键&lt;/strong&gt; —— 选中文本， &lt;code&gt; Ctrl u&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;高亮：对需要使用的高亮文本前后分别添加 &lt;code&gt;==&lt;/code&gt; . &lt;mark&gt;Here&lt;/mark&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除线：对需要使用的删除线的文本前后分别添加 &lt;code&gt;~~&lt;/code&gt; . &lt;s&gt;Here&lt;/s&gt;. &lt;strong&gt;快捷键&lt;/strong&gt; —— 选中文本， &lt;code&gt;SHift Alt 5&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表&#34;&gt;#&lt;/a&gt; 列表&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;有序列表：要创建有序列表，在每个列表项前添加数字并紧跟一个英文句点 ( &lt;code&gt;.&lt;/code&gt; ). 数字不必按数学顺序排列，但是列表应当以数字 1 起始.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;无须列表：要创建无序列表，在每个列表项前添加 &lt;code&gt;-&lt;/code&gt; 、 &lt;code&gt;*&lt;/code&gt;  或 &lt;code&gt;+&lt;/code&gt;  并紧跟一个空格。可以通过缩进的方式来创建嵌套列表 ( &lt;code&gt;Tab&lt;/code&gt; ).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;任务列表：要创建无序列表，在每个列表项前添加 &lt;code&gt;- [ ] &lt;/code&gt; ( &lt;code&gt;-&lt;/code&gt;  空格 &lt;code&gt;[&lt;/code&gt; 空格 &lt;code&gt;]&lt;/code&gt;  空格).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h2&gt;
+</content>
+        <category term="语法" />
+        <updated>2023-07-24T07:01:11.383Z</updated>
+    </entry>
+</feed>
