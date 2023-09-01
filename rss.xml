@@ -7,8 +7,8 @@
         <language>en</language>
         <pubDate>Fri, 01 Sep 2023 16:09:55 +0800</pubDate>
         <lastBuildDate>Fri, 01 Sep 2023 16:09:55 +0800</lastBuildDate>
-        <category>mathematics</category>
         <category>语法</category>
+        <category>mathematics</category>
         <category>C++</category>
         <category>install</category>
         <category>CNN</category>
@@ -90,7 +90,7 @@
 &lt;/li&gt;
 &lt;li id=&#34;fn3&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;[C. Szegedy et al., &amp;quot;Going deeper with convolutions,&amp;quot; 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Boston, MA, USA, 2015, pp. 1-9, doi: 10.1109/CVPR.2015.7298594](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzcyOTg1OTQ=&#34;&gt;Going deeper with convolutions | IEEE Conference Publication | IEEE Xplore&lt;/span&gt;) &lt;a href=&#34;#fnref3&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn4&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;[Zhang A, Lipton Z C, Li M, et al. Dive into deep learning[J]. arXiv preprint arXiv:2106.11342, 2021](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25uZGwvbm5kbC5naXRodWIuaW8vYmxvYi9tYXN0ZXIvbm5kbC1ib29rLnBkZg==&#34;&gt;nndl.github.io/nndl-book.pdf at master · nndl/nndl.github.io · GitHub&lt;/span&gt;) &lt;a href=&#34;#fnref4&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn4&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;[(Zhang A, Lipton Z C, Li M, et al. Dive into deep learning[J]. arXiv preprint arXiv:2106.11342, 2021)](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25uZGwvbm5kbC5naXRodWIuaW8vYmxvYi9tYXN0ZXIvbm5kbC1ib29rLnBkZg==&#34;&gt;nndl.github.io/nndl-book.pdf at master · nndl/nndl.github.io · GitHub&lt;/span&gt;) &lt;a href=&#34;#fnref4&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
