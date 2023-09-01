@@ -5,10 +5,10 @@
     <link href="http://example.com" />
     <updated>2023-07-24T09:31:20.649Z</updated>
     <category term="mathematics" />
-    <category term="语法" />
     <category term="install" />
-    <category term="C++" />
+    <category term="语法" />
     <category term="CNN" />
+    <category term="C++" />
     <entry>
         <id>http://example.com/value/ns3%20install</id>
         <title>ns3 install</title>
