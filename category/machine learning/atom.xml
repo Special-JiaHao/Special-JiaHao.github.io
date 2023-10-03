@@ -4,11 +4,12 @@
     <title>繁華落盡 似水流年 • Posts by &#34;machine learning&#34; category</title>
     <link href="http://example.com" />
     <updated>2023-07-25T06:34:33.109Z</updated>
-    <category term="语法" />
     <category term="mathematics" />
     <category term="C++" />
+    <category term="语法" />
     <category term="install" />
     <category term="CNN" />
+    <category term="STL" />
     <entry>
         <id>http://example.com/value/Graident%20descent</id>
         <title>梯度下降</title>
