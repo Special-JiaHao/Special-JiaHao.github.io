@@ -10,6 +10,7 @@
     <category term="install" />
     <category term="STL" />
     <category term="CNN" />
+    <category term="Project" />
     <entry>
         <id>http://example.com/value/Unix%20programing</id>
         <title>UNIX网络编程</title>

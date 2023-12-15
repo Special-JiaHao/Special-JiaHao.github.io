@@ -10,6 +10,7 @@
     <category term="install" />
     <category term="STL" />
     <category term="CNN" />
+    <category term="Project" />
     <entry>
         <id>http://example.com/value/stl_list</id>
         <title>STL List</title>

@@ -10,9 +10,10 @@
     <category term="install" />
     <category term="STL" />
     <category term="CNN" />
+    <category term="Project" />
     <entry>
         <id>http://example.com/value/%E9%87%91%E5%B1%B1%E4%BC%9A%E8%AE%AE%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F</id>
-        <title></title>
+        <title>金山会议室预约系统</title>
         <link rel="alternate" href="http://example.com/value/%E9%87%91%E5%B1%B1%E4%BC%9A%E8%AE%AE%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F"/>
         <content type="html">&lt;h1 id=&#34;金山会议室预约系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#金山会议室预约系统&#34;&gt;#&lt;/a&gt; 金山会议室预约系统&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Linux Ubuntu20.04&lt;/strong&gt;&lt;/p&gt;
@@ -100,6 +101,7 @@
 &lt;h2 id=&#34;设计逻辑状态机模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计逻辑状态机模型&#34;&gt;#&lt;/a&gt; 设计逻辑（状态机模型）&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://github.com/Special-JiaHao/images/blob/main/%E9%87%91%E5%B1%B1%E7%B3%BB%E7%BB%9F%E9%80%BB%E8%BE%91.png?raw=true&#34; alt=&#34;状态机模型&#34; /&gt;&lt;/p&gt;
 </content>
+        <category term="Project" />
         <updated>2023-12-15T07:40:37.498Z</updated>
     </entry>
     <entry>

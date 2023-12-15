@@ -13,6 +13,7 @@
         <category>install</category>
         <category>STL</category>
         <category>CNN</category>
+        <category>Project</category>
         <item>
             <guid isPermalink="true">http://example.com/value/ns3%20install</guid>
             <title>ns3 install</title>
