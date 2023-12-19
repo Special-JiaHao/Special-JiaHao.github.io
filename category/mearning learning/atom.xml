@@ -4,9 +4,15 @@
     <title>繁華落盡 似水流年 • Posts by &#34;mearning learning&#34; category</title>
     <link href="http://example.com" />
     <updated>2023-09-01T08:09:55.500Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
     <category term="项目构建工具" />
-    <category term="CNN" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
     <category term="Project" />
+    <category term="CNN" />
     <entry>
         <id>http://example.com/value/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C</id>
         <title>Convolutional Neural Network</title>
