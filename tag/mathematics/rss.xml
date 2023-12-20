@@ -8,14 +8,15 @@
         <pubDate>Tue, 25 Jul 2023 14:34:33 +0800</pubDate>
         <lastBuildDate>Tue, 25 Jul 2023 14:34:33 +0800</lastBuildDate>
         <category>mathematics</category>
-        <category>语法</category>
         <category>C++</category>
         <category>项目构建工具</category>
+        <category>语法</category>
+        <category>VMware</category>
         <category>install</category>
         <category>数据库</category>
+        <category>CNN</category>
         <category>STL</category>
         <category>Project</category>
-        <category>CNN</category>
         <item>
             <guid isPermalink="true">http://example.com/value/Graident%20descent</guid>
             <title>梯度下降</title>

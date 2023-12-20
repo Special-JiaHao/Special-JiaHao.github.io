@@ -8,14 +8,15 @@
         <pubDate>Tue, 03 Oct 2023 16:18:31 +0800</pubDate>
         <lastBuildDate>Tue, 03 Oct 2023 16:18:31 +0800</lastBuildDate>
         <category>mathematics</category>
-        <category>语法</category>
         <category>C++</category>
         <category>项目构建工具</category>
+        <category>语法</category>
+        <category>VMware</category>
         <category>install</category>
         <category>数据库</category>
+        <category>CNN</category>
         <category>STL</category>
         <category>Project</category>
-        <category>CNN</category>
         <item>
             <guid isPermalink="true">http://example.com/value/redis</guid>
             <title>redis</title>

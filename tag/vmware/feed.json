@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "繁華落盡 似水流年 • All posts by \"vmware\" tag",
+    "description": "编程日记 & 随笔",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/value/VMware%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98",
+            "url": "http://example.com/value/VMware%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98",
+            "title": "VMware Workstation遇到的一些问题",
+            "date_published": "2023-12-20T06:35:18.919Z",
+            "content_html": "<h1 id=\"vmware-workstation遇到的一些问题\"><a class=\"anchor\" href=\"#vmware-workstation遇到的一些问题\">#</a> VMware Workstation 遇到的一些问题</h1>\n<ul>\n<li>\n<p><code>ens33网卡不见了</code></p>\n<blockquote>\n<p>出现原因：</p>\n<ol>\n<li>未正常关闭虚拟机而笔记本长时间待机可能导致</li>\n</ol>\n</blockquote>\n<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/ens33%E6%B6%88%E5%A4%B1.png\" alt=\"ens33消失\" /></p>\n<p>​\t解决方案：</p>\n<figure class=\"highlight shell\"><figcaption data-lang=\"Bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token operator\">></span> <span class=\"token function\">sudo</span> systemctl start NetworkManager</pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token operator\">></span> <span class=\"token function\">sudo</span> dhclient ens33</pre></td></tr></table></figure><p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%8A%A8%E6%80%81ip%E5%88%86%E9%85%8D.png\" alt=\"动态ip分配\" /></p>\n<p>此时可以正常访问，但是当虚拟机重启之后，可能又回到原来 <code>ens33</code>  消失的状况，此时需要将网卡加入托管</p>\n<figure class=\"highlight shell\"><figcaption data-lang=\"Bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token operator\">></span> nmcli n on</pre></td></tr></table></figure></li>\n</ul>\n",
+            "tags": [
+                "VMware"
+            ]
+        }
+    ]
+}
