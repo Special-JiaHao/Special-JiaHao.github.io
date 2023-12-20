@@ -5,14 +5,14 @@
     <link href="http://example.com" />
     <updated>2023-07-20T09:00:34.000Z</updated>
     <category term="mathematics" />
-    <category term="C++" />
-    <category term="项目构建工具" />
     <category term="语法" />
+    <category term="C++" />
     <category term="VMware" />
+    <category term="项目构建工具" />
     <category term="install" />
     <category term="数据库" />
-    <category term="CNN" />
     <category term="STL" />
+    <category term="CNN" />
     <category term="Project" />
     <entry>
         <id>http://example.com/value/Unix%20programing</id>
