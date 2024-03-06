@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://example.com</id>
-    <title>繁華落盡 似水流年 • Posts by &#34;面试题&#34; tag</title>
+    <title>繁華落盡 似水流年 • Posts by &#34;c++ 面试题&#34; tag</title>
     <link href="http://example.com" />
-    <updated>2024-03-06T08:00:38.678Z</updated>
+    <updated>2024-03-06T13:54:10.931Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -14,7 +14,7 @@
     <category term="STL" />
     <category term="CNN" />
     <category term="Project" />
-    <category term="面试题" />
+    <category term="C++ 面试题" />
     <entry>
         <id>http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>C++面试题</title>
@@ -88,12 +88,16 @@
 &lt;li&gt;虚函数（函数地址在运行阶段确定）（每个包含虚函数的类实例化出的对象除了成员变量之外，最前面会存储虚函数指针；当发生继承时，派生类的虚表和父类一致，若子类中自身包含虚函数，则会添加到后面，若子类虚函数重写了父类的虚函数，则虚表中的地址也会发生响应的改变）&lt;/li&gt;
 &lt;li&gt;编译器在编译阶段会为类（含义虚函数的类）生成虚函数表&lt;/li&gt;
 &lt;li&gt;协变：基类和派生类虚函数的返回值不同（基类返回基类对象的指针或引用，派生类返回派生类对象的指针或引用）&lt;/li&gt;
-&lt;li&gt;虚析构函数：基类中析构函数前使用 &lt;code&gt;virtual&lt;/code&gt;  修饰。当基类指针指向派生类对象时，使用基类指针去释放空间时，则会去先调用派生类的析构函数，再去调用基类的析构函数；若不加 &lt;code&gt;virtual&lt;/code&gt;  则只会调用基类的析构函数，导致内存泄漏. (虽然虚构函数名不一样，其实也是一种重写，系统内部对析构函数做了特殊处理，将析构函数名称都改成了 &lt;code&gt;destructor&lt;/code&gt; )&lt;/li&gt;
+&lt;li&gt;虚析构函数：基类中析构函数前使用 &lt;code&gt;virtual&lt;/code&gt;  修饰。当基类指针指向派生类对象时，使用基类指针去释放空间时，则会去先调用派生类的析构函数，再去调用基类的析构函数；若不加 &lt;code&gt;virtual&lt;/code&gt;  则不会触发动态绑定（多态），只会调用基类的析构函数，导致内存泄漏. (虽然虚构函数名不一样，其实也是一种重写，系统内部对析构函数做了特殊处理，将析构函数名称都改成了 &lt;code&gt;destructor&lt;/code&gt; )&lt;/li&gt;
 &lt;li&gt;虚函数地址在运行时绑定，使用了虚函数表的机制，所以在调用的时候会增加一次内存开销.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;为什么c默认析构函数不是虚函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么c默认析构函数不是虚函数&#34;&gt;#&lt;/a&gt; 为什么 C++ 默认析构函数不是虚函数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;虚函数需要虚函数表和虚函数表指针，会占用内存空间。如果一个类没有子类，那么就没有必要讲析构函数设置为虚函数&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;重载-重写-重定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重载-重写-重定义&#34;&gt;#&lt;/a&gt; 重载、重写、重定义&lt;/h2&gt;
 &lt;ul&gt;
@@ -245,11 +249,12 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;左值引用与右值引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#左值引用与右值引用&#34;&gt;#&lt;/a&gt; 左值引用与右值引用&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;左值引用&lt;/li&gt;
-&lt;li&gt;右值引用：右值往往是没有名称，在实际开发中我们可能需要对右值进行修改，需要借助右值引用（ &lt;code&gt;类型&amp;amp;&amp;amp; 变量名=右值&lt;/code&gt; ）
+&lt;li&gt;左值引用：对左值的引用（可以出现在等式的左边，也可以出现在等式的右边，是具名的，同时可以取地址， &lt;code&gt;const左值引用&lt;/code&gt; 可以引用右值）; 避免对象的拷贝，在一定程度上让程序脱离了危险的指针&lt;/li&gt;
+&lt;li&gt;右值引用：右值（只能出现在等式的右边，不能取地址，纯右值 [字面值，返回的非引用的函数调用，后置自增 / 减，算术表达式，逻辑表达式，比较表达式], 将亡值 [C++11 引入，会触发移动构造或者移动赋值，并进行资源转移]）往往是没有名称，在实际开发中我们可能需要对右值进行修改，需要借助右值引用（ &lt;code&gt;类型&amp;amp;&amp;amp; 变量名=右值&lt;/code&gt; ）
 &lt;ol&gt;
 &lt;li&gt;移动语义：将一个临时对象（将亡值）的资源转移到另外一个对象中去，可以减少不必要的资源的销毁和开辟，提高运行效率&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;move()&lt;/code&gt; ：将左值强制转化为右值引用，通过右值引用来使用，实现移动语义.&lt;/li&gt;
+&lt;li&gt;完美转发&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -312,11 +317,26 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;c智能指针c11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c智能指针c11&#34;&gt;#&lt;/a&gt; C&lt;ins&gt; 智能指针（C&lt;/ins&gt;11）&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;更加安全且容易的管理动态内存，防止内存泄漏&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;auto_ptr&lt;/code&gt; ：C&lt;ins&gt;98 引入，由于其不够安全，被 &lt;code&gt;unique_ptr&lt;/code&gt;  取代，C&lt;/ins&gt;11 废弃；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;unique_ptr&lt;/code&gt; ：与 &lt;code&gt;auto_ptr&lt;/code&gt;  一样采用所有权模式，同一时间只能有一个智能指针可以指向某个对象，但是 &lt;code&gt;unique_ptr&lt;/code&gt;  禁止了拷贝操作， &lt;code&gt;unique_ptr&lt;/code&gt;  采用了移动赋值 &lt;code&gt;move()&lt;/code&gt;  函数来进行控制权转移.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;share_ptr&lt;/code&gt; ：共享所有权的一个智能指针。允许多个指针指针指向同一个对象，并使用引用计数来管理指向对象的指针（成员函数 &lt;code&gt;use_count()&lt;/code&gt;  可获得引用计数），该对象和相关资源会在最后一个引用被销毁时释放&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weak_ptr&lt;/code&gt; ：一种不控制对象生命周期的智能指针，不会影响 &lt;code&gt;share_ptr&lt;/code&gt;  的引用计数，只是提供一种访问其管理对象的方式&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更加安全且容易的管理动态内存，防止内存泄漏&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;auto_ptr&lt;/code&gt; ：C&lt;ins&gt;98 引入，由于其不够安全，被 &lt;code&gt;unique_ptr&lt;/code&gt;  取代，C&lt;/ins&gt;11 废弃；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;unique_ptr&lt;/code&gt; ：与 &lt;code&gt;auto_ptr&lt;/code&gt;  一样采用所有权模式，同一时间只能有一个指针可以指向某个对象，但是 &lt;code&gt;unique_ptr&lt;/code&gt;  禁止了拷贝操作， &lt;code&gt;unique_ptr&lt;/code&gt;  采用了移动赋值 &lt;code&gt;move()&lt;/code&gt;  函数来进行控制权转移.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;share_ptr&lt;/code&gt; ：共享所有权的一个智能指针。允许多个指针指针指向同一个对象，并使用引用计数来管理指向对象的指针（成员函数 &lt;code&gt;use_count()&lt;/code&gt;  可获得引用计数），该对象和相关资源会在最后一个引用被销毁时释放&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;shared_ptr&lt;/code&gt;  循环计数问题：创建了两个 &lt;code&gt;shared_ptr&lt;/code&gt;  分别指向两个对象，而这两个对象内的一个共享指针分别又指向了对方，造成了循环计数，使得两个对象的空间都无法被释放.&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;ListNode&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; _data&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	shared_ptr&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;ListNode&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; ptr&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token function&#34;&gt;ListNode&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; data&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;_data&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;ListNode&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;~ListNode()&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	shared_ptr&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;ListNode&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;node1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ListNode&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	shared_ptr&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;ListNode&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;node2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ListNode&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; node1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;use_count&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; node2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;use_count&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	node1&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;ptr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; node2&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	node2&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;ptr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; node1&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; node1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;use_count&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// 2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; node2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;use_count&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// 2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 常用的解决方案是讲成员函数内的 shared_pre 改成弱指针 weak_ptr&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;weak_ptr&lt;/code&gt; ：一种不控制对象生命周期的智能指针，不会影响 &lt;code&gt;share_ptr&lt;/code&gt;  的引用计数，只是提供一种访问其管理对象的方式&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;内存泄漏&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存泄漏&#34;&gt;#&lt;/a&gt; 内存泄漏&lt;/h2&gt;
 &lt;ul&gt;
@@ -408,7 +428,7 @@
 &lt;h2 id=&#34;括号初始化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#括号初始化&#34;&gt;#&lt;/a&gt; 括号初始化&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;C++11&lt;/code&gt;  引入了新的括号初始化语法 &lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt; ，其不仅允许集合式的初始化，而且还是对常规构造函数的调用。遗憾的是，当与 &lt;code&gt;auto&lt;/code&gt;  类型变量结合使用时，这种方式很容易出现错误， &lt;code&gt;c++17&lt;/code&gt;  增强了这一系列初始化规则。&lt;/p&gt;
 </content>
-        <category term="面试题" />
-        <updated>2024-03-06T08:00:38.678Z</updated>
+        <category term="C++ 面试题" />
+        <updated>2024-03-06T13:54:10.931Z</updated>
     </entry>
 </feed>
