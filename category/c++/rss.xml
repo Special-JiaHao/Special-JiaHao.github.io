@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Wed, 06 Mar 2024 21:54:10 +0800</pubDate>
-        <lastBuildDate>Wed, 06 Mar 2024 21:54:10 +0800</lastBuildDate>
+        <pubDate>Fri, 08 Mar 2024 17:42:44 +0800</pubDate>
+        <lastBuildDate>Fri, 08 Mar 2024 17:42:44 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -23,7 +23,7 @@
             <title>C++面试题</title>
             <link>http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</link>
             <category>面试题</category>
-            <pubDate>Wed, 06 Mar 2024 21:54:10 +0800</pubDate>
+            <pubDate>Fri, 08 Mar 2024 17:42:44 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;程序编译过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序编译过程&#34;&gt;#&lt;/a&gt; 程序编译过程&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;预处理：把 &lt;code&gt;#include&lt;/code&gt;  文件内容复制到 &lt;code&gt;.cpp&lt;/code&gt;  文件中，同时还会完成宏定义 &lt;code&gt;#define&lt;/code&gt;  内容替换&lt;/li&gt;
@@ -37,6 +37,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;c语言内存空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c语言内存空间&#34;&gt;#&lt;/a&gt; C 语言内存空间&lt;/h2&gt;
+&lt;p&gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NwZWNpYWwtSmlhSGFvL2ltYWdlcy9tYWluLyVFNSU4NiU4NSVFNSVBRCU5OCVFNyVBOSVCQSVFOSU5NyVCNC5wbmc=&#34;&gt;https://raw.githubusercontent.com/Special-JiaHao/images/main/ 内存空间.png&lt;/span&gt;&amp;quot; style=&amp;quot;zoom:80%;&amp;quot; /&amp;gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NwZWNpYWwtSmlhSGFvL2ltYWdlcy9tYWluLyVFNSU4NiU4NSVFNSVBRCU5OCVFNyVBOSVCQSVFOSU5NyVCNEMuanBn&#34;&gt;https://raw.githubusercontent.com/Special-JiaHao/images/main/ 内存空间 C.jpg&lt;/span&gt;&amp;quot; style=&amp;quot;zoom:80%;&amp;quot; /&amp;gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;栈：&lt;/li&gt;
 &lt;li&gt;堆：&lt;/li&gt;
@@ -70,6 +71,28 @@
 &lt;li&gt;静态成员变量为 &lt;code&gt;private&lt;/code&gt; （对象的静态成员函数，类的静态成员函数，匿名对象的静态成员函数）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;const&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#const&#34;&gt;#&lt;/a&gt; const&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  修饰变量时表示其为一个常量或想阻止一个变量被改变&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  在类外定义变量时，必须初始化，并之后无法更改&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  成员变量：不能在类外初始化，只能通过构造函数初始化列表进行初始化&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  对象不能调用非 &lt;code&gt;const&lt;/code&gt;  成员函数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  修饰的函数为常函数，不能改变类的成员变量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mutable&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mutable&#34;&gt;#&lt;/a&gt; mutable&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mutable&lt;/code&gt;  与 &lt;code&gt;const&lt;/code&gt;  是相对的，表示一个变量的易变的；被 &lt;code&gt;mutable&lt;/code&gt;  修饰是成员变量可以再 &lt;code&gt;const&lt;/code&gt;  修饰的函数内被修改（也可以被常对象进行直接修改）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;explicit&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#explicit&#34;&gt;#&lt;/a&gt; explicit&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;用于修饰类的构造函数，被修饰的构造函数的类不能发生隐式的类型转化，只能以显示的类型转化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;volatile&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#volatile&#34;&gt;#&lt;/a&gt; volatile&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;用于修饰变量，表示其值随时可能发送变化，编译器不会对访问该变量的代码进行优化，可以保证访问变量的稳定（从内存中读取）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;volatile&lt;/code&gt;  指针&lt;/li&gt;
+&lt;li&gt;多线程下的 &lt;code&gt;volatile&lt;/code&gt; ：当多个线程都需要用到某一个变量时，应该用 &lt;code&gt;volatile&lt;/code&gt; ，防止编译器把变量从内存装入 CPU 寄存器中&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;c三大特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c三大特性&#34;&gt;#&lt;/a&gt; C++ 三大特性&lt;/h2&gt;
 &lt;ul&gt;
@@ -112,8 +135,8 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;final和override&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#final和override&#34;&gt;#&lt;/a&gt; final 和 override&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;final&lt;/code&gt; ：修饰虚函数，表示该虚函数不能再被继承，通俗来讲就是一旦加上 final 关键字，则在派生类中就无法被重写；修饰类，表示该类不可以被继承&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;override&lt;/code&gt; ：检查派生类虚函数是否重写了基类的某个虚函数，如果没有则编译器报错&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;final&lt;/code&gt; ：修饰虚函数，表示该虚函数不能再被重写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;override&lt;/code&gt; ：检查派生类虚函数是否重写了基类的某个虚函数，如果没有则编译器报错；&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;struct-与class&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#struct-与class&#34;&gt;#&lt;/a&gt; struct 与 class&lt;/h2&gt;
 &lt;ul&gt;
@@ -134,15 +157,27 @@
 &lt;li&gt;参数不同；delete 需要给出释放的对象的类型指针，free 可以是 &lt;code&gt;void *&lt;/code&gt;  类型的指针（delete 底层调用的逻辑是先调用对象的析构函数，再调用 &lt;code&gt;operator delete&lt;/code&gt;  释放对象所占内存）（free 只需要提供 &lt;code&gt;void *&lt;/code&gt;  就可以释放申请的所以内存： &lt;code&gt;malloc&lt;/code&gt;  在分配内存时，不仅仅是分配了用户所需要的内存空间的大小，还会在该空间上部分配额外的一部分空间用于存储此次分配的内存的描述信息）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;C++11&lt;/strong&gt; is the second major version of C++ and the most important update since C&lt;ins&gt;98. A large number of changes were introduced to both standardize existing practices and improve the abstractions available to the C&lt;/ins&gt; programmers.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
 &lt;p&gt;注意： &lt;code&gt;delete&lt;/code&gt;  和 &lt;code&gt;free&lt;/code&gt;  被调用后，指针也不会指向空，如果没有其他用途，需要把它设置为 &lt;code&gt;nullptr&lt;/code&gt; ，否则会出现野指针.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;explicit&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#explicit&#34;&gt;#&lt;/a&gt; explicit&lt;/h2&gt;
+&lt;h2 id=&#34;free回收的内存是立即返回给操作系统吗&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#free回收的内存是立即返回给操作系统吗&#34;&gt;#&lt;/a&gt; free 回收的内存是立即返回给操作系统吗？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;不是的。被 &lt;code&gt;free&lt;/code&gt;  回收的内存会被 &lt;code&gt;ptmalloc&lt;/code&gt;  使用双链表保存起来，当用户下一次申请内存空间的时候，会尝试先从这些内存中寻找合适的返回.&lt;/li&gt;
+&lt;li&gt;可以避免频繁的系统调用，提高程序效率.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ptmalloc&lt;/code&gt;  也会尝试对小块进行合并，避免过多的内存碎片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;C++11&lt;/strong&gt; is the second major version of C++ and the most important update since C&lt;ins&gt;98. A large number of changes were introduced to both standardize existing practices and improve the abstractions available to the C&lt;/ins&gt; programmers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;new与delete&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#new与delete&#34;&gt;#&lt;/a&gt; new [] 与 delete []&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;new[]&lt;/code&gt;  会先调用 &lt;code&gt;operateor new[]&lt;/code&gt;  分配内存，然后再分配的内存的前几个字节写入数组的大小，然后进行 n 次构造函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;c中的几种new&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c中的几种new&#34;&gt;#&lt;/a&gt; C++ 中的几种 new&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;new&lt;/code&gt; ： &lt;code&gt;plain new&lt;/code&gt; ，分配内存失败会抛出异常&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nothrow new&lt;/code&gt; ：分配内存失败不抛出异常，而是返回 &lt;code&gt;nullptr&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;placement new&lt;/code&gt; ：不会分配内存，在已有的内存空间上重新构造对象&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;c强制类型转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c强制类型转换&#34;&gt;#&lt;/a&gt; C++ 强制类型转换&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -170,8 +205,10 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;指针与引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针与引用&#34;&gt;#&lt;/a&gt; 指针与引用&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;指针是一个实体，占用内存空间，含义是一个地址；而引用只是变量的别名，不占用内存空间.&lt;/li&gt;
+&lt;li&gt;指针是一个对象，占用内存空间，存储的是一个地址；而引用只是变量的别名，不占用内存空间.&lt;/li&gt;
 &lt;li&gt;指针可不进行初始化，也可以指向空，并且指向可以改变；引用必须初始化，且只可绑定一个变量。这也导致了在使用指针时，往往需要判空操作，而引用是一种安全的指针，一定不为空（引用的底层是通过指针来实现）.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sizeof&lt;/code&gt;  指针得到的是指针的大小， &lt;code&gt;sizeof&lt;/code&gt;  引用得到的是引用绑定对象的大小&lt;/li&gt;
+&lt;li&gt;指针可以是多级的，引用只有一级&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;常引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常引用&#34;&gt;#&lt;/a&gt; 常引用&lt;/h2&gt;
 &lt;ul&gt;
@@ -193,12 +230,34 @@
 &lt;ul&gt;
 &lt;li&gt;野指针：指向已被释放的内存空间或者指向没有访问权限的内存空间&lt;/li&gt;
 &lt;li&gt;指针未被初始化、内存释放后未将指针设置为 &lt;code&gt;nullptr&lt;/code&gt; 、指针超过了变量的作用范围（越界）都可能导致野指针的产生&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;c中的顶层const与底层const&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c中的顶层const与底层const&#34;&gt;#&lt;/a&gt; C++ 中的顶层 const 与底层 const&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;顶层const&lt;/code&gt; ： &lt;code&gt;const&lt;/code&gt;  修饰的变量本身是一个常量，无法修改；（指的是指针，出现在 &lt;code&gt;*&lt;/code&gt;  的右边）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;底层const&lt;/code&gt; ： &lt;code&gt;const&lt;/code&gt;  修饰的变量所指向的对象是一个常量（出现在 &lt;code&gt;*&lt;/code&gt;  左边）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用 &lt;code&gt;const_cast&lt;/code&gt;  时，只能改变运算对象的 &lt;code&gt;底层const&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;常量指针与指针常量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常量指针与指针常量&#34;&gt;#&lt;/a&gt; 常量指针与指针常量&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;常量指针： &lt;code&gt;int const* p = a&lt;/code&gt; ，指针的指向可以改变，而不能通过该指针去改变所指向的内容&lt;/li&gt;
 &lt;li&gt;指针常量： &lt;code&gt;int *const p = a&lt;/code&gt; ，指针的指向不可改变，可以通过指针去改变指向的内容.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;数组指针与指针数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数组指针与指针数组&#34;&gt;#&lt;/a&gt; 数组指针与指针数组&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;数组指针： &lt;code&gt;int (*p)[n]&lt;/code&gt; ，指向一个整形的一维数组，这个数组的长度是 n，在执行 &lt;code&gt;p+1&lt;/code&gt;  操作时， &lt;code&gt;p&lt;/code&gt;  要跨越 n 个整形数据长度&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;指针数组： &lt;code&gt;int *p[n]&lt;/code&gt; ， &lt;code&gt;[]&lt;/code&gt;  优先级高于 &lt;code&gt;*&lt;/code&gt; ，是一个具有 n 个指针类型的数组.&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;//a 理解成一个一维数组，元素为 a [0], a [1], a [2]， 其中 a [0] 的类型为 (int *), a 与 &amp; amp;a [0] 等价，类型为 int (*p)[4]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;函数申明与函数指针&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数申明与函数指针&#34;&gt;#&lt;/a&gt; 函数申明与函数指针&lt;/h2&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;// 函数声明，函数名为 p，返回值为 int*&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;   &lt;span class=&#34;token comment&#34;&gt;//  函数指针，函数返回值类型为 int&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;宏定义与typedef&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#宏定义与typedef&#34;&gt;#&lt;/a&gt; 宏定义与 typedef&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;宏定义主要用于定义常量或者一些书写复杂的内容， &lt;code&gt;typedef&lt;/code&gt;  主要用于定义类型的别名&lt;/li&gt;
+&lt;li&gt;宏定义在预处理阶段完成，只会进行文本的替换，不进行类型的检查； &lt;code&gt;typedef&lt;/code&gt;  在编译阶段完成，会进行类型的检查&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;const与define&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#const与define&#34;&gt;#&lt;/a&gt; const 与 define&lt;/h2&gt;
 &lt;h2 id=&#34;inline内联函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#inline内联函数&#34;&gt;#&lt;/a&gt; inline 内联函数&lt;/h2&gt;
@@ -263,15 +322,14 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;数组指针与指针数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数组指针与指针数组&#34;&gt;#&lt;/a&gt; 数组指针与指针数组&lt;/h2&gt;
+&lt;h2 id=&#34;大小端存储&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大小端存储&#34;&gt;#&lt;/a&gt; 大小端存储&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;数组指针： &lt;code&gt;int (*p)[n]&lt;/code&gt; ，指向一个整形的一维数组，这个数组的长度是 n，在执行 &lt;code&gt;p+1&lt;/code&gt;  操作时， &lt;code&gt;p&lt;/code&gt;  要跨越 n 个整形数据长度&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;指针数组： &lt;code&gt;int *p[n]&lt;/code&gt; ， &lt;code&gt;[]&lt;/code&gt;  优先级高于 &lt;code&gt;*&lt;/code&gt; ，是一个具有 n 个指针类型的数组.&lt;/p&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;//a 理解成一个一维数组，元素为 a [0], a [1], a [2]， 其中 a [0] 的类型为 (int *), a 与 &amp; amp;a [0] 等价，类型为 int (*p)[4]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;大端存储：高位存储在低字节中&lt;/li&gt;
+&lt;li&gt;小端存储：低位存储在低字节中&lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 &lt;code&gt;Socket网络编程&lt;/code&gt; 中，有主机字节序和网络字节序&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;stl六大组件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#stl六大组件&#34;&gt;#&lt;/a&gt; STL 六大组件&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;容器、算法、迭代器、适配器、仿函数、空间分配器&lt;/li&gt;
@@ -305,11 +363,13 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;vector&lt;/code&gt;  是一个动态数组，当插入元素使，若 &lt;code&gt;capacity&lt;/code&gt;  和 &lt;code&gt;size&lt;/code&gt;  相等，则会发生扩容； &lt;code&gt;vector&lt;/code&gt;  扩容并不是在原有空间进行扩充，而是在堆内申请一块更大空间的区域，将原来的数据复制过去，同时释放原有空间。至于这个扩容系数，得看具体的实现，得看取舍（内存和效率的取舍）， &lt;code&gt;GCC&lt;/code&gt;  下的扩容系数是 2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;vectorclear-swap-shrink_to_fit&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vectorclear-swap-shrink_to_fit&#34;&gt;#&lt;/a&gt; vector（clear(), swap(), shrink_to_fit()）&lt;/h2&gt;
+&lt;h2 id=&#34;vectorclear-swap-shrink_to_fitresizereserve&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vectorclear-swap-shrink_to_fitresizereserve&#34;&gt;#&lt;/a&gt; vector（clear(), swap(), shrink_to_fit(),resize(),reserve()）&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;clear()&lt;/code&gt; ：清空内容，不释放内存（capacity 不变，size 变成 0）&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;swap()&lt;/code&gt; ：清空内容，释放内存 (capacity，size 均变成 0)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;shrink_to_fit()&lt;/code&gt; ：可能会释放内存，使 capacity 与 size 适配（capacity 与 size 相等）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;resize(n)&lt;/code&gt; ：会改变 &lt;code&gt;vector&lt;/code&gt;  的 size&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reserve()&lt;/code&gt; ：不会改变 size，但是可能会改变 capacity. 主要目的是为了优化性能，避免在添加元素时频繁进行内存分配&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;vector与list&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vector与list&#34;&gt;#&lt;/a&gt; vector 与 list&lt;/h2&gt;
 &lt;ul&gt;
@@ -360,7 +420,7 @@
 &lt;li&gt;无参构造函数、拷贝构造函数、析构函数、重载赋值运算符、重载取地址符，均是 &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;stl内存优化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#stl内存优化&#34;&gt;#&lt;/a&gt; STL 内存优化&lt;/h2&gt;
-&lt;h2 id=&#34;const&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#const&#34;&gt;#&lt;/a&gt;  &lt;code&gt;const&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;const-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#const-2&#34;&gt;#&lt;/a&gt;  &lt;code&gt;const&lt;/code&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;当以编译初始化的方式定义了一个 &lt;code&gt;const&lt;/code&gt;  对象时，例如 &lt;code&gt;const int bufsize=512&lt;/code&gt; ，编译器将在编译过程中把用到该变量的地方都替换成对应的值。&lt;/p&gt;
@@ -397,12 +457,6 @@
 &lt;li&gt;整个函数的函数体中，不能出现非常量表达式之外的语句（ &lt;code&gt;using, typedef, static_assert, return&lt;/code&gt;  语句除外）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;C++11 语法中， &lt;code&gt;constexpr&lt;/code&gt;  可以修饰模版函数，但由于模版中类型的不确定性，因此模版函数实例化后的函数是否符合常量表达式函数的要求也是不确定的。如果 &lt;code&gt;constexpr&lt;/code&gt;  修饰的模版函数实例化结果不满足常量表达式函数的要求，则 &lt;code&gt;constexpr&lt;/code&gt;  会被自动忽略，即该函数就等同于一个普通函数&lt;/p&gt;
-&lt;h2 id=&#34;volatile&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#volatile&#34;&gt;#&lt;/a&gt; volatile&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;用于修饰变量，表示其值随时可能发送变化，编译器不会对访问该变量的代码进行优化，可以保证访问变量的稳定（从内存中读取）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;volatile&lt;/code&gt;  指针&lt;/li&gt;
-&lt;li&gt;多线程下的 &lt;code&gt;volatile&lt;/code&gt; ：当多个线程都需要用到某一个变量时，应该用 &lt;code&gt;volatile&lt;/code&gt; ，防止编译器把变量从内存装入 CPU 寄存器中&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id=&#34;auto&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#auto&#34;&gt;#&lt;/a&gt; auto&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;auto&lt;/code&gt;  可以自动推导变量类型；使用 &lt;code&gt;auto&lt;/code&gt;  声明的变量必须要进行初始化，以让编译器推导出它的实际类型，在编译阶段将 &lt;code&gt;auto&lt;/code&gt;  占位符替换成其真正的类型。&lt;/p&gt;
 &lt;ul&gt;
