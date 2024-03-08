@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年 • Posts by &#34;c++&#34; category</title>
     <link href="http://example.com" />
-    <updated>2024-03-08T09:42:44.511Z</updated>
+    <updated>2024-03-08T13:53:12.049Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -31,14 +31,14 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;c语言内存空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c语言内存空间&#34;&gt;#&lt;/a&gt; C 语言内存空间&lt;/h2&gt;
-&lt;p&gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NwZWNpYWwtSmlhSGFvL2ltYWdlcy9tYWluLyVFNSU4NiU4NSVFNSVBRCU5OCVFNyVBOSVCQSVFOSU5NyVCNC5wbmc=&#34;&gt;https://raw.githubusercontent.com/Special-JiaHao/images/main/ 内存空间.png&lt;/span&gt;&amp;quot; style=&amp;quot;zoom:80%;&amp;quot; /&amp;gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NwZWNpYWwtSmlhSGFvL2ltYWdlcy9tYWluLyVFNSU4NiU4NSVFNSVBRCU5OCVFNyVBOSVCQSVFOSU5NyVCNEMuanBn&#34;&gt;https://raw.githubusercontent.com/Special-JiaHao/images/main/ 内存空间 C.jpg&lt;/span&gt;&amp;quot; style=&amp;quot;zoom:80%;&amp;quot; /&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;cc内存空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cc内存空间&#34;&gt;#&lt;/a&gt; C/C++ 内存空间&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4C.jpg&#34; alt=&#34;&#34; /&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;栈：&lt;/li&gt;
-&lt;li&gt;堆：&lt;/li&gt;
-&lt;li&gt;代码区：&lt;/li&gt;
-&lt;li&gt;全局 / 静态存储区：&lt;/li&gt;
-&lt;li&gt;常量存储区&lt;/li&gt;
+&lt;li&gt;栈：用于存储局部变量，由编译器自动管理分配与释放，效率很高，但是内存有限&lt;/li&gt;
+&lt;li&gt;堆：动态内存空间，由应用程序去控制。如若程序结束没有释放，则会由操作系统自动回收.&lt;/li&gt;
+&lt;li&gt;代码区：存放函数体二进制代码&lt;/li&gt;
+&lt;li&gt;全局 / 静态存储区：用于存储全局变量和静态变量。在以前 C 语言中，这部分分为初始化的 &lt;code&gt;.data&lt;/code&gt;  和未初始化 &lt;code&gt;.bss&lt;/code&gt; . 现在 C++ 中则没有这样的划分，区域内的变量会被默认初始化为 0.&lt;/li&gt;
+&lt;li&gt;常量存储区：用于存储常量，不允许修改&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;堆与栈&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#堆与栈&#34;&gt;#&lt;/a&gt; 堆与栈&lt;/h2&gt;
 &lt;ul&gt;
@@ -483,7 +483,7 @@
 &lt;p&gt;&lt;code&gt;C++11&lt;/code&gt;  引入了新的括号初始化语法 &lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt; ，其不仅允许集合式的初始化，而且还是对常规构造函数的调用。遗憾的是，当与 &lt;code&gt;auto&lt;/code&gt;  类型变量结合使用时，这种方式很容易出现错误， &lt;code&gt;c++17&lt;/code&gt;  增强了这一系列初始化规则。&lt;/p&gt;
 </content>
         <category term="面试题" />
-        <updated>2024-03-08T09:42:44.511Z</updated>
+        <updated>2024-03-08T13:53:12.049Z</updated>
     </entry>
     <entry>
         <id>http://example.com/value/%E9%87%91%E5%B1%B1%E4%BC%9A%E8%AE%AE%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F</id>
