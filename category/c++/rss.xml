@@ -23,7 +23,7 @@
             <guid isPermalink="true">http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>C++面试题</title>
             <link>http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</link>
-            <category>C++</category>
+            <category>面试题</category>
             <pubDate>Fri, 08 Mar 2024 21:53:12 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;程序编译过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序编译过程&#34;&gt;#&lt;/a&gt; 程序编译过程&lt;/h2&gt;
 &lt;ul&gt;
@@ -183,7 +183,7 @@
 &lt;h2 id=&#34;c强制类型转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c强制类型转换&#34;&gt;#&lt;/a&gt; C++ 强制类型转换&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;static_cast&amp;lt;T&amp;gt;()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;static_cast&amp;lt;T&amp;gt;()&lt;/code&gt; ：不进行类型检查，不安全&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;用于层次结构中基类与派生类间指针的转换&lt;/p&gt;
@@ -192,6 +192,9 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;基本数据类型的转化&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将空指针转化为目标类型的指针&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
@@ -202,7 +205,7 @@
 &lt;p&gt;&lt;code&gt;reinterpret_cast&lt;/code&gt; ：转化过程仅仅是简单的比特位拷贝，不安全&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;const_cast&amp;lt;T&amp;gt;()&lt;/code&gt; ：用于修改变量的 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  属性，变量类型与转换后的类型一致&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;const_cast&amp;lt;T&amp;gt;()&lt;/code&gt; ：用于修改变量的 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  属性，变量类型与转换后的类型一致（只能修改底层 &lt;code&gt;const&lt;/code&gt; ）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;指针与引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针与引用&#34;&gt;#&lt;/a&gt; 指针与引用&lt;/h2&gt;
@@ -298,7 +301,8 @@
 &lt;ul&gt;
 &lt;li&gt;初始化一个引用成员变量时&lt;/li&gt;
 &lt;li&gt;初始化一个常量成员时&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;当父类没有默认构造函数的时&lt;/li&gt;
+&lt;li&gt;当成员变量没有默认构造函数时&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
