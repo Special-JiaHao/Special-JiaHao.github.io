@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Fri, 08 Mar 2024 21:53:12 +0800</pubDate>
-        <lastBuildDate>Fri, 08 Mar 2024 21:53:12 +0800</lastBuildDate>
+        <pubDate>Sat, 09 Mar 2024 14:59:52 +0800</pubDate>
+        <lastBuildDate>Sat, 09 Mar 2024 14:59:52 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -18,6 +18,15 @@
         <category>CNN</category>
         <category>Project</category>
         <category>面试题</category>
+        <category>日常</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/daily/202403</guid>
+            <title>202403</title>
+            <link>http://example.com/value/daily/202403</link>
+            <category>日常</category>
+            <pubDate>Sat, 09 Mar 2024 14:59:52 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>C++面试题</title>

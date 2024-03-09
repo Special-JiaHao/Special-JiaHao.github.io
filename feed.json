@@ -5,6 +5,16 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/value/daily/202403",
+            "url": "http://example.com/value/daily/202403",
+            "title": "202403",
+            "date_published": "2024-03-09T06:59:52.210Z",
+            "content_html": "",
+            "tags": [
+                "日常"
+            ]
+        },
+        {
             "id": "http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98",
             "url": "http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98",
             "title": "C++面试题",
