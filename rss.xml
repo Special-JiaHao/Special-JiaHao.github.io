@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Sat, 09 Mar 2024 15:10:57 +0800</pubDate>
-        <lastBuildDate>Sat, 09 Mar 2024 15:10:57 +0800</lastBuildDate>
+        <pubDate>Sat, 09 Mar 2024 14:59:52 +0800</pubDate>
+        <lastBuildDate>Sat, 09 Mar 2024 14:59:52 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -20,20 +20,14 @@
         <category>面试题</category>
         <category>日常</category>
         <item>
-            <guid isPermalink="true">http://example.com/value/daily/2025/202403</guid>
-            <title>202503</title>
-            <link>http://example.com/value/daily/2025/202403</link>
-            <category>日常</category>
-            <pubDate>Sat, 09 Mar 2024 15:10:57 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/value/daily/2024/202403</guid>
-            <title>202403</title>
-            <link>http://example.com/value/daily/2024/202403</link>
+            <guid isPermalink="true">http://example.com/value/daily/2024/March%202024</guid>
+            <title>March 2024</title>
+            <link>http://example.com/value/daily/2024/March%202024</link>
             <category>日常</category>
             <pubDate>Sat, 09 Mar 2024 14:59:52 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
+            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%91%9C%E4%BC%BD%E6%B9%96%E5%85%A5%E5%8F%A3.jpg&#34; alt=&#34;&#34; title=&#34;瑜伽湖入口&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BB%9D%E6%9C%9B%E5%9D%A1%E5%85%AC%E5%AF%93.jpg&#34; alt=&#34;&#34; title=&#34;绝望坡公寓&#34; /&gt;&lt;/p&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</guid>

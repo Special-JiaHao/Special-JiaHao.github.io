@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年</title>
     <link href="http://example.com" />
-    <updated>2024-03-09T07:10:57.034Z</updated>
+    <updated>2024-03-09T06:59:52.210Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -17,18 +17,12 @@
     <category term="面试题" />
     <category term="日常" />
     <entry>
-        <id>http://example.com/value/daily/2025/202403</id>
-        <title>202503</title>
-        <link rel="alternate" href="http://example.com/value/daily/2025/202403"/>
-        <content type="html"></content>
-        <category term="日常" />
-        <updated>2024-03-09T07:10:57.034Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/value/daily/2024/202403</id>
-        <title>202403</title>
-        <link rel="alternate" href="http://example.com/value/daily/2024/202403"/>
-        <content type="html"></content>
+        <id>http://example.com/value/daily/2024/March%202024</id>
+        <title>March 2024</title>
+        <link rel="alternate" href="http://example.com/value/daily/2024/March%202024"/>
+        <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%91%9C%E4%BC%BD%E6%B9%96%E5%85%A5%E5%8F%A3.jpg&#34; alt=&#34;&#34; title=&#34;瑜伽湖入口&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BB%9D%E6%9C%9B%E5%9D%A1%E5%85%AC%E5%AF%93.jpg&#34; alt=&#34;&#34; title=&#34;绝望坡公寓&#34; /&gt;&lt;/p&gt;
+</content>
         <category term="日常" />
         <updated>2024-03-09T06:59:52.210Z</updated>
     </entry>
