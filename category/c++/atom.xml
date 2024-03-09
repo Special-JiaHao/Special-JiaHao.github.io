@@ -17,9 +17,9 @@
     <category term="面试题" />
     <category term="日常" />
     <entry>
-        <id>http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</id>
+        <id>http://example.com/value/C++/C++%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>C++面试题</title>
-        <link rel="alternate" href="http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98"/>
+        <link rel="alternate" href="http://example.com/value/C++/C++%E9%9D%A2%E8%AF%95%E9%A2%98"/>
         <content type="html">&lt;h2 id=&#34;程序编译过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序编译过程&#34;&gt;#&lt;/a&gt; 程序编译过程&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;预处理：把 &lt;code&gt;#include&lt;/code&gt;  文件内容复制到 &lt;code&gt;.cpp&lt;/code&gt;  文件中，同时还会完成宏定义 &lt;code&gt;#define&lt;/code&gt;  内容替换&lt;/li&gt;
