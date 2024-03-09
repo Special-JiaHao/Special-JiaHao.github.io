@@ -37,7 +37,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;cc内存空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cc内存空间&#34;&gt;#&lt;/a&gt; C/C++ 内存空间&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4C.jpg&#34; alt=&#34;&#34; width=&#34;400px&#34; /&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4.png&#34; alt=&#34;&#34; width=&#34;400px&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4C.jpg&#34; alt=&#34;&#34; width=&#34;200px&#34; /&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4.png&#34; alt=&#34;&#34; width=&#34;200px&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;栈：用于存储局部变量，由编译器自动管理分配与释放，效率很高，但是内存有限&lt;/li&gt;
 &lt;li&gt;堆：动态内存空间，由应用程序去控制。如若程序结束没有释放，则会由操作系统自动回收.&lt;/li&gt;
