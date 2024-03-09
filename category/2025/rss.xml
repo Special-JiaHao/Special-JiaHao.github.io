@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>繁華落盡 似水流年 • Posts by &#34;2025&#34; category</title>
+        <link>http://example.com</link>
+        <description>编程日记 &amp; 随笔</description>
+        <language>en</language>
+        <pubDate>Sat, 09 Mar 2024 15:10:57 +0800</pubDate>
+        <lastBuildDate>Sat, 09 Mar 2024 15:10:57 +0800</lastBuildDate>
+        <category>mathematics</category>
+        <category>语法</category>
+        <category>C++</category>
+        <category>VMware</category>
+        <category>项目构建工具</category>
+        <category>install</category>
+        <category>数据库</category>
+        <category>STL</category>
+        <category>CNN</category>
+        <category>Project</category>
+        <category>面试题</category>
+        <category>日常</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/daily/2025/202403</guid>
+            <title>202503</title>
+            <link>http://example.com/value/daily/2025/202403</link>
+            <category>日常</category>
+            <pubDate>Sat, 09 Mar 2024 15:10:57 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+    </channel>
+</rss>
