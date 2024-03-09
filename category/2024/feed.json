@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "繁華落盡 似水流年 • All posts by \"2024\" category",
+    "description": "编程日记 & 随笔",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/value/daily/2024/March%202024",
+            "url": "http://example.com/value/daily/2024/March%202024",
+            "title": "March 2024",
+            "date_published": "2024-03-09T06:59:52.210Z",
+            "content_html": "<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%91%9C%E4%BC%BD%E6%B9%96%E5%85%A5%E5%8F%A3.jpg\" alt=\"\" title=\"瑜伽湖入口\" /></p>\n<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BB%9D%E6%9C%9B%E5%9D%A1%E5%85%AC%E5%AF%93.jpg\" alt=\"\" title=\"绝望坡公寓\" /></p>\n",
+            "tags": [
+                "日常"
+            ]
+        }
+    ]
+}

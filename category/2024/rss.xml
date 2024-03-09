@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>繁華落盡 似水流年 • Posts by &#34;2024&#34; category</title>
+        <link>http://example.com</link>
+        <description>编程日记 &amp; 随笔</description>
+        <language>en</language>
+        <pubDate>Sat, 09 Mar 2024 14:59:52 +0800</pubDate>
+        <lastBuildDate>Sat, 09 Mar 2024 14:59:52 +0800</lastBuildDate>
+        <category>mathematics</category>
+        <category>语法</category>
+        <category>C++</category>
+        <category>VMware</category>
+        <category>项目构建工具</category>
+        <category>install</category>
+        <category>数据库</category>
+        <category>STL</category>
+        <category>CNN</category>
+        <category>Project</category>
+        <category>面试题</category>
+        <category>日常</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/daily/2024/March%202024</guid>
+            <title>March 2024</title>
+            <link>http://example.com/value/daily/2024/March%202024</link>
+            <category>日常</category>
+            <pubDate>Sat, 09 Mar 2024 14:59:52 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%91%9C%E4%BC%BD%E6%B9%96%E5%85%A5%E5%8F%A3.jpg&#34; alt=&#34;&#34; title=&#34;瑜伽湖入口&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BB%9D%E6%9C%9B%E5%9D%A1%E5%85%AC%E5%AF%93.jpg&#34; alt=&#34;&#34; title=&#34;绝望坡公寓&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
