@@ -5,11 +5,11 @@
     "home_page_url": "http://example.com",
     "items": [
         {
-            "id": "http://example.com/value/daily/March%202024",
-            "url": "http://example.com/value/daily/March%202024",
+            "id": "http://example.com/value/March%202024",
+            "url": "http://example.com/value/March%202024",
             "title": "March 2024",
             "date_published": "2024-03-09T06:59:52.210Z",
-            "content_html": "<ul>\n<li>2024-03-08 瑜伽湖夜跑（跑一半就不行了！）</li>\n</ul>\n<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%91%9C%E4%BC%BD%E6%B9%96%E5%85%A5%E5%8F%A3.jpg\" alt=\"\" title=\"瑜伽湖入口\" /></p>\n<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BB%9D%E6%9C%9B%E5%9D%A1%E5%85%AC%E5%AF%93.jpg\" alt=\"\" title=\"绝望坡公寓\" /></p>\n<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/20240308.jpg\" alt=\"\" title=\"20240308运动数据\" /></p>\n",
+            "content_html": "<ul>\n<li>\n<p>2024-03-08 瑜伽湖夜跑（跑一半就不行了！）</p>\n<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%91%9C%E4%BC%BD%E6%B9%96%E5%85%A5%E5%8F%A3.jpg\" alt=\"\" title=\"瑜伽湖入口\" /></p>\n<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BB%9D%E6%9C%9B%E5%9D%A1%E5%85%AC%E5%AF%93.jpg\" alt=\"\" title=\"绝望坡公寓\" /></p>\n<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/20240308.jpg\" alt=\"\" title=\"20240308运动数据\" /></p>\n</li>\n<li>\n<p>2024-03-09 春季体育嘉年华</p>\n<p><img data-src=\"https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%98%A5%E5%AD%A3%E4%BD%93%E8%82%B2%E5%98%89%E5%B9%B4%E5%8D%8E.jpg\" alt=\"\" title=\"春季体育嘉年华\" /></p>\n</li>\n</ul>\n",
             "tags": [
                 "日常"
             ]

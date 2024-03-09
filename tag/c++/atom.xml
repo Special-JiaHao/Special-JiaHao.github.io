@@ -17,9 +17,9 @@
     <category term="面试题" />
     <category term="日常" />
     <entry>
-        <id>http://example.com/value/CPP/C++%E9%9D%A2%E8%AF%95%E9%A2%98</id>
+        <id>http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>C++面试题</title>
-        <link rel="alternate" href="http://example.com/value/CPP/C++%E9%9D%A2%E8%AF%95%E9%A2%98"/>
+        <link rel="alternate" href="http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98"/>
         <content type="html">&lt;h2 id=&#34;程序编译过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序编译过程&#34;&gt;#&lt;/a&gt; 程序编译过程&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;预处理：把 &lt;code&gt;#include&lt;/code&gt;  文件内容复制到 &lt;code&gt;.cpp&lt;/code&gt;  文件中，同时还会完成宏定义 &lt;code&gt;#define&lt;/code&gt;  内容替换&lt;/li&gt;
@@ -282,8 +282,21 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;类成员函数初始化方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类成员函数初始化方法&#34;&gt;#&lt;/a&gt; 类成员函数初始化方法&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;赋值初始化&lt;/code&gt; ：在函数体内进行赋值. (其是在所有成员被分配内存之后才进行的，同时赋值往往会产生临时对象)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;列表初始化&lt;/code&gt; ：在冒号后使用初始化列表进行初始化.（给数据成员分配内存空间时进行的，在函数体执行之前）&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;赋值初始化&lt;/code&gt; ：在函数体内进行赋值. (其是在所有成员被分配内存之后才进行的，此时会触发成员函数的默认构造函数，同时进入函数体赋值往往会产生临时对象，和拷贝赋值函数)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;列表初始化&lt;/code&gt; ：在冒号后使用初始化列表进行初始化.（给数据成员分配内存时进行的，在函数体执行之前）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于基本数据类型而言，两种在速度方面没有太大的差别，但对于复杂一些的数据类型，列表初始化速度会快于赋值初始化&lt;/p&gt;
+&lt;p&gt;什么情况下必须用初始化列表？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;初始化一个引用成员变量时&lt;/li&gt;
+&lt;li&gt;初始化一个常量成员时&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;using定义别名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#using定义别名&#34;&gt;#&lt;/a&gt; using 定义别名&lt;/h2&gt;
 &lt;h2 id=&#34;autoc11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#autoc11&#34;&gt;#&lt;/a&gt; auto（C++11）&lt;/h2&gt;
@@ -410,8 +423,11 @@
 &lt;li&gt;堆内存泄漏（ &lt;code&gt;Heap leak&lt;/code&gt; ）&lt;/li&gt;
 &lt;li&gt;在释放对象数组时没有使用 &lt;code&gt;delete []&lt;/code&gt;  而使用 &lt;code&gt;delete&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;没有将基类的析构函数定义为虚函数&lt;/li&gt;
-&lt;li&gt;缺少拷贝构造函数和重载赋值运算法&lt;/li&gt;
+&lt;li&gt;缺少拷贝构造函数和拷贝赋值函数&lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Linux 下内存泄漏检查工具：&lt;strong&gt;Valgrind&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;深拷贝与浅拷贝&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#深拷贝与浅拷贝&#34;&gt;#&lt;/a&gt; 深拷贝与浅拷贝&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;浅拷贝：C++ 默认的方式（如果程序员不主动编写拷贝构造函数和赋值构造，编译器将以浅拷贝的方式生成缺省的函数），简单的将成员函数值进行复制. （当成员变量出现指针时，则会导致多个指针指向同一片内存空间，新旧对象共享内存，当其中一个对象释放内存，再调释放其他对象时就会出现问题，同一片内存空间被释放了多次）&lt;/li&gt;
@@ -419,8 +435,9 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;c类默认生成的函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c类默认生成的函数&#34;&gt;#&lt;/a&gt; C++ 类默认生成的函数&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;无参构造函数、拷贝构造函数、析构函数、重载赋值运算符、重载取地址符，均是 &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;无参构造函数、析构函数、拷贝构造函数、拷贝赋值函数、移动构造函数、移动赋值函数、重载取地址符，均是 &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;对象复用与零拷贝&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对象复用与零拷贝&#34;&gt;#&lt;/a&gt; 对象复用与零拷贝&lt;/h2&gt;
 &lt;h2 id=&#34;stl内存优化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#stl内存优化&#34;&gt;#&lt;/a&gt; STL 内存优化&lt;/h2&gt;
 &lt;h2 id=&#34;const-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#const-2&#34;&gt;#&lt;/a&gt;  &lt;code&gt;const&lt;/code&gt;&lt;/h2&gt;
 &lt;ul&gt;
