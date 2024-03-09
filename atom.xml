@@ -17,9 +17,9 @@
     <category term="面试题" />
     <category term="日常" />
     <entry>
-        <id>http://example.com/value/daily/2024/March%202024</id>
+        <id>http://example.com/value/daily/March%202024</id>
         <title>March 2024</title>
-        <link rel="alternate" href="http://example.com/value/daily/2024/March%202024"/>
+        <link rel="alternate" href="http://example.com/value/daily/March%202024"/>
         <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%91%9C%E4%BC%BD%E6%B9%96%E5%85%A5%E5%8F%A3.jpg&#34; alt=&#34;&#34; title=&#34;瑜伽湖入口&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BB%9D%E6%9C%9B%E5%9D%A1%E5%85%AC%E5%AF%93.jpg&#34; alt=&#34;&#34; title=&#34;绝望坡公寓&#34; /&gt;&lt;/p&gt;
 </content>
