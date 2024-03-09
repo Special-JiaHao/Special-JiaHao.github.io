@@ -16,6 +16,7 @@
     <category term="Project" />
     <category term="面试题" />
     <category term="日常" />
+    <category term="C++, 面试题" />
     <entry>
         <id>http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>C++面试题</title>
@@ -510,7 +511,7 @@
 &lt;h2 id=&#34;括号初始化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#括号初始化&#34;&gt;#&lt;/a&gt; 括号初始化&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;C++11&lt;/code&gt;  引入了新的括号初始化语法 &lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt; ，其不仅允许集合式的初始化，而且还是对常规构造函数的调用。遗憾的是，当与 &lt;code&gt;auto&lt;/code&gt;  类型变量结合使用时，这种方式很容易出现错误， &lt;code&gt;c++17&lt;/code&gt;  增强了这一系列初始化规则。&lt;/p&gt;
 </content>
-        <category term="面试题" />
+        <category term="C++, 面试题" />
         <updated>2024-03-08T13:53:12.049Z</updated>
     </entry>
     <entry>
