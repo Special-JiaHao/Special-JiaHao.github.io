@@ -32,7 +32,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;cc内存空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cc内存空间&#34;&gt;#&lt;/a&gt; C/C++ 内存空间&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4C.jpg&#34; alt=&#34;&#34; /&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4C.jpg&#34; alt=&#34;&#34; width=&#34;400px&#34; /&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4.png&#34; alt=&#34;&#34; width=&#34;400px&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;栈：用于存储局部变量，由编译器自动管理分配与释放，效率很高，但是内存有限&lt;/li&gt;
 &lt;li&gt;堆：动态内存空间，由应用程序去控制。如若程序结束没有释放，则会由操作系统自动回收.&lt;/li&gt;
@@ -167,6 +167,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;new[]&lt;/code&gt;  会先调用 &lt;code&gt;operateor new[]&lt;/code&gt;  分配内存，然后再分配的内存的前几个字节写入数组的大小，然后进行 n 次构造函数&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;malloc与free实现原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#malloc与free实现原理&#34;&gt;#&lt;/a&gt; malloc 与 free 实现原理&lt;/h2&gt;
 &lt;h2 id=&#34;c中的几种new&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c中的几种new&#34;&gt;#&lt;/a&gt; C++ 中的几种 new&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;new&lt;/code&gt; ： &lt;code&gt;plain new&lt;/code&gt; ，分配内存失败会抛出异常&lt;/li&gt;
@@ -277,6 +278,11 @@
 &lt;h2 id=&#34;初始化列表c11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#初始化列表c11&#34;&gt;#&lt;/a&gt; 初始化列表（C++11）&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;通过花括号来进行初始化。直接在变量名后面跟上初始化列表来进行对象的初始化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;类成员函数初始化方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类成员函数初始化方法&#34;&gt;#&lt;/a&gt; 类成员函数初始化方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;赋值初始化&lt;/code&gt; ：在函数体内进行赋值. (其是在所有成员被分配内存之后才进行的，同时赋值往往会产生临时对象)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;列表初始化&lt;/code&gt; ：在冒号后使用初始化列表进行初始化.（给数据成员分配内存空间时进行的，在函数体执行之前）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;using定义别名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#using定义别名&#34;&gt;#&lt;/a&gt; using 定义别名&lt;/h2&gt;
 &lt;h2 id=&#34;autoc11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#autoc11&#34;&gt;#&lt;/a&gt; auto（C++11）&lt;/h2&gt;
