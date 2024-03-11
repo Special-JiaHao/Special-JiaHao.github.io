@@ -21,7 +21,9 @@
         <id>http://example.com/value/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>计算机网络面试题</title>
         <link rel="alternate" href="http://example.com/value/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98"/>
-        <content type="html">&lt;h2 id=&#34;tcpip四层模型osi七层模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcpip四层模型osi七层模型&#34;&gt;#&lt;/a&gt; TCP/IP 四层模型，OSI 七层模型&lt;/h2&gt;
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;tcpip四层模型osi七层模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcpip四层模型osi七层模型&#34;&gt;#&lt;/a&gt; TCP/IP 四层模型，OSI 七层模型&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tcp连接建立三次握手&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcp连接建立三次握手&#34;&gt;#&lt;/a&gt; TCP 连接建立（三次握手）&lt;/h2&gt;
 &lt;ol&gt;
@@ -115,11 +117,23 @@
 &lt;li&gt;&lt;code&gt;404&lt;/code&gt; ：&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;500&lt;/code&gt; ：&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;http的长连接与短连接的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#http的长连接与短连接的区别&#34;&gt;#&lt;/a&gt; http 的长连接与短连接的区别&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在早期的 &lt;code&gt;http/1.0&lt;/code&gt;  默认使用的是短连接，每次客户端与服务端进行一次 http 操作，就建立一次连接，任务结束就中断连接&lt;/li&gt;
+&lt;li&gt;从 &lt;code&gt;http/1.1&lt;/code&gt;  起，默认使用的长连接.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;http与https的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#http与https的区别&#34;&gt;#&lt;/a&gt; http 与 https 的区别&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;session与cookie&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#session与cookie&#34;&gt;#&lt;/a&gt; session 与 cookie&lt;/h2&gt;
+&lt;h2 id=&#34;dns域名系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dns域名系统&#34;&gt;#&lt;/a&gt; DNS 域名系统&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于人而言记忆一串有意义的字符串要比记忆一组无规律的数字要容易的多；DNS，即为域名系统，是一个由域名到 IP 地址的分布式数据库，可以方便的完成域名到 IP 的转换.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;工作原理：&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;arp协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#arp协议&#34;&gt;#&lt;/a&gt; ARP 协议&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;网络层的 IP 报文向下需要封装成帧，需要添加以太网头部，这就需要知道节点的 MAC 地址；ARP 的作用就是完成 IP 地址到 MAC 地址的转化协议&lt;/p&gt;
@@ -129,6 +143,8 @@
 &lt;li&gt;源主机发送数据时，首先检查 ARP 列表内是否有目的地址的 MAC 地址，如果有，则写入以太网头部，并发送帧。如果没有，主机以广播的形式发送 ARP 数据报，数据报内源主机 IP 地址，源主机 MAC 地址，目的主机的 IP 地址&lt;/li&gt;
 &lt;li&gt;当网络中的主机收到 ARP 数据包时，首先检查报文中的 IP 地址是否是自己，如果不是则丢弃该报文；否则将自己的 MAC 地址写入 ARP 响应报文中，同时将源主机的 IP 地址和 MAC 地址键值对写入自己的 ARP 列表中.&lt;/li&gt;
 &lt;li&gt;源主机收到 ARP 响应报文后，将目的主机的 IP 地址和 MAC 地址写入自身的 APR 列表中，并写入以太网头部，发送该帧.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="面试题" />
