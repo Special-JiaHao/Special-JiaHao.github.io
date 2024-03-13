@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>繁華落盡 似水流年 • Posts by &#34;操作系统&#34; category</title>
+        <link>http://example.com</link>
+        <description>编程日记 &amp; 随笔</description>
+        <language>en</language>
+        <pubDate>Wed, 13 Mar 2024 09:21:27 +0800</pubDate>
+        <lastBuildDate>Wed, 13 Mar 2024 09:21:27 +0800</lastBuildDate>
+        <category>mathematics</category>
+        <category>语法</category>
+        <category>C++</category>
+        <category>VMware</category>
+        <category>项目构建工具</category>
+        <category>install</category>
+        <category>数据库</category>
+        <category>STL</category>
+        <category>CNN</category>
+        <category>Project</category>
+        <category>面试题</category>
+        <category>日常</category>
+        <category>校招</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
+            <title>操作系统面试题</title>
+            <link>http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</link>
+            <category>面试题</category>
+            <pubDate>Wed, 13 Mar 2024 09:21:27 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;进程与线程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程与线程&#34;&gt;#&lt;/a&gt; 进程与线程&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;进程是资源分配的基本单位，线程是资源调度的基本单位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;进程调度算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程调度算法&#34;&gt;#&lt;/a&gt; 进程调度算法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;先来先服务 &lt;code&gt;FCFS(First Come First Serverd)&lt;/code&gt; ：按照请求的顺序进行调度（不利于短作业，不会导致饿死）&lt;/li&gt;
+&lt;li&gt;短作业优先 &lt;code&gt;SJF(Shortest Job First)&lt;/code&gt; ：按估计运行时间最短的顺序进行调度（不利于长作业，会导致饿死）&lt;/li&gt;
+&lt;li&gt;时间片轮转&lt;/li&gt;
+&lt;li&gt;优先级调度&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
