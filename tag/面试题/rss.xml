@@ -668,9 +668,7 @@
             <link>http://example.com/value/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</link>
             <category>面试题</category>
             <pubDate>Thu, 07 Mar 2024 17:23:50 +0800</pubDate>
-            <description><![CDATA[ &lt;ul&gt;
-&lt;li&gt;
-&lt;h2 id=&#34;tcpip四层模型osi七层模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcpip四层模型osi七层模型&#34;&gt;#&lt;/a&gt; TCP/IP 四层模型，OSI 七层模型&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;tcpip四层模型osi七层模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcpip四层模型osi七层模型&#34;&gt;#&lt;/a&gt; TCP/IP 四层模型，OSI 七层模型&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tcp连接建立三次握手&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcp连接建立三次握手&#34;&gt;#&lt;/a&gt; TCP 连接建立（三次握手）&lt;/h2&gt;
 &lt;ol&gt;
@@ -730,6 +728,19 @@
 &lt;blockquote&gt;
 &lt;p&gt;TCP 拥塞控制同样也是用于控制发送方发送速度，但是出发点是为了缓解整个网络的拥塞，是一个全局的控制算法.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;arq协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#arq协议&#34;&gt;#&lt;/a&gt; ARQ 协议&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ARQ：自动重传请求；如果发送方在发送后一段时间内没有收到确认，它通常会重新发送.&lt;br /&gt;
+ARQ 协议有两种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;停止等待 ARQ&lt;/li&gt;
+&lt;li&gt;连续 ARQ 协议&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;停止等待 ARQ 协议：发送端维护一个超时计数器，发送端每次发送的报文在得到接收方的确认之后才可以发送下一个数据，超过一定时间没有收到发送方的确认，则需要重新发送。对于发送方收到了多个对同一报文的确认直接丢失。接收方对于接收到重复的报文也直接丢失.&lt;/li&gt;
+&lt;li&gt;连续 ARQ 协议：发送端会维护一个窗口，窗口内的分组可以连续发送出去而不需要等待接收端的确认。对于按需到达的分组，接收端会发送最后一个正确到达的分组的确认. （提高信道利用率），会出现回退 N 的现象（当发送端发送了 5 条消息，第三条消息丢失了，接收方只能给接收方发送前两个的确认，而不清楚后三条消息的状态，算法会选择吧后面的三条消息全部重传）&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;tcp与udp的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcp与udp的区别&#34;&gt;#&lt;/a&gt; TCP 与 UDP 的区别&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;TCP 是面向连接的，提供可靠的数据流传输；UDP 是非面向连接的，数据传输不可靠&lt;/li&gt;
@@ -739,8 +750,9 @@
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;运行在 TCP 之上的协议： &lt;code&gt;HTTP&lt;/code&gt; ， &lt;code&gt;HTTPS&lt;/code&gt; ， &lt;code&gt;FTP&lt;/code&gt; ， &lt;code&gt;SSH&lt;/code&gt; &lt;br /&gt;
- 运行在 UDP 之上的协议：DNS&lt;/p&gt;
+ 运行在 UDP 之上的协议：DNS， &lt;code&gt;TFTP&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;tcp中的粘包&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcp中的粘包&#34;&gt;#&lt;/a&gt; TCP 中的粘包&lt;/h2&gt;
 &lt;h2 id=&#34;浏览器请求一个网址的过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#浏览器请求一个网址的过程&#34;&gt;#&lt;/a&gt; 浏览器请求一个网址的过程&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -760,18 +772,49 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;http响应码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#http响应码&#34;&gt;#&lt;/a&gt; http 响应码&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;200&lt;/code&gt; ：&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;404&lt;/code&gt; ：&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;500&lt;/code&gt; ：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1××&lt;/code&gt; ：提示信息，表示协议处于中间状态&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2××&lt;/code&gt; ：成功，报文被正确的接收和处理&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;3××&lt;/code&gt; ：重定向，资源位置发生变动，需要客户端重新发送请求&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;4××&lt;/code&gt; ：客户端错误，请求的报文有误，服务器无法处理&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;5××&lt;/code&gt; ：服务端错误&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;http有哪些常见的字段&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#http有哪些常见的字段&#34;&gt;#&lt;/a&gt; http 有哪些常见的字段&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;HOST&lt;/code&gt; ：服务器域名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Content-Length&lt;/code&gt; ：服务器返回响应时，该字段表示回应的数据长度&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何理解http协议的无连接无状态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#如何理解http协议的无连接无状态&#34;&gt;#&lt;/a&gt; 如何理解 http 协议的 &amp;quot;无连接，无状态&amp;quot;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;http的长连接与短连接的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#http的长连接与短连接的区别&#34;&gt;#&lt;/a&gt; http 的长连接与短连接的区别&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;在早期的 &lt;code&gt;http/1.0&lt;/code&gt;  默认使用的是短连接，每次客户端与服务端进行一次 http 操作，就建立一次连接，任务结束就中断连接&lt;/li&gt;
-&lt;li&gt;从 &lt;code&gt;http/1.1&lt;/code&gt;  起，默认使用的长连接.&lt;/li&gt;
+&lt;li&gt;从 &lt;code&gt;http/1.1&lt;/code&gt;  起，默认使用的长连接。响应报文中 &lt;code&gt;Connection:keep-alive&lt;/code&gt; ， &lt;code&gt;keep-alive&lt;/code&gt;  具有一个保持时间.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;http与https的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#http与https的区别&#34;&gt;#&lt;/a&gt; http 与 https 的区别&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;http 的缺点&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;明文传输，内容可能被窃听&lt;/li&gt;
+&lt;li&gt;通信双方没有身份认证&lt;/li&gt;
+&lt;li&gt;无法验证报文的完整性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;https 的改进&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;加密：客户端通过 &lt;code&gt;SSL&lt;/code&gt;  将报文内容进行加密，服务端界面&lt;/li&gt;
+&lt;li&gt;身份认证：通过值得信赖的第三方机构颁布的证书来确认双方的身份。客户端在通信前会查看服务端的证书&lt;/li&gt;
+&lt;li&gt;完整新保护。通过 MD5 等散列码进行通信内存的校验&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;session与cookie&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#session与cookie&#34;&gt;#&lt;/a&gt; session 与 cookie&lt;/h2&gt;
 &lt;h2 id=&#34;dns域名系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dns域名系统&#34;&gt;#&lt;/a&gt; DNS 域名系统&lt;/h2&gt;
@@ -779,7 +822,14 @@
 &lt;p&gt;对于人而言记忆一串有意义的字符串要比记忆一组无规律的数字要容易的多；DNS，即为域名系统，是一个由域名到 IP 地址的分布式数据库，可以方便的完成域名到 IP 的转换.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;工作原理：&lt;/li&gt;
+&lt;li&gt;工作原理
+&lt;ol&gt;
+&lt;li&gt;当用户输入域名时，浏览器先检查自己的缓存是否包含这个域名的映射。如有则解析结束&lt;/li&gt;
+&lt;li&gt;检查操作系统缓存中是否（Windows 的 hosts）有该域名的映射&lt;/li&gt;
+&lt;li&gt;向本地域名服务器发送解析请求&lt;/li&gt;
+&lt;li&gt;向根域名服务器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;arp协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#arp协议&#34;&gt;#&lt;/a&gt; ARP 协议&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -790,8 +840,6 @@
 &lt;li&gt;源主机发送数据时，首先检查 ARP 列表内是否有目的地址的 MAC 地址，如果有，则写入以太网头部，并发送帧。如果没有，主机以广播的形式发送 ARP 数据报，数据报内源主机 IP 地址，源主机 MAC 地址，目的主机的 IP 地址&lt;/li&gt;
 &lt;li&gt;当网络中的主机收到 ARP 数据包时，首先检查报文中的 IP 地址是否是自己，如果不是则丢弃该报文；否则将自己的 MAC 地址写入 ARP 响应报文中，同时将源主机的 IP 地址和 MAC 地址键值对写入自己的 ARP 列表中.&lt;/li&gt;
 &lt;li&gt;源主机收到 ARP 响应报文后，将目的主机的 IP 地址和 MAC 地址写入自身的 APR 列表中，并写入以太网头部，发送该帧.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
