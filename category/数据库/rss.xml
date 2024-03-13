@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Tue, 03 Oct 2023 16:18:31 +0800</pubDate>
-        <lastBuildDate>Tue, 03 Oct 2023 16:18:31 +0800</lastBuildDate>
+        <pubDate>Wed, 13 Mar 2024 14:46:17 +0800</pubDate>
+        <lastBuildDate>Wed, 13 Mar 2024 14:46:17 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -21,15 +21,29 @@
         <category>日常</category>
         <category>校招</category>
         <item>
+            <guid isPermalink="true">http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
+            <title>MySQL面试题</title>
+            <link>http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</link>
+            <category>面试题</category>
+            <pubDate>Wed, 13 Mar 2024 14:46:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;mysql面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql面试题&#34;&gt;#&lt;/a&gt; MySQL 面试题&lt;/h1&gt;
+&lt;h2 id=&#34;关系型数据库和非关系型数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关系型数据库和非关系型数据库&#34;&gt;#&lt;/a&gt; 关系型数据库和非关系型数据库&lt;/h2&gt;
+&lt;h2 id=&#34;为什么使用索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么使用索引&#34;&gt;#&lt;/a&gt; 为什么使用索引&lt;/h2&gt;
+&lt;h2 id=&#34;b&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#b&#34;&gt;#&lt;/a&gt; B&lt;/h2&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">http://example.com/value/redis</guid>
             <title>redis</title>
             <link>http://example.com/value/redis</link>
             <category>数据库</category>
             <pubDate>Tue, 03 Oct 2023 16:18:31 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis&#34;&gt;#&lt;/a&gt; Redis&lt;/h1&gt;
+&lt;blockquote&gt;
 &lt;p&gt;redis（Remote dictionary server）是一个开源的基于内存的数据存储系统。它可以用于数据库缓存，消息队列等各种场景，是一种 NoSQL 数据库。早期的互联网公司系统大多是通过 Mysql 这种传统的关系型数据库对外提供服务。随着互联网的快速发展，应用系统的访问量原来远大，数据库的性能瓶颈越来越明显，主要是由于磁盘 IO 所导致的，磁盘 IO 的读写速度与内存相比是非常慢的，如果能把数据存储在内存中，则可以大大数据存储的性能。于是便出现了 redis，这种基于内存的数据存储系统。&lt;/p&gt;
-&lt;p&gt;redis 支持多种数据结构，包括五种基本数据类型和五种高级数据类型。&lt;/p&gt;
-&lt;p&gt;五种基本数据类型：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;redis 支持多种数据结构，包括五种基本数据类型和五种高级数据类型。&lt;br /&gt;
+五种基本数据类型：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;字符串 String&lt;/li&gt;
 &lt;li&gt;列表 List&lt;/li&gt;

@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Wed, 13 Mar 2024 09:21:27 +0800</pubDate>
-        <lastBuildDate>Wed, 13 Mar 2024 09:21:27 +0800</lastBuildDate>
+        <pubDate>Wed, 13 Mar 2024 14:46:17 +0800</pubDate>
+        <lastBuildDate>Wed, 13 Mar 2024 14:46:17 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -21,12 +21,25 @@
         <category>日常</category>
         <category>校招</category>
         <item>
+            <guid isPermalink="true">http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
+            <title>MySQL面试题</title>
+            <link>http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</link>
+            <category>面试题</category>
+            <pubDate>Wed, 13 Mar 2024 14:46:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;mysql面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql面试题&#34;&gt;#&lt;/a&gt; MySQL 面试题&lt;/h1&gt;
+&lt;h2 id=&#34;关系型数据库和非关系型数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关系型数据库和非关系型数据库&#34;&gt;#&lt;/a&gt; 关系型数据库和非关系型数据库&lt;/h2&gt;
+&lt;h2 id=&#34;为什么使用索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么使用索引&#34;&gt;#&lt;/a&gt; 为什么使用索引&lt;/h2&gt;
+&lt;h2 id=&#34;b&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#b&#34;&gt;#&lt;/a&gt; B&lt;/h2&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>操作系统面试题</title>
             <link>http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</link>
             <category>面试题</category>
             <pubDate>Wed, 13 Mar 2024 09:21:27 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;进程与线程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程与线程&#34;&gt;#&lt;/a&gt; 进程与线程&lt;/h2&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;操作系统面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统面试题&#34;&gt;#&lt;/a&gt; 操作系统面试题&lt;/h1&gt;
+&lt;h2 id=&#34;进程与线程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程与线程&#34;&gt;#&lt;/a&gt; 进程与线程&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;进程是资源分配的基本单位，线程是资源调度的基本单位&lt;/li&gt;
 &lt;/ul&gt;
@@ -36,8 +49,42 @@
 &lt;li&gt;短作业优先 &lt;code&gt;SJF(Shortest Job First)&lt;/code&gt; ：按估计运行时间最短的顺序进行调度（不利于长作业，会导致饿死）&lt;/li&gt;
 &lt;li&gt;时间片轮转&lt;/li&gt;
 &lt;li&gt;优先级调度&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;多级反馈队列&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;进程间通信方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程间通信方式&#34;&gt;#&lt;/a&gt; 进程间通信方式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;管道&lt;/li&gt;
+&lt;li&gt;共享内存&lt;/li&gt;
+&lt;li&gt;消息队列&lt;/li&gt;
+&lt;li&gt;套接字&lt;/li&gt;
+&lt;li&gt;信号&lt;/li&gt;
+&lt;li&gt;信号量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;动态分区分配算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态分区分配算法&#34;&gt;#&lt;/a&gt; 动态分区分配算法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;首次适应算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;虚拟技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟技术&#34;&gt;#&lt;/a&gt; 虚拟技术&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虚拟技术是把一个物理实体转化为多个逻辑实体&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;时空复用技术&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;多进程与多线程：多个进程能在同一个处理器上并发执行使用了时空复用技术，当每个进程轮流占用 CPU&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;空分复用技术&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虚拟内存：将物理内存抽象为地址空间，每个进程都有各自的地址空间.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;虚拟内存的目的&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟内存的目的&#34;&gt;#&lt;/a&gt; 虚拟内存的目的&lt;/h2&gt;
+&lt;h2 id=&#34;进程状态切换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程状态切换&#34;&gt;#&lt;/a&gt; 进程状态切换&lt;/h2&gt;
+&lt;h2 id=&#34;虚拟地址转换位物理地址的过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟地址转换位物理地址的过程&#34;&gt;#&lt;/a&gt; 虚拟地址转换位物理地址的过程&lt;/h2&gt;
  ]]></description>
         </item>
         <item>
@@ -130,15 +177,59 @@
             <link>http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</link>
             <category>面试题</category>
             <pubDate>Fri, 08 Mar 2024 21:53:12 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;程序编译过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序编译过程&#34;&gt;#&lt;/a&gt; 程序编译过程&lt;/h2&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;c面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c面试题&#34;&gt;#&lt;/a&gt; C++ 面试题&lt;/h1&gt;
+&lt;h2 id=&#34;程序编译过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序编译过程&#34;&gt;#&lt;/a&gt; 程序编译过程&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;预处理：把 &lt;code&gt;#include&lt;/code&gt;  文件内容复制到 &lt;code&gt;.cpp&lt;/code&gt;  文件中，同时还会完成宏定义 &lt;code&gt;#define&lt;/code&gt;  内容替换&lt;/li&gt;
-&lt;li&gt;编译：转化为汇编代码，主要工作是检查一些语法规则，不检查逻辑&lt;/li&gt;
-&lt;li&gt;汇编：将汇编代码转化为二进制格式的文件（机器码）&lt;/li&gt;
-&lt;li&gt;链接：将多个目标文件以及库文件链接成最终的可执行文件
+&lt;li&gt;
+&lt;p&gt;预处理&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;静态链接：将&lt;/li&gt;
-&lt;li&gt;动态链接：&lt;/li&gt;
+&lt;li&gt;完成宏定义 &lt;code&gt;#define&lt;/code&gt;  内容替换&lt;/li&gt;
+&lt;li&gt;处理所有的条件预编译指令，如 &lt;code&gt;#if #endif&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;把 &lt;code&gt;#include&lt;/code&gt;  文件内容复制到 &lt;code&gt;.cpp&lt;/code&gt;  文件中（递归执行）&lt;/li&gt;
+&lt;li&gt;删除所有注释&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编译：转化为汇编代码，主要工作是检查一些语法规则，代码优化（寻找合适的寻址方式，使用位运算来替代乘法运算，删除多余的指令）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;汇编：将汇编代码转化为二进制格式的文件（机器码）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;链接：将多个目标文件以及库文件链接成最终的可执行文件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;静态链接：在链接阶段将库文件的函数和数据合并到应用程序中，组成一个最终的可执行文件.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;运行速度快：可执行程序中具备运行阶段所需要的所以东西&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;空间浪费：可执行程序中有所以目标文件的副本。当多个程序对同一个目标文件有依赖关系时，那么这个目标文件在内存中会有多个副本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当其中一个库文件需要修改，整个程序需要重新编译&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;动态链接：在程序运行阶段才把多个目标文件链接成一个完整的程序.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;运行效率会有所损耗&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;节省空间：共享库&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更新方便：只需要重新编译修改的目标文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -316,7 +407,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;指针与引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针与引用&#34;&gt;#&lt;/a&gt; 指针与引用&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;指针是一个对象，占用内存空间，存储的是一个地址；而引用只是变量的别名，不占用内存空间.&lt;/li&gt;
+&lt;li&gt;存储的是一个地址；而引用只是变量的别名.&lt;/li&gt;
 &lt;li&gt;指针可不进行初始化，也可以指向空，并且指向可以改变；引用必须初始化，且只可绑定一个变量。这也导致了在使用指针时，往往需要判空操作，而引用是一种安全的指针，一定不为空（引用的底层是通过指针来实现）.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;sizeof&lt;/code&gt;  指针得到的是指针的大小， &lt;code&gt;sizeof&lt;/code&gt;  引用得到的是引用绑定对象的大小&lt;/li&gt;
 &lt;li&gt;指针可以是多级的，引用只有一级&lt;/li&gt;
@@ -1045,9 +1136,11 @@
             <category>数据库</category>
             <pubDate>Tue, 03 Oct 2023 16:18:31 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis&#34;&gt;#&lt;/a&gt; Redis&lt;/h1&gt;
+&lt;blockquote&gt;
 &lt;p&gt;redis（Remote dictionary server）是一个开源的基于内存的数据存储系统。它可以用于数据库缓存，消息队列等各种场景，是一种 NoSQL 数据库。早期的互联网公司系统大多是通过 Mysql 这种传统的关系型数据库对外提供服务。随着互联网的快速发展，应用系统的访问量原来远大，数据库的性能瓶颈越来越明显，主要是由于磁盘 IO 所导致的，磁盘 IO 的读写速度与内存相比是非常慢的，如果能把数据存储在内存中，则可以大大数据存储的性能。于是便出现了 redis，这种基于内存的数据存储系统。&lt;/p&gt;
-&lt;p&gt;redis 支持多种数据结构，包括五种基本数据类型和五种高级数据类型。&lt;/p&gt;
-&lt;p&gt;五种基本数据类型：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;redis 支持多种数据结构，包括五种基本数据类型和五种高级数据类型。&lt;br /&gt;
+五种基本数据类型：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;字符串 String&lt;/li&gt;
 &lt;li&gt;列表 List&lt;/li&gt;
