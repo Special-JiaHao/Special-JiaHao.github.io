@@ -58,7 +58,7 @@
 &lt;p&gt;一种典型的 DDos 攻击，在短时间呢伪造不存在的 IP，向服务端发送大量的 &lt;code&gt;SYN&lt;/code&gt;  请求；当服务端发送 &lt;code&gt;SYN+ACK&lt;/code&gt;  报文后，不会收到 &lt;code&gt;ACK&lt;/code&gt;  回应报文，那么 &lt;code&gt;SYN队列&lt;/code&gt; 内的连接就不会出队，久而久之会沾满服务器的 &lt;code&gt;SYN队列&lt;/code&gt; ，使得正常用户无法正常访问.&lt;/p&gt;
 &lt;p&gt;应对方案：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;SYN代理防火墙&lt;/code&gt; ：对于每一个 &lt;code&gt;SYN请求&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SYN代理防火墙&lt;/code&gt; ：对于每一个 &lt;code&gt;SYN请求&lt;/code&gt; 进行代理和回应，并保持半连接；等客户端返回 &lt;code&gt;ACK确认&lt;/code&gt; 后，再重新构造 &lt;code&gt;SYN&lt;/code&gt;  包到服务器，简历真正的 TCP 连接&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/SYN_Flood.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -272,6 +272,11 @@ ARQ 协议有两种：&lt;/p&gt;
 &lt;li&gt;源主机发送数据时，首先检查 ARP 列表内是否有目的地址的 MAC 地址，如果有，则写入以太网头部，并发送帧。如果没有，主机以广播的形式发送 ARP 数据报，数据报内源主机 IP 地址，源主机 MAC 地址，目的主机的 IP 地址&lt;/li&gt;
 &lt;li&gt;当网络中的主机收到 ARP 数据包时，首先检查报文中的 IP 地址是否是自己，如果不是则丢弃该报文；否则将自己的 MAC 地址写入 ARP 响应报文中，同时将源主机的 IP 地址和 MAC 地址键值对写入自己的 ARP 列表中.&lt;/li&gt;
 &lt;li&gt;源主机收到 ARP 响应报文后，将目的主机的 IP 地址和 MAC 地址写入自身的 APR 列表中，并写入以太网头部，发送该帧.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;参考博文&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考博文&#34;&gt;#&lt;/a&gt; 参考博文&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MveUFsRXJsQzA5R25qYVZ2d1VvM0FjZw==&#34;&gt;面渣逆袭：计算机网络六十二问，三万字图文详解！速收藏！ (qq.com)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;[2] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbnRlcnZpZXdndWlkZS5jbi9ub3Rlcy8wMy1odW50aW5nX2pvYi8wMi1pbnRlcnZpZXcvMDMtMDEtbmV0Lmh0bWw=&#34;&gt;计算机网络 - 01-20 | 阿秀的学习笔记 (interviewguide.cn)&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
