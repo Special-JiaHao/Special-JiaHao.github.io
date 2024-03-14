@@ -766,6 +766,7 @@
 &lt;li&gt;TCP 是全双工传输模式，它们双方即是客户端也是服务端，需要建立双向的连接；如果只有两次，无法做到双向连接，而建立连接时，服务端发送确定的同时将 &lt;code&gt;SYN=1&lt;/code&gt; ，确认和建立连接的请求合并了，所以也不需要 4 次.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;半连接队列和syn-flood攻击&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#半连接队列和syn-flood攻击&#34;&gt;#&lt;/a&gt; 半连接队列和 SYN Flood 攻击&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -805,6 +806,9 @@
 &lt;li&gt;保证服务端连接的可靠关闭。如若最后一个 &lt;code&gt;ACK=1&lt;/code&gt;  报文丢失，在 2MSL 内客户端必定察觉，可以重发&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tcp如何保证传输的可靠性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcp如何保证传输的可靠性&#34;&gt;#&lt;/a&gt; TCP 如何保证传输的可靠性&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;校验和：发送放在发送数据时会计算校验和，接收方在接受到数据后同样会检查校验和，如果不一致，那么传输发送了差错&lt;/li&gt;
@@ -867,8 +871,6 @@ ARQ 协议有两种：&lt;/p&gt;
 &lt;li&gt;服务器处理 http 请求，返回 http 响应&lt;/li&gt;
 &lt;li&gt;浏览器解析并渲染页面&lt;/li&gt;
 &lt;li&gt;TCP 四次挥手断开连接&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/HTTP.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
