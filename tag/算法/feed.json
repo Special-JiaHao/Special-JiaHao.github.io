@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "繁華落盡 似水流年 • All posts by \"算法\" tag",
+    "description": "编程日记 & 随笔",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/value/%E7%AE%97%E6%B3%95%E6%A8%A1%E7%89%88",
+            "url": "http://example.com/value/%E7%AE%97%E6%B3%95%E6%A8%A1%E7%89%88",
+            "title": "算法模版",
+            "date_published": "2024-03-17T01:14:42.240Z",
+            "content_html": "",
+            "tags": [
+                "算法"
+            ]
+        }
+    ]
+}

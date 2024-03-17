@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;算法&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-03-17T01:14:42.240Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
+    <category term="VMware" />
+    <category term="项目构建工具" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
+    <category term="CNN" />
+    <category term="Project" />
+    <category term="面试题" />
+    <category term="日常" />
+    <category term="校招" />
+    <category term="算法" />
+    <entry>
+        <id>http://example.com/value/%E7%AE%97%E6%B3%95%E6%A8%A1%E7%89%88</id>
+        <title>算法模版</title>
+        <link rel="alternate" href="http://example.com/value/%E7%AE%97%E6%B3%95%E6%A8%A1%E7%89%88"/>
+        <content type="html"></content>
+        <category term="算法" />
+        <updated>2024-03-17T01:14:42.240Z</updated>
+    </entry>
+</feed>

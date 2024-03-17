@@ -17,6 +17,7 @@
     <category term="面试题" />
     <category term="日常" />
     <category term="校招" />
+    <category term="算法" />
     <entry>
         <id>http://example.com/value/redis</id>
         <title>redis</title>

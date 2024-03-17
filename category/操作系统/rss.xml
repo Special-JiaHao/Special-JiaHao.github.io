@@ -20,6 +20,7 @@
         <category>面试题</category>
         <category>日常</category>
         <category>校招</category>
+        <category>算法</category>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>操作系统面试题</title>
@@ -30,6 +31,8 @@
 &lt;h2 id=&#34;进程与线程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程与线程&#34;&gt;#&lt;/a&gt; 进程与线程&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;进程是资源分配的基本单位，线程是资源调度的基本单位&lt;/li&gt;
+&lt;li&gt;每个进程有多个线程组层，但只有一个主线程，它们共享内存空间（堆、全局变量），但是有各自的栈空间&lt;/li&gt;
+&lt;li&gt;系统开销&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;进程调度算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程调度算法&#34;&gt;#&lt;/a&gt; 进程调度算法&lt;/h2&gt;
 &lt;ul&gt;
@@ -44,13 +47,30 @@
 &lt;li&gt;管道&lt;/li&gt;
 &lt;li&gt;共享内存&lt;/li&gt;
 &lt;li&gt;消息队列&lt;/li&gt;
-&lt;li&gt;套接字&lt;/li&gt;
-&lt;li&gt;信号&lt;/li&gt;
+&lt;li&gt;套接字：适用于不同主机之间的通信，也可以用于同一主机两个进程之间的通信&lt;/li&gt;
+&lt;li&gt;信号：&lt;/li&gt;
 &lt;li&gt;信号量&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;动态分区分配算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态分区分配算法&#34;&gt;#&lt;/a&gt; 动态分区分配算法&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;首次适应算法&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;首次适应算法：每次都从地地址开始查找，找到第一个能满足大小的空闲分区&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最佳适应算法：选择尽可能小的内存分区分配给进程&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;空闲分区按照容量递增次序链接，每次分配内存时按顺序查找空闲分区链，找到第一个能满足要求的空闲分区&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最坏适应算法：每次分配时使用最大的空闲内存区，为了过多的内存碎片&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;空闲分区安容量递减的次序链接，每次分配内存时按顺序查找空闲分区链，找到第一个能过满足要求的空闲分区&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;邻近适应算法： &lt;code&gt;首次适应算法&lt;/code&gt; 每次都要从链表头开始查找，这可能会导致地地址部分出现很多小的空闲分区，每次查找时需要进过这些分区，增加了查找开销。如果每次都从上次查找结束的位置开始检索，就能解决这个问题.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;虚拟技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟技术&#34;&gt;#&lt;/a&gt; 虚拟技术&lt;/h2&gt;
 &lt;blockquote&gt;
