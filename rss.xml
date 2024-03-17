@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Sun, 17 Mar 2024 09:14:42 +0800</pubDate>
-        <lastBuildDate>Sun, 17 Mar 2024 09:14:42 +0800</lastBuildDate>
+        <pubDate>Sun, 17 Mar 2024 09:43:37 +0800</pubDate>
+        <lastBuildDate>Sun, 17 Mar 2024 09:43:37 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -21,6 +21,16 @@
         <category>日常</category>
         <category>校招</category>
         <category>算法</category>
+        <category>Leetcode双周赛</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/Leetcode/%E7%AC%AC%20126%20%E5%9C%BA%E5%8F%8C%E5%91%A8%E8%B5%9B%E9%A2%98%E8%A7%A3</guid>
+            <title>第 126 场双周赛</title>
+            <link>http://example.com/value/Leetcode/%E7%AC%AC%20126%20%E5%9C%BA%E5%8F%8C%E5%91%A8%E8%B5%9B%E9%A2%98%E8%A7%A3</link>
+            <category>Leetcode双周赛</category>
+            <pubDate>Sun, 17 Mar 2024 09:43:37 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;求出加密整数的和&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#求出加密整数的和&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9maW5kLXRoZS1zdW0tb2YtZW5jcnlwdGVkLWludGVnZXJzLw==&#34;&gt;求出加密整数的和&lt;/span&gt;&lt;/h2&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/%E7%AE%97%E6%B3%95%E6%A8%A1%E7%89%88</guid>
             <title>算法模版</title>

@@ -18,6 +18,7 @@
     <category term="日常" />
     <category term="校招" />
     <category term="算法" />
+    <category term="Leetcode双周赛" />
     <entry>
         <id>http://example.com/value/Graident%20descent</id>
         <title>梯度下降</title>

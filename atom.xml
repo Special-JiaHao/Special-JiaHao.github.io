@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年</title>
     <link href="http://example.com" />
-    <updated>2024-03-17T01:14:42.240Z</updated>
+    <updated>2024-03-17T01:43:37.085Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -18,6 +18,16 @@
     <category term="日常" />
     <category term="校招" />
     <category term="算法" />
+    <category term="Leetcode双周赛" />
+    <entry>
+        <id>http://example.com/value/Leetcode/%E7%AC%AC%20126%20%E5%9C%BA%E5%8F%8C%E5%91%A8%E8%B5%9B%E9%A2%98%E8%A7%A3</id>
+        <title>第 126 场双周赛</title>
+        <link rel="alternate" href="http://example.com/value/Leetcode/%E7%AC%AC%20126%20%E5%9C%BA%E5%8F%8C%E5%91%A8%E8%B5%9B%E9%A2%98%E8%A7%A3"/>
+        <content type="html">&lt;h2 id=&#34;求出加密整数的和&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#求出加密整数的和&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9maW5kLXRoZS1zdW0tb2YtZW5jcnlwdGVkLWludGVnZXJzLw==&#34;&gt;求出加密整数的和&lt;/span&gt;&lt;/h2&gt;
+</content>
+        <category term="Leetcode双周赛" />
+        <updated>2024-03-17T01:43:37.085Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E7%AE%97%E6%B3%95%E6%A8%A1%E7%89%88</id>
         <title>算法模版</title>

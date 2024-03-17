@@ -18,6 +18,7 @@
     <category term="日常" />
     <category term="校招" />
     <category term="算法" />
+    <category term="Leetcode双周赛" />
     <entry>
         <id>http://example.com/value/Unix%20programing</id>
         <title>UNIX网络编程</title>
