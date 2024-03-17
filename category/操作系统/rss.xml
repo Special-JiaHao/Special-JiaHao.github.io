@@ -52,6 +52,7 @@
 &lt;li&gt;信号：&lt;/li&gt;
 &lt;li&gt;信号量&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;进程同步的四种方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程同步的四种方式&#34;&gt;#&lt;/a&gt; 进程同步的四种方式&lt;/h2&gt;
 &lt;h2 id=&#34;动态分区分配算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态分区分配算法&#34;&gt;#&lt;/a&gt; 动态分区分配算法&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;

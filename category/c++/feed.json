@@ -5,6 +5,16 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/value/%E7%BA%BF%E7%A8%8B%E6%B1%A0",
+            "url": "http://example.com/value/%E7%BA%BF%E7%A8%8B%E6%B1%A0",
+            "title": "线程池",
+            "date_published": "2024-03-17T11:27:36.716Z",
+            "content_html": "<h2 id=\"什么是线程池线程池的好处\"><a class=\"anchor\" href=\"#什么是线程池线程池的好处\">#</a> 什么是线程池？线程池的好处</h2>\n<blockquote>\n<p>通俗上来说线程池是一个管理线程的池子，它可以容纳多个线程，并对线程可以进行反复的利用，省去了频繁的线程的创建和销毁开销.</p>\n</blockquote>\n<h2 id=\"线程池的核心参数\"><a class=\"anchor\" href=\"#线程池的核心参数\">#</a> 线程池的核心参数</h2>\n<ul>\n<li>\n<p>任务队列：存储需要处理的任务</p>\n<blockquote>\n<p>线程池提供 API 接口，用于往任务队列中添加任务和删除任务</p>\n</blockquote>\n</li>\n</ul>\n",
+            "tags": [
+                "面试题"
+            ]
+        },
+        {
             "id": "http://example.com/value/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B",
             "url": "http://example.com/value/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B",
             "title": "美团校招",

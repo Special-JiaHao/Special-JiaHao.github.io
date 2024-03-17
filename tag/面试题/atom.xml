@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年 • Posts by &#34;面试题&#34; tag</title>
     <link href="http://example.com" />
-    <updated>2024-03-13T06:46:17.113Z</updated>
+    <updated>2024-03-17T11:27:36.716Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -19,6 +19,27 @@
     <category term="校招" />
     <category term="算法" />
     <category term="Leetcode双周赛" />
+    <entry>
+        <id>http://example.com/value/%E7%BA%BF%E7%A8%8B%E6%B1%A0</id>
+        <title>线程池</title>
+        <link rel="alternate" href="http://example.com/value/%E7%BA%BF%E7%A8%8B%E6%B1%A0"/>
+        <content type="html">&lt;h2 id=&#34;什么是线程池线程池的好处&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是线程池线程池的好处&#34;&gt;#&lt;/a&gt; 什么是线程池？线程池的好处&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;通俗上来说线程池是一个管理线程的池子，它可以容纳多个线程，并对线程可以进行反复的利用，省去了频繁的线程的创建和销毁开销.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;线程池的核心参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线程池的核心参数&#34;&gt;#&lt;/a&gt; 线程池的核心参数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;任务队列：存储需要处理的任务&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;线程池提供 API 接口，用于往任务队列中添加任务和删除任务&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="面试题" />
+        <updated>2024-03-17T11:27:36.716Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>MySQL面试题</title>
@@ -59,6 +80,7 @@
 &lt;li&gt;信号：&lt;/li&gt;
 &lt;li&gt;信号量&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;进程同步的四种方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程同步的四种方式&#34;&gt;#&lt;/a&gt; 进程同步的四种方式&lt;/h2&gt;
 &lt;h2 id=&#34;动态分区分配算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态分区分配算法&#34;&gt;#&lt;/a&gt; 动态分区分配算法&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
