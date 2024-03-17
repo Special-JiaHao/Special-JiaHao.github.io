@@ -24,6 +24,8 @@
         <title>第 126 场双周赛</title>
         <link rel="alternate" href="http://example.com/value/Leetcode/%E7%AC%AC%20126%20%E5%9C%BA%E5%8F%8C%E5%91%A8%E8%B5%9B%E9%A2%98%E8%A7%A3"/>
         <content type="html">&lt;h2 id=&#34;求出加密整数的和&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#求出加密整数的和&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9maW5kLXRoZS1zdW0tb2YtZW5jcnlwdGVkLWludGVnZXJzLw==&#34;&gt;求出加密整数的和&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;给你一个整数数组  &lt;code&gt;nums&lt;/code&gt;  ，数组中的元素都是 &lt;strong&gt;正&lt;/strong&gt; 整数。定义一个加密函数  &lt;code&gt;encrypt&lt;/code&gt;  ， &lt;code&gt;encrypt(x)&lt;/code&gt;  将一个整数  &lt;code&gt;x&lt;/code&gt;  中 &lt;strong&gt;每一个&lt;/strong&gt; 数位都用  &lt;code&gt;x&lt;/code&gt;  中的 &lt;strong&gt;最大&lt;/strong&gt; 数位替换。比方说  &lt;code&gt;encrypt(523) = 555&lt;/code&gt;  且  &lt;code&gt;encrypt(213) = 333&lt;/code&gt;  。&lt;/p&gt;
+&lt;p&gt;请你返回数组中所有元素加密后的 &lt;strong&gt;和&lt;/strong&gt; 。&lt;/p&gt;
 </content>
         <category term="Leetcode双周赛" />
         <updated>2024-03-17T01:43:37.085Z</updated>
