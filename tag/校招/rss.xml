@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Sun, 10 Mar 2024 22:47:57 +0800</pubDate>
-        <lastBuildDate>Sun, 10 Mar 2024 22:47:57 +0800</lastBuildDate>
+        <pubDate>Mon, 18 Mar 2024 20:59:34 +0800</pubDate>
+        <lastBuildDate>Mon, 18 Mar 2024 20:59:34 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -22,6 +22,18 @@
         <category>校招</category>
         <category>算法</category>
         <category>Leetcode双周赛</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</guid>
+            <title>腾讯校招</title>
+            <link>http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</link>
+            <category>校招</category>
+            <pubDate>Mon, 18 Mar 2024 20:59:34 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;一面心态爆炸&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一面心态爆炸&#34;&gt;#&lt;/a&gt; 一面（心态爆炸）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一开始问了我的研究方向，具体想自己&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B</guid>
             <title>美团校招</title>

@@ -5,6 +5,16 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B",
+            "url": "http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B",
+            "title": "腾讯校招",
+            "date_published": "2024-03-18T12:59:34.915Z",
+            "content_html": "<h2 id=\"一面心态爆炸\"><a class=\"anchor\" href=\"#一面心态爆炸\">#</a> 一面（心态爆炸）</h2>\n<blockquote>\n<p>一开始问了我的研究方向，具体想自己</p>\n</blockquote>\n",
+            "tags": [
+                "校招"
+            ]
+        },
+        {
             "id": "http://example.com/value/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B",
             "url": "http://example.com/value/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B",
             "title": "美团校招",

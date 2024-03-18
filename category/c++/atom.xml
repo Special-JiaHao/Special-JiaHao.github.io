@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年 • Posts by &#34;c++&#34; category</title>
     <link href="http://example.com" />
-    <updated>2024-03-17T12:47:07.883Z</updated>
+    <updated>2024-03-18T12:59:34.915Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -19,6 +19,18 @@
     <category term="校招" />
     <category term="算法" />
     <category term="Leetcode双周赛" />
+    <entry>
+        <id>http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</id>
+        <title>腾讯校招</title>
+        <link rel="alternate" href="http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B"/>
+        <content type="html">&lt;h2 id=&#34;一面心态爆炸&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一面心态爆炸&#34;&gt;#&lt;/a&gt; 一面（心态爆炸）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一开始问了我的研究方向，具体想自己&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="校招" />
+        <updated>2024-03-18T12:59:34.915Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0</id>
         <title>数据库连接池</title>
