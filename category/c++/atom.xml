@@ -27,6 +27,32 @@
 &lt;blockquote&gt;
 &lt;p&gt;一开始问了我的研究方向，具体想自己&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h3 id=&#34;程序的内存空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序的内存空间&#34;&gt;#&lt;/a&gt; 程序的内存空间&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里居然我卡了一下，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;vector的内存管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vector的内存管理&#34;&gt;#&lt;/a&gt; Vector 的内存管理&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vector 内存是从堆上去申请的，内部具有一个扩容的机制。至于扩容的系数根据不同的操作系统会存在不同的差异，比较常用的是 2 或 1.5（他追问了默认比较常见的系数）. 内部会维护一个 &lt;code&gt;size()&lt;/code&gt;  和 &lt;code&gt;capacity()&lt;/code&gt;  的函数用于获取容器的实际大小和占用内存大小，当两个值相等时，再添加元素就会进行扩容。扩容的过程是从堆中去找一片更大的内存空间分配给这个容器...（没有让我再说下去了）&lt;/p&gt;
+&lt;p&gt;接下来有反问我，说既然提到 &lt;code&gt;vecotr&lt;/code&gt;  的内存是从堆上去申请的，那么你如何证明？如何证明在堆上而不是在栈上？这里我回答不上，也没太理解其实，反正之后面试官一直引导我，可惜我都没要 &lt;code&gt;get&lt;/code&gt;  到，最后几乎告诉我答案了，我才和他说可以在 &lt;code&gt;main&lt;/code&gt;  函数中写 &lt;code&gt;vector&amp;lt;int&amp;gt;(1000000000);&lt;/code&gt;  与 &lt;code&gt;int a[1000000000]&lt;/code&gt;  进行编译运行对比，第二中会报段错误（栈溢出），说明第二种的地址空间是在栈内取申请，而第一种没有报错，能正常运行，说明其内存空间不是在栈上去申请的.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;三次握手的流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三次握手的流程&#34;&gt;#&lt;/a&gt; 三次握手的流程&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;客户端发送 SYN 报文给服务端&lt;/li&gt;
+&lt;li&gt;服务端接收到 SYN 报文后，发送 ACK 确认，同时将 SYN 设置为 1&lt;/li&gt;
+&lt;li&gt;客户端收到请求后，给服务端发送 ACK 确认，三次握手过程结束&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为什么是三次？&lt;/p&gt;
+&lt;p&gt;两次肯定不行，理论上应该是四次. TCP 连接建立是一个全双工的通信，同时其是由确认机制的，所以单边的连接建立需要 2 次，双工就 double，就是四次。但是在建立连接时，服务端可以将 SYN 请求和 ACK 确认包装在一个报文中.&lt;/p&gt;
+&lt;p&gt;那么挥手是几次？是你说的这个原因吗？&lt;/p&gt;
+&lt;p&gt;挥手是四次，是由于中间不能合并，在服务端接受到 FIN 请求后给与确认的同时，服务端可能还有数据没有发送完.&lt;/p&gt;
+&lt;p&gt;四次挥手里面有一个 &lt;code&gt;TIME_WAIT&lt;/code&gt;  的状态吗？你了解吗？&lt;/p&gt;
+&lt;p&gt;主动关闭连接的一方的状态&lt;/p&gt;
+&lt;p&gt;平时有没有用什么抓包工具？ wireshark，但是我不常用&lt;/p&gt;
+&lt;p&gt;那如果是 Linux 命令呢？查看服务器上进程状态？记不清楚&lt;/p&gt;
+&lt;p&gt;TCP 是可靠传输吗？&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
         <category term="校招" />
         <updated>2024-03-18T12:59:34.915Z</updated>
