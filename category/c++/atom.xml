@@ -662,6 +662,12 @@ Description:
 &lt;p&gt;在 &lt;code&gt;Socket网络编程&lt;/code&gt; 中，有主机字节序和网络字节序&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;内存对齐&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存对齐&#34;&gt;#&lt;/a&gt; 内存对齐&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;实际的内存读取时，是一组一组来读取的，一组内存在 n 个字节&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;加快内存的获取速度&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;内存池&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存池&#34;&gt;#&lt;/a&gt; 内存池&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;预先申请分配一定数量的内存块留作备用，当有新的内存需求时，就从内存池中分出一部分内存块，对于使用完的内存块将其放回内存池。若内存池不够，在继续申请新的内存. （防止频繁的内存申请与释放所带来的开销，提高分配效率，同时可以避免内存碎片）&lt;/li&gt;
