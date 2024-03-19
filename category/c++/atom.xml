@@ -23,7 +23,7 @@
         <id>http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
         <title>蚂蚁集团校招</title>
         <link rel="alternate" href="http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B"/>
-        <content type="html">&lt;h2 id=&#34;蚂蚁集团研发算法第一场笔试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#蚂蚁集团研发算法第一场笔试&#34;&gt;#&lt;/a&gt; 蚂蚁集团研发算法第一场笔试&lt;/h2&gt;
+        <content type="html">&lt;h2 id=&#34;蚂蚁集团3-19研发笔试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#蚂蚁集团3-19研发笔试&#34;&gt;#&lt;/a&gt; 蚂蚁集团 3-19 研发笔试&lt;/h2&gt;
 &lt;h3 id=&#34;q1easy&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#q1easy&#34;&gt;#&lt;/a&gt; Q1&lt;span class=&#34;label success&#34;&gt;easy&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;小苯看中了一件价值为 p 元的物品，他手里有 1 个 “打折券” 和 1 个 “立减券”。两种优惠券可以都用在物品上，且使用顺序也是任意的。&lt;/p&gt;
