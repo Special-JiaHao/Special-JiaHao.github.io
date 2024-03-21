@@ -26,8 +26,8 @@
         <content type="html">&lt;h1 id=&#34;操作系统面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统面试题&#34;&gt;#&lt;/a&gt; 操作系统面试题&lt;/h1&gt;
 &lt;h2 id=&#34;主机启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主机启动&#34;&gt;#&lt;/a&gt; 主机启动&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;BIOS&lt;/code&gt; ：I/O 处理系统，开机时可以自动检测各种外设&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Bootloader&lt;/code&gt; ：加载 OS&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;BIOS&lt;/code&gt; ：I/O 处理系统，开机时可以自动检测各种外设&lt;br /&gt;
+ &lt;code&gt;Bootloader&lt;/code&gt; ：加载 OS&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;中断和异常的处理过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中断和异常的处理过程&#34;&gt;#&lt;/a&gt; 中断和异常的处理过程&lt;/h2&gt;
 &lt;ul&gt;

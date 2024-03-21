@@ -31,8 +31,8 @@
             <description><![CDATA[ &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;人生的道路虽然很漫长，但紧要处常常只有几步.&lt;/p&gt;
-&lt;p&gt;特别是当人年轻的时候，没有一个人的生活道路是笔直的，没有岔道的。一些岔道口，比如政治上的岔口，事业上的岔口，个人生活上的岔口，你走错了一步，可以影响人生的一个时期，也可以影响一生.&lt;/p&gt;
-&lt;p&gt;柳青 《创业史》&lt;/p&gt;
+&lt;p&gt;特别是当人年轻的时候，没有一个人的生活道路是笔直的，没有岔道的。一些岔道口，比如政治上的岔口，事业上的岔口，个人生活上的岔口，你走错了一步，可以影响人生的一个时期，也可以影响一生.&lt;br /&gt;
+&lt;span class=&#34;aqua&#34;&gt; 柳青 《创业史》&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
@@ -630,8 +630,8 @@ Description:
             <description><![CDATA[ &lt;h1 id=&#34;操作系统面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统面试题&#34;&gt;#&lt;/a&gt; 操作系统面试题&lt;/h1&gt;
 &lt;h2 id=&#34;主机启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主机启动&#34;&gt;#&lt;/a&gt; 主机启动&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;BIOS&lt;/code&gt; ：I/O 处理系统，开机时可以自动检测各种外设&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Bootloader&lt;/code&gt; ：加载 OS&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;BIOS&lt;/code&gt; ：I/O 处理系统，开机时可以自动检测各种外设&lt;br /&gt;
+ &lt;code&gt;Bootloader&lt;/code&gt; ：加载 OS&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;中断和异常的处理过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中断和异常的处理过程&#34;&gt;#&lt;/a&gt; 中断和异常的处理过程&lt;/h2&gt;
 &lt;ul&gt;
