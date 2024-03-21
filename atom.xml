@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年</title>
     <link href="http://example.com" />
-    <updated>2024-03-19T12:03:19.852Z</updated>
+    <updated>2024-03-21T06:25:31.177Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -19,6 +19,21 @@
     <category term="校招" />
     <category term="算法" />
     <category term="Leetcode双周赛" />
+    <entry>
+        <id>http://example.com/value/daily/Feelings</id>
+        <title>Feelings</title>
+        <link rel="alternate" href="http://example.com/value/daily/Feelings"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;人生的道路虽然很漫长，但紧要处常常只有几步.&lt;/p&gt;
+&lt;p&gt;特别是当人年轻的时候，没有一个人的生活道路是笔直的，没有岔道的。一些岔道口，比如政治上的岔口，事业上的岔口，个人生活上的岔口，你走错了一步，可以影响人生的一个时期，也可以影响一生.&lt;/p&gt;
+&lt;p&gt;柳青 《创业史》&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="日常" />
+        <updated>2024-03-21T06:25:31.177Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
         <title>蚂蚁集团校招</title>
@@ -748,8 +763,20 @@ Description:
 &lt;/ul&gt;
 &lt;h2 id=&#34;页表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#页表&#34;&gt;#&lt;/a&gt; 页表&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;标志位&lt;/li&gt;
-&lt;li&gt;帧号&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;标志位&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;访问位&lt;/li&gt;
+&lt;li&gt;修改位&lt;/li&gt;
+&lt;li&gt;保护位：&lt;/li&gt;
+&lt;li&gt;驻留位：表示该页是在 &lt;code&gt;内存&lt;/code&gt; 中还是在 &lt;code&gt;外存&lt;/code&gt; 中&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;帧号&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%A1%B5%E8%A1%A8%E7%BB%93%E6%9E%84.png&#34; alt=&#34;&#34; title=&#34;页表结构&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -793,7 +820,15 @@ Description:
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;虚拟内存的目的&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟内存的目的&#34;&gt;#&lt;/a&gt; 虚拟内存的目的&lt;/h2&gt;
+&lt;h2 id=&#34;虚拟内存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟内存&#34;&gt;#&lt;/a&gt; 虚拟内存&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;在装入程序时，不必将其全部装入内存，而只需将当前需要执行的部分页面或段装入内存，就可以让程序开始执行&lt;/li&gt;
+&lt;li&gt;在程序执行过程中，如果执行的指令或访问的数据不在内存中（ &lt;code&gt;缺页&lt;/code&gt; 或 &lt;code&gt;缺段&lt;/code&gt; ），则由处理器通知操作系统将相应的页面或段调入内存，然后继续执行程序&lt;/li&gt;
+&lt;li&gt;另一方面，操作系统将内存中暂时不适用的页面或段调出保存到磁盘中，从而腾出更多的空闲空间存放将要装入的程序&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;页面置换算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#页面置换算法&#34;&gt;#&lt;/a&gt; 页面置换算法&lt;/h2&gt;
 &lt;h2 id=&#34;进程状态切换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程状态切换&#34;&gt;#&lt;/a&gt; 进程状态切换&lt;/h2&gt;
 &lt;h2 id=&#34;虚拟地址转换位物理地址的过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟地址转换位物理地址的过程&#34;&gt;#&lt;/a&gt; 虚拟地址转换位物理地址的过程&lt;/h2&gt;
 &lt;h2 id=&#34;磁盘调度算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#磁盘调度算法&#34;&gt;#&lt;/a&gt; 磁盘调度算法&lt;/h2&gt;
@@ -1009,9 +1044,9 @@ Description:
         <updated>2024-03-10T14:47:57.480Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/March%202024</id>
+        <id>http://example.com/value/daily/March%202024</id>
         <title>March 2024</title>
-        <link rel="alternate" href="http://example.com/value/March%202024"/>
+        <link rel="alternate" href="http://example.com/value/daily/March%202024"/>
         <content type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;2024-03-08 瑜伽湖夜跑（跑一半就不行了！）&lt;/p&gt;

@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Sat, 09 Mar 2024 14:59:52 +0800</pubDate>
-        <lastBuildDate>Sat, 09 Mar 2024 14:59:52 +0800</lastBuildDate>
+        <pubDate>Thu, 21 Mar 2024 14:25:31 +0800</pubDate>
+        <lastBuildDate>Thu, 21 Mar 2024 14:25:31 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -23,9 +23,24 @@
         <category>算法</category>
         <category>Leetcode双周赛</category>
         <item>
-            <guid isPermalink="true">http://example.com/value/March%202024</guid>
+            <guid isPermalink="true">http://example.com/value/daily/Feelings</guid>
+            <title>Feelings</title>
+            <link>http://example.com/value/daily/Feelings</link>
+            <category>日常</category>
+            <pubDate>Thu, 21 Mar 2024 14:25:31 +0800</pubDate>
+            <description><![CDATA[ &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;人生的道路虽然很漫长，但紧要处常常只有几步.&lt;/p&gt;
+&lt;p&gt;特别是当人年轻的时候，没有一个人的生活道路是笔直的，没有岔道的。一些岔道口，比如政治上的岔口，事业上的岔口，个人生活上的岔口，你走错了一步，可以影响人生的一个时期，也可以影响一生.&lt;/p&gt;
+&lt;p&gt;柳青 《创业史》&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/value/daily/March%202024</guid>
             <title>March 2024</title>
-            <link>http://example.com/value/March%202024</link>
+            <link>http://example.com/value/daily/March%202024</link>
             <category>日常</category>
             <pubDate>Sat, 09 Mar 2024 14:59:52 +0800</pubDate>
             <description><![CDATA[ &lt;ul&gt;
