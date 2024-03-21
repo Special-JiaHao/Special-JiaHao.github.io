@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年</title>
     <link href="http://example.com" />
-    <updated>2024-03-21T03:21:56.709Z</updated>
+    <updated>2024-03-19T12:03:19.852Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -19,14 +19,6 @@
     <category term="校招" />
     <category term="算法" />
     <category term="Leetcode双周赛" />
-    <entry>
-        <id>http://example.com/value/about</id>
-        <title>Ablut me</title>
-        <link rel="alternate" href="http://example.com/value/about"/>
-        <content type="html">&lt;p&gt;Hello World!&lt;/p&gt;
-</content>
-        <updated>2024-03-21T03:21:56.709Z</updated>
-    </entry>
     <entry>
         <id>http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
         <title>蚂蚁集团校招</title>

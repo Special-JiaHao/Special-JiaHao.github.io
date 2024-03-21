@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Thu, 21 Mar 2024 11:21:56 +0800</pubDate>
-        <lastBuildDate>Thu, 21 Mar 2024 11:21:56 +0800</lastBuildDate>
+        <pubDate>Tue, 19 Mar 2024 20:03:19 +0800</pubDate>
+        <lastBuildDate>Tue, 19 Mar 2024 20:03:19 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -22,14 +22,6 @@
         <category>校招</category>
         <category>算法</category>
         <category>Leetcode双周赛</category>
-        <item>
-            <guid isPermalink="true">http://example.com/value/about</guid>
-            <title>Ablut me</title>
-            <link>http://example.com/value/about</link>
-            <pubDate>Thu, 21 Mar 2024 11:21:56 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Hello World!&lt;/p&gt;
- ]]></description>
-        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B</guid>
             <title>蚂蚁集团校招</title>
