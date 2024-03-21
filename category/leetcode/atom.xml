@@ -29,9 +29,9 @@
 &lt;p&gt;请你返回数组中所有元素加密后的 &lt;strong&gt;和&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;** 输入：**nums = [1,2,3]&lt;/p&gt;
-&lt;p&gt;** 输出：**6&lt;/p&gt;
-&lt;p&gt;** 解释：** 加密后的元素位  &lt;code&gt;[1,2,3]&lt;/code&gt;  。加密元素的和为  &lt;code&gt;1 + 2 + 3 == 6&lt;/code&gt;  。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;输入：&lt;/strong&gt; nums = [1,2,3]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;输出：&lt;/strong&gt; 6&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解释：&lt;/strong&gt; 加密后的元素位  &lt;code&gt;[1,2,3]&lt;/code&gt;  。加密元素的和为  &lt;code&gt;1 + 2 + 3 == 6&lt;/code&gt;  。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;示例 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -66,7 +66,7 @@
 &lt;p&gt;请你返回一个长度为  &lt;code&gt;m&lt;/code&gt;  的数组  &lt;code&gt;answer&lt;/code&gt;  ，其中  &lt;code&gt;answer[i]&lt;/code&gt;  是第  &lt;code&gt;i&lt;/code&gt;  次操作后数组中还没标记元素的 &lt;strong&gt;和&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;** 输入：**nums = [1,2,2,1,2,3,1], queries = [[1,2],[3,3],[4,2]]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;输入：&lt;/strong&gt; nums = [1,2,2,1,2,3,1], queries = [[1,2],[3,3],[4,2]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;输出：&lt;/strong&gt;[8,3,0]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;解释：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我们依次对数组做以下操作：&lt;/p&gt;
