@@ -189,7 +189,13 @@
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%A4%9A%E7%BA%A7%E9%A1%B5%E8%A1%A8.png&#34; alt=&#34;&#34; title=&#34;多级页表&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;反向页表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反向页表&#34;&gt;#&lt;/a&gt; 反向页表&lt;/h2&gt;
 &lt;h2 id=&#34;覆盖技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#覆盖技术&#34;&gt;#&lt;/a&gt; 覆盖技术&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;需要程序员自己把挣个程序划分为若干个小的功能模块，并确定各个模块之间的覆盖关系，增加程序员的负担&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;交换技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#交换技术&#34;&gt;#&lt;/a&gt; 交换技术&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以程序作为交换单位，需要把进程的整个地址空间都换进换出，增加了处理器的开销&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;虚拟技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟技术&#34;&gt;#&lt;/a&gt; 虚拟技术&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;虚拟技术是把一个物理实体转化为多个逻辑实体&lt;/p&gt;
