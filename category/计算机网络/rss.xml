@@ -375,6 +375,10 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;liunx下网络配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#liunx下网络配置&#34;&gt;#&lt;/a&gt; Liunx 下网络配置&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ifconfig&lt;/code&gt;  或 &lt;code&gt;ip&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;参考博文&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考博文&#34;&gt;#&lt;/a&gt; 参考博文&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MveUFsRXJsQzA5R25qYVZ2d1VvM0FjZw==&#34;&gt;面渣逆袭：计算机网络六十二问，三万字图文详解！速收藏！ (qq.com)&lt;/span&gt;&lt;/li&gt;
