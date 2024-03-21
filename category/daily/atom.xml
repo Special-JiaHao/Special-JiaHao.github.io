@@ -34,4 +34,40 @@
         <category term="日常" />
         <updated>2024-03-21T06:25:31.177Z</updated>
     </entry>
+    <entry>
+        <id>http://example.com/value/daily/March%202024</id>
+        <title>March 2024</title>
+        <link rel="alternate" href="http://example.com/value/daily/March%202024"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2024-03-08 瑜伽湖夜跑（跑一半就不行了！）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%91%9C%E4%BC%BD%E6%B9%96%E5%85%A5%E5%8F%A3.jpg&#34; alt=&#34;&#34; title=&#34;瑜伽湖入口&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BB%9D%E6%9C%9B%E5%9D%A1%E5%85%AC%E5%AF%93.jpg&#34; alt=&#34;&#34; title=&#34;绝望坡公寓&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/20240308.jpg&#34; alt=&#34;&#34; title=&#34;20240308运动数据&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-03-09 春季体育嘉年华&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%98%A5%E5%AD%A3%E4%BD%93%E8%82%B2%E5%98%89%E5%B9%B4%E5%8D%8E.jpg&#34; alt=&#34;&#34; title=&#34;春季体育嘉年华&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-03-11&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%8D%8E%E4%B8%AD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E5%9B%BE%E4%B9%A6%E9%A6%86.jpg&#34; alt=&#34;&#34; title=&#34;华中科技大学图书馆&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/dinner.jpg&#34; alt=&#34;&#34; title=&#34;fat dinner&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-03-16&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%AE%8B%E7%A0%B4%E7%9A%84%E6%89%8B%E6%9C%BA.jpg&#34; alt=&#34;&#34; title=&#34;残破的手机&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-03-17&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E4%B8%9C%E4%BA%94%E7%9A%84%E6%A8%B1%E8%8A%B1.jpg&#34; alt=&#34;&#34; title=&#34;东五的樱花&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%98%B4%E9%9B%A8%E8%BF%9E%E7%BB%B5(%E9%9B%BE%E4%B8%AD%E5%8D%8E%E7%A7%91).jpg&#34; alt=&#34;&#34; title=&#34;雾中华科(阴雨连绵)&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%9B%BE%E7%9A%84%E6%B6%88%E6%95%A3.jpg&#34; alt=&#34;&#34; title=&#34;雾的消散&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%8D%8E%E7%A7%91%E7%9A%84%E5%A4%9C.jpg&#34; alt=&#34;&#34; title=&#34;华科的夜&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="日常" />
+        <updated>2024-03-09T06:59:52.210Z</updated>
+    </entry>
 </feed>

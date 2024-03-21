@@ -234,6 +234,7 @@
 &lt;li&gt;另一方面，操作系统将内存中暂时不适用的页面或段调出保存到磁盘中，从而腾出更多的空闲空间存放将要装入的程序&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;缺页中断处理过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#缺页中断处理过程&#34;&gt;#&lt;/a&gt; 缺页中断处理过程&lt;/h2&gt;
 &lt;h2 id=&#34;页面置换算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#页面置换算法&#34;&gt;#&lt;/a&gt; 页面置换算法&lt;/h2&gt;
 &lt;h2 id=&#34;进程状态切换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程状态切换&#34;&gt;#&lt;/a&gt; 进程状态切换&lt;/h2&gt;
 &lt;h2 id=&#34;虚拟地址转换位物理地址的过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚拟地址转换位物理地址的过程&#34;&gt;#&lt;/a&gt; 虚拟地址转换位物理地址的过程&lt;/h2&gt;
