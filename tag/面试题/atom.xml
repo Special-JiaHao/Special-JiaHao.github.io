@@ -19,6 +19,7 @@
     <category term="校招" />
     <category term="算法" />
     <category term="Leetcode双周赛" />
+    <category term="Algorithm" />
     <entry>
         <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0</id>
         <title>数据库连接池</title>

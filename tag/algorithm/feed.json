@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "繁華落盡 似水流年 • All posts by \"algorithm\" tag",
+    "description": "编程日记 & 随笔",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/value/Algorithm/%E4%BA%8C%E5%88%86",
+            "url": "http://example.com/value/Algorithm/%E4%BA%8C%E5%88%86",
+            "title": "二分",
+            "date_published": "2024-03-21T14:02:18.203Z",
+            "content_html": "<h1 id=\"二分\"><a class=\"anchor\" href=\"#二分\">#</a> 二分</h1>\n",
+            "tags": [
+                "Algorithm"
+            ]
+        }
+    ]
+}
