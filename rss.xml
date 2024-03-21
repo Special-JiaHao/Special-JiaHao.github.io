@@ -674,8 +674,11 @@ Description:
 &lt;li&gt;进程是资源分配的基本单位，线程是资源调度的基本单位&lt;/li&gt;
 &lt;li&gt;一个线程属于一个进程，每个进程可以包含多个不同的线程&lt;/li&gt;
 &lt;li&gt;每个进程有多个线程组层，但只有一个主线程，它们共享内存空间（堆、全局变量），但是有各自的栈空间&lt;/li&gt;
-&lt;li&gt;系统开销&lt;/li&gt;
+&lt;li&gt;系统开销：&lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;进程切换：切换页表、切换内核栈和硬件上下文（进程切换之后，新程序的虚拟地址在 TLB 内失效，会导致频繁的访存）&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;进程调度算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程调度算法&#34;&gt;#&lt;/a&gt; 进程调度算法&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;先来先服务 &lt;code&gt;FCFS(First Come First Serverd)&lt;/code&gt; ：按照请求的顺序进行调度（不利于短作业，不会导致饿死）&lt;/li&gt;
@@ -689,7 +692,7 @@ Description:
 &lt;li&gt;管道&lt;/li&gt;
 &lt;li&gt;共享内存&lt;/li&gt;
 &lt;li&gt;消息队列&lt;/li&gt;
-&lt;li&gt;套接字：适用于不同主机之间的通信，也可以用于同一主机两个进程之间的通信&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Socket&lt;/code&gt;  套接字：适用于不同主机之间的通信，也可以用于同一主机两个进程之间的通信&lt;/li&gt;
 &lt;li&gt;信号：&lt;/li&gt;
 &lt;li&gt;信号量&lt;/li&gt;
 &lt;/ul&gt;
