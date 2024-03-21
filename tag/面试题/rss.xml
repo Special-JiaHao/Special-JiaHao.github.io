@@ -440,9 +440,9 @@ Description:
 &lt;p&gt;标志位&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;访问位&lt;/li&gt;
-&lt;li&gt;修改位&lt;/li&gt;
-&lt;li&gt;保护位：&lt;/li&gt;
+&lt;li&gt;访问位：表示当前页之前是否被访问过&lt;/li&gt;
+&lt;li&gt;修改位：表示当前页之前是否被修改过&lt;/li&gt;
+&lt;li&gt;保护位：表示是否允许对该页做任何类型的操作（读、写、可执行等)&lt;/li&gt;
 &lt;li&gt;驻留位：表示该页是在 &lt;code&gt;内存&lt;/code&gt; 中还是在 &lt;code&gt;外存&lt;/code&gt; 中&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
