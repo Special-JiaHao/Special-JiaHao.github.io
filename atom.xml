@@ -643,6 +643,7 @@ Description:
 &lt;p&gt;&lt;code&gt;BIOS&lt;/code&gt; ：I/O 处理系统，开机时可以自动检测各种外设&lt;br /&gt;
  &lt;code&gt;Bootloader&lt;/code&gt; ：加载 OS&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;中断和异常的处理过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中断和异常的处理过程&#34;&gt;#&lt;/a&gt; 中断和异常的处理过程&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;外中断是指由 CPU 执行指令以外的时间引起的，如 IO 完成中断、时钟中断；内中断（异常）是由 CPU 执行指令内部事件引起的，如地址越界、除 0、算术溢出等.&lt;/p&gt;
@@ -675,6 +676,14 @@ Description:
 &lt;p&gt;应用程序需要操作系统提供服务，而这些服务不能由应用程序直接执行。需要操作系统提供接 --- 系统调用&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;用户态&lt;/code&gt; 转化到 &lt;code&gt;内核态&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;操作系统功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统功能&#34;&gt;#&lt;/a&gt; 操作系统功能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;进程管理&lt;/li&gt;
+&lt;li&gt;内存管理：负责管理内存的分配、回收。在进程创建时分配内存以及在进程结束时回收内存，协调内存资源&lt;/li&gt;
+&lt;li&gt;设备管理&lt;/li&gt;
+&lt;li&gt;文件管理&lt;/li&gt;
+&lt;li&gt;提供用户接口&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;cpu内部结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cpu内部结构&#34;&gt;#&lt;/a&gt; CPU 内部结构&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;计算逻辑单元 ALU&lt;/li&gt;
@@ -688,7 +697,7 @@ Description:
 &lt;ol&gt;
 &lt;li&gt;进程的组成：
 &lt;ul&gt;
-&lt;li&gt;进程控制块 &lt;code&gt;PCB&lt;/code&gt; （ &lt;code&gt;PID&lt;/code&gt; ：唯一标识进程，进程控制和管理信息，如进程的状态，资源分配清单、寄存器 &lt;code&gt;PC&lt;/code&gt; 、 &lt;code&gt;PSW&lt;/code&gt; ）&lt;/li&gt;
+&lt;li&gt;进程控制块 &lt;code&gt;PCB&lt;/code&gt; （ &lt;code&gt;PID&lt;/code&gt; ：唯一标识进程）&lt;/li&gt;
 &lt;li&gt;代码段&lt;/li&gt;
 &lt;li&gt;程序段&lt;/li&gt;
 &lt;/ul&gt;
@@ -708,6 +717,7 @@ Description:
 &lt;ul&gt;
 &lt;li&gt;先来先服务 &lt;code&gt;FCFS(First Come First Serverd)&lt;/code&gt; ：按照请求的顺序进行调度（不利于短作业，不会导致饿死）&lt;/li&gt;
 &lt;li&gt;短作业优先 &lt;code&gt;SJF(Shortest Job First)&lt;/code&gt; ：按估计运行时间最短的顺序进行调度（不利于长作业，会导致饿死）&lt;/li&gt;
+&lt;li&gt;最短剩余时间有优先&lt;/li&gt;
 &lt;li&gt;时间片轮转&lt;/li&gt;
 &lt;li&gt;优先级调度&lt;/li&gt;
 &lt;li&gt;多级反馈队列&lt;/li&gt;
@@ -723,10 +733,16 @@ Description:
 &lt;li&gt;共享内存：由一个进程创建，多个进程都可以访问的一段内存空间.&lt;/li&gt;
 &lt;li&gt;消息队列&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Socket&lt;/code&gt;  套接字：适用于不同主机之间的通信，也可以用于同一主机两个进程之间的通信&lt;/li&gt;
-&lt;li&gt;信号：&lt;/li&gt;
+&lt;li&gt;信号&lt;/li&gt;
 &lt;li&gt;信号量&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;进程同步的四种方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程同步的四种方式&#34;&gt;#&lt;/a&gt; 进程同步的四种方式&lt;/h2&gt;
+&lt;h2 id=&#34;多线程模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多线程模型&#34;&gt;#&lt;/a&gt; 多线程模型&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;用户级线程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;死锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#死锁&#34;&gt;#&lt;/a&gt; 死锁&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;两个或多个进程无期限的堵塞、互相等待的一种状态.&lt;/p&gt;
@@ -775,10 +791,10 @@ Description:
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;如何记录内存的使用情况&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#如何记录内存的使用情况&#34;&gt;#&lt;/a&gt; 如何记录内存的使用情况&lt;/h2&gt;
+&lt;h2 id=&#34;空闲内存的管理方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#空闲内存的管理方式&#34;&gt;#&lt;/a&gt; 空闲内存的管理方式&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;空闲分区表&lt;/li&gt;
-&lt;li&gt;空闲分区链&lt;/li&gt;
+&lt;li&gt;空闲链表&lt;/li&gt;
+&lt;li&gt;位图&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;内存紧缩与交换式碎片整理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存紧缩与交换式碎片整理&#34;&gt;#&lt;/a&gt; 内存紧缩与交换式碎片整理&lt;/h2&gt;
 &lt;h2 id=&#34;非连续内存分配&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#非连续内存分配&#34;&gt;#&lt;/a&gt; 非连续内存分配&lt;/h2&gt;
@@ -919,6 +935,7 @@ Description:
 &lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMVlFNDExRDduSC8/c3BtX2lkX2Zyb209MzMzLjMzNy5zZWFyY2gtY2FyZC5hbGwuY2xpY2smYW1wO3ZkX3NvdXJjZT0zZmNhYTQ5NjM0NDM1MzcyM2ExZWMwZWEzZDAxMDQxZQ==&#34;&gt;王道计算机考研 操作系统_哔哩哔哩_bilibili&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;[2] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMXVXNDExZjcybi8/c3BtX2lkX2Zyb209MzMzLjMzNy5zZWFyY2gtY2FyZC5hbGwuY2xpY2s=&#34;&gt;清华 操作系统原理_哔哩哔哩_bilibili&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;[3] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zODA4NzI5MjA=&#34;&gt;操作系统常见面试题&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;[4] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbG91ZC50ZW5jZW50LmNvbS9kZXZlbG9wZXIvYXJ0aWNsZS8xODE1OTY1&#34;&gt;这 50 道操作系统面试题，真牛批！&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="面试题" />
@@ -1152,10 +1169,19 @@ Description:
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;2024-03-17&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E4%B8%9C%E4%BA%94%E7%9A%84%E6%A8%B1%E8%8A%B1.jpg&#34; alt=&#34;&#34; title=&#34;东五的樱花&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E4%B8%9C%E4%BA%94%E7%9A%84%E6%A8%B1%E8%8A%B1.jpg&#34; alt=&#34;&#34; title=&#34;东五的绿与红&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%98%B4%E9%9B%A8%E8%BF%9E%E7%BB%B5(%E9%9B%BE%E4%B8%AD%E5%8D%8E%E7%A7%91).jpg&#34; alt=&#34;&#34; title=&#34;雾中华科(阴雨连绵)&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%9B%BE%E7%9A%84%E6%B6%88%E6%95%A3.jpg&#34; alt=&#34;&#34; title=&#34;雾的消散&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%8D%8E%E7%A7%91%E7%9A%84%E5%A4%9C.jpg&#34; alt=&#34;&#34; title=&#34;华科的夜&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-03-22&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%B0%B8%E8%BE%89%E8%B6%85%E5%B8%8215%E5%85%83%E8%87%AA%E5%8A%A9.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E4%BD%8E%E7%A9%BA%E9%A3%9E%E6%9C%BA.jpg&#34; alt=&#34;&#34; title=&#34;低空飞机&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%B0%91%E5%B9%B4%E4%B8%8E%E5%86%B0%E7%B3%96%E8%91%AB%E8%8A%A61.jpg&#34; alt=&#34;&#34; title=&#34;冰糖葫芦与少年1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%B0%91%E5%B9%B4%E4%B8%8E%E5%86%B0%E7%B3%96%E8%91%AB%E8%8A%A62.jpg&#34; alt=&#34;&#34; title=&#34;冰糖葫芦与少年2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%85%89%E8%B0%B7%E6%9C%89%E8%BD%A8%E7%94%B5%E8%BD%A6.jpg&#34; alt=&#34;&#34; title=&#34;有轨电车&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E4%B8%AD%E5%8D%97%E8%B4%A2%E5%A4%A7%E5%B0%8F%E5%90%83%E8%A1%97.jpg&#34; alt=&#34;&#34; title=&#34;财大小吃街&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
