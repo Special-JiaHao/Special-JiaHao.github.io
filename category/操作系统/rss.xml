@@ -185,9 +185,10 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;空闲内存的管理方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#空闲内存的管理方式&#34;&gt;#&lt;/a&gt; 空闲内存的管理方式&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;空闲链表&lt;/li&gt;
-&lt;li&gt;位图&lt;/li&gt;
+&lt;li&gt;空闲链表：&lt;/li&gt;
+&lt;li&gt;位图：将内存划分为均等的分配单元，每个分配单元对应于位图中的一位，0 表示空闲，1 表示占用；分配单元的大小是一个值得考量的问题，分配单元太小会使得位图占用的空间过大，如果分配单元过大，内造成内部碎片。当需要分配一定大小空间的内存时，需要遍历真个位图，依次检查，时间复杂度较高.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;内存紧缩与交换式碎片整理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存紧缩与交换式碎片整理&#34;&gt;#&lt;/a&gt; 内存紧缩与交换式碎片整理&lt;/h2&gt;
 &lt;h2 id=&#34;非连续内存分配&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#非连续内存分配&#34;&gt;#&lt;/a&gt; 非连续内存分配&lt;/h2&gt;
 &lt;blockquote&gt;
