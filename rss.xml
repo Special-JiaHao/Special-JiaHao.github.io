@@ -52,7 +52,7 @@
 &lt;li&gt;
 &lt;p&gt;学会忍受孤独的日子，学会享受一个人的生活&lt;/p&gt;
 &lt;p&gt;多去思考，多去回顾总结，多去涉猎不同的领域&lt;/p&gt;
-&lt;p&gt;时间是用来提升自己的，而不是用来挥霍和无用的社交&lt;/p&gt;
+&lt;p&gt;时间是用来提升自己的，而不是用来挥霍和无用社交&lt;/p&gt;
 &lt;p&gt;学会安排好自己的时间&lt;/p&gt;
 &lt;p&gt;要有自信，要抬头挺胸&lt;/p&gt;
 &lt;p&gt;要礼貌待人，要将心比心&lt;/p&gt;
@@ -578,6 +578,9 @@ Description:
 &lt;li&gt;在建立索引时，选择区分度也高的列作为索引可以提高查询效率。但是索引也需要考虑其存储空间和更新代价的问题，太多的索引会导致资源浪费&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;b树与b树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#b树与b树&#34;&gt;#&lt;/a&gt; B 树与 B + 树&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;查询一个数据时，在数据页内往往使用二分查找&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;B 树：一种平衡的多叉搜索树&lt;/p&gt;
@@ -657,17 +660,41 @@ Description:
 &lt;p&gt;非聚簇索引：二级索引 / 辅助索引&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;不将数据存储在索引树中，而是存储在数据页中；查询数据时需要两次查询，一次用于查询索引树，获取数据页的地址，在通过数据页的地址来查询数据（如果索引覆盖的话实际上不用回表）&lt;/li&gt;
+&lt;li&gt;当需要对数据进行修改或删除时，不需要更新索引树，减少了系统开销&lt;/li&gt;
 &lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;唯一索引与普通索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#唯一索引与普通索引&#34;&gt;#&lt;/a&gt; 唯一索引与普通索引&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;区别：唯一索引的索引值必须唯一，但允许有空值（即可以是单列唯一索引也可以是联合唯一索引）；普通索引索引值不一定唯一，且允许有空值.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;唯一索引可以保证数据的唯一性&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;数据库的四大特性acid&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库的四大特性acid&#34;&gt;#&lt;/a&gt; 数据库的四大特性 ACID&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;原子性Atomicity&lt;/code&gt; ：当前事务的操作要么执行成功，要么执行失败&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;一致性Consistency&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;隔离性Isolation&lt;/code&gt; ：在事务并发执行时，他们内部的操作不能互相干扰&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;持久性Durability&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;原子性Atomicity&lt;/code&gt; ：当前事务的操作要么执行成功，要么执行失败&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由 &lt;code&gt;undo log&lt;/code&gt;  日志保证，记录了需要回滚的日子信息，事务回滚时撤销已经执行成功的 &lt;code&gt;sql&lt;/code&gt;  语句&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;一致性Consistency&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由其他三大特性共同来保证&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;隔离性Isolation&lt;/code&gt; ：在事务并发执行时，他们内部的操作不能互相干扰&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;持久性Durability&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;事务隔离级别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事务隔离级别&#34;&gt;#&lt;/a&gt; 事务隔离级别&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -679,6 +706,10 @@ Description:
 &lt;li&gt;可重复度 &lt;code&gt;repeatable-read&lt;/code&gt; ：&lt;/li&gt;
 &lt;li&gt;串行化 &lt;code&gt;serializable&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;innodb的索引与myisam的所索引的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#innodb的索引与myisam的所索引的区别&#34;&gt;#&lt;/a&gt;  &lt;code&gt;InnoDB&lt;/code&gt;  的索引与 &lt;code&gt;MyISAM&lt;/code&gt;  的所索引的区别&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
         <item>
