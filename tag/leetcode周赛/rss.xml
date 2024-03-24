@@ -30,8 +30,9 @@
             <link>http://example.com/value/Leetcode/%E7%AC%AC390%E5%9C%BA%E5%91%A8%E8%B5%9B%E9%A2%98%E8%A7%A3</link>
             <category>Leetcode周赛</category>
             <pubDate>Sun, 24 Mar 2024 11:18:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/390%E5%91%A8%E8%B5%9B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;每个字符最多出现两次的最长子字符串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#每个字符最多出现两次的最长子字符串&#34;&gt;#&lt;/a&gt; 每个字符最多出现两次的最长子字符串&lt;/h2&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;第-390-场周赛&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第-390-场周赛&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9jb250ZXN0L3dlZWtseS1jb250ZXN0LTM5MA==&#34;&gt;第 390 场周赛&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/390%E5%91%A8%E8%B5%9B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;每个字符最多出现两次的最长子字符串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#每个字符最多出现两次的最长子字符串&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9tYXhpbXVtLWxlbmd0aC1zdWJzdHJpbmctd2l0aC10d28tb2NjdXJyZW5jZXMv&#34;&gt;每个字符最多出现两次的最长子字符串&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;给你一个字符串  &lt;code&gt;s&lt;/code&gt;  ，请找出满足每个字符最多出现两次的最长子字符串，并返回该子字符串的 &lt;strong&gt;最大&lt;/strong&gt; 长度。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -78,7 +79,7 @@
 &lt;li&gt;空间复杂度：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;O(1)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;O&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，每次统计只需要使用 &lt;code&gt;26&lt;/code&gt;  空间大小的数组&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-&lt;h2 id=&#34;执行操作使数据元素之和大于等于-k&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#执行操作使数据元素之和大于等于-k&#34;&gt;#&lt;/a&gt; 执行操作使数据元素之和大于等于 K&lt;/h2&gt;
+&lt;h2 id=&#34;执行操作使数据元素之和大于等于-k&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#执行操作使数据元素之和大于等于-k&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9hcHBseS1vcGVyYXRpb25zLXRvLW1ha2Utc3VtLW9mLWFycmF5LWdyZWF0ZXItdGhhbi1vci1lcXVhbC10by1rLw==&#34;&gt;执行操作使数据元素之和大于等于 K&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;给你一个&lt;strong&gt;正整数&lt;/strong&gt;  &lt;code&gt;k&lt;/code&gt;  。最初，你有一个数组  &lt;code&gt;nums = [1]&lt;/code&gt;  。&lt;/p&gt;
 &lt;p&gt;你可以对数组执行以下 &lt;strong&gt;任意&lt;/strong&gt; 操作 &lt;strong&gt;任意&lt;/strong&gt; 次数（&lt;strong&gt;可能为零&lt;/strong&gt;）：&lt;/p&gt;
 &lt;ul&gt;
@@ -88,8 +89,8 @@
 &lt;p&gt;返回使得最终数组元素之 &lt;strong&gt;和&lt;/strong&gt; 大于或等于  &lt;code&gt;k&lt;/code&gt;  所需的 &lt;strong&gt;最少&lt;/strong&gt; 操作次数。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;** 输入：**k = 11&lt;/p&gt;
-&lt;p&gt;** 输出：**5&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;输入：&lt;/strong&gt; k=11&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;输出：&lt;/strong&gt; 5&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;解释：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -103,8 +104,8 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;示例 2：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;** 输入：**k = 1&lt;/p&gt;
-&lt;p&gt;** 输出：**0&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;输入：&lt;/strong&gt; k=1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;输出：&lt;/strong&gt; 0&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;解释：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -126,7 +127,7 @@
 &lt;li&gt;空间复杂度：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;O(1)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;O&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-&lt;h2 id=&#34;最高频率的-id&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最高频率的-id&#34;&gt;#&lt;/a&gt; 最高频率的 ID&lt;/h2&gt;
+&lt;h2 id=&#34;最高频率的-id&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最高频率的-id&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9tb3N0LWZyZXF1ZW50LWlkcy8=&#34;&gt;最高频率的 ID&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;你需要在一个集合里动态记录 ID 的出现频率。给你两个长度都为  &lt;code&gt;n&lt;/code&gt;  的整数数组  &lt;code&gt;nums&lt;/code&gt;  和  &lt;code&gt;freq&lt;/code&gt;  ， &lt;code&gt;nums&lt;/code&gt;  中每一个元素表示一个 ID ，对应的  &lt;code&gt;freq&lt;/code&gt;  中的元素表示这个 ID 在集合中此次操作后需要增加或者减少的数目。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;** 增加 ID 的数目：** 如果  &lt;code&gt;freq[i]&lt;/code&gt;  是正数，那么  &lt;code&gt;freq[i]&lt;/code&gt;  个 ID 为  &lt;code&gt;nums[i]&lt;/code&gt;  的元素在第  &lt;code&gt;i&lt;/code&gt;  步操作后会添加到集合中。&lt;/li&gt;
@@ -180,7 +181,7 @@
 &lt;li&gt;空间复杂度：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;O(n)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;O&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，其中 &lt;code&gt;n&lt;/code&gt;  指数组 &lt;code&gt;nums&lt;/code&gt;  的长度&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-&lt;h2 id=&#34;最长公共后缀查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最长公共后缀查询&#34;&gt;#&lt;/a&gt; 最长公共后缀查询&lt;/h2&gt;
+&lt;h2 id=&#34;最长公共后缀查询&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最长公共后缀查询&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9sb25nZXN0LWNvbW1vbi1zdWZmaXgtcXVlcmllcy8=&#34;&gt;最长公共后缀查询&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;给你两个字符串数组  &lt;code&gt;wordsContainer&lt;/code&gt;  和  &lt;code&gt;wordsQuery&lt;/code&gt;  。&lt;/p&gt;
 &lt;p&gt;对于每个  &lt;code&gt;wordsQuery[i]&lt;/code&gt;  ，你需要从  &lt;code&gt;wordsContainer&lt;/code&gt;  中找到一个与  &lt;code&gt;wordsQuery[i]&lt;/code&gt;  有 &lt;strong&gt;最长公共后缀&lt;/strong&gt; 的字符串。如果  &lt;code&gt;wordsContainer&lt;/code&gt;  中有两个或者更多字符串有最长公共后缀，那么答案为长度 &lt;strong&gt;最短&lt;/strong&gt; 的。如果有超过两个字符串有 &lt;strong&gt;相同&lt;/strong&gt; 最短长度，那么答案为它们在  &lt;code&gt;wordsContainer&lt;/code&gt;  中出现 &lt;strong&gt;更早&lt;/strong&gt; 的一个。&lt;/p&gt;
 &lt;p&gt;请你返回一个整数数组  &lt;code&gt;ans&lt;/code&gt;  ，其中  &lt;code&gt;ans[i]&lt;/code&gt;  是  &lt;code&gt;wordsContainer&lt;/code&gt;  中与  &lt;code&gt;wordsQuery[i]&lt;/code&gt;  有 &lt;strong&gt;最长公共后缀&lt;/strong&gt; 字符串的下标。&lt;/p&gt;
@@ -236,7 +237,6 @@
 &lt;li&gt;空间复杂度：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;O(n)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;O&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，其中 &lt;code&gt;n&lt;/code&gt;  指数组 &lt;code&gt;nums&lt;/code&gt;  的长度&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;100245-每个字符最多出现两次的最长子字符串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#100245-每个字符最多出现两次的最长子字符串&#34;&gt;#&lt;/a&gt; 100245. 每个字符最多出现两次的最长子字符串&lt;/h3&gt;
  ]]></description>
         </item>
     </channel>
