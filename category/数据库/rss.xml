@@ -23,6 +23,7 @@
         <category>算法</category>
         <category>Leetcode双周赛</category>
         <category>Algorithm</category>
+        <category>Leetcode周赛</category>
         <item>
             <guid isPermalink="true">http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>MySQL面试题</title>
@@ -153,9 +154,15 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;隔离性Isolation&lt;/code&gt; ：在事务并发执行时，他们内部的操作不能互相干扰&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由 &lt;code&gt;MVCC&lt;/code&gt;  来保证&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;持久性Durability&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由内存 &lt;code&gt;redo log&lt;/code&gt;  来保证， &lt;code&gt;mysql&lt;/code&gt;  修改数据同时在内存和 &lt;code&gt;redo log&lt;/code&gt;  记录这次操作，宕机的时候可以从 &lt;code&gt;redo log&lt;/code&gt;  恢复&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;事务隔离级别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事务隔离级别&#34;&gt;#&lt;/a&gt; 事务隔离级别&lt;/h2&gt;
@@ -168,6 +175,10 @@
 &lt;li&gt;可重复度 &lt;code&gt;repeatable-read&lt;/code&gt; ：&lt;/li&gt;
 &lt;li&gt;串行化 &lt;code&gt;serializable&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;mvcc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mvcc&#34;&gt;#&lt;/a&gt; MVCC&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;多版本并发控制&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;innodb的索引与myisam的所索引的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#innodb的索引与myisam的所索引的区别&#34;&gt;#&lt;/a&gt;  &lt;code&gt;InnoDB&lt;/code&gt;  的索引与 &lt;code&gt;MyISAM&lt;/code&gt;  的所索引的区别&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;/li&gt;
