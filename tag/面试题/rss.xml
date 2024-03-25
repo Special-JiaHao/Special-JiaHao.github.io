@@ -1670,6 +1670,15 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;GET&lt;/code&gt; 、 &lt;code&gt;POST&lt;/code&gt; 、 &lt;code&gt;HEAD&lt;/code&gt; 、 &lt;code&gt;PUT&lt;/code&gt; 、 &lt;code&gt;DELETE&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;常用的服务对应的端口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用的服务对应的端口&#34;&gt;#&lt;/a&gt; 常用的服务对应的端口&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;FTP&lt;/code&gt; ：21&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ssh&lt;/code&gt; ：22&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HTTP&lt;/code&gt; ：80&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HTTPS&lt;/code&gt; ：443&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MySQL&lt;/code&gt; ：3306&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;get与post的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#get与post的区别&#34;&gt;#&lt;/a&gt; GET 与 POST 的区别&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;安全性： &lt;code&gt;GET&lt;/code&gt;  提交的数据会出现在 URL 内，相对不安全； &lt;code&gt;POST&lt;/code&gt;  提交的数据会在报文体内，相对安全&lt;/li&gt;
@@ -1704,6 +1713,13 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;li&gt;在早期的 &lt;code&gt;http/1.0&lt;/code&gt;  默认使用的是短连接，每次客户端与服务端进行一次 http 操作，就建立一次连接，任务结束就中断连接&lt;/li&gt;
 &lt;li&gt;从 &lt;code&gt;http/1.1&lt;/code&gt;  起，默认使用的长连接。响应报文中 &lt;code&gt;Connection:keep-alive&lt;/code&gt; ， &lt;code&gt;keep-alive&lt;/code&gt;  具有一个保持时间.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;http10-11-20的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#http10-11-20的区别&#34;&gt;#&lt;/a&gt; HTTP/1.0、1.1、2.0 的区别&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;HTTP/1.0&lt;/code&gt; ：默认短连接，可以设置 &lt;code&gt;Connection:keep-alive&lt;/code&gt;  强制长连接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HTTP/1.1&lt;/code&gt; ：默认长连接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HTTP/2.0&lt;/code&gt; ：采用了多路复用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;https协议的流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#https协议的流程&#34;&gt;#&lt;/a&gt; HTTPS 协议的流程&lt;/h2&gt;
 &lt;h2 id=&#34;http与https的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#http与https的区别&#34;&gt;#&lt;/a&gt; http 与 https 的区别&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1822,7 +1838,7 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;ul&gt;
 &lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MveUFsRXJsQzA5R25qYVZ2d1VvM0FjZw==&#34;&gt;面渣逆袭：计算机网络六十二问，三万字图文详解！速收藏！ (qq.com)&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;[2] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pbnRlcnZpZXdndWlkZS5jbi9ub3Rlcy8wMy1odW50aW5nX2pvYi8wMi1pbnRlcnZpZXcvMDMtMDEtbmV0Lmh0bWw=&#34;&gt;计算机网络 - 01-20 | 阿秀的学习笔记 (interviewguide.cn)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;[3]&lt;/li&gt;
+&lt;li&gt;[3] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpVME9URTRNell6TXc9PSZhbXA7bWlkPTIyNDc1MTc5NjkmYW1wO2lkeD0zJmFtcDtzbj1hMGZjODgxMTE0OTJmNTUyOWZlZjE0MDA4YTFiYjQ1MSZhbXA7Y2hrc209ZmJiMTBlZWZjY2M2ODdmOThlZGE2YzhkN2Q3M2UyNTFkOWRjNTk3YmJlY2U0ZTU0ZDUxYjc2MDczOTdiNTI2YzU5NTQ1MjgxNWU3MSZhbXA7c2NlbmU9Mjc=&#34;&gt;2W 字！梳理 50 道经典计算机网络面试题（收藏版） (qq.com)&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
