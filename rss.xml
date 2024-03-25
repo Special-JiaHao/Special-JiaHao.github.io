@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Sun, 24 Mar 2024 11:18:05 +0800</pubDate>
-        <lastBuildDate>Sun, 24 Mar 2024 11:18:05 +0800</lastBuildDate>
+        <pubDate>Mon, 25 Mar 2024 21:35:06 +0800</pubDate>
+        <lastBuildDate>Mon, 25 Mar 2024 21:35:06 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -24,6 +24,129 @@
         <category>Leetcode双周赛</category>
         <category>Algorithm</category>
         <category>Leetcode周赛</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
+            <title>Linux面试题</title>
+            <link>http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98</link>
+            <category>面试题</category>
+            <pubDate>Mon, 25 Mar 2024 21:35:06 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;linux面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux面试题&#34;&gt;#&lt;/a&gt; Linux 面试题&lt;/h1&gt;
+&lt;h2 id=&#34;linux常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux常用命令&#34;&gt;#&lt;/a&gt; Linux 常用命令&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; ：列出当前目录或指定目录下的文件&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;-a&lt;/code&gt; ：显示所有文件，包括隐藏文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-h&lt;/code&gt; ：个性化显示文件大小， &lt;code&gt;KB&lt;/code&gt;  替代字节数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;cd&lt;/code&gt; ：切换目录&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;~&lt;/code&gt; ：家目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;..&lt;/code&gt; ：上一级&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;  当前目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pwd&lt;/code&gt; ：显示当前所在目录&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;echo&lt;/code&gt; ：输出指定的字符串或变量值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;cat&lt;/code&gt; ：查看文件内容&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt; ：显示行号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tac&lt;/code&gt; ：反向查看文件内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;more&lt;/code&gt; ：逐页显示文件内容，配合上下键&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;less&lt;/code&gt; ：逐页显示文件内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;head&lt;/code&gt; ：显示文件前几行内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tail&lt;/code&gt; ：显示文件最后几行内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;grep&lt;/code&gt; ：过滤或搜索文件中的关键字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;find&lt;/code&gt; ：搜索文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; /home/ &lt;span class=&#34;token parameter variable&#34;&gt;-name&lt;/span&gt; test.txt	&lt;span class=&#34;token comment&#34;&gt;# 根据文件名搜索&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig&lt;/code&gt; ：产看网卡信息（IP 地址、子网掩码）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ping&lt;/code&gt; ：常用于检查网络连通性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;telnet&lt;/code&gt; ：检查端口连通性&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;telnet &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.0.180 &lt;span class=&#34;token number&#34;&gt;22&lt;/span&gt;	&lt;span class=&#34;token comment&#34;&gt;# 检查 22 端口是否连通&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;netstat&lt;/code&gt; ：检查网络连接状况&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tcpdump&lt;/code&gt; ：抓包分析工具&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ssh&lt;/code&gt; ：远程连接主机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;wget&lt;/code&gt; ：从远程下载文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;wget&lt;/span&gt; https://download/xxx.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ps&lt;/code&gt; ：产看进程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;kill&lt;/code&gt; ：杀死进程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;shutdown&lt;/code&gt; ：关机并关闭电源&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;reboot&lt;/code&gt; ：重启&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;hostname&lt;/code&gt; ：查看主机名&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;top&lt;/code&gt; ：查看当前进程的资源使用情况&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;useradd&lt;/code&gt; ：添加用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;usermod&lt;/code&gt; ：修改用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;userdel&lt;/code&gt; ：删除用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;passwd&lt;/code&gt; ：修改用户名的密码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;su&lt;/code&gt; ：切换用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;chmod&lt;/code&gt; ：修改文件或目录的权限&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/Leetcode/%E7%AC%AC390%E5%9C%BA%E5%91%A8%E8%B5%9B%E9%A2%98%E8%A7%A3</guid>
             <title>第 390 场周赛</title>
@@ -791,9 +914,20 @@ Description:
             <pubDate>Wed, 13 Mar 2024 14:46:17 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;mysql面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql面试题&#34;&gt;#&lt;/a&gt; MySQL 面试题&lt;/h1&gt;
 &lt;h2 id=&#34;关系型数据库和非关系型数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关系型数据库和非关系型数据库&#34;&gt;#&lt;/a&gt; 关系型数据库和非关系型数据库&lt;/h2&gt;
+&lt;h2 id=&#34;数据库并发事务会带来哪些问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库并发事务会带来哪些问题&#34;&gt;#&lt;/a&gt; 数据库并发事务会带来哪些问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;脏读&lt;/li&gt;
+&lt;li&gt;不可重复读&lt;/li&gt;
+&lt;li&gt;幻读&lt;/li&gt;
+&lt;li&gt;丢失修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;覆盖索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#覆盖索引&#34;&gt;#&lt;/a&gt; 覆盖索引&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;索引的值包含所需要查询的字段&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;innodb的索引与myisam的所索引的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#innodb的索引与myisam的所索引的区别&#34;&gt;#&lt;/a&gt;  &lt;code&gt;InnoDB&lt;/code&gt;  的索引与 &lt;code&gt;MyISAM&lt;/code&gt;  的所索引的区别&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  索引文件和数据文件是分离的，使用 B + 树来实现，主键索引和辅助索引实现一致；叶子节点仅保存数据也表中数据的地址.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  索引文件和数据文件是分离的，使用 B + 树来实现，主键索引和辅助索引实现一致；叶子节点仅保存数据也表中数据的地址（非聚簇索引）.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;InnoDB&lt;/code&gt;  索引分两种，聚簇索引和非聚簇索引，聚簇索引的叶子节点同时也会存储数据.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;为什么使用索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么使用索引&#34;&gt;#&lt;/a&gt; 为什么使用索引&lt;/h2&gt;
@@ -803,6 +937,11 @@ Description:
 &lt;ul&gt;
 &lt;li&gt;在关系型数据库中，通常使用 &lt;code&gt;B-Tree&lt;/code&gt;  或哈希表等索引结构&lt;/li&gt;
 &lt;li&gt;在建立索引时，选择区分度也高的列作为索引可以提高查询效率。但是索引也需要考虑其存储空间和更新代价的问题，太多的索引会导致资源浪费&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;innodb为什么使用自增id作为主键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#innodb为什么使用自增id作为主键&#34;&gt;#&lt;/a&gt;  &lt;code&gt;InnoDB&lt;/code&gt;  为什么使用自增 &lt;code&gt;id&lt;/code&gt;  作为主键&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用自增 &lt;code&gt;id&lt;/code&gt;  作为主键，那么在建立索引时，每次插入新的记录，记录会顺序添加到当前索引的后续位置，直到一页满为至才会开辟一个新的页&lt;/li&gt;
+&lt;li&gt;如果使用非自增主键，由于每次插入的主键值比较随机，每次新纪录可能需要插入到现在索引的中间位置，会操作频繁的移动（内部单链表）和分页&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;b树与b树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#b树与b树&#34;&gt;#&lt;/a&gt; B 树与 B + 树&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -872,7 +1011,7 @@ Description:
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;innodb中聚簇索引和非聚簇索引的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#innodb中聚簇索引和非聚簇索引的区别&#34;&gt;#&lt;/a&gt;  &lt;code&gt;InnoDB&lt;/code&gt;  中聚簇索引和非聚簇索引的区别&lt;/h2&gt;
+&lt;h2 id=&#34;聚簇索引和非聚簇索引的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#聚簇索引和非聚簇索引的区别&#34;&gt;#&lt;/a&gt; 聚簇索引和非聚簇索引的区别&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;聚簇索引：主键索引&lt;/p&gt;
@@ -1563,6 +1702,10 @@ Description:
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%B0%91%E5%B9%B4%E4%B8%8E%E5%86%B0%E7%B3%96%E8%91%AB%E8%8A%A62.jpg&#34; alt=&#34;&#34; title=&#34;冰糖葫芦与少年2&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%85%89%E8%B0%B7%E6%9C%89%E8%BD%A8%E7%94%B5%E8%BD%A6.jpg&#34; alt=&#34;&#34; title=&#34;有轨电车&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E4%B8%AD%E5%8D%97%E8%B4%A2%E5%A4%A7%E5%B0%8F%E5%90%83%E8%A1%97.jpg&#34; alt=&#34;&#34; title=&#34;财大小吃街&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-03-25&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%98%A8%E6%97%A5%E6%99%B4%E7%A9%BA.jpg&#34; alt=&#34;&#34; title=&#34;昨日晴空&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>

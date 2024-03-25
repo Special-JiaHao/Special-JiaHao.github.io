@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年 • Posts by &#34;操作系统&#34; category</title>
     <link href="http://example.com" />
-    <updated>2024-03-13T01:21:27.470Z</updated>
+    <updated>2024-03-25T13:35:06.598Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -21,6 +21,129 @@
     <category term="Leetcode双周赛" />
     <category term="Algorithm" />
     <category term="Leetcode周赛" />
+    <entry>
+        <id>http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98</id>
+        <title>Linux面试题</title>
+        <link rel="alternate" href="http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98"/>
+        <content type="html">&lt;h1 id=&#34;linux面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux面试题&#34;&gt;#&lt;/a&gt; Linux 面试题&lt;/h1&gt;
+&lt;h2 id=&#34;linux常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux常用命令&#34;&gt;#&lt;/a&gt; Linux 常用命令&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; ：列出当前目录或指定目录下的文件&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;-a&lt;/code&gt; ：显示所有文件，包括隐藏文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-h&lt;/code&gt; ：个性化显示文件大小， &lt;code&gt;KB&lt;/code&gt;  替代字节数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;cd&lt;/code&gt; ：切换目录&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;~&lt;/code&gt; ：家目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;..&lt;/code&gt; ：上一级&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;  当前目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pwd&lt;/code&gt; ：显示当前所在目录&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;echo&lt;/code&gt; ：输出指定的字符串或变量值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;cat&lt;/code&gt; ：查看文件内容&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt; ：显示行号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tac&lt;/code&gt; ：反向查看文件内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;more&lt;/code&gt; ：逐页显示文件内容，配合上下键&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;less&lt;/code&gt; ：逐页显示文件内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;head&lt;/code&gt; ：显示文件前几行内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tail&lt;/code&gt; ：显示文件最后几行内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;grep&lt;/code&gt; ：过滤或搜索文件中的关键字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;find&lt;/code&gt; ：搜索文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; /home/ &lt;span class=&#34;token parameter variable&#34;&gt;-name&lt;/span&gt; test.txt	&lt;span class=&#34;token comment&#34;&gt;# 根据文件名搜索&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig&lt;/code&gt; ：产看网卡信息（IP 地址、子网掩码）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ping&lt;/code&gt; ：常用于检查网络连通性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;telnet&lt;/code&gt; ：检查端口连通性&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;telnet &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.0.180 &lt;span class=&#34;token number&#34;&gt;22&lt;/span&gt;	&lt;span class=&#34;token comment&#34;&gt;# 检查 22 端口是否连通&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;netstat&lt;/code&gt; ：检查网络连接状况&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tcpdump&lt;/code&gt; ：抓包分析工具&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ssh&lt;/code&gt; ：远程连接主机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;wget&lt;/code&gt; ：从远程下载文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;wget&lt;/span&gt; https://download/xxx.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ps&lt;/code&gt; ：产看进程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;kill&lt;/code&gt; ：杀死进程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;shutdown&lt;/code&gt; ：关机并关闭电源&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;reboot&lt;/code&gt; ：重启&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;hostname&lt;/code&gt; ：查看主机名&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;top&lt;/code&gt; ：查看当前进程的资源使用情况&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;useradd&lt;/code&gt; ：添加用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;usermod&lt;/code&gt; ：修改用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;userdel&lt;/code&gt; ：删除用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;passwd&lt;/code&gt; ：修改用户名的密码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;su&lt;/code&gt; ：切换用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;chmod&lt;/code&gt; ：修改文件或目录的权限&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="面试题" />
+        <updated>2024-03-25T13:35:06.598Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>操作系统面试题</title>
