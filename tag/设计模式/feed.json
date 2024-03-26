@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "繁華落盡 似水流年 • All posts by \"设计模式\" tag",
+    "description": "编程日记 & 随笔",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/value/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F",
+            "url": "http://example.com/value/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F",
+            "title": "设计模式",
+            "date_published": "2024-03-26T06:33:04.399Z",
+            "content_html": "<h1 id=\"设计模式\"><a class=\"anchor\" href=\"#设计模式\">#</a> 设计模式</h1>\n",
+            "tags": [
+                "设计模式"
+            ]
+        }
+    ]
+}

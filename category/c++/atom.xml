@@ -21,6 +21,7 @@
     <category term="Leetcode双周赛" />
     <category term="Algorithm" />
     <category term="Leetcode周赛" />
+    <category term="设计模式" />
     <entry>
         <id>http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
         <title>蚂蚁集团校招</title>
@@ -723,7 +724,7 @@ Description:
 &lt;li&gt;继承：无需重新编写代码而可以直接使用现有类的所以功能，同时可以对现有类进行功能上的扩展，是一个从一般到特殊的过程.
 &lt;ul&gt;
 &lt;li&gt;权限继承：表示基类在子类中的最高权限（破坏继承： &lt;code&gt;friend&lt;/code&gt; ，  &lt;code&gt;using&lt;/code&gt; ）&lt;/li&gt;
-&lt;li&gt;多继承&lt;/li&gt;
+&lt;li&gt;多继承：通过多继承可以得到更多类的数据和方法，实现更大程度的代码复用，当然也存在一些问题，如菱形继承.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;多态：一个接口有多种形态；多态是在不同继承关系的类对象，可以通过父类指针去指向子类对象，通过父类指针调用同一函数，可以产生了不同的行为.（父类的指针可以具有多种形态，称之为多态）（用父类型别的指针指向其子类的实例，然后通过父类指针调用实际的子类的成员函数）
@@ -738,6 +739,7 @@ Description:
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;菱形继承&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#菱形继承&#34;&gt;#&lt;/a&gt; 菱形继承&lt;/h2&gt;
 &lt;h2 id=&#34;为什么c默认析构函数不是虚函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么c默认析构函数不是虚函数&#34;&gt;#&lt;/a&gt; 为什么 C++ 默认析构函数不是虚函数&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;虚函数需要虚函数表和虚函数表指针，会占用内存空间。如果一个类没有子类，那么就没有必要讲析构函数设置为虚函数&lt;/li&gt;
@@ -798,22 +800,30 @@ Description:
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;static_cast&amp;lt;T&amp;gt;()&lt;/code&gt; ：不进行类型检查，不安全&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;用于层次结构中基类与派生类间指针的转换&lt;/p&gt;
 &lt;p&gt;a. 上行转换（派生类指针转化为基类指针），安全&lt;/p&gt;
-&lt;p&gt;b. 下行转化（基类指针转化为派生类指针），不安全&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;基本数据类型的转化&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;将空指针转化为目标类型的指针&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;b. 下行转化（基类指针转化为派生类指针），不安全&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;基本数据类型的转化&lt;/li&gt;
+&lt;li&gt;将空指针转化为目标类型的指针&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;dynamic_cast&lt;/code&gt; ：运行时处理（动态类型转换），只能针对指针或引用，专门用于派生类与基类之间的转换，会进行类型的检查，较安全（转换失败，指针为 &lt;code&gt;nullptr&lt;/code&gt; ，和多态一起使用）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dynamic_cast&lt;/code&gt; ：运行时处理（动态类型转换），只能针对指针或引用，专门用于派生类与基类之间的转换（必须有虚函数），会进行类型的检查，较安全（转换失败，指针为 &lt;code&gt;nullptr&lt;/code&gt; ，和多态一起使用）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;运行时会进行类型的检查&lt;/li&gt;
+&lt;li&gt;不能用于内置基本数据类型的转化&lt;/li&gt;
+&lt;li&gt;如果转化成功的话会返回指向类的指针或引用，转换失败的话则会返回 &lt;code&gt;NULL&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;专门用于派生类与基类之间的类型转化，基本中必须有虚函数（能保证安全性）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;reinterpret_cast&lt;/code&gt; ：转化过程仅仅是简单的比特位拷贝，不安全&lt;/p&gt;
@@ -1167,6 +1177,10 @@ Description:
 &lt;h2 id=&#34;带初始化的if和switch&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#带初始化的if和switch&#34;&gt;#&lt;/a&gt; 带初始化的 if 和 switch&lt;/h2&gt;
 &lt;h2 id=&#34;括号初始化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#括号初始化&#34;&gt;#&lt;/a&gt; 括号初始化&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;C++11&lt;/code&gt;  引入了新的括号初始化语法 &lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt; ，其不仅允许集合式的初始化，而且还是对常规构造函数的调用。遗憾的是，当与 &lt;code&gt;auto&lt;/code&gt;  类型变量结合使用时，这种方式很容易出现错误， &lt;code&gt;c++17&lt;/code&gt;  增强了这一系列初始化规则。&lt;/p&gt;
+&lt;h2 id=&#34;参考博文&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考博文&#34;&gt;#&lt;/a&gt; 参考博文&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NfYmFzZV9qaW4vYXJ0aWNsZS9kZXRhaWxzLzg2MDM2MTg1&#34;&gt;C++ 菱形继承问题和虚继承分析 - CSDN 博客&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         <category term="面试题" />
         <updated>2024-03-08T13:53:12.049Z</updated>

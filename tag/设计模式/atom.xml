@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;设计模式&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-03-26T06:33:04.399Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
+    <category term="VMware" />
+    <category term="项目构建工具" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
+    <category term="CNN" />
+    <category term="Project" />
+    <category term="面试题" />
+    <category term="日常" />
+    <category term="校招" />
+    <category term="算法" />
+    <category term="Leetcode双周赛" />
+    <category term="Algorithm" />
+    <category term="Leetcode周赛" />
+    <category term="设计模式" />
+    <entry>
+        <id>http://example.com/value/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F</id>
+        <title>设计模式</title>
+        <link rel="alternate" href="http://example.com/value/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"/>
+        <content type="html">&lt;h1 id=&#34;设计模式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计模式&#34;&gt;#&lt;/a&gt; 设计模式&lt;/h1&gt;
+</content>
+        <category term="设计模式" />
+        <updated>2024-03-26T06:33:04.399Z</updated>
+    </entry>
+</feed>
