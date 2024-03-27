@@ -285,9 +285,9 @@
 &lt;p&gt;&lt;code&gt;InnoDB&lt;/code&gt;  中 隔离性是由 MySQL 的各种锁机制以及 &lt;code&gt;MVCC&lt;/code&gt;  来实现的&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;读未提交 &lt;code&gt;read_uncommitted&lt;/code&gt; ：有脏读问题&lt;/li&gt;
-&lt;li&gt;读已提交 &lt;code&gt;read_committed&lt;/code&gt; ：有不可重复读的问题&lt;/li&gt;
-&lt;li&gt;可重复读 &lt;code&gt;repeatable-read&lt;/code&gt; ：会有幻读的问题&lt;/li&gt;
+&lt;li&gt;读未提交 &lt;code&gt;read_uncommitted(RU)&lt;/code&gt; ：有脏读问题&lt;/li&gt;
+&lt;li&gt;读已提交 &lt;code&gt;read_committed(RC)&lt;/code&gt; ：有不可重复读的问题&lt;/li&gt;
+&lt;li&gt;可重复读 &lt;code&gt;repeatable-read(RR)&lt;/code&gt; ：会有幻读的问题&lt;/li&gt;
 &lt;li&gt;串行化 &lt;code&gt;serializable&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;数据库并发事务会带来哪些问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库并发事务会带来哪些问题&#34;&gt;#&lt;/a&gt; 数据库并发事务会带来哪些问题&lt;/h2&gt;
