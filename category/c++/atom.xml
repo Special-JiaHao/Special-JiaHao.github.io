@@ -678,9 +678,13 @@ Description:
 &lt;li&gt;静态全局变量：只能在源文件中使用，使得全局变量的作用域变小&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  在类内使用
+&lt;ol&gt;
 &lt;li&gt;&lt;code&gt;static&lt;/code&gt;  所修饰的成员变量为所以对象共享，不占用具体实例的空间.&lt;/li&gt;
 &lt;li&gt;静态成员变量必须在类外定义，定义时不加 &lt;code&gt;static&lt;/code&gt;  关键字&lt;/li&gt;
 &lt;li&gt;静态成员函数没有隐藏的 &lt;code&gt;this&lt;/code&gt;  指针，不能访问非静态成员&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;li&gt;访问静态成员变量的方法：
 &lt;ol&gt;
 &lt;li&gt;静态成员变量为 &lt;code&gt;public&lt;/code&gt; （对象，类，匿名对象）&lt;/li&gt;
