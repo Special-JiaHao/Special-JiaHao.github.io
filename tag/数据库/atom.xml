@@ -22,6 +22,7 @@
     <category term="Algorithm" />
     <category term="Leetcode周赛" />
     <category term="设计模式" />
+    <category term="多线程" />
     <entry>
         <id>http://example.com/value/redis</id>
         <title>redis</title>
