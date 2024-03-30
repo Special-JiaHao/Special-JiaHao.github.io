@@ -11,7 +11,6 @@
         <category>语法</category>
         <category>C++</category>
         <category>VMware</category>
-        <category>项目构建工具</category>
         <category>install</category>
         <category>数据库</category>
         <category>STL</category>
@@ -31,6 +30,8 @@
         <category>MySQL</category>
         <category>操作系统</category>
         <category>计算机网络</category>
+        <category>CMake</category>
+        <category>线程池</category>
         <item>
             <guid isPermalink="true">http://example.com/value/Leetcode/%E7%AC%AC390%E5%9C%BA%E5%91%A8%E8%B5%9B%E9%A2%98%E8%A7%A3</guid>
             <title>第 390 场周赛</title>

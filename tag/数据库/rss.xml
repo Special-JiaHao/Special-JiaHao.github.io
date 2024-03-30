@@ -5,13 +5,12 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Tue, 03 Oct 2023 16:18:31 +0800</pubDate>
-        <lastBuildDate>Tue, 03 Oct 2023 16:18:31 +0800</lastBuildDate>
+        <pubDate>Fri, 29 Mar 2024 16:47:41 +0800</pubDate>
+        <lastBuildDate>Fri, 29 Mar 2024 16:47:41 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
         <category>VMware</category>
-        <category>项目构建工具</category>
         <category>install</category>
         <category>数据库</category>
         <category>STL</category>
@@ -31,6 +30,33 @@
         <category>MySQL</category>
         <category>操作系统</category>
         <category>计算机网络</category>
+        <category>CMake</category>
+        <category>线程池</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</guid>
+            <title>数据库连接池</title>
+            <link>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</link>
+            <category>数据库</category>
+            <category>池化技术</category>
+            <pubDate>Fri, 29 Mar 2024 16:47:41 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;数据库连接池&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库连接池&#34;&gt;#&lt;/a&gt; 数据库连接池&lt;/h1&gt;
+&lt;h2 id=&#34;数据库连接池概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库连接池概述&#34;&gt;#&lt;/a&gt; 数据库连接池概述&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提高数据库的访问瓶颈（关系型数据库）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;缓存服务器 &lt;code&gt;Redis&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;数据库连接池&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一般而言，对于数据库操作都是在访问的时候创建连接，访问完毕之后断开连接。在高并发的情况下，频繁的连接创建和释放会有很大的开销。需要进行如下过程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;建立通信的连接 TCP 三次握手&lt;/li&gt;
+&lt;li&gt;数据库服务器的连接认证&lt;/li&gt;
+&lt;li&gt;关闭数据库连接时资源是释放&lt;/li&gt;
+&lt;li&gt;断开通信连接 TCP 四次挥手&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis</guid>
             <title>redis</title>

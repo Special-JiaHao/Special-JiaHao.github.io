@@ -8,7 +8,6 @@
     <category term="语法" />
     <category term="C++" />
     <category term="VMware" />
-    <category term="项目构建工具" />
     <category term="install" />
     <category term="数据库" />
     <category term="STL" />
@@ -28,10 +27,12 @@
     <category term="MySQL" />
     <category term="操作系统" />
     <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
     <entry>
-        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</id>
+        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</id>
         <title>数据库连接池</title>
-        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0"/>
+        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0"/>
         <content type="html">&lt;h1 id=&#34;数据库连接池&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库连接池&#34;&gt;#&lt;/a&gt; 数据库连接池&lt;/h1&gt;
 &lt;h2 id=&#34;数据库连接池概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库连接池概述&#34;&gt;#&lt;/a&gt; 数据库连接池概述&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -49,13 +50,14 @@
 &lt;li&gt;断开通信连接 TCP 四次挥手&lt;/li&gt;
 &lt;/ol&gt;
 </content>
+        <category term="数据库" />
         <category term="池化技术" />
         <updated>2024-03-29T08:47:41.221Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</id>
+        <id>http://example.com/value/CPP/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</id>
         <title>线程池原理与实现</title>
-        <link rel="alternate" href="http://example.com/value/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0"/>
+        <link rel="alternate" href="http://example.com/value/CPP/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0"/>
         <content type="html">&lt;h1 id=&#34;线程池&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线程池&#34;&gt;#&lt;/a&gt; 线程池&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL1NwZWNpYWwtSmlhSGFvL3RocmVhZHBvb2wvdHJlZS9tYWlu&#34;&gt;项目地址：Special-JiaHao/threadpool: 线程池 (github.com)&lt;/span&gt;&lt;/p&gt;
@@ -223,6 +225,7 @@
 &lt;/ul&gt;
 </content>
         <category term="池化技术" />
+        <category term="线程池" />
         <updated>2024-03-29T02:52:36.894Z</updated>
     </entry>
     <entry>
@@ -840,9 +843,9 @@ NO&lt;/p&gt;
         <updated>2024-03-18T12:59:34.915Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0</id>
-        <title>线程池实现</title>
-        <link rel="alternate" href="http://example.com/value/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0"/>
+        <id>http://example.com/value/CPP/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B</id>
+        <title>多线程编程</title>
+        <link rel="alternate" href="http://example.com/value/CPP/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B"/>
         <content type="html">&lt;h2 id=&#34;什么是线程池线程池的好处&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是线程池线程池的好处&#34;&gt;#&lt;/a&gt; 什么是线程池？线程池的好处&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;通俗上来说线程池是一个管理线程的池子，它可以容纳多个线程，并对线程可以进行反复的利用，省去了频繁的线程的创建和销毁开销.&lt;/p&gt;
@@ -994,6 +997,7 @@ Description:
 &lt;p&gt;一般情况下条件变量用于处理生产者和消费者模型，并且和互斥锁配合使用。条件变量类型为 &lt;code&gt;pthread_cond_t&lt;/code&gt; ，被条件变量堵塞的线程以及线程信息会被记录到这个变量中，以便在解除堵塞时使用。&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;pthread_cond_t cond&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* 初始化 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;pthread_cond_init&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;pthread_cond_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;restrict cond&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; pthread_condaddr_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;restrict attr&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* 销毁释放资源 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;pthread_cond_destroy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;pthread_cond_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;cond&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* 堵塞当前线程 / 进程 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;pthread_cond_wait&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;pthread_cond_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;restrict cond&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; pthread_mutex_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;mutex&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;timespec&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    time_t tv_sec&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;long&lt;/span&gt; tv_nsec&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;pthread_cond_timedwait&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;pthread_cond_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;restrict cond&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; pthread_mutex_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;mutex&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;timespec&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;restrict abstime&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* 唤醒堵塞在条件变量上的一个线程 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;pthread_cond_signal&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;pthread_cond_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;cond&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* 唤醒所以堵塞在条件变量上的线程 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;pthread_cond_broadcast&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;pthread_cond_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;cond&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;信号量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#信号量&#34;&gt;#&lt;/a&gt; 信号量&lt;/h3&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;semaphore.h&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;sem_t sem&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sem_init&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sem_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;sem&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; pshared&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	sem: 信号量变量地址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	pshared: 0 表示线程同步；非 0 表示进程同步&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	value: 初始化当前信号量拥有的资源数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sem_destroy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sem_t &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;sem&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sem_wait&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sem_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;sem&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sem_try_wait&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sem_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;sem&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* 产看信号量 sem 当前拥有的资源个数，通过第二个参数传出（返回值也可以） */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sem_getvalue&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sem_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;sem&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;sval&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sem_post&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sem_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;sem&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="C++" />
         <category term="多线程" />
         <updated>2024-03-17T11:27:36.716Z</updated>
     </entry>
@@ -3076,10 +3080,10 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
         <updated>2023-12-20T06:35:18.919Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/cmake</id>
-        <title>cmake</title>
-        <link rel="alternate" href="http://example.com/value/cmake"/>
-        <content type="html">&lt;h1 id=&#34;cmake&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Cmake&lt;/code&gt;&lt;/h1&gt;
+        <id>http://example.com/value/CPP/CMake</id>
+        <title>CMake</title>
+        <link rel="alternate" href="http://example.com/value/CPP/CMake"/>
+        <content type="html">&lt;h1 id=&#34;cmake&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CMake&lt;/code&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;cmake的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake的使用&#34;&gt;#&lt;/a&gt;  &lt;code&gt;cmake&lt;/code&gt;  的使用&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cmake&lt;/code&gt;  是一个项目构建工具，并且是跨平台的。&lt;/p&gt;
 &lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# CMake 使用 #来进行注释， 使用 #[[]] 来注释一整块代码&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
@@ -3205,7 +3209,8 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;li&gt;&lt;code&gt;EXECUTABLE_OUTPUT_PATH&lt;/code&gt; ：可执行文件的输出路径&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="项目构建工具" />
+        <category term="C++" />
+        <category term="CMake" />
         <updated>2023-12-19T08:01:14.989Z</updated>
     </entry>
     <entry>
@@ -3398,9 +3403,9 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
         <updated>2023-10-03T07:35:12.758Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C</id>
+        <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C</id>
         <title>Convolutional Neural Network</title>
-        <link rel="alternate" href="http://example.com/value/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"/>
+        <link rel="alternate" href="http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"/>
         <content type="html">&lt;h1 id=&#34;background&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#background&#34;&gt;#&lt;/a&gt; Background&lt;/h1&gt;
 &lt;p&gt;卷积神经网络&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn1&#34; id=&#34;fnref1&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;主要使用在图像和视频分析的各种任务上，比如图像分类、人脸识别、图像分割上，其准确率远超其他的神经网络模型。基于卷积神经网络架构的模型在计算机视觉领域中已经占主导地位，当今几乎所有的图像识别、目标检测或语义分割相关的学术竞赛和商业应用都以这种方法为基础。&lt;/p&gt;
 &lt;p&gt;卷积神经网络最早出现是用来处理图像信息，在使用以往的全连接前馈网络处理图像时，往往是将图像数据展平成一维向量，再将数据送入一个全连接的多层感知机中。这样处理图像会存在以下两个问题：&lt;/p&gt;
@@ -3482,9 +3487,9 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
         <updated>2023-09-01T08:09:55.500Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/Graident%20descent</id>
+        <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Graident%20descent</id>
         <title>梯度下降</title>
-        <link rel="alternate" href="http://example.com/value/Graident%20descent"/>
+        <link rel="alternate" href="http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Graident%20descent"/>
         <content type="html">&lt;h1 id=&#34;背景介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景介绍&#34;&gt;#&lt;/a&gt; 背景介绍&lt;/h1&gt;
 &lt;h1 id=&#34;梯度下降法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#梯度下降法&#34;&gt;#&lt;/a&gt; 梯度下降法&lt;/h1&gt;
 &lt;p&gt;与最小二乘法类似，梯度下降法也是一种常用的数学优最化方法，即求解函数的最值问题。&lt;/p&gt;

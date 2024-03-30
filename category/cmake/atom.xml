@@ -1,43 +1,39 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>繁華落盡 似水流年 • Posts by &#34;tools&#34; category</title>
-        <link>http://example.com</link>
-        <description>编程日记 &amp; 随笔</description>
-        <language>en</language>
-        <pubDate>Tue, 19 Dec 2023 16:01:14 +0800</pubDate>
-        <lastBuildDate>Tue, 19 Dec 2023 16:01:14 +0800</lastBuildDate>
-        <category>mathematics</category>
-        <category>语法</category>
-        <category>C++</category>
-        <category>VMware</category>
-        <category>项目构建工具</category>
-        <category>install</category>
-        <category>数据库</category>
-        <category>STL</category>
-        <category>CNN</category>
-        <category>Project</category>
-        <category>面试题</category>
-        <category>日常</category>
-        <category>校招</category>
-        <category>算法</category>
-        <category>Leetcode双周赛</category>
-        <category>Algorithm</category>
-        <category>Leetcode周赛</category>
-        <category>设计模式</category>
-        <category>多线程</category>
-        <category>池化技术</category>
-        <category>redis</category>
-        <category>MySQL</category>
-        <category>操作系统</category>
-        <category>计算机网络</category>
-        <item>
-            <guid isPermalink="true">http://example.com/value/cmake</guid>
-            <title>cmake</title>
-            <link>http://example.com/value/cmake</link>
-            <category>项目构建工具</category>
-            <pubDate>Tue, 19 Dec 2023 16:01:14 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;cmake&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Cmake&lt;/code&gt;&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;cmake&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2023-12-19T08:01:14.989Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
+    <category term="VMware" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
+    <category term="CNN" />
+    <category term="Project" />
+    <category term="面试题" />
+    <category term="日常" />
+    <category term="校招" />
+    <category term="算法" />
+    <category term="Leetcode双周赛" />
+    <category term="Algorithm" />
+    <category term="Leetcode周赛" />
+    <category term="设计模式" />
+    <category term="多线程" />
+    <category term="池化技术" />
+    <category term="redis" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
+    <entry>
+        <id>http://example.com/value/CPP/CMake</id>
+        <title>CMake</title>
+        <link rel="alternate" href="http://example.com/value/CPP/CMake"/>
+        <content type="html">&lt;h1 id=&#34;cmake&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CMake&lt;/code&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;cmake的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake的使用&#34;&gt;#&lt;/a&gt;  &lt;code&gt;cmake&lt;/code&gt;  的使用&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cmake&lt;/code&gt;  是一个项目构建工具，并且是跨平台的。&lt;/p&gt;
 &lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# CMake 使用 #来进行注释， 使用 #[[]] 来注释一整块代码&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
@@ -162,7 +158,9 @@
 &lt;li&gt;&lt;code&gt;CMAKE_CXX_STANDARD&lt;/code&gt; ： &lt;code&gt;C++&lt;/code&gt;  标准&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;EXECUTABLE_OUTPUT_PATH&lt;/code&gt; ：可执行文件的输出路径&lt;/li&gt;
 &lt;/ul&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="C++" />
+        <category term="CMake" />
+        <updated>2023-12-19T08:01:14.989Z</updated>
+    </entry>
+</feed>

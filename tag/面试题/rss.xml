@@ -11,7 +11,6 @@
         <category>语法</category>
         <category>C++</category>
         <category>VMware</category>
-        <category>项目构建工具</category>
         <category>install</category>
         <category>数据库</category>
         <category>STL</category>
@@ -31,6 +30,8 @@
         <category>MySQL</category>
         <category>操作系统</category>
         <category>计算机网络</category>
+        <category>CMake</category>
+        <category>线程池</category>
         <item>
             <guid isPermalink="true">http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>Linux面试题</title>

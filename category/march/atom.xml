@@ -8,7 +8,6 @@
     <category term="语法" />
     <category term="C++" />
     <category term="VMware" />
-    <category term="项目构建工具" />
     <category term="install" />
     <category term="数据库" />
     <category term="STL" />
@@ -28,6 +27,8 @@
     <category term="MySQL" />
     <category term="操作系统" />
     <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
     <entry>
         <id>http://example.com/value/daily/March%202024</id>
         <title>March 2024</title>

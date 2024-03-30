@@ -8,7 +8,6 @@
     <category term="语法" />
     <category term="C++" />
     <category term="VMware" />
-    <category term="项目构建工具" />
     <category term="install" />
     <category term="数据库" />
     <category term="STL" />
@@ -28,10 +27,12 @@
     <category term="MySQL" />
     <category term="操作系统" />
     <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
     <entry>
-        <id>http://example.com/value/Graident%20descent</id>
+        <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Graident%20descent</id>
         <title>梯度下降</title>
-        <link rel="alternate" href="http://example.com/value/Graident%20descent"/>
+        <link rel="alternate" href="http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Graident%20descent"/>
         <content type="html">&lt;h1 id=&#34;背景介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景介绍&#34;&gt;#&lt;/a&gt; 背景介绍&lt;/h1&gt;
 &lt;h1 id=&#34;梯度下降法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#梯度下降法&#34;&gt;#&lt;/a&gt; 梯度下降法&lt;/h1&gt;
 &lt;p&gt;与最小二乘法类似，梯度下降法也是一种常用的数学优最化方法，即求解函数的最值问题。&lt;/p&gt;

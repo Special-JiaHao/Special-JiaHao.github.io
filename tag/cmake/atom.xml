@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://example.com</id>
-    <title>繁華落盡 似水流年 • Posts by &#34;tools&#34; category</title>
+    <title>繁華落盡 似水流年 • Posts by &#34;cmake&#34; tag</title>
     <link href="http://example.com" />
     <updated>2023-12-19T08:01:14.989Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
     <category term="VMware" />
-    <category term="项目构建工具" />
     <category term="install" />
     <category term="数据库" />
     <category term="STL" />
@@ -28,11 +27,13 @@
     <category term="MySQL" />
     <category term="操作系统" />
     <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
     <entry>
-        <id>http://example.com/value/cmake</id>
-        <title>cmake</title>
-        <link rel="alternate" href="http://example.com/value/cmake"/>
-        <content type="html">&lt;h1 id=&#34;cmake&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Cmake&lt;/code&gt;&lt;/h1&gt;
+        <id>http://example.com/value/CPP/CMake</id>
+        <title>CMake</title>
+        <link rel="alternate" href="http://example.com/value/CPP/CMake"/>
+        <content type="html">&lt;h1 id=&#34;cmake&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CMake&lt;/code&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;cmake的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake的使用&#34;&gt;#&lt;/a&gt;  &lt;code&gt;cmake&lt;/code&gt;  的使用&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cmake&lt;/code&gt;  是一个项目构建工具，并且是跨平台的。&lt;/p&gt;
 &lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# CMake 使用 #来进行注释， 使用 #[[]] 来注释一整块代码&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
@@ -158,7 +159,8 @@
 &lt;li&gt;&lt;code&gt;EXECUTABLE_OUTPUT_PATH&lt;/code&gt; ：可执行文件的输出路径&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="项目构建工具" />
+        <category term="C++" />
+        <category term="CMake" />
         <updated>2023-12-19T08:01:14.989Z</updated>
     </entry>
 </feed>
