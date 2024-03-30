@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "繁華落盡 似水流年 • All posts by \"mysql\" category",
+    "description": "编程日记 & 随笔",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95",
+            "url": "http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95",
+            "title": "MySQL基础语法",
+            "date_published": "2024-03-30T01:58:45.307Z",
+            "content_html": "<h1 id=\"mysql基础语法\"><a class=\"anchor\" href=\"#mysql基础语法\">#</a> MySQL 基础语法</h1>\n",
+            "tags": [
+                "数据库",
+                "MySQL"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>繁華落盡 似水流年 • Posts by &#34;mysql&#34; category</title>
+        <link>http://example.com</link>
+        <description>编程日记 &amp; 随笔</description>
+        <language>en</language>
+        <pubDate>Sat, 30 Mar 2024 09:58:45 +0800</pubDate>
+        <lastBuildDate>Sat, 30 Mar 2024 09:58:45 +0800</lastBuildDate>
+        <category>mathematics</category>
+        <category>语法</category>
+        <category>C++</category>
+        <category>VMware</category>
+        <category>install</category>
+        <category>数据库</category>
+        <category>STL</category>
+        <category>CNN</category>
+        <category>Project</category>
+        <category>面试题</category>
+        <category>日常</category>
+        <category>算法</category>
+        <category>Leetcode双周赛</category>
+        <category>Algorithm</category>
+        <category>Leetcode周赛</category>
+        <category>设计模式</category>
+        <category>多线程</category>
+        <category>池化技术</category>
+        <category>redis</category>
+        <category>MySQL</category>
+        <category>CMake</category>
+        <category>线程池</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</guid>
+            <title>MySQL基础语法</title>
+            <link>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</link>
+            <category>数据库</category>
+            <category>MySQL</category>
+            <pubDate>Sat, 30 Mar 2024 09:58:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;mysql基础语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql基础语法&#34;&gt;#&lt;/a&gt; MySQL 基础语法&lt;/h1&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
