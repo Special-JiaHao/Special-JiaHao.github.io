@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Wed, 13 Mar 2024 14:46:17 +0800</pubDate>
-        <lastBuildDate>Wed, 13 Mar 2024 14:46:17 +0800</lastBuildDate>
+        <pubDate>Sat, 30 Mar 2024 09:58:45 +0800</pubDate>
+        <lastBuildDate>Sat, 30 Mar 2024 09:58:45 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -32,6 +32,16 @@
         <category>计算机网络</category>
         <category>CMake</category>
         <category>线程池</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</guid>
+            <title>MySQL基础语法</title>
+            <link>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</link>
+            <category>数据库</category>
+            <category>MySQL</category>
+            <pubDate>Sat, 30 Mar 2024 09:58:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;mysql基础语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql基础语法&#34;&gt;#&lt;/a&gt; MySQL 基础语法&lt;/h1&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>MySQL面试题</title>

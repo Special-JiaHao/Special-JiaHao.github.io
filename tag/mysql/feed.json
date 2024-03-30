@@ -5,6 +5,17 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95",
+            "url": "http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95",
+            "title": "MySQL基础语法",
+            "date_published": "2024-03-30T01:58:45.307Z",
+            "content_html": "<h1 id=\"mysql基础语法\"><a class=\"anchor\" href=\"#mysql基础语法\">#</a> MySQL 基础语法</h1>\n",
+            "tags": [
+                "数据库",
+                "MySQL"
+            ]
+        },
+        {
             "id": "http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98",
             "url": "http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98",
             "title": "MySQL面试题",

@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年 • Posts by &#34;数据库&#34; tag</title>
     <link href="http://example.com" />
-    <updated>2024-03-29T08:47:41.221Z</updated>
+    <updated>2024-03-30T01:58:45.307Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -29,6 +29,16 @@
     <category term="计算机网络" />
     <category term="CMake" />
     <category term="线程池" />
+    <entry>
+        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</id>
+        <title>MySQL基础语法</title>
+        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"/>
+        <content type="html">&lt;h1 id=&#34;mysql基础语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql基础语法&#34;&gt;#&lt;/a&gt; MySQL 基础语法&lt;/h1&gt;
+</content>
+        <category term="数据库" />
+        <category term="MySQL" />
+        <updated>2024-03-30T01:58:45.307Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</id>
         <title>数据库连接池</title>
