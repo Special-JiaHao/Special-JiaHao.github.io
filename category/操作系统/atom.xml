@@ -23,6 +23,11 @@
     <category term="Leetcode周赛" />
     <category term="设计模式" />
     <category term="多线程" />
+    <category term="池化技术" />
+    <category term="redis" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
     <entry>
         <id>http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>Linux面试题</title>
@@ -147,9 +152,9 @@
         <updated>2024-03-25T13:35:06.598Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>操作系统面试题</title>
-        <link rel="alternate" href="http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98"/>
         <content type="html">&lt;h1 id=&#34;操作系统面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统面试题&#34;&gt;#&lt;/a&gt; 操作系统面试题&lt;/h1&gt;
 &lt;h2 id=&#34;主机启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主机启动&#34;&gt;#&lt;/a&gt; 主机启动&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -210,7 +215,7 @@
 &lt;ol&gt;
 &lt;li&gt;进程的组成：
 &lt;ul&gt;
-&lt;li&gt;进程控制块 &lt;code&gt;PCB&lt;/code&gt; （ &lt;code&gt;PID&lt;/code&gt; ：唯一标识进程）&lt;/li&gt;
+&lt;li&gt;进程控制块 &lt;code&gt;PCB&lt;/code&gt; （ &lt;code&gt;PID&lt;/code&gt; ：唯一标识进程、进程状态、进程优先级、程序计数器 PC、内存指针	）&lt;/li&gt;
 &lt;li&gt;代码段&lt;/li&gt;
 &lt;li&gt;程序段&lt;/li&gt;
 &lt;/ul&gt;
@@ -453,6 +458,7 @@
 &lt;/ul&gt;
 </content>
         <category term="面试题" />
+        <category term="操作系统" />
         <updated>2024-03-13T01:21:27.470Z</updated>
     </entry>
 </feed>

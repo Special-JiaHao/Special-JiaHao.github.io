@@ -26,6 +26,11 @@
         <category>Leetcode周赛</category>
         <category>设计模式</category>
         <category>多线程</category>
+        <category>池化技术</category>
+        <category>redis</category>
+        <category>MySQL</category>
+        <category>操作系统</category>
+        <category>计算机网络</category>
         <item>
             <guid isPermalink="true">http://example.com/value/%E9%87%91%E5%B1%B1%E4%BC%9A%E8%AE%AE%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F</guid>
             <title>金山会议室预约系统</title>

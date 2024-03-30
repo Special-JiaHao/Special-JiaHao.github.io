@@ -23,10 +23,15 @@
     <category term="Leetcode周赛" />
     <category term="设计模式" />
     <category term="多线程" />
+    <category term="池化技术" />
+    <category term="redis" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
     <entry>
-        <id>http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
         <title>蚂蚁集团校招</title>
-        <link rel="alternate" href="http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B"/>
         <content type="html">&lt;h2 id=&#34;蚂蚁集团3-19研发笔试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#蚂蚁集团3-19研发笔试&#34;&gt;#&lt;/a&gt; 蚂蚁集团 3-19 研发笔试&lt;/h2&gt;
 &lt;h3 id=&#34;q1easy&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#q1easy&#34;&gt;#&lt;/a&gt; Q1&lt;span class=&#34;label success&#34;&gt;easy&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;&lt;/p&gt;
@@ -179,9 +184,9 @@ NO&lt;/p&gt;
         <updated>2024-03-19T12:03:19.852Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</id>
         <title>腾讯校招</title>
-        <link rel="alternate" href="http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B"/>
         <content type="html">&lt;h2 id=&#34;一面心态爆炸&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一面心态爆炸&#34;&gt;#&lt;/a&gt; 一面（心态爆炸）&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
@@ -211,9 +216,9 @@ NO&lt;/p&gt;
         <updated>2024-03-18T12:59:34.915Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
         <title>美团校招</title>
-        <link rel="alternate" href="http://example.com/value/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B"/>
         <content type="html">&lt;h2 id=&#34;美团2024年春招第一场笔试算法策略&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#美团2024年春招第一场笔试算法策略&#34;&gt;#&lt;/a&gt; 美团 2024 年春招第一场笔试【算法策略】&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本来早就想记录一下了，但是笔试的时候没有把题目和代码保存下来！今天 (2024-03-10) 在小红书看到了笔试题，于是乎打算重新写一遍。整体来说，对我而言感觉难度中等偏上一点。第五题没有得到全部分数，没有把正向删边等加成逆向加边&lt;/p&gt;

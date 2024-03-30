@@ -23,6 +23,11 @@
     <category term="Leetcode周赛" />
     <category term="设计模式" />
     <category term="多线程" />
+    <category term="池化技术" />
+    <category term="redis" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
     <entry>
         <id>http://example.com/value/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F</id>
         <title>设计模式</title>

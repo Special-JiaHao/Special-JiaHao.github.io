@@ -26,11 +26,17 @@
         <category>Leetcode周赛</category>
         <category>设计模式</category>
         <category>多线程</category>
+        <category>池化技术</category>
+        <category>redis</category>
+        <category>MySQL</category>
+        <category>操作系统</category>
+        <category>计算机网络</category>
         <item>
-            <guid isPermalink="true">http://example.com/value/redis</guid>
+            <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis</guid>
             <title>redis</title>
-            <link>http://example.com/value/redis</link>
+            <link>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis</link>
             <category>数据库</category>
+            <category>redis</category>
             <pubDate>Tue, 03 Oct 2023 16:18:31 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis&#34;&gt;#&lt;/a&gt; Redis&lt;/h1&gt;
 &lt;blockquote&gt;

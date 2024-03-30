@@ -23,10 +23,15 @@
     <category term="Leetcode周赛" />
     <category term="设计模式" />
     <category term="多线程" />
+    <category term="池化技术" />
+    <category term="redis" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
     <entry>
-        <id>http://example.com/value/stl_list</id>
+        <id>http://example.com/value/CPP/stl_list</id>
         <title>STL List</title>
-        <link rel="alternate" href="http://example.com/value/stl_list"/>
+        <link rel="alternate" href="http://example.com/value/CPP/stl_list"/>
         <content type="html">&lt;h1 id=&#34;list&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#list&#34;&gt;#&lt;/a&gt; List&lt;/h1&gt;
 &lt;h2 id=&#34;list-node设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#list-node设计&#34;&gt;#&lt;/a&gt; list node 设计&lt;/h2&gt;
 &lt;p&gt;list 是由 list 节点串联而成，需要分开设计。SGI STL 内设计的 list 为双向链表，故 list 节点需要三个成员变量。&lt;/p&gt;

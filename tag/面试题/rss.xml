@@ -26,6 +26,11 @@
         <category>Leetcode周赛</category>
         <category>设计模式</category>
         <category>多线程</category>
+        <category>池化技术</category>
+        <category>redis</category>
+        <category>MySQL</category>
+        <category>操作系统</category>
+        <category>计算机网络</category>
         <item>
             <guid isPermalink="true">http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>Linux面试题</title>
@@ -150,33 +155,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0</guid>
-            <title>数据库连接池</title>
-            <link>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0</link>
-            <category>面试题</category>
-            <pubDate>Sun, 17 Mar 2024 20:47:07 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;数据库连接池&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库连接池&#34;&gt;#&lt;/a&gt; 数据库连接池&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;提高数据库的访问瓶颈（关系型数据库）：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;缓存服务器 &lt;code&gt;Redis&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;数据库连接池&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;一般而言，对于数据库操作都是在访问的时候创建连接，访问完毕之后断开连接。在高并发的情况下，频繁的连接创建和释放会有很大的开销&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;建立通信的连接 TCP 三次握手&lt;/li&gt;
-&lt;li&gt;数据库服务器的连接认证&lt;/li&gt;
-&lt;li&gt;关闭数据库连接时资源是释放&lt;/li&gt;
-&lt;li&gt;断开通信连接 TCP 四次挥手&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
+            <guid isPermalink="true">http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>MySQL面试题</title>
-            <link>http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</link>
+            <link>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</link>
             <category>面试题</category>
+            <category>MySQL</category>
             <pubDate>Wed, 13 Mar 2024 14:46:17 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;mysql面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql面试题&#34;&gt;#&lt;/a&gt; MySQL 面试题&lt;/h1&gt;
 &lt;h2 id=&#34;关系型数据库和非关系型数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关系型数据库和非关系型数据库&#34;&gt;#&lt;/a&gt; 关系型数据库和非关系型数据库&lt;/h2&gt;
@@ -185,7 +168,8 @@
 &lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  索引采用的是非聚簇索引，索引的数据域存储数据的指针，而 &lt;code&gt;InnoDB&lt;/code&gt;  主键采用的是聚簇索引，非主键采用非聚簇索引，索引的数据域存储主键的 id.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  不支持事务，但是每次查询都是原子操作； &lt;code&gt;Innodb&lt;/code&gt;  支持 &lt;code&gt;ACID&lt;/code&gt;  的事务，支持事务的四种隔离级别&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  存储表的总行数； &lt;code&gt;InnoDB&lt;/code&gt;  不存储表的总行数&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  支持的是表级锁，不支持外检约束； &lt;code&gt;InnoDB&lt;/code&gt;  支持行级锁，支持外检约束&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  不支持外键约束，而 &lt;code&gt;InnoDB&lt;/code&gt;  支持&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  支持最小粒度所为表级锁； &lt;code&gt;InnoDB&lt;/code&gt;  支持行级锁&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;覆盖索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#覆盖索引&#34;&gt;#&lt;/a&gt; 覆盖索引&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -268,14 +252,33 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;索引失效的情况&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#索引失效的情况&#34;&gt;#&lt;/a&gt; 索引失效的情况&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;使用 &lt;code&gt;like&lt;/code&gt;  查询并且左边带 &lt;code&gt;%&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;隐式类型转换。索引字段是 &lt;code&gt;int&lt;/code&gt; ，而使用字符串类型去查询&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;where&lt;/code&gt;  条件里面对索引使用运算或者函数&lt;/li&gt;
-&lt;li&gt;使用 &lt;code&gt;or&lt;/code&gt;  且存在非索引列&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;where&lt;/code&gt;  条件中对两列作比较&lt;/li&gt;
-&lt;li&gt;使用 &lt;code&gt;in&lt;/code&gt; （和数据量有关系）&lt;/li&gt;
-&lt;li&gt;使用 &lt;code&gt;order by&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;is null&lt;/code&gt; 、 &lt;code&gt;is not null&lt;/code&gt; 、 &lt;code&gt;≠&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;like&lt;/code&gt;  查询并且左边带 &lt;code&gt;%&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;索引往往使用的是 B + 树结构，是一个有序排列的。百分号放在前面进行一个模糊查找时，前面都能匹配，很有可能就无法更具索引的有序性来进行查找了.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;隐式类型转换。索引字段是 &lt;code&gt;int&lt;/code&gt; ，而使用字符串类型去查询&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;where&lt;/code&gt;  条件里面对索引使用运算或者函数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;or&lt;/code&gt;  且存在非索引列&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;where&lt;/code&gt;  条件中对两列作比较&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;in&lt;/code&gt; （和数据量有关系）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;order by&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;is null&lt;/code&gt; 、 &lt;code&gt;is not null&lt;/code&gt; 、 &lt;code&gt;≠&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;innodb为什么使用自增id作为主键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#innodb为什么使用自增id作为主键&#34;&gt;#&lt;/a&gt;  &lt;code&gt;InnoDB&lt;/code&gt;  为什么使用自增 &lt;code&gt;id&lt;/code&gt;  作为主键&lt;/h2&gt;
 &lt;ul&gt;
@@ -514,10 +517,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
+            <guid isPermalink="true">http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>操作系统面试题</title>
-            <link>http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</link>
+            <link>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</link>
             <category>面试题</category>
+            <category>操作系统</category>
             <pubDate>Wed, 13 Mar 2024 09:21:27 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;操作系统面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统面试题&#34;&gt;#&lt;/a&gt; 操作系统面试题&lt;/h1&gt;
 &lt;h2 id=&#34;主机启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主机启动&#34;&gt;#&lt;/a&gt; 主机启动&lt;/h2&gt;
@@ -579,7 +583,7 @@
 &lt;ol&gt;
 &lt;li&gt;进程的组成：
 &lt;ul&gt;
-&lt;li&gt;进程控制块 &lt;code&gt;PCB&lt;/code&gt; （ &lt;code&gt;PID&lt;/code&gt; ：唯一标识进程）&lt;/li&gt;
+&lt;li&gt;进程控制块 &lt;code&gt;PCB&lt;/code&gt; （ &lt;code&gt;PID&lt;/code&gt; ：唯一标识进程、进程状态、进程优先级、程序计数器 PC、内存指针	）&lt;/li&gt;
 &lt;li&gt;代码段&lt;/li&gt;
 &lt;li&gt;程序段&lt;/li&gt;
 &lt;/ul&gt;
@@ -823,9 +827,10 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
+            <guid isPermalink="true">http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/C++%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>C++面试题</title>
-            <link>http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</link>
+            <link>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/C++%E9%9D%A2%E8%AF%95%E9%A2%98</link>
+            <category>C++</category>
             <category>面试题</category>
             <pubDate>Fri, 08 Mar 2024 21:53:12 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;c面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c面试题&#34;&gt;#&lt;/a&gt; C++ 面试题&lt;/h1&gt;
@@ -1451,10 +1456,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/value/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
+            <guid isPermalink="true">http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>计算机网络面试题</title>
-            <link>http://example.com/value/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</link>
+            <link>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</link>
             <category>面试题</category>
+            <category>计算机网络</category>
             <pubDate>Thu, 07 Mar 2024 17:23:50 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;tcpip四层模型osi七层模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcpip四层模型osi七层模型&#34;&gt;#&lt;/a&gt; TCP/IP 四层模型，OSI 七层模型&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;

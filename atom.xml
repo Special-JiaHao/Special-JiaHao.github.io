@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年</title>
     <link href="http://example.com" />
-    <updated>2024-03-29T02:52:36.894Z</updated>
+    <updated>2024-03-29T08:47:41.221Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -23,6 +23,35 @@
     <category term="Leetcode周赛" />
     <category term="设计模式" />
     <category term="多线程" />
+    <category term="池化技术" />
+    <category term="redis" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
+    <entry>
+        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</id>
+        <title>数据库连接池</title>
+        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0"/>
+        <content type="html">&lt;h1 id=&#34;数据库连接池&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库连接池&#34;&gt;#&lt;/a&gt; 数据库连接池&lt;/h1&gt;
+&lt;h2 id=&#34;数据库连接池概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库连接池概述&#34;&gt;#&lt;/a&gt; 数据库连接池概述&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提高数据库的访问瓶颈（关系型数据库）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;缓存服务器 &lt;code&gt;Redis&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;数据库连接池&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一般而言，对于数据库操作都是在访问的时候创建连接，访问完毕之后断开连接。在高并发的情况下，频繁的连接创建和释放会有很大的开销。需要进行如下过程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;建立通信的连接 TCP 三次握手&lt;/li&gt;
+&lt;li&gt;数据库服务器的连接认证&lt;/li&gt;
+&lt;li&gt;关闭数据库连接时资源是释放&lt;/li&gt;
+&lt;li&gt;断开通信连接 TCP 四次挥手&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="池化技术" />
+        <updated>2024-03-29T08:47:41.221Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</id>
         <title>线程池原理与实现</title>
@@ -193,15 +222,8 @@
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	通过线程 ID 来获取存储在工作者线程链中该线程的位置，再调用工作者线程链删除节点的接口，最后销毁该线程&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;template&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;typename&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;T&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;ThreadPool&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;T&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;threadExit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	pthread_t tid &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;pthread_self&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;pthread_mutex_lock&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;threadPoolMutex&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;workerIDs&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;erase&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;mp&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;tid&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;mp&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;erase&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;tid&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;pthread_mutex_unlock&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;threadPoolMutex&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;pthread_exit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token constant&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="多线程" />
+        <category term="池化技术" />
         <updated>2024-03-29T02:52:36.894Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/value/RPC</id>
-        <title></title>
-        <link rel="alternate" href="http://example.com/value/RPC"/>
-        <content type="html"></content>
-        <updated>2024-03-27T11:57:42.807Z</updated>
     </entry>
     <entry>
         <id>http://example.com/value/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F</id>
@@ -631,9 +653,9 @@
         <updated>2024-03-21T06:25:31.177Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
         <title>蚂蚁集团校招</title>
-        <link rel="alternate" href="http://example.com/value/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%E6%A0%A1%E6%8B%9B"/>
         <content type="html">&lt;h2 id=&#34;蚂蚁集团3-19研发笔试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#蚂蚁集团3-19研发笔试&#34;&gt;#&lt;/a&gt; 蚂蚁集团 3-19 研发笔试&lt;/h2&gt;
 &lt;h3 id=&#34;q1easy&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#q1easy&#34;&gt;#&lt;/a&gt; Q1&lt;span class=&#34;label success&#34;&gt;easy&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;&lt;/p&gt;
@@ -786,9 +808,9 @@ NO&lt;/p&gt;
         <updated>2024-03-19T12:03:19.852Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</id>
         <title>腾讯校招</title>
-        <link rel="alternate" href="http://example.com/value/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B"/>
         <content type="html">&lt;h2 id=&#34;一面心态爆炸&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一面心态爆炸&#34;&gt;#&lt;/a&gt; 一面（心态爆炸）&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
@@ -816,29 +838,6 @@ NO&lt;/p&gt;
 </content>
         <category term="校招" />
         <updated>2024-03-18T12:59:34.915Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0</id>
-        <title>数据库连接池</title>
-        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0"/>
-        <content type="html">&lt;h2 id=&#34;数据库连接池&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库连接池&#34;&gt;#&lt;/a&gt; 数据库连接池&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;提高数据库的访问瓶颈（关系型数据库）：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;缓存服务器 &lt;code&gt;Redis&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;数据库连接池&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;一般而言，对于数据库操作都是在访问的时候创建连接，访问完毕之后断开连接。在高并发的情况下，频繁的连接创建和释放会有很大的开销&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;建立通信的连接 TCP 三次握手&lt;/li&gt;
-&lt;li&gt;数据库服务器的连接认证&lt;/li&gt;
-&lt;li&gt;关闭数据库连接时资源是释放&lt;/li&gt;
-&lt;li&gt;断开通信连接 TCP 四次挥手&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-</content>
-        <category term="面试题" />
-        <updated>2024-03-17T12:47:07.883Z</updated>
     </entry>
     <entry>
         <id>http://example.com/value/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0</id>
@@ -1123,9 +1122,9 @@ Description:
         <updated>2024-03-17T01:14:42.240Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>MySQL面试题</title>
-        <link rel="alternate" href="http://example.com/value/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/MySQL%E9%9D%A2%E8%AF%95%E9%A2%98"/>
         <content type="html">&lt;h1 id=&#34;mysql面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql面试题&#34;&gt;#&lt;/a&gt; MySQL 面试题&lt;/h1&gt;
 &lt;h2 id=&#34;关系型数据库和非关系型数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关系型数据库和非关系型数据库&#34;&gt;#&lt;/a&gt; 关系型数据库和非关系型数据库&lt;/h2&gt;
 &lt;h2 id=&#34;myisam和innodb的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#myisam和innodb的区别&#34;&gt;#&lt;/a&gt;  &lt;code&gt;MyISAM&lt;/code&gt;  和 &lt;code&gt;InnoDB&lt;/code&gt;  的区别&lt;/h2&gt;
@@ -1133,7 +1132,8 @@ Description:
 &lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  索引采用的是非聚簇索引，索引的数据域存储数据的指针，而 &lt;code&gt;InnoDB&lt;/code&gt;  主键采用的是聚簇索引，非主键采用非聚簇索引，索引的数据域存储主键的 id.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  不支持事务，但是每次查询都是原子操作； &lt;code&gt;Innodb&lt;/code&gt;  支持 &lt;code&gt;ACID&lt;/code&gt;  的事务，支持事务的四种隔离级别&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  存储表的总行数； &lt;code&gt;InnoDB&lt;/code&gt;  不存储表的总行数&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  支持的是表级锁，不支持外检约束； &lt;code&gt;InnoDB&lt;/code&gt;  支持行级锁，支持外检约束&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  不支持外键约束，而 &lt;code&gt;InnoDB&lt;/code&gt;  支持&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MyISAM&lt;/code&gt;  支持最小粒度所为表级锁； &lt;code&gt;InnoDB&lt;/code&gt;  支持行级锁&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;覆盖索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#覆盖索引&#34;&gt;#&lt;/a&gt; 覆盖索引&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -1216,14 +1216,33 @@ Description:
 &lt;/ul&gt;
 &lt;h2 id=&#34;索引失效的情况&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#索引失效的情况&#34;&gt;#&lt;/a&gt; 索引失效的情况&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;使用 &lt;code&gt;like&lt;/code&gt;  查询并且左边带 &lt;code&gt;%&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;隐式类型转换。索引字段是 &lt;code&gt;int&lt;/code&gt; ，而使用字符串类型去查询&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;where&lt;/code&gt;  条件里面对索引使用运算或者函数&lt;/li&gt;
-&lt;li&gt;使用 &lt;code&gt;or&lt;/code&gt;  且存在非索引列&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;where&lt;/code&gt;  条件中对两列作比较&lt;/li&gt;
-&lt;li&gt;使用 &lt;code&gt;in&lt;/code&gt; （和数据量有关系）&lt;/li&gt;
-&lt;li&gt;使用 &lt;code&gt;order by&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;is null&lt;/code&gt; 、 &lt;code&gt;is not null&lt;/code&gt; 、 &lt;code&gt;≠&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;like&lt;/code&gt;  查询并且左边带 &lt;code&gt;%&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;索引往往使用的是 B + 树结构，是一个有序排列的。百分号放在前面进行一个模糊查找时，前面都能匹配，很有可能就无法更具索引的有序性来进行查找了.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;隐式类型转换。索引字段是 &lt;code&gt;int&lt;/code&gt; ，而使用字符串类型去查询&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;where&lt;/code&gt;  条件里面对索引使用运算或者函数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;or&lt;/code&gt;  且存在非索引列&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;where&lt;/code&gt;  条件中对两列作比较&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;in&lt;/code&gt; （和数据量有关系）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;order by&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;is null&lt;/code&gt; 、 &lt;code&gt;is not null&lt;/code&gt; 、 &lt;code&gt;≠&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;innodb为什么使用自增id作为主键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#innodb为什么使用自增id作为主键&#34;&gt;#&lt;/a&gt;  &lt;code&gt;InnoDB&lt;/code&gt;  为什么使用自增 &lt;code&gt;id&lt;/code&gt;  作为主键&lt;/h2&gt;
 &lt;ul&gt;
@@ -1461,12 +1480,13 @@ Description:
 &lt;/blockquote&gt;
 </content>
         <category term="面试题" />
+        <category term="MySQL" />
         <updated>2024-03-13T06:46:17.113Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>操作系统面试题</title>
-        <link rel="alternate" href="http://example.com/value/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A2%E8%AF%95%E9%A2%98"/>
         <content type="html">&lt;h1 id=&#34;操作系统面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统面试题&#34;&gt;#&lt;/a&gt; 操作系统面试题&lt;/h1&gt;
 &lt;h2 id=&#34;主机启动&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主机启动&#34;&gt;#&lt;/a&gt; 主机启动&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -1527,7 +1547,7 @@ Description:
 &lt;ol&gt;
 &lt;li&gt;进程的组成：
 &lt;ul&gt;
-&lt;li&gt;进程控制块 &lt;code&gt;PCB&lt;/code&gt; （ &lt;code&gt;PID&lt;/code&gt; ：唯一标识进程）&lt;/li&gt;
+&lt;li&gt;进程控制块 &lt;code&gt;PCB&lt;/code&gt; （ &lt;code&gt;PID&lt;/code&gt; ：唯一标识进程、进程状态、进程优先级、程序计数器 PC、内存指针	）&lt;/li&gt;
 &lt;li&gt;代码段&lt;/li&gt;
 &lt;li&gt;程序段&lt;/li&gt;
 &lt;/ul&gt;
@@ -1770,12 +1790,13 @@ Description:
 &lt;/ul&gt;
 </content>
         <category term="面试题" />
+        <category term="操作系统" />
         <updated>2024-03-13T01:21:27.470Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B</id>
         <title>美团校招</title>
-        <link rel="alternate" href="http://example.com/value/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E7%BE%8E%E5%9B%A2%E6%A0%A1%E6%8B%9B"/>
         <content type="html">&lt;h2 id=&#34;美团2024年春招第一场笔试算法策略&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#美团2024年春招第一场笔试算法策略&#34;&gt;#&lt;/a&gt; 美团 2024 年春招第一场笔试【算法策略】&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本来早就想记录一下了，但是笔试的时候没有把题目和代码保存下来！今天 (2024-03-10) 在小红书看到了笔试题，于是乎打算重新写一遍。整体来说，对我而言感觉难度中等偏上一点。第五题没有得到全部分数，没有把正向删边等加成逆向加边&lt;/p&gt;
@@ -2024,9 +2045,9 @@ Description:
         <updated>2024-03-09T06:59:52.210Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/C++%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>C++面试题</title>
-        <link rel="alternate" href="http://example.com/value/C++%E9%9D%A2%E8%AF%95%E9%A2%98"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/C++%E9%9D%A2%E8%AF%95%E9%A2%98"/>
         <content type="html">&lt;h1 id=&#34;c面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c面试题&#34;&gt;#&lt;/a&gt; C++ 面试题&lt;/h1&gt;
 &lt;h2 id=&#34;程序编译过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序编译过程&#34;&gt;#&lt;/a&gt; 程序编译过程&lt;/h2&gt;
 &lt;ul&gt;
@@ -2648,13 +2669,14 @@ Description:
 &lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NfYmFzZV9qaW4vYXJ0aWNsZS9kZXRhaWxzLzg2MDM2MTg1&#34;&gt;C++ 菱形继承问题和虚继承分析 - CSDN 博客&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
+        <category term="C++" />
         <category term="面试题" />
         <updated>2024-03-08T13:53:12.049Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>计算机网络面试题</title>
-        <link rel="alternate" href="http://example.com/value/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98"/>
         <content type="html">&lt;h2 id=&#34;tcpip四层模型osi七层模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcpip四层模型osi七层模型&#34;&gt;#&lt;/a&gt; TCP/IP 四层模型，OSI 七层模型&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tcp连接建立三次握手&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcp连接建立三次握手&#34;&gt;#&lt;/a&gt; TCP 连接建立（三次握手）&lt;/h2&gt;
@@ -3030,6 +3052,7 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;/ul&gt;
 </content>
         <category term="面试题" />
+        <category term="计算机网络" />
         <updated>2024-03-07T09:23:50.257Z</updated>
     </entry>
     <entry>
@@ -3283,9 +3306,9 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
         <updated>2023-12-15T07:40:37.498Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/redis</id>
+        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis</id>
         <title>redis</title>
-        <link rel="alternate" href="http://example.com/value/redis"/>
+        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis"/>
         <content type="html">&lt;h1 id=&#34;redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis&#34;&gt;#&lt;/a&gt; Redis&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;redis（Remote dictionary server）是一个开源的基于内存的数据存储系统。它可以用于数据库缓存，消息队列等各种场景，是一种 NoSQL 数据库。早期的互联网公司系统大多是通过 Mysql 这种传统的关系型数据库对外提供服务。随着互联网的快速发展，应用系统的访问量原来远大，数据库的性能瓶颈越来越明显，主要是由于磁盘 IO 所导致的，磁盘 IO 的读写速度与内存相比是非常慢的，如果能把数据存储在内存中，则可以大大数据存储的性能。于是便出现了 redis，这种基于内存的数据存储系统。&lt;/p&gt;
@@ -3354,12 +3377,13 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;/ol&gt;
 </content>
         <category term="数据库" />
+        <category term="redis" />
         <updated>2023-10-03T08:18:31.023Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/stl_list</id>
+        <id>http://example.com/value/CPP/stl_list</id>
         <title>STL List</title>
-        <link rel="alternate" href="http://example.com/value/stl_list"/>
+        <link rel="alternate" href="http://example.com/value/CPP/stl_list"/>
         <content type="html">&lt;h1 id=&#34;list&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#list&#34;&gt;#&lt;/a&gt; List&lt;/h1&gt;
 &lt;h2 id=&#34;list-node设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#list-node设计&#34;&gt;#&lt;/a&gt; list node 设计&lt;/h2&gt;
 &lt;p&gt;list 是由 list 节点串联而成，需要分开设计。SGI STL 内设计的 list 为双向链表，故 list 节点需要三个成员变量。&lt;/p&gt;

@@ -23,10 +23,15 @@
     <category term="Leetcode周赛" />
     <category term="设计模式" />
     <category term="多线程" />
+    <category term="池化技术" />
+    <category term="redis" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
     <entry>
-        <id>http://example.com/value/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</id>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>计算机网络面试题</title>
-        <link rel="alternate" href="http://example.com/value/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98"/>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98"/>
         <content type="html">&lt;h2 id=&#34;tcpip四层模型osi七层模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcpip四层模型osi七层模型&#34;&gt;#&lt;/a&gt; TCP/IP 四层模型，OSI 七层模型&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tcp连接建立三次握手&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tcp连接建立三次握手&#34;&gt;#&lt;/a&gt; TCP 连接建立（三次握手）&lt;/h2&gt;
@@ -402,6 +407,7 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;/ul&gt;
 </content>
         <category term="面试题" />
+        <category term="计算机网络" />
         <updated>2024-03-07T09:23:50.257Z</updated>
     </entry>
 </feed>
