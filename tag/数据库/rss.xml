@@ -40,10 +40,89 @@
             <category>MySQL</category>
             <pubDate>Sat, 30 Mar 2024 09:58:45 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;mysql基础语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql基础语法&#34;&gt;#&lt;/a&gt; MySQL 基础语法&lt;/h1&gt;
-&lt;h2 id=&#34;创建数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据库&#34;&gt;#&lt;/a&gt; 创建数据库&lt;/h2&gt;
+&lt;h2 id=&#34;create创建数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create创建数据库&#34;&gt;#&lt;/a&gt;  &lt;code&gt;create&lt;/code&gt;  创建数据库&lt;/h2&gt;
 &lt;p&gt;建数据库基本语法：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;create
+&lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;create database [if not exists] database_name
+[character set charset_name]
+[collate collation_name];
+# 如果创建的database_name已存在，则执行会导致错误. 添加 if not exists可以避免
+# charset_name可以指定字符集（？）
+# collation_name指定排列规则（？）
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;drop删除数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#drop删除数据库&#34;&gt;#&lt;/a&gt;  &lt;code&gt;drop&lt;/code&gt;  删除数据库&lt;/h2&gt;
+&lt;p&gt;使用普通用户登录 &lt;code&gt;MySQL&lt;/code&gt;  服务器，需要特定的权限才可以删除或创建数据库.&lt;/p&gt;
+&lt;p&gt;删除数据库基本语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;drop database [if exists] database_name;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;use选择数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#use选择数据库&#34;&gt;#&lt;/a&gt;  &lt;code&gt;use&lt;/code&gt;  选择数据库&lt;/h2&gt;
+&lt;p&gt;选择数据库基础语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;use database_name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;基本数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本数据类型&#34;&gt;#&lt;/a&gt; 基本数据类型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;数值类型&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;tinyint&lt;/code&gt; ：1 字节.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;smallint&lt;/code&gt; ：2 字节&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mediumint&lt;/code&gt; ：3 字节&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt; ：4 字节&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bigint&lt;/code&gt; ：8 字节&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;float&lt;/code&gt; ：4 字节，单精度浮点数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;double&lt;/code&gt; ：8 字节，双进度浮点数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;decimal&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;日期和时间类型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;字符串类型&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;char&lt;/code&gt; ：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;varchar&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;create创建数据库表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create创建数据库表&#34;&gt;#&lt;/a&gt;  &lt;code&gt;create&lt;/code&gt;  创建数据库表&lt;/h2&gt;
+&lt;p&gt;创建数据库表基本语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;create table table_name&amp;#123;
+	coloumn1 datatype,
+	colomun2 datatype,
+	...
+&amp;#125;
+[character set charset_name]
+[collate collation_name]
+[engine=engine_name];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;字段属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Primary key&lt;/code&gt; ：主键&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;auto_increment&lt;/code&gt; ：自增，一般用于主键&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not null&lt;/code&gt; ：非空，若输入的记录该字段为空，则会报错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;drop删除数据库表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#drop删除数据库表&#34;&gt;#&lt;/a&gt;  &lt;code&gt;drop&lt;/code&gt;  删除数据库表&lt;/h2&gt;
+&lt;p&gt;删除数据库表基本语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;drop table [if exists] table_name;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;insert插入数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#insert插入数据&#34;&gt;#&lt;/a&gt;  &lt;code&gt;insert&lt;/code&gt;  插入数据&lt;/h2&gt;
+&lt;h2 id=&#34;delete删除数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#delete删除数据&#34;&gt;#&lt;/a&gt;  &lt;code&gt;delete&lt;/code&gt;  删除数据&lt;/h2&gt;
+&lt;h2 id=&#34;select查询数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#select查询数据&#34;&gt;#&lt;/a&gt;  &lt;code&gt;select&lt;/code&gt;  查询数据&lt;/h2&gt;
+&lt;h2 id=&#34;wherer子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#wherer子句&#34;&gt;#&lt;/a&gt;  &lt;code&gt;wherer&lt;/code&gt;  子句&lt;/h2&gt;
+&lt;h2 id=&#34;update更新&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#update更新&#34;&gt;#&lt;/a&gt;  &lt;code&gt;update&lt;/code&gt;  更新&lt;/h2&gt;
+&lt;h2 id=&#34;like子句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#like子句&#34;&gt;#&lt;/a&gt;  &lt;code&gt;like&lt;/code&gt;  子句&lt;/h2&gt;
+&lt;h2 id=&#34;union&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#union&#34;&gt;#&lt;/a&gt;  &lt;code&gt;union&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;order-by语句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#order-by语句&#34;&gt;#&lt;/a&gt;  &lt;code&gt;order by&lt;/code&gt;  语句&lt;/h2&gt;
+&lt;h2 id=&#34;group-by分组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#group-by分组&#34;&gt;#&lt;/a&gt;  &lt;code&gt;group by&lt;/code&gt;  分组&lt;/h2&gt;
+&lt;h2 id=&#34;连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连接&#34;&gt;#&lt;/a&gt; 连接&lt;/h2&gt;
+&lt;h2 id=&#34;事务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事务&#34;&gt;#&lt;/a&gt; 事务&lt;/h2&gt;
+&lt;h2 id=&#34;索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#索引&#34;&gt;#&lt;/a&gt; 索引&lt;/h2&gt;
+&lt;h2 id=&#34;函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数&#34;&gt;#&lt;/a&gt; 函数&lt;/h2&gt;
 &lt;h2 id=&#34;参考文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文章&#34;&gt;#&lt;/a&gt; 参考文章&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9teXNxbC9teXNxbC10dXRvcmlhbC5odG1s&#34;&gt;MySQL 教程 | 菜鸟教程 (runoob.com)&lt;/span&gt;&lt;/li&gt;
