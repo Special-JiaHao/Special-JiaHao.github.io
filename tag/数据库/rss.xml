@@ -18,6 +18,7 @@
         <category>Project</category>
         <category>面试题</category>
         <category>日常</category>
+        <category>校招</category>
         <category>算法</category>
         <category>Leetcode双周赛</category>
         <category>Algorithm</category>
@@ -27,6 +28,8 @@
         <category>池化技术</category>
         <category>redis</category>
         <category>MySQL</category>
+        <category>操作系统</category>
+        <category>计算机网络</category>
         <category>CMake</category>
         <category>线程池</category>
         <item>
@@ -37,6 +40,14 @@
             <category>MySQL</category>
             <pubDate>Sat, 30 Mar 2024 09:58:45 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;mysql基础语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql基础语法&#34;&gt;#&lt;/a&gt; MySQL 基础语法&lt;/h1&gt;
+&lt;h2 id=&#34;创建数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建数据库&#34;&gt;#&lt;/a&gt; 创建数据库&lt;/h2&gt;
+&lt;p&gt;建数据库基本语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;create
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;参考文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文章&#34;&gt;#&lt;/a&gt; 参考文章&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9teXNxbC9teXNxbC10dXRvcmlhbC5odG1s&#34;&gt;MySQL 教程 | 菜鸟教程 (runoob.com)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
         <item>

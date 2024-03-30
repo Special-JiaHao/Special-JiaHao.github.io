@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>繁華落盡 似水流年 • Posts by &#34;腾讯&#34; category</title>
+        <link>http://example.com</link>
+        <description>编程日记 &amp; 随笔</description>
+        <language>en</language>
+        <pubDate>Mon, 18 Mar 2024 20:59:34 +0800</pubDate>
+        <lastBuildDate>Mon, 18 Mar 2024 20:59:34 +0800</lastBuildDate>
+        <category>mathematics</category>
+        <category>语法</category>
+        <category>C++</category>
+        <category>VMware</category>
+        <category>install</category>
+        <category>数据库</category>
+        <category>STL</category>
+        <category>CNN</category>
+        <category>Project</category>
+        <category>面试题</category>
+        <category>日常</category>
+        <category>校招</category>
+        <category>算法</category>
+        <category>Leetcode双周赛</category>
+        <category>Algorithm</category>
+        <category>Leetcode周赛</category>
+        <category>设计模式</category>
+        <category>多线程</category>
+        <category>池化技术</category>
+        <category>redis</category>
+        <category>MySQL</category>
+        <category>操作系统</category>
+        <category>计算机网络</category>
+        <category>CMake</category>
+        <category>线程池</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</guid>
+            <title>腾讯校招</title>
+            <link>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</link>
+            <category>校招</category>
+            <pubDate>Mon, 18 Mar 2024 20:59:34 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;一面心态爆炸&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一面心态爆炸&#34;&gt;#&lt;/a&gt; 一面（心态爆炸）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;一开始问了我的研究方向&lt;/code&gt; ，讲一讲论文提出的方法.&lt;/li&gt;
+&lt;li&gt;问我 &lt;code&gt;熟悉的语言&lt;/code&gt; 是什么？ 我说 C++&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;程序的空间分布？&lt;/code&gt; 这里我居然还卡了一下，栈、堆、全局 / 静态存储区、常量存储区、代码区。栈区主要用于存储一些局部变量，空间由操作系统来管理；堆是动态内存空间，由程序员管理内存的申请和释放。全局 / 静态区用于存储全局变量和静态变量；面试官说先到这. (我当时紧张其实忘记了常量区，但是我记得有五个区，所以卡了)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vector你了解吗？你知道它的内存管理吗?``vector&lt;/code&gt;  是 &lt;code&gt;STL&lt;/code&gt;  内的一个顺序容器，其空间是从堆上申请的， &lt;code&gt;vector&lt;/code&gt;  可以通过 &lt;code&gt;size()&lt;/code&gt;  来获取其实际存储的变量数目， &lt;code&gt;capacity()&lt;/code&gt;  可以用于获取所占空间，当 &lt;code&gt;size()和capacity()&lt;/code&gt;  相等时，会进行扩容的操作，这个扩容的系数依赖于不同的操作系统，它会去堆内找一片更大的空间分配给这个 &lt;code&gt;vector&lt;/code&gt; ，将之前的内容复制过来，然后释放由来申请的空间.  &lt;code&gt;比较常用的扩容系数是什么?&lt;/code&gt; ，我回答 2 或者 1.5.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;你说vecotr申请的空间是在堆上，那比如说我想要你去验证它所申请的空间是在堆的，你如何证明？&lt;/code&gt; 这个我没有想到，但是面试官一直引导我，几乎快说出答案了，最后我才反应过来，这里直接说方法。首先在 &lt;code&gt;main&lt;/code&gt;  函数内写 &lt;code&gt;int a[10000000000];&lt;/code&gt;  程序会报段错误，其是栈空间溢出了（局部变量存储在栈中）; 然后换成另外一段程序 &lt;code&gt;vector&amp;lt;int&amp;gt; res(10000000000);&lt;/code&gt;  程序顺利编译执行，说明 &lt;code&gt;vector&lt;/code&gt;  所申请的空间和前面的语句所申请的空间不是同一片，所以应该是在堆上的.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;讲一下三次握手的流程？&lt;/code&gt; 首先客户端发送 &lt;code&gt;SYN报文&lt;/code&gt; 给服务端，服务端接收到 &lt;code&gt;SYN报文&lt;/code&gt; 后，发送 &lt;code&gt;ACK确认&lt;/code&gt; ，同时把 &lt;code&gt;SYN&lt;/code&gt;  置为 1，客户端收到响应后，向服务端发送 &lt;code&gt;ACK确认&lt;/code&gt; ，服务端收到确认后，三次握手连接建立成功.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;为什么是三次啊. &lt;/code&gt; 首先 2 次是一定不可以的. TCP 是一个全双工的协议，而且 TCP 采用了确认机制，所以必须至少 4 次才能建立双向的连接。其次是在第二次握手的同时向客户端发送 &lt;code&gt;ACK确认&lt;/code&gt; 可以和服务端建立连接的请求 &lt;code&gt;SYN=1&lt;/code&gt;  合并.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;那么挥手是几次呢？&lt;/code&gt; 四次.  &lt;code&gt;为什么呢？不可以三次吗？&lt;/code&gt; 四次挥手中间的连接中断和 &lt;code&gt;ACK确认&lt;/code&gt; 两个报文不能合并，因为当被动断开方收到断开连接请求的同时，可能还有数据没有发送完。此时不能仓促的将断开连接请求和 &lt;code&gt;ACK确认&lt;/code&gt; 请求合并.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TIME_WAIT状态你了解吗？是哪一方的状态，是主动断开连接方还是被动断开连接方.&lt;/code&gt;  被动断开连接方&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;你平时有没有用过一些抓包工具啊. 比如说我想看一些客户端和服务端的一些状态.&lt;/code&gt;  wireless shark，但是我用的并不多.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;那在Linux下呢？有什么命令可以查看网络状态. &lt;/code&gt; 我说记不太清楚了，其实我并不知道，后来查了一下。可以用 &lt;code&gt; netstat&lt;/code&gt; ，具体还得再去看看&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TCP是可靠传输的吗？它是怎么保证可靠传输的. &lt;/code&gt; 是可靠传输的，它有很多机制来保证。超时重传、序号和确认、流量控制、拥塞控制。于是他又问 &lt;code&gt;TCP里面是不是有一个字段也可以保证这个可靠传输?&lt;/code&gt;  校验和&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;既然TCP有这么多机制来保证可靠校验，传输层只是网络协议的一层，那么在应用层，为什么还需要做额外的可靠性校验.&lt;/code&gt;  这里我回答不上。面试官也引导了我，可惜我不会！后来面试官说先到这里，让我写两道题.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;股票买卖,一次交易&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;链表逆置&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;最后就结束了！比较令人烦的是腾讯会议搞的这个 &lt;code&gt;面呗&lt;/code&gt; ，不知道是我不会用还是设计的有问题，题目也没办法调试，没有输入输出，我也没办法验证我写的对不对。最后特意写了一个输入输出，还需要写一个链表.&lt;/p&gt;
+&lt;ol start=&#34;17&#34;&gt;
+&lt;li&gt;最后简单聊了一些，问我有什么问题需要问他的？我随便问了一些，他说就一个问题吗？当时面的巨烂，瑟瑟发抖，于是乎又问了几个。最后结束的时候问我实验室，发现面试官是一个实验室的学长！那还挺幸运. hh&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

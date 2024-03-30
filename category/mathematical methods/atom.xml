@@ -15,6 +15,7 @@
     <category term="Project" />
     <category term="面试题" />
     <category term="日常" />
+    <category term="校招" />
     <category term="算法" />
     <category term="Leetcode双周赛" />
     <category term="Algorithm" />
@@ -24,6 +25,8 @@
     <category term="池化技术" />
     <category term="redis" />
     <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
     <category term="CMake" />
     <category term="线程池" />
     <entry>
