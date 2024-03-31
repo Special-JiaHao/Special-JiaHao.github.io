@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;小红书&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2024-03-31T13:51:53.656Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
+    <category term="VMware" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
+    <category term="CNN" />
+    <category term="Project" />
+    <category term="面试题" />
+    <category term="日常" />
+    <category term="校招" />
+    <category term="算法" />
+    <category term="Leetcode双周赛" />
+    <category term="Algorithm" />
+    <category term="Leetcode周赛" />
+    <category term="设计模式" />
+    <category term="多线程" />
+    <category term="池化技术" />
+    <category term="redis" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
+    <entry>
+        <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%A0%A1%E6%8B%9B</id>
+        <title>腾讯校招</title>
+        <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%A0%A1%E6%8B%9B"/>
+        <content type="html">&lt;h2 id=&#34;笔试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#笔试&#34;&gt;#&lt;/a&gt; 笔试&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2024-03-29 晚上做的，第一题签到题，第二题看错题目了，导致已知没有调出来，坐了这么久的劳居然都没有想去从新读一遍题目，太懒了！第三题看一些，概率 DP，感觉就不会。还是得好好整理整理一下.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="校招" />
+        <updated>2024-03-31T13:51:53.656Z</updated>
+    </entry>
+</feed>
