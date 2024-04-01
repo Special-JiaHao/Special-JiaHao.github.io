@@ -26,12 +26,13 @@
         <category>设计模式</category>
         <category>多线程</category>
         <category>池化技术</category>
-        <category>redis</category>
         <category>MySQL</category>
         <category>操作系统</category>
         <category>计算机网络</category>
         <category>CMake</category>
         <category>线程池</category>
+        <category>Go</category>
+        <category>Redis</category>
         <item>
             <guid isPermalink="true">http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98</guid>
             <title>Linux面试题</title>
@@ -515,6 +516,7 @@
 &lt;li&gt;半同步复制：主节点写入 &lt;code&gt;binlog&lt;/code&gt;  并将数据同步到从节点时，不需要等待所以的从节点执行完成，当收到至少一个从节点的同步完成就将结果返回给客户端.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;mysql-ngram全文检索&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-ngram全文检索&#34;&gt;#&lt;/a&gt;  &lt;code&gt;MySQL Ngram&lt;/code&gt;  全文检索&lt;/h2&gt;
  ]]></description>
         </item>
         <item>

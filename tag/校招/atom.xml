@@ -23,15 +23,16 @@
     <category term="设计模式" />
     <category term="多线程" />
     <category term="池化技术" />
-    <category term="redis" />
     <category term="MySQL" />
     <category term="操作系统" />
     <category term="计算机网络" />
     <category term="CMake" />
     <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
     <entry>
         <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%A0%A1%E6%8B%9B</id>
-        <title>腾讯校招</title>
+        <title>小红书校招</title>
         <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%A0%A1%E6%8B%9B"/>
         <content type="html">&lt;h2 id=&#34;笔试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#笔试&#34;&gt;#&lt;/a&gt; 笔试&lt;/h2&gt;
 &lt;blockquote&gt;

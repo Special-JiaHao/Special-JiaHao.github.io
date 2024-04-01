@@ -23,12 +23,13 @@
     <category term="设计模式" />
     <category term="多线程" />
     <category term="池化技术" />
-    <category term="redis" />
     <category term="MySQL" />
     <category term="操作系统" />
     <category term="计算机网络" />
     <category term="CMake" />
     <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
     <entry>
         <id>http://example.com/value/CPP/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</id>
         <title>线程池原理与实现</title>

@@ -23,12 +23,13 @@
     <category term="设计模式" />
     <category term="多线程" />
     <category term="池化技术" />
-    <category term="redis" />
     <category term="MySQL" />
     <category term="操作系统" />
     <category term="计算机网络" />
     <category term="CMake" />
     <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
     <entry>
         <id>http://example.com/value/Leetcode/%E7%AC%AC%20126%20%E5%9C%BA%E5%8F%8C%E5%91%A8%E8%B5%9B%E9%A2%98%E8%A7%A3</id>
         <title>第 126 场双周赛</title>

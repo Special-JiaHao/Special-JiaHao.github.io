@@ -23,16 +23,17 @@
     <category term="设计模式" />
     <category term="多线程" />
     <category term="池化技术" />
-    <category term="redis" />
     <category term="MySQL" />
     <category term="操作系统" />
     <category term="计算机网络" />
     <category term="CMake" />
     <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
     <entry>
-        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis</id>
-        <title>redis</title>
-        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis"/>
+        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis%E5%9F%BA%E7%A1%80</id>
+        <title>Redis基础</title>
+        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis%E5%9F%BA%E7%A1%80"/>
         <content type="html">&lt;h1 id=&#34;redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis&#34;&gt;#&lt;/a&gt; Redis&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;redis（Remote dictionary server）是一个开源的基于内存的数据存储系统。它可以用于数据库缓存，消息队列等各种场景，是一种 NoSQL 数据库。早期的互联网公司系统大多是通过 Mysql 这种传统的关系型数据库对外提供服务。随着互联网的快速发展，应用系统的访问量原来远大，数据库的性能瓶颈越来越明显，主要是由于磁盘 IO 所导致的，磁盘 IO 的读写速度与内存相比是非常慢的，如果能把数据存储在内存中，则可以大大数据存储的性能。于是便出现了 redis，这种基于内存的数据存储系统。&lt;/p&gt;
@@ -40,11 +41,11 @@
 &lt;p&gt;redis 支持多种数据结构，包括五种基本数据类型和五种高级数据类型。&lt;br /&gt;
 五种基本数据类型：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;字符串 String&lt;/li&gt;
-&lt;li&gt;列表 List&lt;/li&gt;
-&lt;li&gt;集合 Set&lt;/li&gt;
-&lt;li&gt;有序集合 SortedSet&lt;/li&gt;
-&lt;li&gt;哈希 Hash&lt;/li&gt;
+&lt;li&gt;字符串 &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;列表 &lt;code&gt;List&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;集合 &lt;code&gt;Set&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;有序集合 &lt;code&gt;SortedSet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;哈希 &lt;code&gt;Hash&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;五种高级数据类型：&lt;/p&gt;
 &lt;ul&gt;
@@ -83,25 +84,9 @@
 &lt;li&gt;AOF 方式（Append-Only File），追加文件，每次在执行写命令的时候，不仅将命令写入到内存中，还会将命令写入到一个追加的文件中，这个文件就是 AOF 文件，它会以日志的形式来记录每一个写操作，当 redis 重启的时候，就会通过重新执行 AOF 文件中的命令来在内存中重建整个数据库的内容&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;主从复制是指将一台服务器（主节点）的数据复制到其他 redis 服务器中（从节点）。一个主节点可以有多个从节点，而每个从节点只可以有一个主节点，数据的复制是单向的，只能由主节点到从节点；一般来说主节点负责写操作，从节点负责读操作，主节点会将自己的数据变化通过异步的方式发送给从节点，从节点接收到主节点的数据之后，更新自己的数据，这样就达到的了数据一致性的目的。&lt;/p&gt;
-&lt;p&gt;面试问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  是多线程还是单线程？
-&lt;ul&gt;
-&lt;li&gt;在早期的 &lt;code&gt;redis&lt;/code&gt;  版本中， &lt;code&gt;redis&lt;/code&gt;  的网络 &lt;code&gt;I/O&lt;/code&gt;  和键值对的读写操作是由单线程来处理的；在回来的版本，在网络 &lt;code&gt;I/O&lt;/code&gt;  模块使用了多线程，但是对于键值对的操作仍然使用的是单线程（故无论是早期版本的 &lt;code&gt;redis&lt;/code&gt;  还是当前版本的 &lt;code&gt;redis&lt;/code&gt;  均是并发安全的）；当然对于一个 &lt;code&gt;redis&lt;/code&gt;  的数据持久化，集群同步等问题都是使用多线程来完成，需要额外的开销&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  为什么速度快？
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  的一种基于内存的数据存储系统，相比于涉及到磁盘操作的 &lt;code&gt;mysql&lt;/code&gt;  等其他数据库而言，对于内存的操作会更快。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  对于键值对的读写操作是单线程的，不需要额外线程切换的开销&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  底层通过哈希对数据进行映射，可以实现线性的存储与访问；同时在访问冲突大时，使用渐进式的 &lt;code&gt;rehash&lt;/code&gt;  机制来进行重新映射&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  内部维护了一个缓存时间戳，避免的频繁的系统调用而导致的额外开销。（ &lt;code&gt;redis&lt;/code&gt;  获取系统的毫秒时间戳并不会频繁的调用 &lt;code&gt;time()&lt;/code&gt;  这样的系统调用， &lt;code&gt;redis&lt;/code&gt;  会对时间戳进行缓存，同时通过额外的线程来对时间戳进行更新）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 </content>
         <category term="数据库" />
-        <category term="redis" />
+        <category term="Redis" />
         <updated>2023-10-03T08:18:31.023Z</updated>
     </entry>
 </feed>

@@ -26,12 +26,13 @@
         <category>设计模式</category>
         <category>多线程</category>
         <category>池化技术</category>
-        <category>redis</category>
         <category>MySQL</category>
         <category>操作系统</category>
         <category>计算机网络</category>
         <category>CMake</category>
         <category>线程池</category>
+        <category>Go</category>
+        <category>Redis</category>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E8%85%BE%E8%AE%AF%E6%A0%A1%E6%8B%9B</guid>
             <title>腾讯校招</title>

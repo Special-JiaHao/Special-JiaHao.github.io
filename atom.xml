@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年</title>
     <link href="http://example.com" />
-    <updated>2024-03-31T13:51:53.656Z</updated>
+    <updated>2024-04-01T07:59:06.673Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -23,15 +23,25 @@
     <category term="设计模式" />
     <category term="多线程" />
     <category term="池化技术" />
-    <category term="redis" />
     <category term="MySQL" />
     <category term="操作系统" />
     <category term="计算机网络" />
     <category term="CMake" />
     <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
+    <entry>
+        <id>http://example.com/value/Go/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</id>
+        <title>Go基础语法</title>
+        <link rel="alternate" href="http://example.com/value/Go/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"/>
+        <content type="html">&lt;h2 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h2&gt;
+</content>
+        <category term="Go" />
+        <updated>2024-04-01T07:59:06.673Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%A0%A1%E6%8B%9B</id>
-        <title>腾讯校招</title>
+        <title>小红书校招</title>
         <link rel="alternate" href="http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%A0%A1%E6%8B%9B"/>
         <content type="html">&lt;h2 id=&#34;笔试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#笔试&#34;&gt;#&lt;/a&gt; 笔试&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -94,7 +104,9 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;drop删除数据库表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#drop删除数据库表&#34;&gt;#&lt;/a&gt;  &lt;code&gt;drop&lt;/code&gt;  删除数据库表&lt;/h2&gt;
 &lt;p&gt;删除数据库表基本语法：&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;drop&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;exists&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; table_name&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;insert插入数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#insert插入数据&#34;&gt;#&lt;/a&gt;  &lt;code&gt;insert&lt;/code&gt;  插入数据&lt;/h2&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;drop&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;exists&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; table_name&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;alter修改表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#alter修改表&#34;&gt;#&lt;/a&gt;  &lt;code&gt;alter&lt;/code&gt;  修改表&lt;/h2&gt;
+&lt;p&gt;修改表结构基本语法&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;alter&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt; table_name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;add&lt;/span&gt; column_name datatype&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;drop&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;column&lt;/span&gt; column_name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;modify&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;column&lt;/span&gt; column_name datatype&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;insert插入数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#insert插入数据&#34;&gt;#&lt;/a&gt;  &lt;code&gt;insert&lt;/code&gt;  插入数据&lt;/h2&gt;
 &lt;p&gt;插入数据基本语法：&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;insert&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;into&lt;/span&gt; table_name&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;column1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; column2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;values1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; values2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;values1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; values2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;如果主键为自增的列，可使用 &lt;code&gt;NULL&lt;/code&gt;  占位符替代&lt;/p&gt;
 &lt;h2 id=&#34;delete删除数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#delete删除数据&#34;&gt;#&lt;/a&gt;  &lt;code&gt;delete&lt;/code&gt;  删除数据&lt;/h2&gt;
@@ -154,25 +166,68 @@
 &lt;p&gt;&lt;code&gt;with rollup&lt;/code&gt;  可以实现在分组统计数据基础上再进行相同的统计，例如：&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mysql&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;coalesce&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;name&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;总数&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;SUM&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;signin&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; signin_count &lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt;  employee_tbl &lt;span class=&#34;token keyword&#34;&gt;GROUP&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; name &lt;span class=&#34;token keyword&#34;&gt;WITH ROLLUP&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;--------------------------+--------------+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;coalesce&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;name&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;总数&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; signin_count &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;--------------------------+--------------+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; 小丽                   &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;            &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; 小明                   &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;            &lt;span class=&#34;token number&#34;&gt;7&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; 小王                   &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;            &lt;span class=&#34;token number&#34;&gt;7&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; 总数                   &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;           &lt;span class=&#34;token number&#34;&gt;16&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;--------------------------+--------------+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;rows&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.01&lt;/span&gt; sec&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;having&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#having&#34;&gt;#&lt;/a&gt;  &lt;code&gt;having&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;having&lt;/code&gt;  作为 &lt;code&gt;where&lt;/code&gt;  的补充功能， &lt;code&gt;having&lt;/code&gt;  子句中可以使用聚集函数&lt;/p&gt;
 &lt;h2 id=&#34;连接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连接&#34;&gt;#&lt;/a&gt; 连接&lt;/h2&gt;
-&lt;p&gt;JOIN 按照功能大致分为如下三类：&lt;/p&gt;
+&lt;p&gt;JOIN 按照功能大致分为如下几类：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;inner join&lt;/code&gt; ：内连接 / 等值连接&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; column1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; column2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; table1 &lt;span class=&#34;token keyword&#34;&gt;inner&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; table2 &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; table1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;column_name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; table2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;column_name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;inner join&lt;/code&gt; ：内连接 / 等值连接，返回两个表中满足连接条件的匹配行&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/inner_join.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; column1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; column2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; table1 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;inner&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; table2 &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; table1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;column_name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; table2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;column_name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;left join&lt;/code&gt; ：&lt;/p&gt;
-&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;left join&lt;/code&gt; ：返回左表的所有行，并包括右表中匹配的行，如果右表中没有匹配的行，将使用 &lt;code&gt;null&lt;/code&gt;  填充相应字段&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/left_join.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; column1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; column2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; table1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; table2 &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; table1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;column_name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; table2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;column_name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;right join&lt;/code&gt; ：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;right join&lt;/code&gt; ：返回右表的所以行，并包含左表匹配的行，如果左表中没有匹配的行，将使用 &lt;code&gt;null&lt;/code&gt;  填充相应字段&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/right_join.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; column1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; column2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; table1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;join&lt;/span&gt; table2 &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; table1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;column_name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; table2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;column_name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;cross join&lt;/code&gt; ：对两个表做一个笛卡尔积，最终返回的表的记录可能非常大&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/cross_join.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; olumn1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; column2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; table1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CROSS&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;JOIN&lt;/span&gt; table2&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;slef join&lt;/code&gt; ：自连接&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;事务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事务&#34;&gt;#&lt;/a&gt; 事务&lt;/h2&gt;
+&lt;h2 id=&#34;null值的处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#null值的处理&#34;&gt;#&lt;/a&gt;  &lt;code&gt;null&lt;/code&gt;  值的处理&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;MySQL&lt;/code&gt;  中 &lt;code&gt;null&lt;/code&gt;  表示缺失或未知的数据，处理 &lt;code&gt;null&lt;/code&gt;  值需要特别处理，在  &lt;code&gt;MySQL&lt;/code&gt;  中， &lt;code&gt;NULL&lt;/code&gt;  值与任何其它值的比较（即使是  &lt;code&gt;NULL&lt;/code&gt; ）永远返回  &lt;code&gt;NULL&lt;/code&gt; ，即  &lt;code&gt;NULL = NULL&lt;/code&gt;  返回  &lt;code&gt;NULL&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MySQL 中处理 NULL 值的常见注意事项和技巧&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;is null&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;is not null&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;=&amp;gt;&lt;/code&gt; ：比较操作符（不同于 = 运算符），当比较的的两个值相等或者都为 NULL 时返回 true&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;coalesce&lt;/code&gt;  函数替换 &lt;code&gt;null&lt;/code&gt;  值，它接收 &lt;code&gt;多个参数&lt;/code&gt; ，返回参数列表中第一个非 &lt;code&gt;null&lt;/code&gt;  的值&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; product_name&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;COALESCE&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;column1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; column1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;AS&lt;/span&gt; actual_quantity&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; products&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;ifnull&lt;/code&gt;  函数处理 &lt;code&gt;null&lt;/code&gt; ， &lt;code&gt;ifnull&lt;/code&gt;  函数是 &lt;code&gt;coalesce&lt;/code&gt;  的 MySQL 特定版本，它接受两个参数，如果第一个参数为 NULL，则返回第二个参数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;null&lt;/code&gt;  排序，在使用 &lt;code&gt;order by&lt;/code&gt;  子句进行排序时， &lt;code&gt;null&lt;/code&gt;  会默认排在最后。如果希望 &lt;code&gt;null&lt;/code&gt;  排在前面，可以使用 &lt;code&gt;NULLS FIRST&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; product_name&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; price&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; products&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;ORDER&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; price &lt;span class=&#34;token keyword&#34;&gt;ASC&lt;/span&gt; NULLS &lt;span class=&#34;token keyword&#34;&gt;FIRST&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;聚合函数 &lt;code&gt;count/sum/avg&lt;/code&gt;  会忽略 &lt;code&gt;null&lt;/code&gt;  值，如果希望将 &lt;code&gt;null&lt;/code&gt;  视为 0，可以使用 &lt;code&gt;coalesce&lt;/code&gt;  或 &lt;code&gt;ifnull&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;exists&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#exists&#34;&gt;#&lt;/a&gt;  &lt;code&gt;exists&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;any-all&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#any-all&#34;&gt;#&lt;/a&gt;  &lt;code&gt;any、all&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;case&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#case&#34;&gt;#&lt;/a&gt;  &lt;code&gt;case&lt;/code&gt;&lt;/h2&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CASE&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;WHEN&lt;/span&gt; condition1 &lt;span class=&#34;token keyword&#34;&gt;THEN&lt;/span&gt; result1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;WHEN&lt;/span&gt; condition2 &lt;span class=&#34;token keyword&#34;&gt;THEN&lt;/span&gt; result2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;WHEN&lt;/span&gt; conditionN &lt;span class=&#34;token keyword&#34;&gt;THEN&lt;/span&gt; resultN&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;ELSE&lt;/span&gt; result&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;END&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;例子：&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt; OrderID&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Quantity&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;CASE&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;WHEN&lt;/span&gt; Quantity &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;30&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;THEN&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;The quantity is greater than 30&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;WHEN&lt;/span&gt; Quantity &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;30&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;THEN&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;The quantity is 30&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;ELSE&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;The quantity is under 30&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;END&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;AS&lt;/span&gt; QuantityText&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;FROM&lt;/span&gt; OrderDetails&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;事务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事务&#34;&gt;#&lt;/a&gt; 事务&lt;/h2&gt;
 &lt;h2 id=&#34;索引&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#索引&#34;&gt;#&lt;/a&gt; 索引&lt;/h2&gt;
 &lt;h2 id=&#34;函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数&#34;&gt;#&lt;/a&gt; 函数&lt;/h2&gt;
 &lt;h2 id=&#34;参考文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文章&#34;&gt;#&lt;/a&gt; 参考文章&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9teXNxbC9teXNxbC10dXRvcmlhbC5odG1s&#34;&gt;MySQL 教程 | 菜鸟教程 (runoob.com)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;[2] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9teXNxbC9kZWZhdWx0LmFzcA==&#34;&gt;MySQL Tutorial (w3schools.com)&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="数据库" />
@@ -1832,6 +1887,7 @@ Description:
 &lt;li&gt;半同步复制：主节点写入 &lt;code&gt;binlog&lt;/code&gt;  并将数据同步到从节点时，不需要等待所以的从节点执行完成，当收到至少一个从节点的同步完成就将结果返回给客户端.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;mysql-ngram全文检索&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-ngram全文检索&#34;&gt;#&lt;/a&gt;  &lt;code&gt;MySQL Ngram&lt;/code&gt;  全文检索&lt;/h2&gt;
 </content>
         <category term="面试题" />
         <category term="MySQL" />
@@ -3668,9 +3724,9 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
         <updated>2023-12-15T07:40:37.498Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis</id>
-        <title>redis</title>
-        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis"/>
+        <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis%E5%9F%BA%E7%A1%80</id>
+        <title>Redis基础</title>
+        <link rel="alternate" href="http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis%E5%9F%BA%E7%A1%80"/>
         <content type="html">&lt;h1 id=&#34;redis&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#redis&#34;&gt;#&lt;/a&gt; Redis&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;redis（Remote dictionary server）是一个开源的基于内存的数据存储系统。它可以用于数据库缓存，消息队列等各种场景，是一种 NoSQL 数据库。早期的互联网公司系统大多是通过 Mysql 这种传统的关系型数据库对外提供服务。随着互联网的快速发展，应用系统的访问量原来远大，数据库的性能瓶颈越来越明显，主要是由于磁盘 IO 所导致的，磁盘 IO 的读写速度与内存相比是非常慢的，如果能把数据存储在内存中，则可以大大数据存储的性能。于是便出现了 redis，这种基于内存的数据存储系统。&lt;/p&gt;
@@ -3678,11 +3734,11 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;p&gt;redis 支持多种数据结构，包括五种基本数据类型和五种高级数据类型。&lt;br /&gt;
 五种基本数据类型：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;字符串 String&lt;/li&gt;
-&lt;li&gt;列表 List&lt;/li&gt;
-&lt;li&gt;集合 Set&lt;/li&gt;
-&lt;li&gt;有序集合 SortedSet&lt;/li&gt;
-&lt;li&gt;哈希 Hash&lt;/li&gt;
+&lt;li&gt;字符串 &lt;code&gt;String&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;列表 &lt;code&gt;List&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;集合 &lt;code&gt;Set&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;有序集合 &lt;code&gt;SortedSet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;哈希 &lt;code&gt;Hash&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;五种高级数据类型：&lt;/p&gt;
 &lt;ul&gt;
@@ -3721,25 +3777,9 @@ UDP 应用场景：实时性要求高，准确度要求低（在线语音 / 视�
 &lt;li&gt;AOF 方式（Append-Only File），追加文件，每次在执行写命令的时候，不仅将命令写入到内存中，还会将命令写入到一个追加的文件中，这个文件就是 AOF 文件，它会以日志的形式来记录每一个写操作，当 redis 重启的时候，就会通过重新执行 AOF 文件中的命令来在内存中重建整个数据库的内容&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;主从复制是指将一台服务器（主节点）的数据复制到其他 redis 服务器中（从节点）。一个主节点可以有多个从节点，而每个从节点只可以有一个主节点，数据的复制是单向的，只能由主节点到从节点；一般来说主节点负责写操作，从节点负责读操作，主节点会将自己的数据变化通过异步的方式发送给从节点，从节点接收到主节点的数据之后，更新自己的数据，这样就达到的了数据一致性的目的。&lt;/p&gt;
-&lt;p&gt;面试问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  是多线程还是单线程？
-&lt;ul&gt;
-&lt;li&gt;在早期的 &lt;code&gt;redis&lt;/code&gt;  版本中， &lt;code&gt;redis&lt;/code&gt;  的网络 &lt;code&gt;I/O&lt;/code&gt;  和键值对的读写操作是由单线程来处理的；在回来的版本，在网络 &lt;code&gt;I/O&lt;/code&gt;  模块使用了多线程，但是对于键值对的操作仍然使用的是单线程（故无论是早期版本的 &lt;code&gt;redis&lt;/code&gt;  还是当前版本的 &lt;code&gt;redis&lt;/code&gt;  均是并发安全的）；当然对于一个 &lt;code&gt;redis&lt;/code&gt;  的数据持久化，集群同步等问题都是使用多线程来完成，需要额外的开销&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  为什么速度快？
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  的一种基于内存的数据存储系统，相比于涉及到磁盘操作的 &lt;code&gt;mysql&lt;/code&gt;  等其他数据库而言，对于内存的操作会更快。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  对于键值对的读写操作是单线程的，不需要额外线程切换的开销&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  底层通过哈希对数据进行映射，可以实现线性的存储与访问；同时在访问冲突大时，使用渐进式的 &lt;code&gt;rehash&lt;/code&gt;  机制来进行重新映射&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;redis&lt;/code&gt;  内部维护了一个缓存时间戳，避免的频繁的系统调用而导致的额外开销。（ &lt;code&gt;redis&lt;/code&gt;  获取系统的毫秒时间戳并不会频繁的调用 &lt;code&gt;time()&lt;/code&gt;  这样的系统调用， &lt;code&gt;redis&lt;/code&gt;  会对时间戳进行缓存，同时通过额外的线程来对时间戳进行更新）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 </content>
         <category term="数据库" />
-        <category term="redis" />
+        <category term="Redis" />
         <updated>2023-10-03T08:18:31.023Z</updated>
     </entry>
     <entry>

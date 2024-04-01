@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;go&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2024-04-01T07:59:06.673Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
+    <category term="VMware" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
+    <category term="CNN" />
+    <category term="Project" />
+    <category term="面试题" />
+    <category term="日常" />
+    <category term="校招" />
+    <category term="算法" />
+    <category term="Leetcode双周赛" />
+    <category term="Algorithm" />
+    <category term="Leetcode周赛" />
+    <category term="设计模式" />
+    <category term="多线程" />
+    <category term="池化技术" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
+    <entry>
+        <id>http://example.com/value/Go/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</id>
+        <title>Go基础语法</title>
+        <link rel="alternate" href="http://example.com/value/Go/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"/>
+        <content type="html">&lt;h2 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h2&gt;
+</content>
+        <category term="Go" />
+        <updated>2024-04-01T07:59:06.673Z</updated>
+    </entry>
+</feed>

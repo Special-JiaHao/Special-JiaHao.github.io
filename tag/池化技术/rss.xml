@@ -26,12 +26,13 @@
         <category>设计模式</category>
         <category>多线程</category>
         <category>池化技术</category>
-        <category>redis</category>
         <category>MySQL</category>
         <category>操作系统</category>
         <category>计算机网络</category>
         <category>CMake</category>
         <category>线程池</category>
+        <category>Go</category>
+        <category>Redis</category>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</guid>
             <title>数据库连接池</title>
