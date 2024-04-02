@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;april&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2024-04-02T08:25:04.208Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
+    <category term="VMware" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
+    <category term="CNN" />
+    <category term="Project" />
+    <category term="面试题" />
+    <category term="日常" />
+    <category term="校招" />
+    <category term="算法" />
+    <category term="Leetcode双周赛" />
+    <category term="Algorithm" />
+    <category term="Leetcode周赛" />
+    <category term="设计模式" />
+    <category term="多线程" />
+    <category term="池化技术" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
+    <entry>
+        <id>http://example.com/value/daily/April%202024</id>
+        <title>April 2024</title>
+        <link rel="alternate" href="http://example.com/value/daily/April%202024"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2024-04-01&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E4%B8%87%E7%89%A9%E5%A4%8D%E8%8B%8F.jpg&#34; alt=&#34;&#34; title=&#34;万物复苏&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="日常" />
+        <updated>2024-04-02T08:25:04.208Z</updated>
+    </entry>
+</feed>
