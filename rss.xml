@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Mon, 01 Apr 2024 15:59:06 +0800</pubDate>
-        <lastBuildDate>Mon, 01 Apr 2024 15:59:06 +0800</lastBuildDate>
+        <pubDate>Tue, 02 Apr 2024 08:53:23 +0800</pubDate>
+        <lastBuildDate>Tue, 02 Apr 2024 08:53:23 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -33,6 +33,75 @@
         <category>线程池</category>
         <category>Go</category>
         <category>Redis</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/CPP/C++11</guid>
+            <title>操作系统面试题</title>
+            <link>http://example.com/value/CPP/C++11</link>
+            <category>C++</category>
+            <pubDate>Tue, 02 Apr 2024 08:53:23 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;c11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c11&#34;&gt;#&lt;/a&gt;  &lt;code&gt;C++11&lt;/code&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;C++11&lt;/strong&gt; is the second major version of C++ and the most important update since C&lt;ins&gt;98. A large number of changes were introduced to both standardize existing practices and improve the abstractions available to the C&lt;/ins&gt; programmers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;原始字面量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#原始字面量&#34;&gt;#&lt;/a&gt; 原始字面量&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;C++11&lt;/code&gt;  中定义原始字面量的方式： &lt;code&gt;R&amp;quot;×××(原始字面量)×××&amp;quot;&lt;/code&gt; ，其中 &lt;code&gt;()&lt;/code&gt;  两边的字符可以省略。原始字面量可以直接表示字符串的实际含义，而不需要额外的转义字符。以下三条语句是等效的：&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;string path1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;D:\\Desktop\\tmp.txt&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;string path2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token raw-string string&#34;&gt;R&#34;(D:\Desktop\tmp.txt)&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;指针空值类型nullptr&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针空值类型nullptr&#34;&gt;#&lt;/a&gt; 指针空值类型 &lt;code&gt;nullptr&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;nullptr&lt;/code&gt;  是一个空指针类型，在 &lt;code&gt;C++&lt;/code&gt;  中其可以隐式的转化为任何其他类型的空指针类型.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;NULL&lt;/code&gt;  在 &lt;code&gt;C++&lt;/code&gt;  中被定义为 0，这一点的设置主要是让目前的 C++ 兼容之前的 C 程序，0 可以隐式转化为其他类型的空指针类型。所以在 &lt;code&gt;C++&lt;/code&gt;  程序中如果想要表达的是空指针，建议使用 &lt;code&gt;nullptr&lt;/code&gt; ，如果使用 &lt;code&gt;NULL&lt;/code&gt;  则可能导致出乎意料的结果.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;常量表达式constexpr&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常量表达式constexpr&#34;&gt;#&lt;/a&gt; 常量表达式 &lt;code&gt;constexpr&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;const&lt;/code&gt;  在 &lt;code&gt;C++&lt;/code&gt;  中有两个语义，变量只读和修饰常量。当 &lt;code&gt;const&lt;/code&gt;  修饰常量时，其值在编译阶段就已经确定，而修饰变量时，则需要等到运行时才确定.  &lt;code&gt;C++&lt;/code&gt;  为了区别这两种语义引入常量表达式 &lt;code&gt;constexpr&lt;/code&gt; ，用于修饰常量，在编译阶段确定其值.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;constexpr&lt;/code&gt;  可以用于修饰函数（常量表达式函数），可以用于修饰普通函数 / 类成员函数、类的构造函数、模版函数。修饰函数时，需要满足如下条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;函数必须有返回值，并且 &lt;code&gt;return&lt;/code&gt;  返回的表达式必须是常量表达式&lt;/li&gt;
+&lt;li&gt;整个函数体中不能出现非常量表达式之外语句&lt;/li&gt;
+&lt;li&gt;修饰构造函数时，成员必须初始化，且初始化需要使用初始化列表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;自动类型推导auto&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自动类型推导auto&#34;&gt;#&lt;/a&gt; 自动类型推导 &lt;code&gt;auto&lt;/code&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;auto&lt;/code&gt;  可以自动推导变量类型；使用 &lt;code&gt;auto&lt;/code&gt;  声明的变量必须要进行初始化，以让编译器推导出它的实际类型，在编译阶段将 &lt;code&gt;auto&lt;/code&gt;  占位符替换成其真正的类型.&lt;/li&gt;
+&lt;li&gt;对于有 &lt;code&gt;const&lt;/code&gt;  和 &lt;code&gt;volatile&lt;/code&gt;  修饰的变量， &lt;code&gt;auto&lt;/code&gt;  只能推断底层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt; ，顶层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  会被忽略，需要自己添加&lt;/li&gt;
+&lt;li&gt;不能在函数的参数中使用，不能用于定义数组，不能用于类的非静态成员的初始化（只能用于类的静态常量成员变量的初始化）&lt;/li&gt;
+&lt;li&gt;不能用于模版参数的类型推导&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;自动类型推导decltype&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自动类型推导decltype&#34;&gt;#&lt;/a&gt; 自动类型推导 &lt;code&gt;decltype&lt;/code&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们希望从表达式（函数返回值）中推断出想要定义的变量的类型，但是却不想用表达式的值去初始化变量，这种情况 &lt;code&gt;auto&lt;/code&gt;  显得无力了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;推断表达式类型作为变量的定义类型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;推断函数返回值（实际不会调用，仅推断），推导出的对象类型与函数返回值一致&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当函数返回的是一个纯右值，需要忽略掉前面的 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;无论是底层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  还是顶层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  都会被保留&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;表达式是一个左值，或者被 &lt;code&gt;()&lt;/code&gt;  包围，使用 &lt;code&gt;decltype&lt;/code&gt;  推导出来是表达式类型的引用（如果有 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  则需要加上）&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;decltype&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		&lt;span class=&#34;token comment&#34;&gt;//b 的类型为 int&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;decltype&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; c &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;	&lt;span class=&#34;token comment&#34;&gt;//c 的类型为 int&amp;amp;，绑定 a 对象&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;返回值类型后置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#返回值类型后置&#34;&gt;#&lt;/a&gt; 返回值类型后置&lt;/h2&gt;
+&lt;h2 id=&#34;final&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#final&#34;&gt;#&lt;/a&gt;  &lt;code&gt;final&lt;/code&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;当用于修饰类时，表示该类不能被继承， &lt;code&gt;final&lt;/code&gt;  卸载类名后面&lt;/li&gt;
+&lt;li&gt;当修饰成员函数时，只能修饰虚函数，表示这个虚函数不能被重写， &lt;code&gt;final&lt;/code&gt;  写在函数后&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;override&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#override&#34;&gt;#&lt;/a&gt;  &lt;code&gt;override&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;明确表明派生类中的函数重写了基类的虚函数， &lt;code&gt;override&lt;/code&gt;  写在派生类函数（重写了基类虚函数）后面.&lt;/p&gt;
+&lt;h2 id=&#34;函数模版默认模版参数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数模版默认模版参数&#34;&gt;#&lt;/a&gt; 函数模版默认模版参数&lt;/h2&gt;
+&lt;h2 id=&#34;参考博文&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考博文&#34;&gt;#&lt;/a&gt; 参考博文&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdWJpbmd3ZW4uY24vY2F0ZWdvcmllcy9DLw==&#34;&gt;爱编程的大丙 (subingwen.cn)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;[2] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbi5jcHByZWZlcmVuY2UuY29tL3cvY3BwLzEx&#34;&gt;C++11 - cppreference.com&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/Go/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</guid>
             <title>Go基础语法</title>
@@ -1893,6 +1962,13 @@ Description:
 &lt;li&gt;半同步复制：主节点写入 &lt;code&gt;binlog&lt;/code&gt;  并将数据同步到从节点时，不需要等待所以的从节点执行完成，当收到至少一个从节点的同步完成就将结果返回给客户端.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;## 慢查询如何优化
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;检查是否建了索引，查询是否走了索引&lt;/li&gt;
+&lt;li&gt;检查是否 &lt;code&gt;load&lt;/code&gt;  了多余的数据列&lt;/li&gt;
+&lt;li&gt;返回的数据量太多&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;mysql-ngram全文检索&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-ngram全文检索&#34;&gt;#&lt;/a&gt;  &lt;code&gt;MySQL Ngram&lt;/code&gt;  全文检索&lt;/h2&gt;
  ]]></description>
         </item>
@@ -1959,25 +2035,33 @@ Description:
 &lt;li&gt;内存管理单元 MMU&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;进程与线程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程与线程&#34;&gt;#&lt;/a&gt; 进程与线程&lt;/h2&gt;
+&lt;p&gt;进程是程序的一个执行实例，是资源分配的基本单位，系统通过进程控制块 &lt;code&gt;PCB&lt;/code&gt;  来管理进程。进程控制块主要存储的内容：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;进程的组成：
 &lt;ul&gt;
-&lt;li&gt;进程控制块 &lt;code&gt;PCB&lt;/code&gt; （ &lt;code&gt;PID&lt;/code&gt; ：唯一标识进程、进程状态、进程优先级、程序计数器 PC、内存指针	）&lt;/li&gt;
-&lt;li&gt;代码段&lt;/li&gt;
-&lt;li&gt;程序段&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PID&lt;/code&gt; ：进程标识符&lt;/li&gt;
+&lt;li&gt;进程状态&lt;/li&gt;
+&lt;li&gt;进程优先级&lt;/li&gt;
+&lt;li&gt;程序计数器&lt;/li&gt;
+&lt;li&gt;内存指针&lt;/li&gt;
+&lt;li&gt;上下文数据&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;在 &lt;code&gt;Linux&lt;/code&gt;  中通过 &lt;code&gt;fork&lt;/code&gt;  函数来创建一个子进程，子进程会拷贝父进程的&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;进程是资源分配的基本单位，线程是资源调度的基本单位&lt;/li&gt;
-&lt;li&gt;一个线程属于一个进程，每个进程可以包含多个不同的线程&lt;/li&gt;
-&lt;li&gt;每个进程有多个线程组层，但只有一个主线程，它们共享内存空间（堆、全局变量），但是有各自的栈空间&lt;/li&gt;
-&lt;li&gt;系统开销：&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;线程是进程内部的一个控制序列，其实资源调度的基本单位，其是在进程内部运行，本质是在进程的地址空间运行。一个进程至少有一个执行的线程，也可以有多线线程，同一个进程下的多个线程共享进程的内存空间。系统通过线程控制块 &lt;code&gt;TCB&lt;/code&gt;  来管理线程，每个线程有自己独有的线程 ID，栈空间.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;进程切换：切换页表、切换内核栈和硬件上下文（进程切换之后，新程序的虚拟地址在 TLB 内失效，会导致频繁的访存）&lt;/p&gt;
+&lt;p&gt;多进程的优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;各个进程拥有自己独立的虚拟地址空间，各个程序之间的执行互不干扰，而且子进程的崩溃不会影响父进程，反之父进程崩溃也不会影响子进程&lt;/li&gt;
+&lt;li&gt;多个进程可以充分利用 CPU，并行执行程序，不用担心并行执行程序导致的问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;多线程的缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;由于进程的独立性，不同进程之间数据交换需要进程通信&lt;/li&gt;
+&lt;li&gt;创建一个子进程的开销比创建一个子线程的开销大&lt;/li&gt;
+&lt;li&gt;线程的切换比进程的切换系统开销会更大【切换页表、切换内核栈和硬件上下文（进程切换之后，新程序的虚拟地址在 TLB 内失效，会导致频繁的访存）】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;多线程的优点：&lt;/p&gt;
+&lt;p&gt;多线程的缺点：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;进程调度算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程调度算法&#34;&gt;#&lt;/a&gt; 进程调度算法&lt;/h2&gt;
 &lt;ul&gt;
@@ -2662,7 +2746,7 @@ Description:
 &lt;/ul&gt;
 &lt;h2 id=&#34;final和override&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#final和override&#34;&gt;#&lt;/a&gt; final 和 override&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;final&lt;/code&gt; ：修饰虚函数，表示该虚函数不能再被重写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;final&lt;/code&gt; ：修饰虚函数，表示该虚函数不能再被重写。修饰类表示该类不能被继承&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;override&lt;/code&gt; ：检查派生类虚函数是否重写了基类的某个虚函数，如果没有则编译器报错；&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;struct-与class&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#struct-与class&#34;&gt;#&lt;/a&gt; struct 与 class&lt;/h2&gt;
@@ -2772,12 +2856,13 @@ Description:
 &lt;/ul&gt;
 &lt;h2 id=&#34;c中的顶层const与底层const&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c中的顶层const与底层const&#34;&gt;#&lt;/a&gt; C++ 中的顶层 const 与底层 const&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;顶层const&lt;/code&gt; ： &lt;code&gt;const&lt;/code&gt;  修饰的变量本身是一个常量，无法修改；（指的是指针，出现在 &lt;code&gt;*&lt;/code&gt;  的右边）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;底层const&lt;/code&gt; ： &lt;code&gt;const&lt;/code&gt;  修饰的变量所指向的对象是一个常量（出现在 &lt;code&gt;*&lt;/code&gt;  左边）&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;顶层const&lt;/code&gt; ： &lt;code&gt;const&lt;/code&gt;  修饰的变量本身是一个常量，无法修改；（指的是指针，出现在 &lt;code&gt;*&lt;/code&gt;  的右边）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;底层const&lt;/code&gt; ： &lt;code&gt;const&lt;/code&gt;  修饰的变量所指向的对象是一个常量（出现在 &lt;code&gt;*&lt;/code&gt;  左边）&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;				&lt;span class=&#34;token comment&#34;&gt;// 顶层 const&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;auto&lt;/span&gt; other b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;				&lt;span class=&#34;token comment&#34;&gt;//other 类型为 int&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* --------------- */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;ptr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;	          &lt;span class=&#34;token comment&#34;&gt;// 底层 const, 常量指针，表示指针所指向的内容无法通过该指针进行修改，但是可以改变指针的指向&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;auto&lt;/span&gt; other1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; ptr&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		          &lt;span class=&#34;token comment&#34;&gt;//other1 类型为 const int*&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;other1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		              &lt;span class=&#34;token comment&#34;&gt;// error! &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;other1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;b&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;			    	 &lt;span class=&#34;token comment&#34;&gt;// right!&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;decltype&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;ptr&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; other2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; ptr&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		  &lt;span class=&#34;token comment&#34;&gt;//other2 类型为 const int *&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;other2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		              &lt;span class=&#34;token comment&#34;&gt;// error! &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;other2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;b&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;			    	 &lt;span class=&#34;token comment&#34;&gt;// right!&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* --------------- */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; ptr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;	         &lt;span class=&#34;token comment&#34;&gt;// 顶层 const，指针常量，表示指针是一个常量，不可修改指针的指向，但是可以通过指针去修改所指向空间的内容&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;auto&lt;/span&gt; other1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; ptr&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		        &lt;span class=&#34;token comment&#34;&gt;//other1 类型为 int *&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;other1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		            &lt;span class=&#34;token comment&#34;&gt;// right!&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;other1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;b&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		   		   &lt;span class=&#34;token comment&#34;&gt;// right!&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;decltype&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;ptr&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; other2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; ptr&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		&lt;span class=&#34;token comment&#34;&gt;//other2 的类型为 int* const&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;other2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;                   &lt;span class=&#34;token comment&#34;&gt;// right!&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;other2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;b&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;                    &lt;span class=&#34;token comment&#34;&gt;// error!&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;使用 &lt;code&gt;const_cast&lt;/code&gt;  时，只能改变运算对象的 &lt;code&gt;底层const&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;h2 id=&#34;常量指针与指针常量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常量指针与指针常量&#34;&gt;#&lt;/a&gt; 常量指针与指针常量&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;常量指针： &lt;code&gt;int const* p = a&lt;/code&gt; ，指针的指向可以改变，而不能通过该指针去改变所指向的内容&lt;/li&gt;
@@ -2854,23 +2939,47 @@ Description:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;using定义别名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#using定义别名&#34;&gt;#&lt;/a&gt; using 定义别名&lt;/h2&gt;
-&lt;h2 id=&#34;autoc11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#autoc11&#34;&gt;#&lt;/a&gt; auto（C++11）&lt;/h2&gt;
+&lt;h2 id=&#34;autoc11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#autoc11&#34;&gt;#&lt;/a&gt;  &lt;code&gt;auto（C++11）&lt;/code&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;类型推导，通过变量值编译器自动的进行类型的推导，相当于一个占位符（使用 &lt;code&gt;auto&lt;/code&gt;  时，必须进行变量的初始化）&lt;/li&gt;
-&lt;li&gt;对于有 &lt;code&gt;const&lt;/code&gt;  和 &lt;code&gt;volatile&lt;/code&gt;  修饰的变量， &lt;code&gt;auto&lt;/code&gt;  只能推断底层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt; ，顶层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  会被忽略，需要自己添加&lt;/li&gt;
-&lt;li&gt;不能在函数的参数中使用，不能用于定义数组，不能用于类的非静态成员&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;auto&lt;/code&gt;  可以自动推导变量类型；使用 &lt;code&gt;auto&lt;/code&gt;  声明的变量必须要进行初始化，以让编译器推导出它的实际类型，在编译阶段将 &lt;code&gt;auto&lt;/code&gt;  占位符替换成其真正的类型.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对于有 &lt;code&gt;const&lt;/code&gt;  和 &lt;code&gt;volatile&lt;/code&gt;  修饰的变量， &lt;code&gt;auto&lt;/code&gt;  只能推断底层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt; ，顶层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  会被忽略，需要自己添加&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不能在函数的参数中使用，不能用于定义数组，不能用于类的非静态成员的初始化（只能用于类的静态常量成员变量的初始化）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不能用于模版参数的类型推导&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类的成员变量并不属于类，而属于具体的实例。如果没有创建实例，那么就没有办法进行自动类型推导.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;decltypec11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#decltypec11&#34;&gt;#&lt;/a&gt; decltype（C++11）&lt;/h2&gt;
+&lt;h2 id=&#34;decltypec11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#decltypec11&#34;&gt;#&lt;/a&gt;  &lt;code&gt;decltype（C++11）&lt;/code&gt;&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我们希望从表达式（函数返回值）中推断出想要定义的变量的类型，但是却不想用表达式的值去初始化变量，这种情况 &lt;code&gt;auto&lt;/code&gt;  显得无力了&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;推断表达式类型作为变量的定义类型&lt;/li&gt;
-&lt;li&gt;推断函数返回值（实际不会调用，仅推断）&lt;/li&gt;
-&lt;li&gt;无论是底层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  还是顶层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  都会被保留&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;推断表达式类型作为变量的定义类型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;推断函数返回值（实际不会调用，仅推断），推导出的对象类型与函数返回值一致&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当函数返回的是一个纯右值，需要忽略掉前面的 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;无论是底层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  还是顶层 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  都会被保留&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;表达式是一个左值，或者被 &lt;code&gt;()&lt;/code&gt;  包围，使用 &lt;code&gt;decltype&lt;/code&gt;  推导出来是表达式类型的引用（如果有 &lt;code&gt;const&lt;/code&gt;  或 &lt;code&gt;volatile&lt;/code&gt;  则需要加上）&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;decltype&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;		&lt;span class=&#34;token comment&#34;&gt;//b 的类型为 int&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;decltype&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; c &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;	&lt;span class=&#34;token comment&#34;&gt;//c 的类型为 int&amp;amp;，绑定 a 对象&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;范围for循环c11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#范围for循环c11&#34;&gt;#&lt;/a&gt; 范围 for 循环（C++11）&lt;/h2&gt;
-&lt;h2 id=&#34;null与nullptr&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#null与nullptr&#34;&gt;#&lt;/a&gt; NULL 与 nullptr&lt;/h2&gt;
+&lt;h2 id=&#34;null与nullptr&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#null与nullptr&#34;&gt;#&lt;/a&gt;  &lt;code&gt;NULL&lt;/code&gt;  与 &lt;code&gt;nullptr&lt;/code&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;NULL&lt;/code&gt;  来自 C 语言，由宏定义实现， &lt;code&gt;nullptr&lt;/code&gt;  是 C++11 新增的关键字&lt;/p&gt;
@@ -3042,35 +3151,9 @@ Description:
 &lt;li&gt;&lt;code&gt;array&lt;/code&gt; ：固定大小数组。支持快速随机访问。不能添加或者删除元素。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;string&lt;/code&gt; ：与 &lt;code&gt;vector&lt;/code&gt;  类似，但专门用于存储字符&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;原始字面量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#原始字面量&#34;&gt;#&lt;/a&gt; 原始字面量&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;定义方式&lt;/strong&gt;：&lt;em&gt;R×××(原始字符串)×××&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;其中 &lt;code&gt;()&lt;/code&gt;  两侧的字符串 &lt;code&gt;×××&lt;/code&gt;  可以省略，原始字面量 &lt;code&gt;R&lt;/code&gt;  可以直接表示字符串的实际含义（不进行转义）&lt;/p&gt;
 &lt;h2 id=&#34;指针空值类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针空值类型&#34;&gt;#&lt;/a&gt; 指针空值类型&lt;/h2&gt;
 &lt;p&gt;C 与 C&lt;ins&gt; 内定义的 &lt;code&gt;NULL&lt;/code&gt;  含义不同；C&lt;/ins&gt; 内定义： &lt;code&gt;#define NULL 0&lt;/code&gt; , 而 C 内的定义： &lt;code&gt;#define NULL ((void *)0)&lt;/code&gt; .C 与 C&lt;ins&gt; 都是强类型语言，从 C 到 C&lt;/ins&gt; 语言的类型定义变的更加严格，C++ 内不允许 &lt;code&gt;void( *)&lt;/code&gt;  类型的变量隐式转化为其他类型。&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 宏定义&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;ifndef&lt;/span&gt; &lt;span class=&#34;token expression&#34;&gt;&lt;span class=&#34;token constant&#34;&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;ifdef&lt;/span&gt; &lt;span class=&#34;token expression&#34;&gt;__cplusplus&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;token macro-name&#34;&gt;NULL&lt;/span&gt; &lt;span class=&#34;token expression&#34;&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;else&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;token macro-name&#34;&gt;NULL&lt;/span&gt;  &lt;span class=&#34;token expression&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;code&gt;nullptr&lt;/code&gt;  无法隐式的转化为整形，但是可以隐式匹配指针类型&lt;/p&gt;
-&lt;h2 id=&#34;constexpr&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#constexpr&#34;&gt;#&lt;/a&gt; constexpr&lt;/h2&gt;
-&lt;p&gt;const 的双重语义：&lt;em&gt;变量只读&lt;/em&gt;和&lt;em&gt;修饰常量&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;c++ 程序从编写完成到执行分为四个阶段：&lt;em&gt;预处理&lt;/em&gt;、&lt;em&gt;编译&lt;/em&gt;、&lt;em&gt;汇编&lt;/em&gt;和&lt;em&gt;链接&lt;/em&gt;。非常量表达式只能在运行阶段计算出结果，但常量表达式计算发生程序编译阶段，这可以大大提高程序的执行效率。&lt;/p&gt;
-&lt;p&gt;为了提高 C++ 程序的执行效率，我们可以将程序中值不需要发生变化的变量定义为常量，也可以使用 &lt;code&gt;constexpr&lt;/code&gt;  修饰函数返回值，这种函数被称作常量表达式函数，这写函数主要包括一下几种：普通函数、类成员函数、类构造函数、模版函数。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;函数必须要用返回值，并且 &lt;code&gt;return&lt;/code&gt;  返回的表达式必须是常量表达式&lt;/li&gt;
-&lt;li&gt;函数在使用之前，必须有对应的定义语句&lt;/li&gt;
-&lt;li&gt;整个函数的函数体中，不能出现非常量表达式之外的语句（ &lt;code&gt;using, typedef, static_assert, return&lt;/code&gt;  语句除外）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;C++11 语法中， &lt;code&gt;constexpr&lt;/code&gt;  可以修饰模版函数，但由于模版中类型的不确定性，因此模版函数实例化后的函数是否符合常量表达式函数的要求也是不确定的。如果 &lt;code&gt;constexpr&lt;/code&gt;  修饰的模版函数实例化结果不满足常量表达式函数的要求，则 &lt;code&gt;constexpr&lt;/code&gt;  会被自动忽略，即该函数就等同于一个普通函数&lt;/p&gt;
-&lt;h2 id=&#34;auto&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#auto&#34;&gt;#&lt;/a&gt; auto&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;auto&lt;/code&gt;  可以自动推导变量类型；使用 &lt;code&gt;auto&lt;/code&gt;  声明的变量必须要进行初始化，以让编译器推导出它的实际类型，在编译阶段将 &lt;code&gt;auto&lt;/code&gt;  占位符替换成其真正的类型。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;当变量不是指针或者引用类型时，推导的结果中不会保留 &lt;code&gt;const和、volatile&lt;/code&gt;  关键字&lt;/li&gt;
-&lt;li&gt;当变量是指针或者引用类型时，推导的结果中会保留 &lt;code&gt;const和、volatile&lt;/code&gt;  关键字&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;auto的限制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#auto的限制&#34;&gt;#&lt;/a&gt; auto 的限制&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;不能作为函数参数使用。因为只有在函数被调用的时候才会给函数参数传递实参， &lt;code&gt;auto&lt;/code&gt;  要求必须给修饰的变量赋值。&lt;/li&gt;
-&lt;li&gt;不能用于类的非静态成员变量的初始化（类的非静态成员不属于类，而属于对象，只有对象被创建出来之后，才能给非静态成员变量赋值）&lt;/li&gt;
-&lt;li&gt;不能使用 &lt;code&gt;auto&lt;/code&gt;  关键字定义数组&lt;/li&gt;
-&lt;li&gt;无法使用 &lt;code&gt;auto&lt;/code&gt;  推导出模版&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id=&#34;使用结构化绑定来解包绑定的返回值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用结构化绑定来解包绑定的返回值&#34;&gt;#&lt;/a&gt; 使用结构化绑定来解包绑定的返回值&lt;/h2&gt;
 &lt;p&gt;结构化绑定是 C++17 新特性，其可以结合语法糖自动推导类型，并可以从组对、元祖和结构体中提取单独的变量（解包）&lt;/p&gt;
 &lt;ol&gt;

@@ -570,6 +570,13 @@
 &lt;li&gt;半同步复制：主节点写入 &lt;code&gt;binlog&lt;/code&gt;  并将数据同步到从节点时，不需要等待所以的从节点执行完成，当收到至少一个从节点的同步完成就将结果返回给客户端.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;## 慢查询如何优化
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;检查是否建了索引，查询是否走了索引&lt;/li&gt;
+&lt;li&gt;检查是否 &lt;code&gt;load&lt;/code&gt;  了多余的数据列&lt;/li&gt;
+&lt;li&gt;返回的数据量太多&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;mysql-ngram全文检索&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-ngram全文检索&#34;&gt;#&lt;/a&gt;  &lt;code&gt;MySQL Ngram&lt;/code&gt;  全文检索&lt;/h2&gt;
 </content>
         <category term="面试题" />
