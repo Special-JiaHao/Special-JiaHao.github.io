@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;linux&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-03-25T13:35:06.598Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
+    <category term="VMware" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
+    <category term="CNN" />
+    <category term="Project" />
+    <category term="面试题" />
+    <category term="日常" />
+    <category term="校招" />
+    <category term="算法" />
+    <category term="Leetcode双周赛" />
+    <category term="Algorithm" />
+    <category term="Leetcode周赛" />
+    <category term="设计模式" />
+    <category term="多线程" />
+    <category term="池化技术" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
+    <category term="Linux" />
+    <entry>
+        <id>http://example.com/value/Linux%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</id>
+        <title>Linux基础与常用命令</title>
+        <link rel="alternate" href="http://example.com/value/Linux%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"/>
+        <content type="html">&lt;h1 id=&#34;linux基础与常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux基础与常用命令&#34;&gt;#&lt;/a&gt; Linux 基础与常用命令&lt;/h1&gt;
+&lt;h2 id=&#34;目录结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#目录结构&#34;&gt;#&lt;/a&gt; 目录结构&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bin(binary)&lt;/code&gt; ：存放一些常用命令，比如 &lt;code&gt;ls, mkdir&lt;/code&gt;  等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;boot&lt;/code&gt; ：存放系统启动需要用到的核心文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dev(device)&lt;/code&gt; ：在 &lt;code&gt;linux&lt;/code&gt;  中一切皆文件，存放 &lt;code&gt;Linux&lt;/code&gt;  下的设备文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;etc&lt;/code&gt; ：存放系统用户所需要的配置文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;home&lt;/code&gt; ：存放用户目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lib&lt;/code&gt; ：存放一些动态库文件，共应用程序使用&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lost+found&lt;/code&gt; ：一般情况下是空的，当系统异常关机后，该目录下会存放一些系统文件，用于恢复&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;media&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mnt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;opt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;proc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;root&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sbin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;srv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;usr&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tmp&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;var&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文件颜色&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件颜色&#34;&gt;#&lt;/a&gt; 文件颜色&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;白色：普通文件&lt;/li&gt;
+&lt;li&gt;蓝色：目录&lt;/li&gt;
+&lt;li&gt;绿色：可执行文件&lt;/li&gt;
+&lt;li&gt;青色：链接文件&lt;/li&gt;
+&lt;li&gt;红色：压缩文件、失效的链接文件&lt;/li&gt;
+&lt;li&gt;黄色：设备文件&lt;/li&gt;
+&lt;li&gt;灰色：其他文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;终端快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#终端快捷键&#34;&gt;#&lt;/a&gt; 终端快捷键&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ctrl + b&lt;/code&gt; ：向后移动光标&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + f&lt;/code&gt; ：向前移动光标&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + a&lt;/code&gt; ：光标移动到行首&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + e&lt;/code&gt; ：光标移动的行尾&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + u&lt;/code&gt; ：删除光标之前位置的所有内容（不包括光标当前位置）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + k&lt;/code&gt; ：删除光标之后位置的所有内容（包括光标当前位置）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + w&lt;/code&gt; ：删除光标前面的一个单词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文件的权限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件的权限&#34;&gt;#&lt;/a&gt; 文件的权限&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;可读 &lt;code&gt;r&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可写 &lt;code&gt;w&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可执行 &lt;code&gt;x&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;无权限 &lt;code&gt;-&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;文件所有者： &lt;code&gt;rwx&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用户组：&lt;/li&gt;
+&lt;li&gt;其他人&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;通配符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#通配符&#34;&gt;#&lt;/a&gt; 通配符&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;*&lt;/code&gt; ：匹配 0 个或者多个字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;?&lt;/code&gt; ：匹配一个字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[abcd]&lt;/code&gt; ：匹配 &lt;code&gt;abcd&lt;/code&gt;  中任意 &lt;code&gt;一个&lt;/code&gt; 字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[a-z]&lt;/code&gt; ：匹配 &lt;code&gt;a-z&lt;/code&gt;  范围内的任意 &lt;code&gt;一个&lt;/code&gt; 字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[!abc]&lt;/code&gt; ：除 &lt;code&gt;abc&lt;/code&gt;  中的字符之外，可以与任意 &lt;code&gt;一个&lt;/code&gt; 字符匹配&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[^abc]&lt;/code&gt; ：与 &lt;code&gt;[!abc]&lt;/code&gt;  一致&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; ：列出当前目录或指定目录下的文件&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;-a&lt;/code&gt; ：显示所有文件，包括隐藏文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-h&lt;/code&gt; ：个性化显示文件大小， &lt;code&gt;KB&lt;/code&gt;  替代字节数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;cd&lt;/code&gt; ：切换目录&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;~&lt;/code&gt; ：家目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;..&lt;/code&gt; ：上一级&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;  当前目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pwd&lt;/code&gt; ：显示当前所在目录&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;echo&lt;/code&gt; ：输出指定的字符串或变量值&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;cat&lt;/code&gt; ：查看文件内容&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt; ：显示行号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tac&lt;/code&gt; ：反向查看文件内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;more&lt;/code&gt; ：逐页显示文件内容，配合上下键&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;less&lt;/code&gt; ：逐页显示文件内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;head&lt;/code&gt; ：显示文件前几行内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tail&lt;/code&gt; ：显示文件最后几行内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;grep&lt;/code&gt; ：过滤或搜索文件中的关键字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;find&lt;/code&gt; ：搜索文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; /home/ &lt;span class=&#34;token parameter variable&#34;&gt;-name&lt;/span&gt; test.txt	&lt;span class=&#34;token comment&#34;&gt;# 根据文件名搜索&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig&lt;/code&gt; ：产看网卡信息（IP 地址、子网掩码）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ping&lt;/code&gt; ：常用于检查网络连通性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;telnet&lt;/code&gt; ：检查端口连通性&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;telnet &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.0.180 &lt;span class=&#34;token number&#34;&gt;22&lt;/span&gt;	&lt;span class=&#34;token comment&#34;&gt;# 检查 22 端口是否连通&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;netstat&lt;/code&gt; ：检查网络连接状况&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tcpdump&lt;/code&gt; ：抓包分析工具&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ssh&lt;/code&gt; ：远程连接主机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;wget&lt;/code&gt; ：从远程下载文件&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;wget&lt;/span&gt; https://download/xxx.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ps&lt;/code&gt; ：产看进程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;kill&lt;/code&gt; ：杀死进程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;shutdown&lt;/code&gt; ：关机并关闭电源&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;reboot&lt;/code&gt; ：重启&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;hostname&lt;/code&gt; ：查看主机名&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;top&lt;/code&gt; ：查看当前进程的资源使用情况&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;useradd&lt;/code&gt; ：添加用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;usermod&lt;/code&gt; ：修改用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;userdel&lt;/code&gt; ：删除用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;passwd&lt;/code&gt; ：修改用户名的密码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;su&lt;/code&gt; ：切换用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;chmod&lt;/code&gt; ：修改文件或目录的权限&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Linux" />
+        <updated>2024-03-25T13:35:06.598Z</updated>
+    </entry>
+</feed>

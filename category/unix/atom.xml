@@ -30,6 +30,7 @@
     <category term="线程池" />
     <category term="Go" />
     <category term="Redis" />
+    <category term="Linux" />
     <entry>
         <id>http://example.com/value/Unix%20programing</id>
         <title>UNIX网络编程</title>

@@ -30,6 +30,7 @@
     <category term="线程池" />
     <category term="Go" />
     <category term="Redis" />
+    <category term="Linux" />
     <entry>
         <id>http://example.com/value/%E6%A0%A1%E6%8B%9B%E4%B8%8E%E9%9D%A2%E8%AF%95/C++%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>C++面试题</title>
@@ -471,15 +472,24 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;lambda表达式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lambda表达式&#34;&gt;#&lt;/a&gt; lambda 表达式&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;匿名函数。一个 &lt;code&gt;lambda&lt;/code&gt;  表达式具有一个返回值、一个参数列表和一个函数体。与函数不同的是， &lt;code&gt;lambda&lt;/code&gt;  表达式可以定义在函数体内部，格式为： &lt;code&gt;[capture list](parameter list)-&amp;gt;return type &amp;#123;function body&amp;#125;&lt;/code&gt; ，不能用默认参数.&lt;/li&gt;
+&lt;li&gt;匿名函数。一个 &lt;code&gt;lambda&lt;/code&gt;  表达式具有一个返回值、一个参数列表和一个函数体。与函数不同的是， &lt;code&gt;lambda&lt;/code&gt;  表达式可以定义在函数体内部，格式为： &lt;code&gt;[capture list](parameter list) opt -&amp;gt;return type &amp;#123;function body&amp;#125;&lt;/code&gt; ，不能用默认参数.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;capture list&lt;/code&gt; ：捕获列表
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;[]&lt;/code&gt; ：不捕获任何变量&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[&amp;amp;]&lt;/code&gt; ：捕获外部作用域中的所有变量，并作为引用在函数体内使用（按引用捕获）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;[=]&lt;/code&gt; ：捕获外部作用域中的所有变量，并作为副本在函数体内使用（按值捕获）&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[=]&lt;/code&gt; ：捕获外部作用域中的所有变量，并作为副本在函数体内使用（按值捕获），拷贝的副本在匿名函数体内部是只读的，不可改变.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[=, &amp;amp;foo]&lt;/code&gt; ：按值捕获外部作用域内的所以变量，按引用捕获变量 &lt;code&gt;foo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[this]&lt;/code&gt; ：捕获当前实例的 &lt;code&gt;this&lt;/code&gt;  指针&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(parameter list)&lt;/code&gt; ：参数列表，和普通函数的参数列表一样，如果没有参数列表可以省略不写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;opt&lt;/code&gt;  选项，不需要可以省略
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;mutable&lt;/code&gt; ：可以修改按值拷贝进来的副本（注意修改的是副本）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exception&lt;/code&gt; ：指定函数抛出的异常&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;return type&lt;/code&gt; ：一般情况下，不指定 &lt;code&gt;lambda&lt;/code&gt;  表达式的返回值，编译器会根据 &lt;code&gt;return&lt;/code&gt;  语句自动推导返回值类型，但是 &lt;code&gt;初始化列表不能用于返回值的自动推导&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;左值引用与右值引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#左值引用与右值引用&#34;&gt;#&lt;/a&gt; 左值引用与右值引用&lt;/h2&gt;
 &lt;ul&gt;
@@ -501,9 +511,7 @@
 &lt;p&gt;在 &lt;code&gt;Socket网络编程&lt;/code&gt; 中，有主机字节序和网络字节序&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;内存对齐&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存对齐&#34;&gt;#&lt;/a&gt; 内存对齐&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;实际的内存读取时，是一组一组来读取的，一组内存在 n 个字节&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;理论上计算机对于任何变量的访问都可以从任务位置开始，然而实际上系统会对这些变量的存放做一些限制，通常将某个变量的地址设置为某个数 &lt;code&gt;N&lt;/code&gt;  的整数倍。这就是内存对齐.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;加快内存的获取速度&lt;/li&gt;
 &lt;/ul&gt;
@@ -570,13 +578,13 @@
 &lt;p&gt;&lt;code&gt;auto_ptr&lt;/code&gt; ：C&lt;ins&gt;98 引入，由于其不够安全，被 &lt;code&gt;unique_ptr&lt;/code&gt;  取代，C&lt;/ins&gt;11 废弃；&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;unique_ptr&lt;/code&gt; ：与 &lt;code&gt;auto_ptr&lt;/code&gt;  一样采用所有权模式，同一时间只能有一个指针可以指向某个对象，但是 &lt;code&gt;unique_ptr&lt;/code&gt;  禁止了拷贝操作， &lt;code&gt;unique_ptr&lt;/code&gt;  采用了移动赋值 &lt;code&gt;move()&lt;/code&gt;  函数来进行控制权转移.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;unique_ptr&lt;/code&gt; ：与 &lt;code&gt;auto_ptr&lt;/code&gt;  一样采用独占所有权模式，同一时间只能有一个指针可以指向某个对象，但是 &lt;code&gt;unique_ptr&lt;/code&gt;  禁止了拷贝操作， &lt;code&gt;unique_ptr&lt;/code&gt;  采用了移动赋值 &lt;code&gt;move()&lt;/code&gt;  函数来进行控制权转移.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;share_ptr&lt;/code&gt; ：共享所有权的一个智能指针。允许多个指针指针指向同一个对象，并使用引用计数来管理指向对象的指针（成员函数 &lt;code&gt;use_count()&lt;/code&gt;  可获得引用计数），该对象和相关资源会在最后一个引用被销毁时释放&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;shared_ptr&lt;/code&gt; ：共享所有权的一个智能指针。允许多个指针指针指向同一个对象，并使用引用计数来管理指向对象的指针（成员函数 &lt;code&gt;use_count()&lt;/code&gt;  可获得引用计数），该对象和相关资源会在最后一个引用被销毁时释放&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;share_ptr&lt;/code&gt; ：内部的引用计数是线程安全的，但是对象的读取需要加锁.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;shared_ptr&lt;/code&gt; ：内部的引用计数是线程安全的，但是对象的读取需要加锁.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;shared_ptr&lt;/code&gt;  循环计数问题：创建了两个 &lt;code&gt;shared_ptr&lt;/code&gt;  分别指向两个对象，而这两个对象内的一个共享指针分别又指向了对方，造成了循环计数，使得两个对象的空间都无法被释放.&lt;/p&gt;

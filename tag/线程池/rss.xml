@@ -33,6 +33,7 @@
         <category>线程池</category>
         <category>Go</category>
         <category>Redis</category>
+        <category>Linux</category>
         <item>
             <guid isPermalink="true">http://example.com/value/CPP/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</guid>
             <title>线程池原理与实现</title>

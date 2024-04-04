@@ -33,6 +33,7 @@
         <category>线程池</category>
         <category>Go</category>
         <category>Redis</category>
+        <category>Linux</category>
         <item>
             <guid isPermalink="true">http://example.com/value/CPP/CMake</guid>
             <title>CMake</title>

@@ -30,13 +30,86 @@
     <category term="线程池" />
     <category term="Go" />
     <category term="Redis" />
+    <category term="Linux" />
     <entry>
-        <id>http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98</id>
-        <title>Linux面试题</title>
-        <link rel="alternate" href="http://example.com/value/Linux%E9%9D%A2%E8%AF%95%E9%A2%98"/>
-        <content type="html">&lt;h1 id=&#34;linux面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux面试题&#34;&gt;#&lt;/a&gt; Linux 面试题&lt;/h1&gt;
-&lt;h2 id=&#34;linux常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux常用命令&#34;&gt;#&lt;/a&gt; Linux 常用命令&lt;/h2&gt;
+        <id>http://example.com/value/Linux%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</id>
+        <title>Linux基础与常用命令</title>
+        <link rel="alternate" href="http://example.com/value/Linux%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"/>
+        <content type="html">&lt;h1 id=&#34;linux基础与常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux基础与常用命令&#34;&gt;#&lt;/a&gt; Linux 基础与常用命令&lt;/h1&gt;
+&lt;h2 id=&#34;目录结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#目录结构&#34;&gt;#&lt;/a&gt; 目录结构&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bin(binary)&lt;/code&gt; ：存放一些常用命令，比如 &lt;code&gt;ls, mkdir&lt;/code&gt;  等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;boot&lt;/code&gt; ：存放系统启动需要用到的核心文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dev(device)&lt;/code&gt; ：在 &lt;code&gt;linux&lt;/code&gt;  中一切皆文件，存放 &lt;code&gt;Linux&lt;/code&gt;  下的设备文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;etc&lt;/code&gt; ：存放系统用户所需要的配置文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;home&lt;/code&gt; ：存放用户目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lib&lt;/code&gt; ：存放一些动态库文件，共应用程序使用&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lost+found&lt;/code&gt; ：一般情况下是空的，当系统异常关机后，该目录下会存放一些系统文件，用于恢复&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;media&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mnt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;opt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;proc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;root&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sbin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;srv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;usr&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tmp&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;var&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文件颜色&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件颜色&#34;&gt;#&lt;/a&gt; 文件颜色&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;白色：普通文件&lt;/li&gt;
+&lt;li&gt;蓝色：目录&lt;/li&gt;
+&lt;li&gt;绿色：可执行文件&lt;/li&gt;
+&lt;li&gt;青色：链接文件&lt;/li&gt;
+&lt;li&gt;红色：压缩文件、失效的链接文件&lt;/li&gt;
+&lt;li&gt;黄色：设备文件&lt;/li&gt;
+&lt;li&gt;灰色：其他文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;终端快捷键&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#终端快捷键&#34;&gt;#&lt;/a&gt; 终端快捷键&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ctrl + b&lt;/code&gt; ：向后移动光标&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + f&lt;/code&gt; ：向前移动光标&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + a&lt;/code&gt; ：光标移动到行首&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + e&lt;/code&gt; ：光标移动的行尾&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + u&lt;/code&gt; ：删除光标之前位置的所有内容（不包括光标当前位置）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + k&lt;/code&gt; ：删除光标之后位置的所有内容（包括光标当前位置）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + w&lt;/code&gt; ：删除光标前面的一个单词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文件的权限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件的权限&#34;&gt;#&lt;/a&gt; 文件的权限&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;可读 &lt;code&gt;r&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可写 &lt;code&gt;w&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可执行 &lt;code&gt;x&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;无权限 &lt;code&gt;-&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;文件所有者： &lt;code&gt;rwx&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用户组：&lt;/li&gt;
+&lt;li&gt;其他人&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;通配符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#通配符&#34;&gt;#&lt;/a&gt; 通配符&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;*&lt;/code&gt; ：匹配 0 个或者多个字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;?&lt;/code&gt; ：匹配一个字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[abcd]&lt;/code&gt; ：匹配 &lt;code&gt;abcd&lt;/code&gt;  中任意 &lt;code&gt;一个&lt;/code&gt; 字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[a-z]&lt;/code&gt; ：匹配 &lt;code&gt;a-z&lt;/code&gt;  范围内的任意 &lt;code&gt;一个&lt;/code&gt; 字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[!abc]&lt;/code&gt; ：除 &lt;code&gt;abc&lt;/code&gt;  中的字符之外，可以与任意 &lt;code&gt;一个&lt;/code&gt; 字符匹配&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[^abc]&lt;/code&gt; ：与 &lt;code&gt;[!abc]&lt;/code&gt;  一致&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;ls&lt;/code&gt; ：列出当前目录或指定目录下的文件&lt;/p&gt;
 &lt;blockquote&gt;
@@ -150,7 +223,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="面试题" />
+        <category term="Linux" />
         <updated>2024-03-25T13:35:06.598Z</updated>
     </entry>
     <entry>
