@@ -32,7 +32,6 @@
     <category term="Redis" />
     <category term="Linux" />
     <category term="json" />
-    <category term="机器学习" />
     <entry>
         <id>http://example.com/value/ns3%20install</id>
         <title>ns3 install</title>

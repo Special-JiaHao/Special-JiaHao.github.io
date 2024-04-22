@@ -32,7 +32,6 @@
     <category term="Redis" />
     <category term="Linux" />
     <category term="json" />
-    <category term="机器学习" />
     <entry>
         <id>http://example.com/value/Unix%20programing</id>
         <title>UNIX网络编程</title>
