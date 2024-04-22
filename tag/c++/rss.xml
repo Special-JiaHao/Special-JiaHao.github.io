@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Thu, 04 Apr 2024 18:03:53 +0800</pubDate>
-        <lastBuildDate>Thu, 04 Apr 2024 18:03:53 +0800</lastBuildDate>
+        <pubDate>Tue, 09 Apr 2024 16:00:34 +0800</pubDate>
+        <lastBuildDate>Tue, 09 Apr 2024 16:00:34 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -34,6 +34,124 @@
         <category>Go</category>
         <category>Redis</category>
         <category>Linux</category>
+        <category>json</category>
+        <category>机器学习</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/grpc%20for%20C++</guid>
+            <title>grpc for C++</title>
+            <link>http://example.com/value/grpc%20for%20C++</link>
+            <category>C++</category>
+            <pubDate>Tue, 09 Apr 2024 16:00:34 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;grpc-for-c&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#grpc-for-c&#34;&gt;#&lt;/a&gt; GRPC For C++&lt;/h1&gt;
+&lt;h2 id=&#34;what-is-rpc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#what-is-rpc&#34;&gt;#&lt;/a&gt; What is RPC？&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;RPC(Remote Procedure Call)&lt;/code&gt; ，远程过程调用，一种通过网络调用远程计算机的服务，而不需要了解底层网络技术的协议，使调用者可以像调用本地服务一样调用远程的方法。主要用于分布式服务器之间的通信，微服务&lt;/p&gt;
+&lt;h3 id=&#34;rpc框架&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rpc框架&#34;&gt;#&lt;/a&gt; RPC 框架&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Dobbo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Motan&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tars&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SpringCloud&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gRPC&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Thrift&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;rpc特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rpc特性&#34;&gt;#&lt;/a&gt; RPC 特性&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;RPC&lt;/code&gt;  是基于 &lt;code&gt;HTTP2&lt;/code&gt;  协议的，使用的是长连接，不需要每次通信&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;windows编译grpc-for-qt&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#windows编译grpc-for-qt&#34;&gt;#&lt;/a&gt; Windows 编译 grpc for QT&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;通过 &lt;code&gt;git&lt;/code&gt;  把 &lt;code&gt;github&lt;/code&gt;  下的 &lt;code&gt;grpc&lt;/code&gt;  源码 clone 下来&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone --recurse-submodules &lt;span class=&#34;token parameter variable&#34;&gt;-b&lt;/span&gt; --shallow-submodules https://github.com/grpc/grpc&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载 &lt;code&gt;Qt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Qt 官方网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucXQuaW8vZG93bmxvYWQtb3Blbi1zb3VyY2UlRUYlQkMlOEMlRTQlQjglOEIlRTglQkQlQkQlRTUlQkMlODAlRTYlQkElOTAlRTclODklODglRTYlOUMlQUMlRUYlQkMlODglRTUlODUlOEQlRTglQjQlQjklRUYlQkMlODk=&#34;&gt;https://www.qt.io/download-open-source，下载开源版本（免费）&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/Qt..png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NASM&lt;/p&gt;
+&lt;p&gt;NASM 官方网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9uYXNtLnVzLw==&#34;&gt;NASM&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/NASM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;设置 &lt;code&gt;NASM&lt;/code&gt;  的环境变量：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/nasm%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这里面的环境变量为 &lt;code&gt;你安装NASM的目录&lt;/code&gt; 。设置好了基本没什么问题，为了防止某些错误，你也可以测试一下.  &lt;code&gt;CMD&lt;/code&gt;  用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nasm --version&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/nasm%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E6%B5%8B%E8%AF%95.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;QT 构建 grpc&lt;/p&gt;
+&lt;p&gt;打开 &lt;code&gt;Qt Creator&lt;/code&gt; ，打开新的项目，然后选择 &lt;code&gt;你clone grpc的路径下方的CMakeLists.txt&lt;/code&gt;  文件进行构建.&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/Qt%E6%9E%84%E5%BB%BAgrpc1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/Qt%E6%9E%84%E5%BB%BAgrpc2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;最后就构建成功了！&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/Qt%E6%9E%84%E5%BB%BAgrpc3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ncnBjLmlvL2RvY3MvbGFuZ3VhZ2VzL2NwcC9xdWlja3N0YXJ0Lw==&#34;&gt;https://grpc.io/docs/languages/cpp/quickstart/&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/value/CPP/jsoncpp</guid>
+            <title>jsoncpp</title>
+            <link>http://example.com/value/CPP/jsoncpp</link>
+            <category>C++</category>
+            <category>json</category>
+            <pubDate>Sat, 06 Apr 2024 10:28:27 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;jsoncpp&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jsoncpp&#34;&gt;#&lt;/a&gt;  &lt;code&gt;jsoncpp&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;ubuntu编译&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ubuntu编译&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ubuntu&lt;/code&gt;  编译&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;github&lt;/code&gt;  地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL29wZW4tc291cmNlLXBhcnNlcnMvanNvbmNwcC9yZWxlYXNlcw==&#34;&gt;https://github.com/open-source-parsers/jsoncpp/releases&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解压 (后面跟上你压缩包名称)&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;tar&lt;/span&gt; xzvf jsoncpp-1.9.5.tar.gz&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编译&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; build&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; build&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cmake &lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;make&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;生成的静态库文件和动态库文件在 &lt;code&gt;build/lib&lt;/code&gt;  下方&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;one@one-virtual-machine:~/下载/jsoncpp-1.9.5/build/lib$ &lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;libjsoncpp.a  libjsoncpp.so  libjsoncpp.so.1.9.5  libjsoncpp.so.25&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将生成的静态库 / 动态库、头文件 &lt;code&gt;./include/json&lt;/code&gt;  放置于你的项目目录下&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;jsoncpp-api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jsoncpp-api&#34;&gt;#&lt;/a&gt;  &lt;code&gt;jsoncpp API&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;jsoncpp&lt;/code&gt;  库中的类被定义在 &lt;code&gt;Json&lt;/code&gt;  的命名空间中，使用 &lt;code&gt;jsoncpp&lt;/code&gt;  解析 &lt;code&gt;json&lt;/code&gt;  格式的数据，常用的一下几个类:&lt;/p&gt;
+&lt;h3 id=&#34;value&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#value&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Value&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;封装了 &lt;code&gt;jsoncpp&lt;/code&gt;  支持解析的数据类型，有如下几种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;nullValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;intValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uintValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;realValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stringValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;booleanValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arrayValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;objectValue&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;构造函数&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;成员方法&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;fastwriter&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fastwriter&#34;&gt;#&lt;/a&gt;  &lt;code&gt;FastWriter&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;将 &lt;code&gt;Value&lt;/code&gt;  对象中的数据序列化为字符串&lt;/p&gt;
+&lt;h3 id=&#34;reader&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reader&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Reader&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;将 &lt;code&gt;json&lt;/code&gt;  字符串反序列化为 &lt;code&gt;Value&lt;/code&gt;  对象&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Reader&lt;/span&gt;&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;parse&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; std&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;string document&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Value&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; root&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; collectComments &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;	&lt;span class=&#34;token comment&#34;&gt;// C++ 风格&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;参数：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	1. document: json 格式的字符串&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	2. root: 传出参数，保留解析出的数据（存储在 Value 对象中）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	3. collectComments: 是否保存 json 字符串中的注释信息&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Reader&lt;/span&gt;&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;parse&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;beginDoc&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; endDoc&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Value&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; root&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; collectComments &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;	&lt;span class=&#34;token comment&#34;&gt;// C 风格&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Reader&lt;/span&gt;&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;parse&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;std&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;istream&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; is&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Value&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; root&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; collectComments &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/CPP/%E7%8E%B0%E4%BB%A3C++</guid>
             <title>现代C++</title>
@@ -142,6 +260,7 @@
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; c&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;c &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Derived&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token base-clause&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Base&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;using&lt;/span&gt; Base&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;Base&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Derived &lt;span class=&#34;token function&#34;&gt;tp&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;除此之外，我们可以使用 &lt;code&gt;using&lt;/code&gt;  在派生类中引入基类中被隐藏的成员函数 (重写)&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	在派生类 Derived 中我们需要重定义 fun 成员函数，这样一来会导致基类中的所有 fun 函数（被重载）都会被隐藏，如果我们只是想修改 fun 无参函数的功能，其他 fun 有参的成员函数保留，就需要使用 using &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; c&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;c &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;fun&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Base fun&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;fun&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;fun(&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;,&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;)&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Derived&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token base-clause&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Base&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;using&lt;/span&gt; Base&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;Base&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;using&lt;/span&gt; Base&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;fun&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;fun&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Derived fun&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;列表初始化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表初始化&#34;&gt;#&lt;/a&gt; 列表初始化&lt;/h2&gt;
 &lt;h2 id=&#34;stdinitializer_list&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#stdinitializer_list&#34;&gt;#&lt;/a&gt;  &lt;code&gt;std::initializer_list&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;可调用对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#可调用对象&#34;&gt;#&lt;/a&gt; 可调用对象&lt;/h2&gt;
 &lt;h2 id=&#34;基于范围的for循环&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基于范围的for循环&#34;&gt;#&lt;/a&gt; 基于范围的 &lt;code&gt;for&lt;/code&gt;  循环&lt;/h2&gt;
 &lt;h2 id=&#34;lamada表达式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lamada表达式&#34;&gt;#&lt;/a&gt;  &lt;code&gt;lamada&lt;/code&gt;  表达式&lt;/h2&gt;
 &lt;ul&gt;
@@ -228,7 +347,12 @@
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 关闭数据库连接实例，释放 mysql_init () 申请得到的空间&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mysql_close&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; mysql&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;字符编码设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字符编码设置&#34;&gt;#&lt;/a&gt; 字符编码设置&lt;/h3&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 获取当前连接默认的字符集&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;mysql_character_set_name&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; mysql&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 设置编码集&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mysql_set_charater_set&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; mysql&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;character_name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;事务操作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#事务操作&#34;&gt;#&lt;/a&gt; 事务操作&lt;/h3&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 设置数据库的提交方式（自动提交 mode:true、手动提交 mode:false）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;my_bool &lt;span class=&#34;token function&#34;&gt;mysql_autocommit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; mysql&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; my_bool mode&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;返回值：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	成功：true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	失败：false&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 提交事务&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;my_bool &lt;span class=&#34;token function&#34;&gt;mysql_commit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;mysql&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;返回值：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	成功：true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	失败：false&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 事务回滚&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;my_bool &lt;span class=&#34;token function&#34;&gt;mysql_rollback&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;mysql&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;返回值：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	成功：true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	失败：false&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;获取错误信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#获取错误信息&#34;&gt;#&lt;/a&gt; 获取错误信息&lt;/h3&gt;
-&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;mysql_error&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; mysql&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mysql_errno&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; mysql&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;mysql_error&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; mysql&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mysql_errno&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;MYSQL&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; mysql&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;数据库连接池实现&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库连接池实现&#34;&gt;#&lt;/a&gt; 数据库连接池实现&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;数据库连接类&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">http://example.com/value/CPP/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B</guid>
@@ -501,44 +625,28 @@ Description:
 &lt;/ul&gt;
 &lt;h2 id=&#34;static&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#static&#34;&gt;#&lt;/a&gt; static&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;在函数中申明变量时，被 &lt;code&gt;static&lt;/code&gt;  修饰的变量只会被初始化一次，改变了变量的存储位置（原来存储在栈区，现在存储在静态 / 全局存储区），延长了变量的生命周期&lt;/li&gt;
-&lt;li&gt;被 &lt;code&gt;static&lt;/code&gt;  修饰的变量默认初始化为 0&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  修饰全局变量
-&lt;ol&gt;
-&lt;li&gt;全局变量：既可以在源文件中使用，也可以在其他文件中使用（使用 &lt;code&gt;extern&lt;/code&gt;  修饰）&lt;/li&gt;
-&lt;li&gt;静态全局变量：只能在源文件中使用，使得全局变量的作用域变小&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  在类内使用
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  所修饰的成员变量为所以对象共享，不占用具体实例的空间.&lt;/li&gt;
-&lt;li&gt;静态成员变量必须在类外定义，定义时不加 &lt;code&gt;static&lt;/code&gt;  关键字&lt;/li&gt;
-&lt;li&gt;静态成员函数没有隐藏的 &lt;code&gt;this&lt;/code&gt;  指针，不能访问非静态成员&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;访问静态成员变量的方法：
-&lt;ol&gt;
-&lt;li&gt;静态成员变量为 &lt;code&gt;public&lt;/code&gt; （对象，类，匿名对象）&lt;/li&gt;
-&lt;li&gt;静态成员变量为 &lt;code&gt;private&lt;/code&gt; （对象的静态成员函数，类的静态成员函数，匿名对象的静态成员函数）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  修饰局部变量：改变变量的存储位置（由栈区转移到静态存储区），延长了变量的生命周期； &lt;code&gt;static&lt;/code&gt;  局部变量只在当前的作用域内有效，在作用外无法访问.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  修饰全局变量：只能在当前源文件内有效，在其他源文件内无法访问. （无 &lt;code&gt;static&lt;/code&gt;  修饰的全局变量可以在其他源文件中使用 extern 申明其他源文件中的全局变量，即可在当前源文件中使用）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  修饰函数：和 &lt;code&gt;static&lt;/code&gt;  用于修饰全局变量具有一样的特性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  修饰成员变量：静态成员变量，为类所以，可供所以对象共享，不占用实例的存储空间，同时其初始化必须定义外类外部&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  修饰成员函数：静态成员函数，没有隐藏的 &lt;code&gt;this&lt;/code&gt;  指针，因此函数体内不能访问该类的非静态成员变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static&lt;/code&gt;  修饰的变量默认初始化为 0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;const&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#const&#34;&gt;#&lt;/a&gt; const&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  修饰变量时表示其为一个常量或想阻止一个变量被改变&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  在类外定义变量时，必须初始化，并之后无法更改&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  修饰的变量值不可变修改&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;const&lt;/code&gt;  成员变量：不能在类外初始化，只能通过构造函数初始化列表进行初始化&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  对象不能调用非 &lt;code&gt;const&lt;/code&gt;  成员函数&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  修饰的函数为常函数，不能改变类的成员变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  修饰的函数为常函数，不能改变类的成员变量（可以修改被 &lt;code&gt;mutable&lt;/code&gt;  修饰的变量）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt;  对象不能调用非 &lt;code&gt;const&lt;/code&gt;  成员函数（防止类的非常函数对 &lt;code&gt;const&lt;/code&gt;  对象的成员变量进行修改）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;mutable&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mutable&#34;&gt;#&lt;/a&gt; mutable&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;mutable&lt;/code&gt;  与 &lt;code&gt;const&lt;/code&gt;  是相对的，表示一个变量的易变的；被 &lt;code&gt;mutable&lt;/code&gt;  修饰是成员变量可以再 &lt;code&gt;const&lt;/code&gt;  修饰的函数内被修改（也可以被常对象进行直接修改）&lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;mutable&lt;/code&gt;  与 &lt;code&gt;const&lt;/code&gt;  是相对的，表示一个变量的易变的；被 &lt;code&gt;mutable&lt;/code&gt;  修饰是成员变量可以再 &lt;code&gt;const&lt;/code&gt;  修饰的函数内被修改（也可以被常对象进行直接修改）&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;explicit&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#explicit&#34;&gt;#&lt;/a&gt; explicit&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;用于修饰类的构造函数，被修饰的构造函数的类不能发生隐式的类型转化，只能以显示的类型转化&lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;用于修饰类的构造函数，防止其他对象隐式的转化为该类对象，只能显示的进行类型转化&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;volatile&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#volatile&#34;&gt;#&lt;/a&gt; volatile&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;用于修饰变量，表示其值随时可能发送变化，编译器不会对访问该变量的代码进行优化，可以保证访问变量的稳定（从内存中读取）&lt;/li&gt;
@@ -549,26 +657,42 @@ Description:
 &lt;ul&gt;
 &lt;li&gt;封装、继承、多态（封装和继承可以实现 &lt;code&gt;代码的重用&lt;/code&gt; ，多态可以实现 &lt;code&gt;接口的重用&lt;/code&gt; ）
 &lt;ol&gt;
-&lt;li&gt;封装：将数据和实现过程包裹起来，隐藏代码的实现细节，通过定义的接口来访问数据成员，使代码模块化. (直接体现面向对象，代码重用，权限控制)
+&lt;li&gt;
+&lt;p&gt;封装：将数据和实现过程包裹起来，隐藏代码的实现细节，通过定义的接口来访问数据成员，使代码模块化. (直接体现面向对象，代码重用，权限控制)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;public&lt;/code&gt; ：公有权限，类内可以访问，类外也可以访问&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;protected&lt;/code&gt; ：保护权限，类内可以访问，类外不可以访问&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;private&lt;/code&gt; ：私有权限，类内可以访问，类外不可以访问&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;继承：无需重新编写代码而可以直接使用现有类的所以功能，同时可以对现有类进行功能上的扩展，是一个从一般到特殊的过程.
+&lt;li&gt;
+&lt;p&gt;继承：无需重新编写代码而可以直接使用现有类的所以功能，同时可以对现有类进行功能上的扩展，是一个从一般到特殊的过程.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;权限继承：表示基类在子类中的最高权限（破坏继承： &lt;code&gt;friend&lt;/code&gt; ，  &lt;code&gt;using&lt;/code&gt; ）&lt;/li&gt;
 &lt;li&gt;多继承：通过多继承可以得到更多类的数据和方法，实现更大程度的代码复用，当然也存在一些问题，如菱形继承.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;多态：一个接口有多种形态；多态是在不同继承关系的类对象，可以通过父类指针去指向子类对象，通过父类指针调用同一函数，可以产生了不同的行为.（父类的指针可以具有多种形态，称之为多态）（用父类型别的指针指向其子类的实例，然后通过父类指针调用实际的子类的成员函数）
+&lt;li&gt;
+&lt;p&gt;多态：通过父类指针指向多个派生的子类对象时，调用父类的一个接口，可以实现多种不同的行为即为多态.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;虚函数（函数地址在运行阶段确定）（每个包含虚函数的类实例化出的对象除了成员变量之外，最前面会存储虚函数表指针；当发生继承时，派生类的虚表和父类一致，若子类中自身包含虚函数，则会添加到后面，若子类虚函数重写了父类的虚函数，则虚表中的地址也会发生响应的改变）&lt;/li&gt;
-&lt;li&gt;编译器在编译阶段会为类（含义虚函数的类）生成虚函数表&lt;/li&gt;
-&lt;li&gt;协变：基类和派生类虚函数的返回值不同（基类返回基类对象的指针或引用，派生类返回派生类对象的指针或引用）&lt;/li&gt;
-&lt;li&gt;虚析构函数：基类中析构函数前使用 &lt;code&gt;virtual&lt;/code&gt;  修饰。当基类指针指向派生类对象时，使用基类指针去释放空间时，则会去先调用派生类的析构函数，再去调用基类的析构函数；若不加 &lt;code&gt;virtual&lt;/code&gt;  则不会触发动态绑定（多态），只会调用基类的析构函数，导致内存泄漏. (虽然虚构函数名不一样，其实也是一种重写，系统内部对析构函数做了特殊处理，将析构函数名称都改成了 &lt;code&gt;destructor&lt;/code&gt; )&lt;/li&gt;
-&lt;li&gt;虚函数地址在运行时绑定，使用了虚函数表的机制，所以在调用的时候会增加一次内存开销.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;被 &lt;code&gt;virtual&lt;/code&gt;  修饰的成员函数即为虚函数，如基类的虚函数为空即为纯虚函数，这个类即可为抽象类，不能被实例化，否则就是一个虚类，可被实例化.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在编译阶段，虚类内会隐藏的存储一个虚函数表指针的成员变量，指向一张虚函数表，该类的所以对象共用这张虚函数表.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;派生类继承虚类时，其会复制一份父类的虚函数表，类内的虚函数指针指向这张新的虚函数表，如派生类重写了虚函数则会将对应的虚函数表对应的指针项做一个修改，如果派生类定义了新的虚函数，则会在新的虚函数表后追加新的函数与地址的映射. （如若派生类继承了多个父类，即多继承，那么这个派生类可能存储多个虚函数表指针）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;虚析构函数：基类中析构函数前使用 &lt;code&gt;virtual&lt;/code&gt;  修饰。当基类指针指向派生类对象时，使用基类指针去释放空间时，则会去先调用派生类的析构函数，再去调用基类的析构函数；若不加 &lt;code&gt;virtual&lt;/code&gt;  则不会触发动态绑定（多态），只会调用基类的析构函数，导致内存泄漏. (虽然虚构函数名不一样，其实也是一种重写，系统内部对析构函数做了特殊处理，将析构函数名称都改成了 &lt;code&gt;destructor&lt;/code&gt; )&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;虚函数地址在运行时绑定（函数地址在运行阶段确定），使用了虚函数表的机制，所以在调用的时候会增加一次内存开销. （虚函数的缺点）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;协变：基类和派生类虚函数的返回值不同（基类返回基类对象的指针或引用，派生类返回派生类对象的指针或引用），其也是一种多态&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;iostream&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;namespace&lt;/span&gt; std&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;User&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;virtual&lt;/span&gt; User &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;return user&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Manager&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token base-clause&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;User&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;virtual&lt;/span&gt; Manager &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;return manager&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    Manager mg&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    User&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; ptr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;mg&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    ptr&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -576,9 +700,9 @@ Description:
 &lt;/ul&gt;
 &lt;h2 id=&#34;菱形继承&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#菱形继承&#34;&gt;#&lt;/a&gt; 菱形继承&lt;/h2&gt;
 &lt;h2 id=&#34;为什么c默认析构函数不是虚函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么c默认析构函数不是虚函数&#34;&gt;#&lt;/a&gt; 为什么 C++ 默认析构函数不是虚函数&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;虚函数需要虚函数表和虚函数表指针，会占用内存空间。如果一个类没有子类，那么就没有必要讲析构函数设置为虚函数&lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虚函数需要虚函数表和虚函数表指针，会占用内存空间。如果一个类没有子类，那么就没有必要讲析构函数设置为虚函数&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;重载-重写-重定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重载-重写-重定义&#34;&gt;#&lt;/a&gt; 重载、重写、重定义&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;重载：多个同名函数，他们的参数个数或者参数类型不同；（编译器根据函数不同的参数表，对同名函数的名称做修饰，然后这些同名函数就变成了不同的函数），也可以称之为静态多态，函数地址在编译器就已经确定了&lt;/li&gt;
@@ -593,7 +717,7 @@ Description:
 &lt;h2 id=&#34;struct-与class&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#struct-与class&#34;&gt;#&lt;/a&gt; struct 与 class&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;C++ 中的 &lt;code&gt;struct&lt;/code&gt;  默认 &lt;code&gt;public&lt;/code&gt;  共有权限， &lt;code&gt;class&lt;/code&gt;  默认 &lt;code&gt;private&lt;/code&gt;  私有权限&lt;/li&gt;
-&lt;li&gt;C 语言中的 &lt;code&gt;struct&lt;/code&gt;  只是一个变量的集合体，只可以用于封装数据&lt;/li&gt;
+&lt;li&gt;C 语言中的 &lt;code&gt;struct&lt;/code&gt;  只是一个变量的集合体，只可以用于封装数据，而不备面向对象的一些特性&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;new-和-malloc的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#new-和-malloc的区别&#34;&gt;#&lt;/a&gt; new 和 malloc 的区别&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;new&lt;/code&gt;  和 &lt;code&gt;malloc&lt;/code&gt;  都是用于分配内存的，其中 &lt;code&gt;new&lt;/code&gt;  是 C++ 中的操作符，可以被重载， &lt;code&gt;malloc&lt;/code&gt;  是 C 语言中的库函数，不可以被重载&lt;/p&gt;
@@ -637,11 +761,9 @@ Description:
 &lt;p&gt;&lt;code&gt;static_cast&amp;lt;T&amp;gt;()&lt;/code&gt; ：不进行类型检查，不安全&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;用于层次结构中基类与派生类间指针的转换&lt;/p&gt;
-&lt;p&gt;a. 上行转换（派生类指针转化为基类指针），安全&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;用于层次结构中基类与派生类间指针的转换&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;a. 上行转换（派生类指针转化为基类指针），安全&lt;/p&gt;
 &lt;p&gt;b. 下行转化（基类指针转化为派生类指针），不安全&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;基本数据类型的转化&lt;/li&gt;
@@ -650,13 +772,12 @@ Description:
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;dynamic_cast&lt;/code&gt; ：运行时处理（动态类型转换），只能针对指针或引用，专门用于派生类与基类之间的转换（必须有虚函数），会进行类型的检查，较安全（转换失败，指针为 &lt;code&gt;nullptr&lt;/code&gt; ，和多态一起使用）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dynamic_cast&lt;/code&gt; ：专门用于派生类与基类之间的类型转化，基类中必须有虚函数；会进行类型的检查，是一种安全类型转化（转换失败，指针为 &lt;code&gt;nullptr&lt;/code&gt; ）&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;运行时会进行类型的检查&lt;/li&gt;
 &lt;li&gt;不能用于内置基本数据类型的转化&lt;/li&gt;
 &lt;li&gt;如果转化成功的话会返回指向类的指针或引用，转换失败的话则会返回 &lt;code&gt;NULL&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;专门用于派生类与基类之间的类型转化，基本中必须有虚函数（能保证安全性）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
@@ -683,13 +804,6 @@ Description:
 &lt;p&gt;在 C++ 中，临时对象都是 &lt;code&gt;const&lt;/code&gt;  类型的，const 类型的对象转换为非 const 类型是非法的.&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;string &lt;span class=&#34;token function&#34;&gt;foo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;bar&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;string &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;s&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;bar&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;foo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;	    &lt;span class=&#34;token comment&#34;&gt;//  非法&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;hello world&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;     &lt;span class=&#34;token comment&#34;&gt;// 非法&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;将引用作为函数返回值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将引用作为函数返回值&#34;&gt;#&lt;/a&gt; 将引用作为函数返回值&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;好处：在内存中不会产生返回值副本&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;注意：不能返回局部变量的引用，不能返回函数内部 new 的内存空间的引用（无法释放）&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;h2 id=&#34;野指针&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#野指针&#34;&gt;#&lt;/a&gt; 野指针&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;野指针：指向已被释放的内存空间或者指向没有访问权限的内存空间&lt;/li&gt;
@@ -873,9 +987,9 @@ Description:
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;内存对齐&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存对齐&#34;&gt;#&lt;/a&gt; 内存对齐&lt;/h2&gt;
 &lt;p&gt;理论上计算机对于任何变量的访问都可以从任务位置开始，然而实际上系统会对这些变量的存放做一些限制，通常将某个变量的地址设置为某个数 &lt;code&gt;N&lt;/code&gt;  的整数倍。这就是内存对齐.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;加快内存的获取速度&lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;内存是以字节为基本单位，但是对于处理器往往是按字节块来存取数据。进行内存对齐，主要是为了加快内存的存取速度.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;内存池&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存池&#34;&gt;#&lt;/a&gt; 内存池&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;预先申请分配一定数量的内存块留作备用，当有新的内存需求时，就从内存池中分出一部分内存块，对于使用完的内存块将其放回内存池。若内存池不够，在继续申请新的内存. （防止频繁的内存申请与释放所带来的开销，提高分配效率，同时可以避免内存碎片）&lt;/li&gt;
@@ -1031,6 +1145,15 @@ Description:
             <category>CMake</category>
             <pubDate>Tue, 19 Dec 2023 16:01:14 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;cmake&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CMake&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;指定cmake最低版本依赖&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指定cmake最低版本依赖&#34;&gt;#&lt;/a&gt; 指定 &lt;code&gt;CMake&lt;/code&gt;  最低版本依赖&lt;/h2&gt;
+&lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;cmake_minimum_required&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token property&#34;&gt;VERSION&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3.0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;项目名称&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#项目名称&#34;&gt;#&lt;/a&gt; 项目名称&lt;/h2&gt;
+&lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;project&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;project_name &lt;span class=&#34;token property&#34;&gt;VERSION&lt;/span&gt; v1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;生成可执行文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成可执行文件&#34;&gt;#&lt;/a&gt; 生成可执行文件&lt;/h2&gt;
+&lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;add_executable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;project_name 源文件&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;构建-编译与运行&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#构建-编译与运行&#34;&gt;#&lt;/a&gt; 构建、编译与运行&lt;/h2&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; build&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; cmake &lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;make&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;搜索源文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搜索源文件&#34;&gt;#&lt;/a&gt; 搜索源文件&lt;/h2&gt;
+&lt;h2 id=&#34;参考博文&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考博文&#34;&gt;#&lt;/a&gt; 参考博文：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbWFrZS5vcmcvY21ha2UvaGVscC9ib29rL21hc3RlcmluZy1jbWFrZS9jbWFrZS9IZWxwL2d1aWRlL3R1dG9yaWFsL2luZGV4Lmh0bWw=&#34;&gt;CMake Tutorial — Mastering CMake&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;cmake的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cmake的使用&#34;&gt;#&lt;/a&gt;  &lt;code&gt;cmake&lt;/code&gt;  的使用&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cmake&lt;/code&gt;  是一个项目构建工具，并且是跨平台的。&lt;/p&gt;
 &lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# CMake 使用 #来进行注释， 使用 #[[]] 来注释一整块代码&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;

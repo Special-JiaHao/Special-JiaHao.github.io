@@ -31,6 +31,8 @@
     <category term="Go" />
     <category term="Redis" />
     <category term="Linux" />
+    <category term="json" />
+    <category term="机器学习" />
     <entry>
         <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Graident%20descent</id>
         <title>梯度下降</title>
@@ -43,9 +45,9 @@
         <updated>2023-07-25T06:34:33.109Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/value/least%20squares%20method</id>
+        <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/least%20squares%20method</id>
         <title>最小二乘法</title>
-        <link rel="alternate" href="http://example.com/value/least%20squares%20method"/>
+        <link rel="alternate" href="http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/least%20squares%20method"/>
         <content type="html">&lt;h1 id=&#34;背景介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#背景介绍&#34;&gt;#&lt;/a&gt; 背景介绍&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;最小二乘法&lt;/strong&gt;（英语：least squares method），又称&lt;strong&gt;最小平方法&lt;/strong&gt;，是一种数学优化建模方法。它通过最小化误差的平方和（均方误差，mean square error, MSE）寻找数据的最佳函数匹配，以此可以简便的求得未知的数据。其最重要的应用是在&lt;strong&gt;曲线拟合&lt;/strong&gt;上。&lt;br /&gt;
 最小平方法通常归功于&lt;em&gt;&lt;strong&gt;高斯&lt;/strong&gt;&lt;/em&gt;（Carl Friedrich Gauss，1795），但最小平方法是由&lt;em&gt;&lt;strong&gt;阿德里安 - 马里・勒让德&lt;/strong&gt;&lt;/em&gt;（Adrien-Marie Legendre）首先发表的。&lt;/p&gt;

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;json&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2024-04-06T02:28:27.024Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
+    <category term="VMware" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
+    <category term="CNN" />
+    <category term="Project" />
+    <category term="面试题" />
+    <category term="日常" />
+    <category term="校招" />
+    <category term="算法" />
+    <category term="Leetcode双周赛" />
+    <category term="Algorithm" />
+    <category term="Leetcode周赛" />
+    <category term="设计模式" />
+    <category term="多线程" />
+    <category term="池化技术" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
+    <category term="Linux" />
+    <category term="json" />
+    <category term="机器学习" />
+    <entry>
+        <id>http://example.com/value/CPP/jsoncpp</id>
+        <title>jsoncpp</title>
+        <link rel="alternate" href="http://example.com/value/CPP/jsoncpp"/>
+        <content type="html">&lt;h1 id=&#34;jsoncpp&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jsoncpp&#34;&gt;#&lt;/a&gt;  &lt;code&gt;jsoncpp&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;ubuntu编译&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ubuntu编译&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ubuntu&lt;/code&gt;  编译&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;github&lt;/code&gt;  地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL29wZW4tc291cmNlLXBhcnNlcnMvanNvbmNwcC9yZWxlYXNlcw==&#34;&gt;https://github.com/open-source-parsers/jsoncpp/releases&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解压 (后面跟上你压缩包名称)&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;tar&lt;/span&gt; xzvf jsoncpp-1.9.5.tar.gz&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编译&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; build&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; build&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cmake &lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;make&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;生成的静态库文件和动态库文件在 &lt;code&gt;build/lib&lt;/code&gt;  下方&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;one@one-virtual-machine:~/下载/jsoncpp-1.9.5/build/lib$ &lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;libjsoncpp.a  libjsoncpp.so  libjsoncpp.so.1.9.5  libjsoncpp.so.25&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将生成的静态库 / 动态库、头文件 &lt;code&gt;./include/json&lt;/code&gt;  放置于你的项目目录下&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;jsoncpp-api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#jsoncpp-api&#34;&gt;#&lt;/a&gt;  &lt;code&gt;jsoncpp API&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;jsoncpp&lt;/code&gt;  库中的类被定义在 &lt;code&gt;Json&lt;/code&gt;  的命名空间中，使用 &lt;code&gt;jsoncpp&lt;/code&gt;  解析 &lt;code&gt;json&lt;/code&gt;  格式的数据，常用的一下几个类:&lt;/p&gt;
+&lt;h3 id=&#34;value&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#value&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Value&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;封装了 &lt;code&gt;jsoncpp&lt;/code&gt;  支持解析的数据类型，有如下几种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;nullValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;intValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uintValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;realValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stringValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;booleanValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arrayValue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;objectValue&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;构造函数&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;成员方法&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;fastwriter&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fastwriter&#34;&gt;#&lt;/a&gt;  &lt;code&gt;FastWriter&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;将 &lt;code&gt;Value&lt;/code&gt;  对象中的数据序列化为字符串&lt;/p&gt;
+&lt;h3 id=&#34;reader&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reader&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Reader&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;将 &lt;code&gt;json&lt;/code&gt;  字符串反序列化为 &lt;code&gt;Value&lt;/code&gt;  对象&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Reader&lt;/span&gt;&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;parse&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; std&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;string document&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Value&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; root&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; collectComments &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;	&lt;span class=&#34;token comment&#34;&gt;// C++ 风格&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;参数：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	1. document: json 格式的字符串&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	2. root: 传出参数，保留解析出的数据（存储在 Value 对象中）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	3. collectComments: 是否保存 json 字符串中的注释信息&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Reader&lt;/span&gt;&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;parse&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;beginDoc&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; endDoc&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Value&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; root&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; collectComments &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;	&lt;span class=&#34;token comment&#34;&gt;// C 风格&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Reader&lt;/span&gt;&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;parse&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;std&lt;span class=&#34;token double-colon punctuation&#34;&gt;::&lt;/span&gt;istream&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; is&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Value&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt; root&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;bool&lt;/span&gt; collectComments &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="C++" />
+        <category term="json" />
+        <updated>2024-04-06T02:28:27.024Z</updated>
+    </entry>
+</feed>

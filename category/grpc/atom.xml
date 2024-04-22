@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>繁華落盡 似水流年 • Posts by &#34;grpc&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2024-04-09T08:00:34.000Z</updated>
+    <category term="mathematics" />
+    <category term="语法" />
+    <category term="C++" />
+    <category term="VMware" />
+    <category term="install" />
+    <category term="数据库" />
+    <category term="STL" />
+    <category term="CNN" />
+    <category term="Project" />
+    <category term="面试题" />
+    <category term="日常" />
+    <category term="校招" />
+    <category term="算法" />
+    <category term="Leetcode双周赛" />
+    <category term="Algorithm" />
+    <category term="Leetcode周赛" />
+    <category term="设计模式" />
+    <category term="多线程" />
+    <category term="池化技术" />
+    <category term="MySQL" />
+    <category term="操作系统" />
+    <category term="计算机网络" />
+    <category term="CMake" />
+    <category term="线程池" />
+    <category term="Go" />
+    <category term="Redis" />
+    <category term="Linux" />
+    <category term="json" />
+    <category term="机器学习" />
+    <entry>
+        <id>http://example.com/value/grpc%20for%20C++</id>
+        <title>grpc for C++</title>
+        <link rel="alternate" href="http://example.com/value/grpc%20for%20C++"/>
+        <content type="html">&lt;h1 id=&#34;grpc-for-c&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#grpc-for-c&#34;&gt;#&lt;/a&gt; GRPC For C++&lt;/h1&gt;
+&lt;h2 id=&#34;what-is-rpc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#what-is-rpc&#34;&gt;#&lt;/a&gt; What is RPC？&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;RPC(Remote Procedure Call)&lt;/code&gt; ，远程过程调用，一种通过网络调用远程计算机的服务，而不需要了解底层网络技术的协议，使调用者可以像调用本地服务一样调用远程的方法。主要用于分布式服务器之间的通信，微服务&lt;/p&gt;
+&lt;h3 id=&#34;rpc框架&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rpc框架&#34;&gt;#&lt;/a&gt; RPC 框架&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Dobbo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Motan&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tars&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SpringCloud&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gRPC&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Thrift&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;rpc特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rpc特性&#34;&gt;#&lt;/a&gt; RPC 特性&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;RPC&lt;/code&gt;  是基于 &lt;code&gt;HTTP2&lt;/code&gt;  协议的，使用的是长连接，不需要每次通信&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;windows编译grpc-for-qt&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#windows编译grpc-for-qt&#34;&gt;#&lt;/a&gt; Windows 编译 grpc for QT&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;通过 &lt;code&gt;git&lt;/code&gt;  把 &lt;code&gt;github&lt;/code&gt;  下的 &lt;code&gt;grpc&lt;/code&gt;  源码 clone 下来&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;figcaption data-lang=&#34;Bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone --recurse-submodules &lt;span class=&#34;token parameter variable&#34;&gt;-b&lt;/span&gt; --shallow-submodules https://github.com/grpc/grpc&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载 &lt;code&gt;Qt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Qt 官方网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucXQuaW8vZG93bmxvYWQtb3Blbi1zb3VyY2UlRUYlQkMlOEMlRTQlQjglOEIlRTglQkQlQkQlRTUlQkMlODAlRTYlQkElOTAlRTclODklODglRTYlOUMlQUMlRUYlQkMlODglRTUlODUlOEQlRTglQjQlQjklRUYlQkMlODk=&#34;&gt;https://www.qt.io/download-open-source，下载开源版本（免费）&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/Qt..png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NASM&lt;/p&gt;
+&lt;p&gt;NASM 官方网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9uYXNtLnVzLw==&#34;&gt;NASM&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/NASM.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;设置 &lt;code&gt;NASM&lt;/code&gt;  的环境变量：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/nasm%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这里面的环境变量为 &lt;code&gt;你安装NASM的目录&lt;/code&gt; 。设置好了基本没什么问题，为了防止某些错误，你也可以测试一下.  &lt;code&gt;CMD&lt;/code&gt;  用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;nasm --version&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/nasm%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E6%B5%8B%E8%AF%95.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;QT 构建 grpc&lt;/p&gt;
+&lt;p&gt;打开 &lt;code&gt;Qt Creator&lt;/code&gt; ，打开新的项目，然后选择 &lt;code&gt;你clone grpc的路径下方的CMakeLists.txt&lt;/code&gt;  文件进行构建.&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/Qt%E6%9E%84%E5%BB%BAgrpc1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/Qt%E6%9E%84%E5%BB%BAgrpc2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;最后就构建成功了！&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/Qt%E6%9E%84%E5%BB%BAgrpc3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ncnBjLmlvL2RvY3MvbGFuZ3VhZ2VzL2NwcC9xdWlja3N0YXJ0Lw==&#34;&gt;https://grpc.io/docs/languages/cpp/quickstart/&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="C++" />
+        <updated>2024-04-09T08:00:34.000Z</updated>
+    </entry>
+</feed>

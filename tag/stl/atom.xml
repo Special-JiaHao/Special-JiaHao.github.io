@@ -31,6 +31,8 @@
     <category term="Go" />
     <category term="Redis" />
     <category term="Linux" />
+    <category term="json" />
+    <category term="机器学习" />
     <entry>
         <id>http://example.com/value/CPP/stl_list</id>
         <title>STL List</title>

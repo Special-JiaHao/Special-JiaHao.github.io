@@ -34,6 +34,8 @@
         <category>Go</category>
         <category>Redis</category>
         <category>Linux</category>
+        <category>json</category>
+        <category>机器学习</category>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</guid>
             <title>MySQL基础语法</title>
@@ -585,6 +587,13 @@
 &lt;li&gt;返回的数据量太多&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;mysql-ngram全文检索&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-ngram全文检索&#34;&gt;#&lt;/a&gt;  &lt;code&gt;MySQL Ngram&lt;/code&gt;  全文检索&lt;/h2&gt;
+&lt;h2 id=&#34;跳表与b树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#跳表与b树&#34;&gt;#&lt;/a&gt; 跳表与 B + 树&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;跳表：将部分链表节点提取出来，再构建出一个新的链表，一直递归的做上述的过程，形成的新的数据结构就是跳表。每次在进行查询操作的时候，先查询上层的链表，看落在那个范围，在递归去下层链表搜索. （跳表一条数据一个节点）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;跳表的写入性能比 B + 树好：B + 树在进行插入数据的时候，由于 B + 树的一个多叉的平衡树，可能会导致拆分合并索引数据页。跳表则是独立插入，并根据随机函数确定是否在上层中增加节点。没有旋转维持平衡的开销&lt;/p&gt;
+&lt;/blockquote&gt;
  ]]></description>
         </item>
     </channel>

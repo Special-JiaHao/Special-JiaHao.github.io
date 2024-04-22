@@ -31,6 +31,8 @@
     <category term="Go" />
     <category term="Redis" />
     <category term="Linux" />
+    <category term="json" />
+    <category term="机器学习" />
     <entry>
         <id>http://example.com/value/VMware%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98</id>
         <title>VMware Workstation遇到的一些问题</title>

@@ -31,6 +31,8 @@
     <category term="Go" />
     <category term="Redis" />
     <category term="Linux" />
+    <category term="json" />
+    <category term="机器学习" />
     <entry>
         <id>http://example.com/value/Markdown%20grammar</id>
         <title>Markdown语法</title>

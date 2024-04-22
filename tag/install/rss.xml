@@ -34,6 +34,8 @@
         <category>Go</category>
         <category>Redis</category>
         <category>Linux</category>
+        <category>json</category>
+        <category>机器学习</category>
         <item>
             <guid isPermalink="true">http://example.com/value/ns3%20install</guid>
             <title>ns3 install</title>

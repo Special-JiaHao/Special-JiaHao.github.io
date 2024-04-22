@@ -31,6 +31,8 @@
     <category term="Go" />
     <category term="Redis" />
     <category term="Linux" />
+    <category term="json" />
+    <category term="机器学习" />
     <entry>
         <id>http://example.com/value/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F</id>
         <title>设计模式</title>

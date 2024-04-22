@@ -31,10 +31,12 @@
     <category term="Go" />
     <category term="Redis" />
     <category term="Linux" />
+    <category term="json" />
+    <category term="机器学习" />
     <entry>
-        <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C</id>
+        <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9CCNN</id>
         <title>Convolutional Neural Network</title>
-        <link rel="alternate" href="http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"/>
+        <link rel="alternate" href="http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9CCNN"/>
         <content type="html">&lt;h1 id=&#34;background&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#background&#34;&gt;#&lt;/a&gt; Background&lt;/h1&gt;
 &lt;p&gt;卷积神经网络&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn1&#34; id=&#34;fnref1&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;主要使用在图像和视频分析的各种任务上，比如图像分类、人脸识别、图像分割上，其准确率远超其他的神经网络模型。基于卷积神经网络架构的模型在计算机视觉领域中已经占主导地位，当今几乎所有的图像识别、目标检测或语义分割相关的学术竞赛和商业应用都以这种方法为基础。&lt;/p&gt;
 &lt;p&gt;卷积神经网络最早出现是用来处理图像信息，在使用以往的全连接前馈网络处理图像时，往往是将图像数据展平成一维向量，再将数据送入一个全连接的多层感知机中。这样处理图像会存在以下两个问题：&lt;/p&gt;
