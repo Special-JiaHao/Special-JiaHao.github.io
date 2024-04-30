@@ -35,6 +35,7 @@
         <category>Redis</category>
         <category>Linux</category>
         <category>json</category>
+        <category>Python</category>
         <item>
             <guid isPermalink="true">http://example.com/value/CPP/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B</guid>
             <title>多线程编程</title>

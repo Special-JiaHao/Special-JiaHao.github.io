@@ -32,6 +32,7 @@
     <category term="Redis" />
     <category term="Linux" />
     <category term="json" />
+    <category term="Python" />
     <entry>
         <id>http://example.com/value/%E7%AE%97%E6%B3%95%E6%A8%A1%E7%89%88</id>
         <title>算法模版</title>

@@ -35,6 +35,7 @@
         <category>Redis</category>
         <category>Linux</category>
         <category>json</category>
+        <category>Python</category>
         <item>
             <guid isPermalink="true">http://example.com/value/Go/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</guid>
             <title>Go基础语法</title>

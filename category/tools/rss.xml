@@ -35,6 +35,7 @@
         <category>Redis</category>
         <category>Linux</category>
         <category>json</category>
+        <category>Python</category>
         <item>
             <guid isPermalink="true">http://example.com/value/CPP/jsoncpp</guid>
             <title>jsoncpp</title>
