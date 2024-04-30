@@ -5,6 +5,16 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LeNet5",
+            "url": "http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LeNet5",
+            "title": "The Convolutional Neural Network - Theory and Implementation of LeNet-5 and AlexNet",
+            "date_published": "2024-04-30T08:01:46.250Z",
+            "content_html": "<h2 id=\"参考\"><a class=\"anchor\" href=\"#参考\">#</a> 参考</h2>\n<ul>\n<li>[1] <span class=\"exturl\" data-url=\"aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL3N0YW1wL3N0YW1wLmpzcD90cD0mYW1wO2FybnVtYmVyPTcyNjc5MQ==\">Gradient-Based Learning Applied to Document Recognition</span></li>\n</ul>\n",
+            "tags": [
+                "CNN"
+            ]
+        },
+        {
             "id": "http://example.com/value/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8",
             "url": "http://example.com/value/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8",
             "title": "IO多路复用",

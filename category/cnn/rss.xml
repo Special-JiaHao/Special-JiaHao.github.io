@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>繁華落盡 似水流年 • Posts by &#34;cnn&#34; category</title>
+        <link>http://example.com</link>
+        <description>编程日记 &amp; 随笔</description>
+        <language>en</language>
+        <pubDate>Tue, 30 Apr 2024 16:01:46 +0800</pubDate>
+        <lastBuildDate>Tue, 30 Apr 2024 16:01:46 +0800</lastBuildDate>
+        <category>mathematics</category>
+        <category>语法</category>
+        <category>C++</category>
+        <category>VMware</category>
+        <category>install</category>
+        <category>数据库</category>
+        <category>STL</category>
+        <category>CNN</category>
+        <category>Project</category>
+        <category>面试题</category>
+        <category>日常</category>
+        <category>校招</category>
+        <category>算法</category>
+        <category>Leetcode双周赛</category>
+        <category>Algorithm</category>
+        <category>Leetcode周赛</category>
+        <category>设计模式</category>
+        <category>多线程</category>
+        <category>池化技术</category>
+        <category>MySQL</category>
+        <category>操作系统</category>
+        <category>计算机网络</category>
+        <category>CMake</category>
+        <category>线程池</category>
+        <category>Go</category>
+        <category>Redis</category>
+        <category>Linux</category>
+        <category>json</category>
+        <category>Python</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LeNet5</guid>
+            <title>The Convolutional Neural Network - Theory and Implementation of LeNet-5 and AlexNet</title>
+            <link>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LeNet5</link>
+            <category>CNN</category>
+            <pubDate>Tue, 30 Apr 2024 16:01:46 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL3N0YW1wL3N0YW1wLmpzcD90cD0mYW1wO2FybnVtYmVyPTcyNjc5MQ==&#34;&gt;Gradient-Based Learning Applied to Document Recognition&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
