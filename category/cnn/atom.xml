@@ -35,11 +35,14 @@
     <category term="Python" />
     <entry>
         <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LeNet5</id>
-        <title>The Convolutional Neural Network - Theory and Implementation of LeNet-5 and AlexNet</title>
+        <title>The Convolutional Neural Network - Theory and Implementation of LeNet5</title>
         <link rel="alternate" href="http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LeNet5"/>
-        <content type="html">&lt;h2 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h2&gt;
+        <content type="html">&lt;h2 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h2&gt;
+&lt;h2 id=&#34;-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;[1] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL3N0YW1wL3N0YW1wLmpzcD90cD0mYW1wO2FybnVtYmVyPTcyNjc5MQ==&#34;&gt;Gradient-Based Learning Applied to Document Recognition&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;[2] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYWJsb2luc2VudGUuZ2l0aHViLmlvL3RoZS1jb252b2x1dGlvbmFsLW5ldHdvcms=&#34;&gt;The Convolutional Neural Network - Theory and Implementation of LeNet-5 and AlexNet&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="CNN" />
