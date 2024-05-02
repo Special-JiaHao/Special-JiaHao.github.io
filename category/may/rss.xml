@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>繁華落盡 似水流年 • Posts by &#34;may&#34; category</title>
+        <link>http://example.com</link>
+        <description>编程日记 &amp; 随笔</description>
+        <language>en</language>
+        <pubDate>Thu, 02 May 2024 09:35:35 +0800</pubDate>
+        <lastBuildDate>Thu, 02 May 2024 09:35:35 +0800</lastBuildDate>
+        <category>mathematics</category>
+        <category>语法</category>
+        <category>C++</category>
+        <category>VMware</category>
+        <category>install</category>
+        <category>数据库</category>
+        <category>STL</category>
+        <category>CNN</category>
+        <category>Project</category>
+        <category>面试题</category>
+        <category>日常</category>
+        <category>校招</category>
+        <category>算法</category>
+        <category>Leetcode双周赛</category>
+        <category>Algorithm</category>
+        <category>Leetcode周赛</category>
+        <category>设计模式</category>
+        <category>多线程</category>
+        <category>池化技术</category>
+        <category>MySQL</category>
+        <category>操作系统</category>
+        <category>计算机网络</category>
+        <category>CMake</category>
+        <category>线程池</category>
+        <category>Go</category>
+        <category>Redis</category>
+        <category>Linux</category>
+        <category>json</category>
+        <category>Python</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/daily/May%202024</guid>
+            <title>April 2024</title>
+            <link>http://example.com/value/daily/May%202024</link>
+            <category>日常</category>
+            <pubDate>Thu, 02 May 2024 09:35:35 +0800</pubDate>
+            <description><![CDATA[ &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2024-05-01&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%93%81%E8%B7%AF%E7%89%99%E5%AD%90.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
