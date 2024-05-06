@@ -34,9 +34,9 @@
     <category term="json" />
     <category term="Python" />
     <entry>
-        <id>http://example.com/value/Code/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98</id>
-        <title>刷题记录</title>
-        <link rel="alternate" href="http://example.com/value/Code/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98"/>
+        <id>http://example.com/value/Code/%E7%AE%97%E6%B3%95%E6%97%A5%E5%BF%97</id>
+        <title>算法日志</title>
+        <link rel="alternate" href="http://example.com/value/Code/%E7%AE%97%E6%B3%95%E6%97%A5%E5%BF%97"/>
         <content type="html">&lt;h2 id=&#34;1759d-make-it-round&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1759d-make-it-round&#34;&gt;#&lt;/a&gt; 1759D - Make It Round&lt;/h2&gt;
 &lt;p&gt;贝兰迪亚发生了通货膨胀，因此商店需要改变商品价格。&lt;/p&gt;
 &lt;p&gt;给出了商品 $$&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;n&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;$$ 的当前价格。允许将商品价格提高 $$&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;k&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.03148em;&#34;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;$$ 倍，其中 $$1 \le k \le m$ ，k 为整数。输出该商品最可能的新价格。也就是最后有最多零的价格。&lt;/p&gt;

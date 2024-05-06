@@ -37,9 +37,9 @@
         <category>json</category>
         <category>Python</category>
         <item>
-            <guid isPermalink="true">http://example.com/value/Code/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98</guid>
-            <title>刷题记录</title>
-            <link>http://example.com/value/Code/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98</link>
+            <guid isPermalink="true">http://example.com/value/Code/%E7%AE%97%E6%B3%95%E6%97%A5%E5%BF%97</guid>
+            <title>算法日志</title>
+            <link>http://example.com/value/Code/%E7%AE%97%E6%B3%95%E6%97%A5%E5%BF%97</link>
             <category>Algorithm</category>
             <pubDate>Mon, 06 May 2024 22:12:14 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;1759d-make-it-round&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1759d-make-it-round&#34;&gt;#&lt;/a&gt; 1759D - Make It Round&lt;/h2&gt;
