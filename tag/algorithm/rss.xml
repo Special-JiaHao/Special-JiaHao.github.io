@@ -68,7 +68,7 @@
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9wcm9ibGVtL2NvbnRlbnQvODg3Lw==&#34;&gt;885. 求组合数 I&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;方法二费马小定理快速幂取模值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#方法二费马小定理快速幂取模值&#34;&gt;#&lt;/a&gt; 方法二：费马小定理 + 快速幂（取模值）&lt;/h2&gt;
-&lt;p b!=&#34;&#34;&gt;利用组合数公式：C_{a}^{b}=\frac{a(a-1)(a-b+1)}&lt;/p&gt;
+&lt;p b!=&#34;&#34;&gt;利用组合数公式：C_{a}^{b}=\frac{a(a-1)\times}&lt;/p&gt;
 &lt;p b!(a-b)!=&#34;&#34;&gt;= \frac{a(a - 1) \cdots (a-b+1) \times (a-b)!}{b!(a-b)!}=\frac{a!}&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;预处理出所以&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;!&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;n!&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;!&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
