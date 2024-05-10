@@ -33,6 +33,7 @@
     <category term="Linux" />
     <category term="json" />
     <category term="Python" />
+    <category term="牛客" />
     <entry>
         <id>http://example.com/value/grpc%20for%20python</id>
         <title>gRPC for Python</title>

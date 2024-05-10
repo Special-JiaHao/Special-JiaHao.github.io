@@ -33,6 +33,7 @@
     <category term="Linux" />
     <category term="json" />
     <category term="Python" />
+    <category term="牛客" />
     <entry>
         <id>http://example.com/value/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8</id>
         <title>IO多路复用</title>
