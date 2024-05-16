@@ -34,10 +34,11 @@
     <category term="json" />
     <category term="Python" />
     <category term="牛客" />
+    <category term="Git" />
     <entry>
-        <id>http://example.com/value/grpc%20for%20python</id>
+        <id>http://example.com/value/Python/grpc%20for%20python</id>
         <title>gRPC for Python</title>
-        <link rel="alternate" href="http://example.com/value/grpc%20for%20python"/>
+        <link rel="alternate" href="http://example.com/value/Python/grpc%20for%20python"/>
         <content type="html">&lt;h2 id=&#34;grpc介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#grpc介绍&#34;&gt;#&lt;/a&gt;  &lt;code&gt;gRPC&lt;/code&gt;  介绍&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“gRPC is a modern open source high performance RPC framework that can run in any environment. It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing, health checking and authentication. It is also applicable in last mile of distributed computing to connect devices, mobile applications and browsers to backend services.”&lt;/p&gt;

@@ -37,10 +37,11 @@
         <category>json</category>
         <category>Python</category>
         <category>牛客</category>
+        <category>Git</category>
         <item>
-            <guid isPermalink="true">http://example.com/value/grpc%20for%20python</guid>
+            <guid isPermalink="true">http://example.com/value/Python/grpc%20for%20python</guid>
             <title>gRPC for Python</title>
-            <link>http://example.com/value/grpc%20for%20python</link>
+            <link>http://example.com/value/Python/grpc%20for%20python</link>
             <category>Python</category>
             <pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;grpc介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#grpc介绍&#34;&gt;#&lt;/a&gt;  &lt;code&gt;gRPC&lt;/code&gt;  介绍&lt;/h2&gt;
