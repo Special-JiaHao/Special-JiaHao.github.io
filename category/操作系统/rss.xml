@@ -231,6 +231,8 @@
 &lt;p&gt;&lt;code&gt;chmod&lt;/code&gt; ：修改文件或目录的权限&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;python2与python3共存&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#python2与python3共存&#34;&gt;#&lt;/a&gt; python2 与 python3 共存&lt;/h2&gt;
+&lt;h2 id=&#34;yum失效&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#yum失效&#34;&gt;#&lt;/a&gt; yum 失效&lt;/h2&gt;
  ]]></description>
         </item>
         <item>
