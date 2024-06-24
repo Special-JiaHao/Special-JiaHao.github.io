@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Thu, 02 May 2024 09:35:35 +0800</pubDate>
-        <lastBuildDate>Thu, 02 May 2024 09:35:35 +0800</lastBuildDate>
+        <pubDate>Mon, 24 Jun 2024 19:58:40 +0800</pubDate>
+        <lastBuildDate>Mon, 24 Jun 2024 19:58:40 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -39,6 +39,44 @@
         <category>牛客</category>
         <category>Git</category>
         <item>
+            <guid isPermalink="true">http://example.com/value/daily/June</guid>
+            <title>April 2024</title>
+            <link>http://example.com/value/daily/June</link>
+            <category>日常</category>
+            <pubDate>Mon, 24 Jun 2024 19:58:40 +0800</pubDate>
+            <description><![CDATA[ &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2024-06-01&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%9F%8E.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%88%AB%E8%87%B4%E5%AE%BF%E8%88%8D.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-06-08&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E7%83%A7%E6%AF%81%E7%9A%84%E5%A4%A7%E5%8E%A6.jpg&#34; alt=&#34;&#34; title=&#34;烧毁的大厦&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-06-09&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%B9%BF%E5%B7%9E%E5%A1%941.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%B9%BF%E5%B7%9E%E5%A1%942.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%B9%BF%E5%B7%9E%E5%A1%943.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/IT%E5%88%9B%E6%84%8F%E5%9B%AD.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%8D%8E%E5%8D%97%E7%90%86%E5%B7%A5%E5%9B%BD%E9%99%85%E6%A0%A1%E5%8C%BA.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%8D%8E%E5%8D%97%E7%90%86%E5%B7%A5%E5%9B%BD%E9%99%85%E6%A0%A1%E5%8C%BA2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-06-15&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%9B%A8%E5%AD%A3%E7%8E%BB%E7%92%83.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%80%BE%E7%9B%86%E5%A4%A7%E9%9B%A8.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-06-16&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%97%8B%E8%BD%AC%E7%9A%84%E9%A3%8E%E8%BD%A6.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%90%B9.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">http://example.com/value/daily/May%202024</guid>
             <title>April 2024</title>
             <link>http://example.com/value/daily/May%202024</link>
@@ -65,6 +103,25 @@
 &lt;li&gt;
 &lt;p&gt;2024-05-09&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E8%A7%92%E8%90%BD%E4%BD%99%E6%99%96.jpg&#34; alt=&#34;&#34; title=&#34;角落余晖&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-6-17&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/WE%20602307.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-05-18&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%B7%B1%E5%9C%B3%E5%8C%97%E7%AB%99.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%B7%B1%E5%9C%B3%E5%8C%97%E7%AB%99%EF%BC%88%E5%9C%B0%E9%93%81%E7%AB%99%EF%BC%89.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%88%BF%E5%B1%8B.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-05-19&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%88%BF%E5%B1%8B2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%8B%9B%E7%A7%9F%E5%91%8A%E7%A4%BA.jpg&#34; alt=&#34;&#34; title=&#34;招租告示&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-05-26&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%87%91%E5%9C%B0%E5%A4%A7%E5%8E%A6.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
