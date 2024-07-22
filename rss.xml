@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Mon, 24 Jun 2024 19:58:40 +0800</pubDate>
-        <lastBuildDate>Mon, 24 Jun 2024 19:58:40 +0800</lastBuildDate>
+        <pubDate>Mon, 22 Jul 2024 15:24:22 +0800</pubDate>
+        <lastBuildDate>Mon, 22 Jul 2024 15:24:22 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -38,6 +38,31 @@
         <category>Python</category>
         <category>牛客</category>
         <category>Git</category>
+        <category>大模型</category>
+        <category>深度学习</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Normalization</guid>
+            <title>Normalization</title>
+            <link>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Normalization</link>
+            <category>深度学习</category>
+            <pubDate>Mon, 22 Jul 2024 15:24:22 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;normalization&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#normalization&#34;&gt;#&lt;/a&gt; Normalization&lt;/h1&gt;
+&lt;h2 id=&#34;ics&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ics&#34;&gt;#&lt;/a&gt; ICS&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;ICS&lt;/strong&gt;: 协变量，Internal Covariate Shift. 在训练多层神经网络，每一层的神经网络在训练过程当中，它的参数是会发生变动的，前一层网络参数的变动会影响下一层的输入数据，如果数据分布发生重大变化，就会导致训练过程中收敛慢、不稳定的问题.  （要想训练效果好，需要采取一些小心翼翼的策略，比如减小学习率，精心初始化参数，有时还需要 dropout 技巧）&lt;/p&gt;
+&lt;h2 id=&#34;batch-normalization1&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#batch-normalization1&#34;&gt;#&lt;/a&gt; Batch Normalization[^1]&lt;/h2&gt;
+&lt;p&gt;一种加速深度神经网络训练速度的方法，同事可以减少 ICS 问题。可以使得在训练时大胆的使用大学习率和初始化参数，在一定程度上可以&lt;/p&gt;
+&lt;h2 id=&#34;参考文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文章&#34;&gt;#&lt;/a&gt; 参考文章&lt;/h2&gt;
+&lt;p&gt;[^ 1] [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift]([&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE1MDIuMDMxNjc=&#34;&gt;1502.03167] Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift (arxiv.org)&lt;/span&gt;)&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Llama</guid>
+            <title>Llama</title>
+            <link>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Llama</link>
+            <category>大模型</category>
+            <pubDate>Mon, 22 Jul 2024 10:34:52 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/daily/June</guid>
             <title>April 2024</title>
@@ -75,13 +100,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Llama</guid>
-            <title></title>
-            <link>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Llama</link>
-            <pubDate>Mon, 24 Jun 2024 14:34:24 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">http://example.com/value/%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6Git</guid>

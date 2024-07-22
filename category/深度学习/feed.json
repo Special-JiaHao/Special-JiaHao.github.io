@@ -5,6 +5,16 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Normalization",
+            "url": "http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Normalization",
+            "title": "Normalization",
+            "date_published": "2024-07-22T07:24:22.324Z",
+            "content_html": "<h1 id=\"normalization\"><a class=\"anchor\" href=\"#normalization\">#</a> Normalization</h1>\n<h2 id=\"ics\"><a class=\"anchor\" href=\"#ics\">#</a> ICS</h2>\n<p><strong>ICS</strong>: 协变量，Internal Covariate Shift. 在训练多层神经网络，每一层的神经网络在训练过程当中，它的参数是会发生变动的，前一层网络参数的变动会影响下一层的输入数据，如果数据分布发生重大变化，就会导致训练过程中收敛慢、不稳定的问题.  （要想训练效果好，需要采取一些小心翼翼的策略，比如减小学习率，精心初始化参数，有时还需要 dropout 技巧）</p>\n<h2 id=\"batch-normalization1\"><a class=\"anchor\" href=\"#batch-normalization1\">#</a> Batch Normalization[^1]</h2>\n<p>一种加速深度神经网络训练速度的方法，同事可以减少 ICS 问题。可以使得在训练时大胆的使用大学习率和初始化参数，在一定程度上可以</p>\n<h2 id=\"参考文章\"><a class=\"anchor\" href=\"#参考文章\">#</a> 参考文章</h2>\n<p>[^ 1] [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift]([<span class=\"exturl\" data-url=\"aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE1MDIuMDMxNjc=\">1502.03167] Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift (arxiv.org)</span>)</p>\n",
+            "tags": [
+                "深度学习"
+            ]
+        },
+        {
             "id": "http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LeNet5",
             "url": "http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/LeNet5",
             "title": "The Convolutional Neural Network - Theory and Implementation of LeNet5",
