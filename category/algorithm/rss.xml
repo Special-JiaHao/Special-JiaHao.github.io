@@ -38,8 +38,9 @@
         <category>Python</category>
         <category>牛客</category>
         <category>Git</category>
-        <category>大模型</category>
         <category>normalization</category>
+        <category>推理加速</category>
+        <category>LLM</category>
         <item>
             <guid isPermalink="true">http://example.com/value/Algorithm/%E7%BB%84%E5%90%88%E6%95%B0</guid>
             <title>组合数</title>

@@ -35,8 +35,9 @@
     <category term="Python" />
     <category term="牛客" />
     <category term="Git" />
-    <category term="大模型" />
     <category term="normalization" />
+    <category term="推理加速" />
+    <category term="LLM" />
     <entry>
         <id>http://example.com/value/CPP/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B(C%20API)</id>
         <title>多线程编程(C API)</title>

@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年</title>
     <link href="http://example.com" />
-    <updated>2024-07-22T07:24:22.324Z</updated>
+    <updated>2024-07-23T07:01:34.036Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -35,8 +35,26 @@
     <category term="Python" />
     <category term="牛客" />
     <category term="Git" />
-    <category term="大模型" />
     <category term="normalization" />
+    <category term="推理加速" />
+    <category term="LLM" />
+    <entry>
+        <id>http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/FlashAttention</id>
+        <title>Flash Attention</title>
+        <link rel="alternate" href="http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/FlashAttention"/>
+        <content type="html">&lt;h1 id=&#34;flash-attention&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flash-attention&#34;&gt;#&lt;/a&gt; Flash Attention&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn1&#34; id=&#34;fnref1&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;参考文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文章&#34;&gt;#&lt;/a&gt; 参考文章&lt;/h2&gt;
+&lt;hr class=&#34;footnotes-sep&#34; /&gt;
+&lt;section class=&#34;footnotes&#34;&gt;
+&lt;ol class=&#34;footnotes-list&#34;&gt;
+&lt;li id=&#34;fn1&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]([&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIyMDUuMTQxMzU=&#34;&gt;2205.14135] FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness (arxiv.org)&lt;/span&gt;) &lt;a href=&#34;#fnref1&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        <category term="推理加速" />
+        <updated>2024-07-23T07:01:34.036Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Normalization</id>
         <title>Normalization</title>
@@ -64,7 +82,7 @@
         <title>Llama</title>
         <link rel="alternate" href="http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Llama"/>
         <content type="html"></content>
-        <category term="大模型" />
+        <category term="LLM" />
         <updated>2024-07-22T02:34:52.107Z</updated>
     </entry>
     <entry>

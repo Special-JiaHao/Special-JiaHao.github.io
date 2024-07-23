@@ -35,8 +35,9 @@
     <category term="Python" />
     <category term="牛客" />
     <category term="Git" />
-    <category term="大模型" />
     <category term="normalization" />
+    <category term="推理加速" />
+    <category term="LLM" />
     <entry>
         <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis%E5%9F%BA%E7%A1%80</id>
         <title>Redis基础</title>

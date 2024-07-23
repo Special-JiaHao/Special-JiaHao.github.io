@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "繁華落盡 似水流年 • All posts by \"推理加速\" category",
+    "description": "编程日记 & 随笔",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/FlashAttention",
+            "url": "http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/FlashAttention",
+            "title": "Flash Attention",
+            "date_published": "2024-07-23T07:01:34.036Z",
+            "content_html": "<h1 id=\"flash-attention\"><a class=\"anchor\" href=\"#flash-attention\">#</a> Flash Attention<sup class=\"footnote-ref\"><a href=\"#fn1\" id=\"fnref1\">[1]</a></sup></h1>\n<h2 id=\"参考文章\"><a class=\"anchor\" href=\"#参考文章\">#</a> 参考文章</h2>\n<hr class=\"footnotes-sep\" />\n<section class=\"footnotes\">\n<ol class=\"footnotes-list\">\n<li id=\"fn1\" class=\"footnote-item\"><p>[FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness]([<span class=\"exturl\" data-url=\"aHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIyMDUuMTQxMzU=\">2205.14135] FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness (arxiv.org)</span>) <a href=\"#fnref1\" class=\"footnote-backref\">↩︎</a></p>\n</li>\n</ol>\n</section>\n",
+            "tags": [
+                "推理加速"
+            ]
+        }
+    ]
+}
