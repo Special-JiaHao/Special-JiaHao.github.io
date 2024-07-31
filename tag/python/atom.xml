@@ -38,6 +38,7 @@
     <category term="normalization" />
     <category term="推理加速" />
     <category term="LLM" />
+    <category term="AI算法" />
     <entry>
         <id>http://example.com/value/Python/grpc%20for%20python</id>
         <title>gRPC for Python</title>
