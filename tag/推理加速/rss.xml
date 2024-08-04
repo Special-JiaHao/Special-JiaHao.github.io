@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Wed, 31 Jul 2024 10:59:06 +0800</pubDate>
-        <lastBuildDate>Wed, 31 Jul 2024 10:59:06 +0800</lastBuildDate>
+        <pubDate>Sun, 04 Aug 2024 16:28:06 +0800</pubDate>
+        <lastBuildDate>Sun, 04 Aug 2024 16:28:06 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -44,6 +44,21 @@
         <category>AI算法</category>
         <category>Pytorch</category>
         <category>激活函数</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Continuous%20batching</guid>
+            <title>Continuous Batching</title>
+            <link>http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Continuous%20batching</link>
+            <category>推理加速</category>
+            <pubDate>Sun, 04 Aug 2024 16:28:06 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;continuous-batching&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#continuous-batching&#34;&gt;#&lt;/a&gt; Continuous Batching&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Continuous Batching，连续批处理，也称动态批处理或基于迭代的批处理.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;静态批处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态批处理&#34;&gt;#&lt;/a&gt; 静态批处理&lt;/h2&gt;
+&lt;h2 id=&#34;连续批处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连续批处理&#34;&gt;#&lt;/a&gt; 连续批处理&lt;/h2&gt;
+&lt;h2 id=&#34;参考文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文章&#34;&gt;#&lt;/a&gt; 参考文章&lt;/h2&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Paged%20Attention</guid>
             <title>Paged Attention</title>

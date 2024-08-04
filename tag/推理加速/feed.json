@@ -5,6 +5,16 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Continuous%20batching",
+            "url": "http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Continuous%20batching",
+            "title": "Continuous Batching",
+            "date_published": "2024-08-04T08:28:06.609Z",
+            "content_html": "<h1 id=\"continuous-batching\"><a class=\"anchor\" href=\"#continuous-batching\">#</a> Continuous Batching</h1>\n<blockquote>\n<p>Continuous Batching，连续批处理，也称动态批处理或基于迭代的批处理.</p>\n</blockquote>\n<h2 id=\"静态批处理\"><a class=\"anchor\" href=\"#静态批处理\">#</a> 静态批处理</h2>\n<h2 id=\"连续批处理\"><a class=\"anchor\" href=\"#连续批处理\">#</a> 连续批处理</h2>\n<h2 id=\"参考文章\"><a class=\"anchor\" href=\"#参考文章\">#</a> 参考文章</h2>\n",
+            "tags": [
+                "推理加速"
+            ]
+        },
+        {
             "id": "http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Paged%20Attention",
             "url": "http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Paged%20Attention",
             "title": "Paged Attention",

@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年 • Posts by &#34;推理加速&#34; category</title>
     <link href="http://example.com" />
-    <updated>2024-07-31T02:59:06.277Z</updated>
+    <updated>2024-08-04T08:28:06.609Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -41,6 +41,21 @@
     <category term="AI算法" />
     <category term="Pytorch" />
     <category term="激活函数" />
+    <entry>
+        <id>http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Continuous%20batching</id>
+        <title>Continuous Batching</title>
+        <link rel="alternate" href="http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Continuous%20batching"/>
+        <content type="html">&lt;h1 id=&#34;continuous-batching&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#continuous-batching&#34;&gt;#&lt;/a&gt; Continuous Batching&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Continuous Batching，连续批处理，也称动态批处理或基于迭代的批处理.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;静态批处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态批处理&#34;&gt;#&lt;/a&gt; 静态批处理&lt;/h2&gt;
+&lt;h2 id=&#34;连续批处理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#连续批处理&#34;&gt;#&lt;/a&gt; 连续批处理&lt;/h2&gt;
+&lt;h2 id=&#34;参考文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文章&#34;&gt;#&lt;/a&gt; 参考文章&lt;/h2&gt;
+</content>
+        <category term="推理加速" />
+        <updated>2024-08-04T08:28:06.609Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Paged%20Attention</id>
         <title>Paged Attention</title>
