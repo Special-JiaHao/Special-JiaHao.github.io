@@ -40,6 +40,7 @@
     <category term="LLM" />
     <category term="AI算法" />
     <category term="Pytorch" />
+    <category term="激活函数" />
     <entry>
         <id>http://example.com/value/Algorithm/%E7%BB%84%E5%90%88%E6%95%B0</id>
         <title>组合数</title>

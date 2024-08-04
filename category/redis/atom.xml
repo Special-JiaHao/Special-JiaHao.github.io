@@ -40,6 +40,7 @@
     <category term="LLM" />
     <category term="AI算法" />
     <category term="Pytorch" />
+    <category term="激活函数" />
     <entry>
         <id>http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis%E5%9F%BA%E7%A1%80</id>
         <title>Redis基础</title>

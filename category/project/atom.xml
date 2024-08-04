@@ -40,6 +40,7 @@
     <category term="LLM" />
     <category term="AI算法" />
     <category term="Pytorch" />
+    <category term="激活函数" />
     <entry>
         <id>http://example.com/value/CPP/%E9%87%91%E5%B1%B1%E4%BC%9A%E8%AE%AE%E5%AE%A4%E9%A2%84%E7%BA%A6%E7%B3%BB%E7%BB%9F</id>
         <title>金山会议室预约系统</title>

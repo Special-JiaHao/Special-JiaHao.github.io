@@ -40,6 +40,7 @@
     <category term="LLM" />
     <category term="AI算法" />
     <category term="Pytorch" />
+    <category term="激活函数" />
     <entry>
         <id>http://example.com/value/CPP/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8</id>
         <title>IO多路复用</title>

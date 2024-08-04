@@ -40,6 +40,7 @@
     <category term="LLM" />
     <category term="AI算法" />
     <category term="Pytorch" />
+    <category term="激活函数" />
     <entry>
         <id>http://example.com/value/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F</id>
         <title>设计模式</title>
