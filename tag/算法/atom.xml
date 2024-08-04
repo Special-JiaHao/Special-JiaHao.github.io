@@ -39,6 +39,7 @@
     <category term="推理加速" />
     <category term="LLM" />
     <category term="AI算法" />
+    <category term="Pytorch" />
     <entry>
         <id>http://example.com/value/%E7%AE%97%E6%B3%95%E6%A8%A1%E7%89%88</id>
         <title>算法模版</title>

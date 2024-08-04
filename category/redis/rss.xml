@@ -42,6 +42,7 @@
         <category>推理加速</category>
         <category>LLM</category>
         <category>AI算法</category>
+        <category>Pytorch</category>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/redis%E5%9F%BA%E7%A1%80</guid>
             <title>Redis基础</title>

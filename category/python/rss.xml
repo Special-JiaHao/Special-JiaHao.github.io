@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Wed, 10 Apr 2024 00:00:00 +0800</pubDate>
-        <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0800</lastBuildDate>
+        <pubDate>Wed, 31 Jul 2024 20:13:11 +0800</pubDate>
+        <lastBuildDate>Wed, 31 Jul 2024 20:13:11 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -42,6 +42,16 @@
         <category>推理加速</category>
         <category>LLM</category>
         <category>AI算法</category>
+        <category>Pytorch</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/Python/Pytorch</guid>
+            <title>Pytorch</title>
+            <link>http://example.com/value/Python/Pytorch</link>
+            <category>Pytorch</category>
+            <pubDate>Wed, 31 Jul 2024 20:13:11 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;pytorch&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pytorch&#34;&gt;#&lt;/a&gt; Pytorch&lt;/h1&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/Python/grpc%20for%20python</guid>
             <title>gRPC for Python</title>

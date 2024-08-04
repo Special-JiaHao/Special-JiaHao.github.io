@@ -39,11 +39,19 @@
     <category term="推理加速" />
     <category term="LLM" />
     <category term="AI算法" />
+    <category term="Pytorch" />
     <entry>
         <id>http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/AI%E8%BD%AF%E5%BC%80%E9%9D%A2%E8%AF%95%E9%A2%98</id>
         <title>AI算法面试题</title>
         <link rel="alternate" href="http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/AI%E8%BD%AF%E5%BC%80%E9%9D%A2%E8%AF%95%E9%A2%98"/>
         <content type="html">&lt;h1 id=&#34;ai算法面试题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ai算法面试题&#34;&gt;#&lt;/a&gt; AI 算法面试题&lt;/h1&gt;
+&lt;h2 id=&#34;简单讲一下-transformer-结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简单讲一下-transformer-结构&#34;&gt;#&lt;/a&gt; 简单讲一下 Transformer 结构&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Attention&lt;/code&gt;  的作用：获取上下文的关系， &lt;code&gt;FFN&lt;/code&gt;  的作用：存储知识&lt;/li&gt;
+&lt;li&gt;使用的归一化方法是 &lt;code&gt;LayerNorm&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;计算复杂度和空间复杂度都是&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;N^{2}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8141079999999999em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10903em;&#34;&gt;N&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，其中&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;N&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.68333em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10903em;&#34;&gt;N&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 指代的是 &lt;code&gt;seq_len&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 d=&#34;&#34; id=&#34;attention的qk之后为什么要除sqrt&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#attention的qk之后为什么要除sqrt&#34;&gt;#&lt;/a&gt;  &lt;code&gt;attention&lt;/code&gt;  的 &lt;code&gt;QK&lt;/code&gt;  之后为什么要除\sqrt&lt;/h2&gt;
 </content>
         <category term="AI算法" />

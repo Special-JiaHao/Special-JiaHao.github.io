@@ -39,6 +39,7 @@
     <category term="推理加速" />
     <category term="LLM" />
     <category term="AI算法" />
+    <category term="Pytorch" />
     <entry>
         <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Llama</id>
         <title>Llama</title>

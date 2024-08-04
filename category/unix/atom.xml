@@ -39,6 +39,7 @@
     <category term="推理加速" />
     <category term="LLM" />
     <category term="AI算法" />
+    <category term="Pytorch" />
     <entry>
         <id>http://example.com/value/CPP/%E5%9F%BA%E6%9C%AC%E5%A5%97%E6%8E%A5%E5%AD%97%E7%BC%96%E7%A8%8B</id>
         <title>基本套接字编程</title>
