@@ -9,7 +9,7 @@
             "url": "http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Llama",
             "title": "Llama",
             "date_published": "2024-07-22T02:34:52.107Z",
-            "content_html": "",
+            "content_html": "<h1 id=\"llama\"><a class=\"anchor\" href=\"#llama\">#</a> Llama</h1>\n<h2 id=\"创新点\"><a class=\"anchor\" href=\"#创新点\">#</a> 创新点</h2>\n<ul>\n<li><code>Pre-Normalization</code> ：层前归一化</li>\n<li><code>RMSNorm</code> ：均方根归一化，相比于 <code>Layer-Normalization</code></li>\n<li><code>RoPE</code> ：旋转位置编码，与传统的 <code>Transform</code>  模型的固定位置编码不同，其是一种动态的位置编码.  <code>RoPE</code>  不直接嵌入词向量中，而是对 <code>QKV</code>  做了选择操作，从而引入对应词的位置信息.</li>\n<li><code>SwiGLU</code> ：</li>\n</ul>\n",
             "tags": [
                 "LLM"
             ]

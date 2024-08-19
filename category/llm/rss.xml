@@ -76,7 +76,8 @@
             <pubDate>Tue, 23 Jul 2024 15:01:34 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;flash-attention&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flash-attention&#34;&gt;#&lt;/a&gt; Flash Attention&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn1&#34; id=&#34;fnref1&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Flash Attention 是一种在 IO 上优化的推理加速策略。通过算子融合将 Attention 操作合并，引用分块技术 &lt;code&gt;Tiling&lt;/code&gt;  计算注意力矩阵，可实现每次从 SRAM 去读取数据而避免频繁的 HBM 的 IO 延迟.&lt;/p&gt;
+&lt;p&gt;传统 Transformer 模型在成处理长序列，&lt;br /&gt;
+Flash Attention 是一种在 IO 上优化的推理加速策略。通过算子融合将 Attention 操作合并，引用分块技术 &lt;code&gt;Tiling&lt;/code&gt;  计算注意力矩阵，可实现每次从 SRAM 去读取数据而避免频繁的 HBM 的 IO 延迟.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;motivation&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#motivation&#34;&gt;#&lt;/a&gt; Motivation&lt;/h2&gt;
 &lt;p&gt;当把 &lt;code&gt;Transformer&lt;/code&gt;  模型的上下文拓展到更长时是非常困难的，主要是因为：&lt;/p&gt;
@@ -180,7 +181,15 @@ s(p_2)^{global}=\frac{l(p_2)^{global}}{l(x)}(广播机制)
             <link>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Llama</link>
             <category>LLM</category>
             <pubDate>Mon, 22 Jul 2024 10:34:52 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
+            <description><![CDATA[ &lt;h1 id=&#34;llama&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#llama&#34;&gt;#&lt;/a&gt; Llama&lt;/h1&gt;
+&lt;h2 id=&#34;创新点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创新点&#34;&gt;#&lt;/a&gt; 创新点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Pre-Normalization&lt;/code&gt; ：层前归一化&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RMSNorm&lt;/code&gt; ：均方根归一化，相比于 &lt;code&gt;Layer-Normalization&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RoPE&lt;/code&gt; ：旋转位置编码，与传统的 &lt;code&gt;Transform&lt;/code&gt;  模型的固定位置编码不同，其是一种动态的位置编码.  &lt;code&gt;RoPE&lt;/code&gt;  不直接嵌入词向量中，而是对 &lt;code&gt;QKV&lt;/code&gt;  做了选择操作，从而引入对应词的位置信息.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SwiGLU&lt;/code&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
         </item>
     </channel>
 </rss>

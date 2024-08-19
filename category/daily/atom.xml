@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年 • Posts by &#34;daily&#34; category</title>
     <link href="http://example.com" />
-    <updated>2024-06-24T11:58:40.132Z</updated>
+    <updated>2024-08-19T02:37:44.105Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -41,6 +41,44 @@
     <category term="AI算法" />
     <category term="Pytorch" />
     <category term="激活函数" />
+    <entry>
+        <id>http://example.com/value/daily/August</id>
+        <title>August 2024</title>
+        <link rel="alternate" href="http://example.com/value/daily/August"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2024-08-03&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-08-04&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%81%97%E6%BC%8F%E7%9A%84%E9%98%B3%E5%85%89.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-08-10&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E6%9C%AA%E6%9D%A5%E6%A0%91.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%A2%99%E5%A3%81.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%88%AB%E6%A0%B7%E7%9A%84%E8%AE%BE%E8%AE%A1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%BB%84%E9%B9%A4%E6%A5%BC%E4%B8%8B.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A51.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5%E5%A4%A9%E7%A9%BA.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A52.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A53.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-08-11&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%8E%BB%E8%BF%9C%E8%A1%8C.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2024-08-15&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%8D%97%E4%B8%80%E5%A4%A9%E7%A9%BA.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/Special-JiaHao/images/main/%E5%8D%97%E4%B8%80%E5%A4%A9%E7%A9%BA2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="日常" />
+        <updated>2024-08-19T02:37:44.105Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/daily/June</id>
         <title>April 2024</title>
