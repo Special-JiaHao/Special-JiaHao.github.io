@@ -261,7 +261,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
             <description><![CDATA[ &lt;h1 id=&#34;flash-attention&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#flash-attention&#34;&gt;#&lt;/a&gt; Flash Attention&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn1&#34; id=&#34;fnref1&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;传统 Transformer 模型在成处理长序列，&lt;br /&gt;
-Flash Attention 是一种在 IO 上优化的推理加速策略。通过算子融合将 Attention 操作合并，引用分块技术 &lt;code&gt;Tiling&lt;/code&gt;  计算注意力矩阵，可实现每次从 SRAM 去读取数据而避免频繁的 HBM 的 IO 延迟.&lt;/p&gt;
+Flash Attention 是一种在 IO 上优化的推理加速策略。通过算子融合将 Attention 操作合并，引用分块技术 &lt;code&gt;Tiling&lt;/code&gt;  计算注意力矩阵和 &lt;code&gt;On&lt;/code&gt; , 可实现每次从 SRAM 去读取数据而避免频繁的 HBM 的 IO 延迟.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;motivation&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#motivation&#34;&gt;#&lt;/a&gt; Motivation&lt;/h2&gt;
 &lt;p&gt;当把 &lt;code&gt;Transformer&lt;/code&gt;  模型的上下文拓展到更长时是非常困难的，主要是因为：&lt;/p&gt;
