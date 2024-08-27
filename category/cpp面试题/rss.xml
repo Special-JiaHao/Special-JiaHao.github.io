@@ -184,6 +184,20 @@
 &lt;li&gt;&lt;code&gt;volatile&lt;/code&gt;  指针&lt;/li&gt;
 &lt;li&gt;多线程下的 &lt;code&gt;volatile&lt;/code&gt; ：当多个线程都需要用到某一个变量时，应该用 &lt;code&gt;volatile&lt;/code&gt; ，防止编译器把变量从内存装入 CPU 寄存器中&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;extern&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#extern&#34;&gt;#&lt;/a&gt; extern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;用于变量的声明（不分配内存空间，不用赋予初值）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当我们需要再 A 文件中使用 B 文件的中的函数或者全局变量的时候，有两种做法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通过 &lt;code&gt;include&lt;/code&gt;  将 B 的头文件导入进 A 文件中，可能存在递归导入很多无关紧要的函数或变量，其会导致程序的编译（预编译）变慢&lt;/li&gt;
+&lt;li&gt;在 A 文件中 &lt;code&gt;extern&lt;/code&gt;  所需要使用的 B 文件的函数或变量，在 &lt;code&gt;makefile&lt;/code&gt;  时将他们的 &lt;code&gt;.o&lt;/code&gt;  文件放在一起做 &lt;code&gt;link&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;c三大特性&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#c三大特性&#34;&gt;#&lt;/a&gt; C++ 三大特性&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;封装、继承、多态（封装和继承可以实现 &lt;code&gt;代码的重用&lt;/code&gt; ，多态可以实现 &lt;code&gt;接口的重用&lt;/code&gt; ）
@@ -210,7 +224,7 @@
 &lt;p&gt;被 &lt;code&gt;virtual&lt;/code&gt;  修饰的成员函数即为虚函数，如基类的虚函数为空即为纯虚函数，这个类即可为抽象类，不能被实例化，否则就是一个虚类，可被实例化.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;在编译阶段，虚类内会隐藏的存储一个虚函数表指针的成员变量，指向一张虚函数表，该类的所以对象共用这张虚函数表.&lt;/p&gt;
+&lt;p&gt;在编译阶段，虚类内会隐藏的存储一个虚函数表指针的成员变量，指向一张虚函数表（存储在全局 / 静态存储区）该类的所以对象共用这张虚函数表.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;派生类继承虚类时，其会复制一份父类的虚函数表，类内的虚函数指针指向这张新的虚函数表，如派生类重写了虚函数则会将对应的虚函数表对应的指针项做一个修改，如果派生类定义了新的虚函数，则会在新的虚函数表后追加新的函数与地址的映射. （如若派生类继承了多个父类，即多继承，那么这个派生类可能存储多个虚函数表指针）&lt;/p&gt;
@@ -229,10 +243,14 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;虚函数与纯虚函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#虚函数与纯虚函数&#34;&gt;#&lt;/a&gt; 虚函数与纯虚函数&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;纯虚函数是在基类中声明&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;菱形继承&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#菱形继承&#34;&gt;#&lt;/a&gt; 菱形继承&lt;/h2&gt;
 &lt;h2 id=&#34;为什么c默认析构函数不是虚函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#为什么c默认析构函数不是虚函数&#34;&gt;#&lt;/a&gt; 为什么 C++ 默认析构函数不是虚函数&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;虚函数需要虚函数表和虚函数表指针，会占用内存空间。如果一个类没有子类，那么就没有必要讲析构函数设置为虚函数&lt;/p&gt;
+&lt;p&gt;虚函数需要虚函数表和虚函数表指针，会占用内存空间。如果一个类没有子类，那么就没有必要将析构函数设置为虚函数&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;重载-重写-重定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重载-重写-重定义&#34;&gt;#&lt;/a&gt; 重载、重写、重定义&lt;/h2&gt;
 &lt;ul&gt;
@@ -250,6 +268,7 @@
 &lt;li&gt;C++ 中的 &lt;code&gt;struct&lt;/code&gt;  默认 &lt;code&gt;public&lt;/code&gt;  共有权限， &lt;code&gt;class&lt;/code&gt;  默认 &lt;code&gt;private&lt;/code&gt;  私有权限&lt;/li&gt;
 &lt;li&gt;C 语言中的 &lt;code&gt;struct&lt;/code&gt;  只是一个变量的集合体，只可以用于封装数据，而不备面向对象的一些特性&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;struct-与-union&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#struct-与-union&#34;&gt;#&lt;/a&gt; struct 与 union&lt;/h2&gt;
 &lt;h2 id=&#34;new-和-malloc的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#new-和-malloc的区别&#34;&gt;#&lt;/a&gt; new 和 malloc 的区别&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;new&lt;/code&gt;  和 &lt;code&gt;malloc&lt;/code&gt;  都是用于分配内存的，其中 &lt;code&gt;new&lt;/code&gt;  是 C++ 中的操作符，可以被重载， &lt;code&gt;malloc&lt;/code&gt;  是 C 语言中的库函数，不可以被重载&lt;/p&gt;
 &lt;ol&gt;
@@ -329,7 +348,7 @@
 &lt;h2 id=&#34;常引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常引用&#34;&gt;#&lt;/a&gt; 常引用&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;保护传递给函数的数据在函数内不背改变.  &lt;code&gt;const 类型&amp;amp; 引用名&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;保护传递给函数的数据在函数内不被改变.  &lt;code&gt;const 类型&amp;amp; 引用名&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在 C++ 中，临时对象都是 &lt;code&gt;const&lt;/code&gt;  类型的，const 类型的对象转换为非 const 类型是非法的.&lt;/p&gt;

@@ -53,10 +53,10 @@
             <description><![CDATA[ &lt;h1 id=&#34;llama&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#llama&#34;&gt;#&lt;/a&gt; Llama&lt;/h1&gt;
 &lt;h2 id=&#34;创新点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创新点&#34;&gt;#&lt;/a&gt; 创新点&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Pre-Normalization&lt;/code&gt; ：层前归一化&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Pre-Normalization&lt;/code&gt; ：前置层归一化，可以让训练更加稳定，防止梯度消失的问题.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;RMSNorm&lt;/code&gt; ：均方根归一化，相比于 &lt;code&gt;Layer-Normalization&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;RoPE&lt;/code&gt; ：旋转位置编码，与传统的 &lt;code&gt;Transform&lt;/code&gt;  模型的固定位置编码不同，其是一种动态的位置编码.  &lt;code&gt;RoPE&lt;/code&gt;  不直接嵌入词向量中，而是对 &lt;code&gt;QKV&lt;/code&gt;  做了选择操作，从而引入对应词的位置信息.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SwiGLU&lt;/code&gt; ：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SwiGLU&lt;/code&gt; ：激活函数。结合了 &lt;code&gt;GLU&lt;/code&gt;  和 &lt;code&gt;Switch&lt;/code&gt;  的优势.&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
