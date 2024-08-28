@@ -41,6 +41,7 @@
     <category term="AI算法" />
     <category term="Pytorch" />
     <category term="激活函数" />
+    <category term="部署" />
     <entry>
         <id>http://example.com/value/CPP/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B(C%20API)</id>
         <title>多线程编程(C API)</title>

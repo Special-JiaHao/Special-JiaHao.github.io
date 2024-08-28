@@ -41,6 +41,7 @@
     <category term="AI算法" />
     <category term="Pytorch" />
     <category term="激活函数" />
+    <category term="部署" />
     <entry>
         <id>http://example.com/value/CPP/CMake</id>
         <title>CMake</title>

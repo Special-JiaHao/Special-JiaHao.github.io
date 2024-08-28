@@ -41,6 +41,7 @@
     <category term="AI算法" />
     <category term="Pytorch" />
     <category term="激活函数" />
+    <category term="部署" />
     <entry>
         <id>http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Tensor%20Parallelism</id>
         <title>Tensor Parallelism</title>

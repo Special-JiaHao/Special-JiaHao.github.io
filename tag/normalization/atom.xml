@@ -41,6 +41,7 @@
     <category term="AI算法" />
     <category term="Pytorch" />
     <category term="激活函数" />
+    <category term="部署" />
     <entry>
         <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/Normalization</id>
         <title>Normalization</title>
