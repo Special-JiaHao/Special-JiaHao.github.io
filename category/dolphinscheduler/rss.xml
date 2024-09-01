@@ -54,7 +54,12 @@
             <pubDate>Sun, 01 Sep 2024 20:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;dolphinscheduler&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dolphinscheduler&#34;&gt;#&lt;/a&gt; DolphinScheduler&lt;/h1&gt;
 &lt;h2 id=&#34;关于dolphinscheduler&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于dolphinscheduler&#34;&gt;#&lt;/a&gt; 关于 &lt;code&gt;DolphinScheduler&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Apache DolphinScheduler&lt;/code&gt;  是一个分布式的易扩展的可视化 &lt;code&gt;DAG&lt;/code&gt;  工作流任务调度系统。旨在解决复杂大数据任务依赖关系，并为应用程序提供&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Apache DolphinScheduler&lt;/code&gt;  是一个分布式的易扩展的可视化 &lt;code&gt;DAG&lt;/code&gt;  工作流任务调度系统。旨在解决复杂大数据任务依赖关系，并为应用程序提供数据和各种 &lt;code&gt;OPS&lt;/code&gt;  编排.  &lt;code&gt;DophinScheduler&lt;/code&gt;  以 &lt;code&gt;DAG&lt;/code&gt;  流的方式组装任务，可以及时监控任务的执行状态，支持重试.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;丰富的使用场景&lt;/li&gt;
+&lt;li&gt;高可靠性： &lt;code&gt;High Reliability&lt;/code&gt; , 去中心化设计，确保稳定性。原生支持高可用 &lt;code&gt;High Avaliable&lt;/code&gt;  的任务队列，提供过载容错能力.&lt;/li&gt;
+&lt;li&gt;搞扩展性： &lt;code&gt;High Scalability&lt;/code&gt; , 支持多租户和在线资源管理。支持每天 10 万个数据任务的稳定运行&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
     </channel>

@@ -9,7 +9,7 @@
             "url": "http://example.com/value/DolphinScheduler",
             "title": "DolphinScheduler",
             "date_published": "2024-09-01T12:00:00.000Z",
-            "content_html": "<h1 id=\"dolphinscheduler\"><a class=\"anchor\" href=\"#dolphinscheduler\">#</a> DolphinScheduler</h1>\n<h2 id=\"关于dolphinscheduler\"><a class=\"anchor\" href=\"#关于dolphinscheduler\">#</a> 关于 <code>DolphinScheduler</code></h2>\n<p><code>Apache DolphinScheduler</code>  是一个分布式的易扩展的可视化 <code>DAG</code>  工作流任务调度系统。旨在解决复杂大数据任务依赖关系，并为应用程序提供</p>\n",
+            "content_html": "<h1 id=\"dolphinscheduler\"><a class=\"anchor\" href=\"#dolphinscheduler\">#</a> DolphinScheduler</h1>\n<h2 id=\"关于dolphinscheduler\"><a class=\"anchor\" href=\"#关于dolphinscheduler\">#</a> 关于 <code>DolphinScheduler</code></h2>\n<p><code>Apache DolphinScheduler</code>  是一个分布式的易扩展的可视化 <code>DAG</code>  工作流任务调度系统。旨在解决复杂大数据任务依赖关系，并为应用程序提供数据和各种 <code>OPS</code>  编排.  <code>DophinScheduler</code>  以 <code>DAG</code>  流的方式组装任务，可以及时监控任务的执行状态，支持重试.</p>\n<ul>\n<li>丰富的使用场景</li>\n<li>高可靠性： <code>High Reliability</code> , 去中心化设计，确保稳定性。原生支持高可用 <code>High Avaliable</code>  的任务队列，提供过载容错能力.</li>\n<li>搞扩展性： <code>High Scalability</code> , 支持多租户和在线资源管理。支持每天 10 万个数据任务的稳定运行</li>\n</ul>\n",
             "tags": [
                 "DolphinScheduler"
             ]
