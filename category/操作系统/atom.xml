@@ -42,6 +42,7 @@
     <category term="Pytorch" />
     <category term="激活函数" />
     <category term="部署" />
+    <category term="DolphinScheduler" />
     <entry>
         <id>http://example.com/value/Linux%E5%9F%BA%E7%A1%80%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</id>
         <title>Linux基础与常用命令</title>

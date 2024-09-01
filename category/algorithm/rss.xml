@@ -45,6 +45,7 @@
         <category>Pytorch</category>
         <category>激活函数</category>
         <category>部署</category>
+        <category>DolphinScheduler</category>
         <item>
             <guid isPermalink="true">http://example.com/value/Algorithm/%E7%BB%84%E5%90%88%E6%95%B0</guid>
             <title>组合数</title>

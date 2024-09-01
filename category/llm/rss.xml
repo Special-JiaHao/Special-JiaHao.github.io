@@ -45,6 +45,7 @@
         <category>Pytorch</category>
         <category>激活函数</category>
         <category>部署</category>
+        <category>DolphinScheduler</category>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Tensor%20Parallelism</guid>
             <title>Tensor Parallelism</title>

@@ -42,6 +42,7 @@
     <category term="Pytorch" />
     <category term="激活函数" />
     <category term="部署" />
+    <category term="DolphinScheduler" />
     <entry>
         <id>http://example.com/value/ns3%20install</id>
         <title>ns3 install</title>

@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "繁華落盡 似水流年 • All posts by \"dolphinscheduler\" tag",
+    "description": "编程日记 & 随笔",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/value/DolphinScheduler",
+            "url": "http://example.com/value/DolphinScheduler",
+            "title": "DolphinScheduler",
+            "date_published": "2024-09-01T12:00:00.000Z",
+            "content_html": "<h1 id=\"dolphinscheduler\"><a class=\"anchor\" href=\"#dolphinscheduler\">#</a> DolphinScheduler</h1>\n<h2 id=\"关于dolphinscheduler\"><a class=\"anchor\" href=\"#关于dolphinscheduler\">#</a> 关于 <code>DolphinScheduler</code></h2>\n<p><code>Apache DolphinScheduler</code>  是一个分布式的易扩展的可视化 <code>DAG</code>  工作流任务调度系统。旨在解决复杂大数据任务依赖关系，并为应用程序提供</p>\n",
+            "tags": [
+                "DolphinScheduler"
+            ]
+        }
+    ]
+}

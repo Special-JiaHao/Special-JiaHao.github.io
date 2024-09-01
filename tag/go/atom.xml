@@ -42,6 +42,7 @@
     <category term="Pytorch" />
     <category term="激活函数" />
     <category term="部署" />
+    <category term="DolphinScheduler" />
     <entry>
         <id>http://example.com/value/Go/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</id>
         <title>Go基础语法</title>

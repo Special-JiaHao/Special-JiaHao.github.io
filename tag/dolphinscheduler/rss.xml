@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>繁華落盡 似水流年 • Posts by &#34;dolphinscheduler&#34; tag</title>
+        <link>http://example.com</link>
+        <description>编程日记 &amp; 随笔</description>
+        <language>en</language>
+        <pubDate>Sun, 01 Sep 2024 20:00:00 +0800</pubDate>
+        <lastBuildDate>Sun, 01 Sep 2024 20:00:00 +0800</lastBuildDate>
+        <category>mathematics</category>
+        <category>语法</category>
+        <category>C++</category>
+        <category>VMware</category>
+        <category>install</category>
+        <category>数据库</category>
+        <category>STL</category>
+        <category>CNN</category>
+        <category>Project</category>
+        <category>面试题</category>
+        <category>日常</category>
+        <category>校招</category>
+        <category>算法</category>
+        <category>Leetcode双周赛</category>
+        <category>Algorithm</category>
+        <category>Leetcode周赛</category>
+        <category>设计模式</category>
+        <category>多线程</category>
+        <category>池化技术</category>
+        <category>MySQL</category>
+        <category>操作系统</category>
+        <category>计算机网络</category>
+        <category>CMake</category>
+        <category>线程池</category>
+        <category>Go</category>
+        <category>Redis</category>
+        <category>Linux</category>
+        <category>json</category>
+        <category>Python</category>
+        <category>牛客</category>
+        <category>Git</category>
+        <category>normalization</category>
+        <category>推理加速</category>
+        <category>LLM</category>
+        <category>AI算法</category>
+        <category>Pytorch</category>
+        <category>激活函数</category>
+        <category>部署</category>
+        <category>DolphinScheduler</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/DolphinScheduler</guid>
+            <title>DolphinScheduler</title>
+            <link>http://example.com/value/DolphinScheduler</link>
+            <category>DolphinScheduler</category>
+            <pubDate>Sun, 01 Sep 2024 20:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;dolphinscheduler&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dolphinscheduler&#34;&gt;#&lt;/a&gt; DolphinScheduler&lt;/h1&gt;
+&lt;h2 id=&#34;关于dolphinscheduler&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于dolphinscheduler&#34;&gt;#&lt;/a&gt; 关于 &lt;code&gt;DolphinScheduler&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Apache DolphinScheduler&lt;/code&gt;  是一个分布式的易扩展的可视化 &lt;code&gt;DAG&lt;/code&gt;  工作流任务调度系统。旨在解决复杂大数据任务依赖关系，并为应用程序提供&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
