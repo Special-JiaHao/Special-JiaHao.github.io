@@ -46,6 +46,7 @@
         <category>激活函数</category>
         <category>部署</category>
         <category>DolphinScheduler</category>
+        <category>ZooKeeper</category>
         <item>
             <guid isPermalink="true">http://example.com/value/CPP/CMake</guid>
             <title>CMake</title>

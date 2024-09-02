@@ -43,6 +43,7 @@
     <category term="激活函数" />
     <category term="部署" />
     <category term="DolphinScheduler" />
+    <category term="ZooKeeper" />
     <entry>
         <id>http://example.com/value/Markdown%20grammar</id>
         <title>Markdown语法</title>

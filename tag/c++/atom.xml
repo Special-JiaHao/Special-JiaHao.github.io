@@ -43,6 +43,7 @@
     <category term="激活函数" />
     <category term="部署" />
     <category term="DolphinScheduler" />
+    <category term="ZooKeeper" />
     <entry>
         <id>http://example.com/value/CPP/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8</id>
         <title>IO多路复用</title>

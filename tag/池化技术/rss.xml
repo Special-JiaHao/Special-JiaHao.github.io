@@ -46,6 +46,7 @@
         <category>激活函数</category>
         <category>部署</category>
         <category>DolphinScheduler</category>
+        <category>ZooKeeper</category>
         <item>
             <guid isPermalink="true">http://example.com/value/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0</guid>
             <title>数据库连接池(C++)</title>

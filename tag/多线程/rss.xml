@@ -46,6 +46,7 @@
         <category>激活函数</category>
         <category>部署</category>
         <category>DolphinScheduler</category>
+        <category>ZooKeeper</category>
         <item>
             <guid isPermalink="true">http://example.com/value/CPP/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B(C%20API)</guid>
             <title>多线程编程(C API)</title>

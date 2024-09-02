@@ -5,8 +5,8 @@
         <link>http://example.com</link>
         <description>编程日记 &amp; 随笔</description>
         <language>en</language>
-        <pubDate>Sun, 01 Sep 2024 20:00:00 +0800</pubDate>
-        <lastBuildDate>Sun, 01 Sep 2024 20:00:00 +0800</lastBuildDate>
+        <pubDate>Mon, 02 Sep 2024 12:00:00 +0800</pubDate>
+        <lastBuildDate>Mon, 02 Sep 2024 12:00:00 +0800</lastBuildDate>
         <category>mathematics</category>
         <category>语法</category>
         <category>C++</category>
@@ -46,6 +46,16 @@
         <category>激活函数</category>
         <category>部署</category>
         <category>DolphinScheduler</category>
+        <category>ZooKeeper</category>
+        <item>
+            <guid isPermalink="true">http://example.com/value/ZooKeeper</guid>
+            <title>ZooKeeper</title>
+            <link>http://example.com/value/ZooKeeper</link>
+            <category>ZooKeeper</category>
+            <pubDate>Mon, 02 Sep 2024 12:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h1&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/value/DolphinScheduler</guid>
             <title>DolphinScheduler</title>
