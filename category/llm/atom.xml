@@ -3,7 +3,7 @@
     <id>http://example.com</id>
     <title>繁華落盡 似水流年 • Posts by &#34;llm&#34; category</title>
     <link href="http://example.com" />
-    <updated>2024-08-22T02:07:49.508Z</updated>
+    <updated>2024-09-03T00:55:58.397Z</updated>
     <category term="mathematics" />
     <category term="语法" />
     <category term="C++" />
@@ -44,6 +44,15 @@
     <category term="部署" />
     <category term="DolphinScheduler" />
     <category term="ZooKeeper" />
+    <entry>
+        <id>http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/GPT</id>
+        <title>GPT</title>
+        <link rel="alternate" href="http://example.com/value/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/GPT"/>
+        <content type="html">&lt;h1 id=&#34;gpt&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gpt&#34;&gt;#&lt;/a&gt; GPT&lt;/h1&gt;
+</content>
+        <category term="LLM" />
+        <updated>2024-09-03T00:55:58.397Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/value/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/Tensor%20Parallelism</id>
         <title>Tensor Parallelism</title>

@@ -9,7 +9,7 @@
             "url": "http://example.com/value/ZooKeeper",
             "title": "ZooKeeper",
             "date_published": "2024-09-02T04:00:00.000Z",
-            "content_html": "<h1 id=\"\"><a class=\"anchor\" href=\"#\">#</a> </h1>\n",
+            "content_html": "<h1 id=\"zookeeper\"><a class=\"anchor\" href=\"#zookeeper\">#</a> ZooKeeper</h1>\n",
             "tags": [
                 "ZooKeeper"
             ]
